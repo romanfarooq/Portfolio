@@ -5,7 +5,14 @@ const nextConfig: NextConfig = {
     reactCompiler: true,
   },
   images: {
-    domains: ["robohash.org"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "robohash.org",
+        port: "",
+        pathname: "/**",
+      },
+    ],
   },
 };
 

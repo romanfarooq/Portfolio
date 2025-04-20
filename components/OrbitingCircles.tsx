@@ -2,7 +2,7 @@ import React from "react";
 import { cn } from "../lib/utils";
 
 interface OrbitingCirclesProps {
-  [key: string]: any;
+  [key: string]: unknown;
   className?: string;
   children: React.ReactNode;
   reverse?: boolean;
