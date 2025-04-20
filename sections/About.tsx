@@ -10,7 +10,7 @@ import { CopyEmailButton } from "../components/CopyEmailButton";
 export default function About() {
   const grid2Container = useRef<HTMLDivElement>(null!);
   return (
-    <section className="c-space section-spacing" id="about">
+    <section id="about" className="c-space section-spacing scroll-mt-12">
       <h2 className="text-heading">About Me</h2>
       <div className="mt-12 grid grid-cols-1 gap-4 md:auto-rows-[18rem] md:grid-cols-6">
         {/* Grid 1 */}

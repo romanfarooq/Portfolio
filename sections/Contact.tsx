@@ -1,7 +1,8 @@
 "use client";
 
 import emailjs from "@emailjs/browser";
-import { useState, ChangeEvent, FormEvent } from "react";
+import { useState } from "react";
+import { useForm } from "react-hook-form";
 import { Alert } from "../components/Alert";
 import { Particles } from "../components/Particles";
 
@@ -11,60 +12,66 @@ interface FormData {
   message: string;
 }
 
+interface AlertState {
+  show: boolean;
+  type: "success" | "danger";
+  message: string;
+}
+
 export default function Contact() {
-  const [formData, setFormData] = useState<FormData>({
-    name: "",
-    email: "",
+  const [alert, setAlert] = useState<AlertState>({
+    show: false,
+    type: "success",
     message: "",
   });
-  const [isLoading, setIsLoading] = useState<boolean>(false);
-  const [showAlert, setShowAlert] = useState<boolean>(false);
-  const [alertType, setAlertType] = useState<"success" | "danger">("success");
-  const [alertMessage, setAlertMessage] = useState<string>("");
-  
-  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-  
+
+  const {
+    reset,
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+  } = useForm<FormData>({
+    defaultValues: {
+      name: "",
+      email: "",
+      message: "",
+    },
+  });
+
   const showAlertMessage = (type: "success" | "danger", message: string) => {
-    setAlertType(type);
-    setAlertMessage(message);
-    setShowAlert(true);
+    setAlert({ show: true, type, message });
     setTimeout(() => {
-      setShowAlert(false);
+      setAlert((prev) => ({ ...prev, show: false }));
     }, 5000);
   };
-  
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsLoading(true);
 
+  const onSubmit = async (data: FormData) => {
     try {
-      console.log("From submitted:", formData);
       await emailjs.send(
         "service_79b0nyj",
         "template_17us8im",
         {
-          from_name: formData.name,
+          from_name: data.name,
           to_name: "Ali",
-          from_email: formData.email,
+          from_email: data.email,
           to_email: "AliSanatiDev@gmail.com",
-          message: formData.message,
+          message: data.message,
         },
-        "pn-Bw_mS1_QQdofuV"
+        "pn-Bw_mS1_QQdofuV",
       );
-      setIsLoading(false);
-      setFormData({ name: "", email: "", message: "" });
+      reset();
       showAlertMessage("success", "Your message has been sent!");
     } catch (error) {
-      setIsLoading(false);
       console.log(error);
       showAlertMessage("danger", "Something went wrong!");
     }
   };
-  
+
   return (
-    <section className="relative flex items-center c-space section-spacing">
+    <section
+      id="contact"
+      className="c-space section-spacing relative flex scroll-mt-12 items-center"
+    >
       <Particles
         className="absolute inset-0 -z-50"
         quantity={100}
@@ -72,31 +79,30 @@ export default function Contact() {
         color={"#ffffff"}
         refresh
       />
-      {showAlert && <Alert type={alertType} text={alertMessage} />}
-      <div className="flex flex-col items-center justify-center max-w-md p-5 mx-auto border border-white/10 rounded-2xl bg-primary">
-        <div className="flex flex-col items-start w-full gap-5 mb-10">
+      {alert.show && <Alert type={alert.type} text={alert.message} />}
+      <div className="bg-primary mx-auto flex max-w-md flex-col items-center justify-center rounded-2xl border border-white/10 p-5">
+        <div className="mb-10 flex w-full flex-col items-start gap-5">
           <h2 className="text-heading">Let's Talk</h2>
           <p className="font-normal text-neutral-400">
             Whether you're looking to build a new website, improve your existing
             platform, or bring a unique project to life, I'm here to help
           </p>
         </div>
-        <form className="w-full" onSubmit={handleSubmit}>
+        <form className="w-full" onSubmit={handleSubmit(onSubmit)}>
           <div className="mb-5">
             <label htmlFor="name" className="feild-label">
               Full Name
             </label>
             <input
               id="name"
-              name="name"
-              type="text"
               className="field-input field-input-focus"
               placeholder="John Doe"
               autoComplete="name"
-              value={formData.name}
-              onChange={handleChange}
-              required
+              {...register("name", { required: true })}
             />
+            {errors.name && (
+              <span className="text-sm text-red-500">Name is required</span>
+            )}
           </div>
           <div className="mb-5">
             <label htmlFor="email" className="feild-label">
@@ -104,15 +110,22 @@ export default function Contact() {
             </label>
             <input
               id="email"
-              name="email"
-              type="email"
               className="field-input field-input-focus"
               placeholder="JohnDoe@email.com"
               autoComplete="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
+              {...register("email", {
+                required: true,
+                pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+              })}
             />
+            {errors.email?.type === "required" && (
+              <span className="text-sm text-red-500">Email is required</span>
+            )}
+            {errors.email?.type === "pattern" && (
+              <span className="text-sm text-red-500">
+                Please enter a valid email
+              </span>
+            )}
           </div>
           <div className="mb-5">
             <label htmlFor="message" className="feild-label">
@@ -120,21 +133,21 @@ export default function Contact() {
             </label>
             <textarea
               id="message"
-              name="message"
               rows={4}
               className="field-input field-input-focus"
               placeholder="Share your thoughts..."
-              autoComplete="message"
-              value={formData.message}
-              onChange={handleChange}
-              required
+              {...register("message", { required: true })}
             />
+            {errors.message && (
+              <span className="text-sm text-red-500">Message is required</span>
+            )}
           </div>
           <button
             type="submit"
-            className="w-full px-1 py-3 text-lg text-center rounded-md cursor-pointer bg-radial from-lavender to-royal hover-animation"
+            className="from-lavender to-royal hover-animation w-full cursor-pointer rounded-md bg-radial px-1 py-3 text-center text-lg"
+            disabled={isSubmitting}
           >
-            {!isLoading ? "Send" : "Sending..."}
+            {isSubmitting ? "Sending..." : "Send"}
           </button>
         </form>
       </div>
