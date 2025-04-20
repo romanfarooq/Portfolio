@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { mySocials } from "../constants";
 
 export default function Footer() {
@@ -14,7 +15,13 @@ export default function Footer() {
       <div className="flex gap-3">
         {mySocials.map((social, index) => (
           <a href={social.href} key={index}>
-            <img src={social.icon} className="h-5 w-5" alt={social.name} />
+            <Image
+              src={social.icon}
+              className="h-5 w-5"
+              width={20}
+              height={20}
+              alt={social.name}
+            />
           </a>
         ))}
       </div>

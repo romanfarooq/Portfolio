@@ -1,23 +1,26 @@
 "use client";
 
+import Image from "next/image";
 import { useRef } from "react";
 import { Card } from "../components/Card";
 import { Globe } from "../components/globe";
-import { CopyEmailButton } from "../components/CopyEmailButton";
 import { Frameworks } from "../components/Frameworks";
+import { CopyEmailButton } from "../components/CopyEmailButton";
 
 export default function About() {
-  const grid2Container = useRef<HTMLDivElement>(null);
+  const grid2Container = useRef<HTMLDivElement>(null!);
   return (
     <section className="c-space section-spacing" id="about">
       <h2 className="text-heading">About Me</h2>
       <div className="mt-12 grid grid-cols-1 gap-4 md:auto-rows-[18rem] md:grid-cols-6">
         {/* Grid 1 */}
         <div className="grid-default-color grid-1 flex items-end">
-          <img
-            src="assets/coding-pov.png"
+          <Image
+            src="/assets/coding-pov.png"
             className="absolute -top-[1rem] -right-[5rem] scale-[1.75] md:inset-y-10 md:left-50 md:scale-[3] lg:scale-[2.5]"
             alt="Coding POV"
+            width={500}
+            height={500}
           />
           <div className="z-10">
             <p className="headtext">Hi, I'm Ali Sanati</p>
@@ -116,4 +119,4 @@ export default function About() {
       </div>
     </section>
   );
-};
+}

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import { motion } from "motion/react";
 
@@ -46,9 +47,11 @@ export default function Navbar() {
             onClick={() => setIsOpen(!isOpen)}
             className="flex cursor-pointer text-neutral-400 hover:text-white focus:outline-none sm:hidden"
           >
-            <img
-              src={isOpen ? "assets/close.svg" : "assets/menu.svg"}
+            <Image
+              src={isOpen ? "/assets/close.svg" : "/assets/menu.svg"}
               className="h-6 w-6"
+              width={24}
+              height={24}
               alt="toggle"
             />
           </button>
