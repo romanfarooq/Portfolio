@@ -240,21 +240,17 @@ export function Particles({
     window.addEventListener("resize", handleResize);
 
     return () => {
-      if (rafID.current != null) {
-        window.cancelAnimationFrame(rafID.current);
-      }
-      if (resizeTimeout.current) {
-        clearTimeout(resizeTimeout.current);
-      }
+      if (rafID.current) window.cancelAnimationFrame(rafID.current);
+      if (resizeTimeout.current) clearTimeout(resizeTimeout.current);
       window.removeEventListener("resize", handleResize);
     };
   }, [initCanvas, animate]);
 
   return (
     <div
-      className={cn("pointer-events-none", className)}
       ref={canvasContainerRef}
       aria-hidden="true"
+      className={cn("pointer-events-none", className)}
       {...props}
     >
       <canvas ref={canvasRef} className="size-full" />

@@ -1,5 +1,5 @@
-import { motion, AnimatePresence } from "motion/react";
 import { cn } from "../lib/utils";
+import { motion, AnimatePresence } from "motion/react";
 
 interface AlertProps {
   text: string;
