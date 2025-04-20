@@ -4,10 +4,9 @@ import { AnimatePresence, motion } from "motion/react";
 
 export function CopyEmailButton() {
   const [copied, setCopied] = useState(false);
-  const email = "Your Email Address";
 
   const copyToClipboard = () => {
-    navigator.clipboard.writeText(email);
+    navigator.clipboard.writeText(process.env.CONTACT_EMAIL!);
     setCopied(true);
 
     setTimeout(() => {

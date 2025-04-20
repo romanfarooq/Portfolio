@@ -1,16 +1,12 @@
 "use client";
 
-import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
 import { Alert } from "../components/Alert";
+import { sendEmail } from "../actions/email";
 import { Particles } from "../components/Particles";
-
-interface FormData {
-  name: string;
-  email: string;
-  message: string;
-}
+import { contactFormSchema, ContactFormData } from "../lib/validations";
 
 interface AlertState {
   show: boolean;
@@ -29,8 +25,9 @@ export default function Contact() {
     reset,
     register,
     handleSubmit,
-    formState: { errors, isSubmitting },
-  } = useForm<FormData>({
+    formState: { isSubmitting, errors },
+  } = useForm<ContactFormData>({
+    resolver: zodResolver(contactFormSchema),
     defaultValues: {
       name: "",
       email: "",
@@ -45,24 +42,24 @@ export default function Contact() {
     }, 5000);
   };
 
-  const onSubmit = async (data: FormData) => {
+  const onSubmit = async (data: ContactFormData) => {
     try {
-      await emailjs.send(
-        "service_79b0nyj",
-        "template_17us8im",
-        {
-          from_name: data.name,
-          to_name: "Ali",
-          from_email: data.email,
-          to_email: "AliSanatiDev@gmail.com",
-          message: data.message,
-        },
-        "pn-Bw_mS1_QQdofuV",
-      );
+      const formData = new FormData();
+      formData.append("name", data.name);
+      formData.append("email", data.email);
+      formData.append("message", data.message);
+
+      const result = await sendEmail(formData);
+
+      if (!result?.success) {
+        showAlertMessage("danger", result?.error || "Something went wrong!");
+        return;
+      }
+
       reset();
       showAlertMessage("success", "Your message has been sent!");
     } catch (error) {
-      console.log(error);
+      console.error(error);
       showAlertMessage("danger", "Something went wrong!");
     }
   };
@@ -98,10 +95,12 @@ export default function Contact() {
               className="field-input field-input-focus"
               placeholder="John Doe"
               autoComplete="name"
-              {...register("name", { required: true })}
+              {...register("name")}
             />
             {errors.name && (
-              <span className="text-sm text-red-500">Name is required</span>
+              <span className="text-sm text-red-500">
+                {errors.name.message}
+              </span>
             )}
           </div>
           <div className="mb-5">
@@ -113,17 +112,11 @@ export default function Contact() {
               className="field-input field-input-focus"
               placeholder="JohnDoe@email.com"
               autoComplete="email"
-              {...register("email", {
-                required: true,
-                pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-              })}
+              {...register("email")}
             />
-            {errors.email?.type === "required" && (
-              <span className="text-sm text-red-500">Email is required</span>
-            )}
-            {errors.email?.type === "pattern" && (
+            {errors.email && (
               <span className="text-sm text-red-500">
-                Please enter a valid email
+                {errors.email.message}
               </span>
             )}
           </div>
@@ -136,10 +129,12 @@ export default function Contact() {
               rows={4}
               className="field-input field-input-focus"
               placeholder="Share your thoughts..."
-              {...register("message", { required: true })}
+              {...register("message")}
             />
             {errors.message && (
-              <span className="text-sm text-red-500">Message is required</span>
+              <span className="text-sm text-red-500">
+                {errors.message.message}
+              </span>
             )}
           </div>
           <button
