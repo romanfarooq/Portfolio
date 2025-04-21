@@ -21,7 +21,6 @@ export async function sendEmail(formData: FormData) {
 
     const validatedData = result.data;
 
-    // Send email using Resend
     const response = await resend.emails.send({
       from: "Contact Form <onboarding@resend.dev>",
       to: process.env.CONTACT_EMAIL!,

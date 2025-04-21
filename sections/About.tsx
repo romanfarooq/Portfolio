@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useRef } from "react";
 import { Card } from "../components/Card";
-import { Globe } from "../components/globe";
+import { Globe } from "../components/Globe";
 import { Frameworks } from "../components/Frameworks";
 import { CopyEmailButton } from "../components/CopyEmailButton";
 
