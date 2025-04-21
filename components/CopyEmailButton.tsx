@@ -2,16 +2,18 @@ import Image from "next/image";
 import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 
+const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL!;
+
 export function CopyEmailButton() {
   const [copied, setCopied] = useState(false);
 
   const copyToClipboard = () => {
-    navigator.clipboard.writeText(process.env.CONTACT_EMAIL!);
-    setCopied(true);
-
-    setTimeout(() => {
-      setCopied(false);
-    }, 2000);
+    navigator.clipboard.writeText(CONTACT_EMAIL).then(() => {
+      setCopied(true);
+      setTimeout(() => {
+        setCopied(false);
+      }, 2000);
+    });
   };
 
   return (

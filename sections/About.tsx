@@ -106,17 +106,17 @@ export default function About() {
             />
             <Card
               style={{ rotate: "30deg", top: "70%", left: "70%" }}
-              image="assets/logos/cpp.png"
+              image="assets/logos/cplusplus.webp"
               containerRef={gridContainer}
             />
             <Card
               style={{ rotate: "-45deg", top: "70%", left: "25%" }}
-              image="assets/logos/js.png"
+              image="assets/logos/javascript.webp"
               containerRef={gridContainer}
             />
             <Card
               style={{ rotate: "-45deg", top: "5%", left: "10%" }}
-              image="assets/logos/dart.png"
+              image="assets/logos/dart.webp"
               containerRef={gridContainer}
             />
           </div>
