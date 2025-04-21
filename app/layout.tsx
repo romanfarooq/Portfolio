@@ -64,7 +64,6 @@ export const metadata: Metadata = {
   category: "Portfolio",
   classification: "Portfolio, Web Development, Software Engineering",
   referrer: "origin-when-cross-origin",
-  colorScheme: "dark",
   formatDetection: {
     telephone: false,
     email: false,
@@ -107,6 +106,7 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: "#02020B",
+  colorScheme: "dark",
 };
 
 export default function RootLayout({

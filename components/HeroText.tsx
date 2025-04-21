@@ -13,9 +13,9 @@ export function HeroText() {
   return (
     <div className="z-10 mt-20 rounded-3xl bg-clip-text text-center md:mt-40 md:text-left">
       {/* Desktop View */}
-      <div className="c-space relative hidden h-[60vh] w-screen flex-col md:flex">
+      <div className="c-space hidden flex-col md:flex">
         <motion.h1
-          className="text-4xl font-medium"
+          className="text-3xl font-medium"
           variants={variants}
           initial="hidden"
           animate="visible"
@@ -53,24 +53,22 @@ export function HeroText() {
           >
             Web Solutions
           </motion.p>
-          <div className="absolute bottom-1 right-24">
-            <motion.a
-              href="/Roman-Farooq-CV.pdf"
-              download
-              variants={variants}
-              initial="hidden"
-              animate="visible"
-              transition={{ delay: 2 }}
-              className="flex items-center gap-2 rounded-full border border-black/10 bg-white px-7 py-2 outline-hidden transition hover:scale-110 focus-visible:scale-110 active:scale-105 dark:bg-white/10"
-            >
-              Download CV
-              <HiDownload className="text-white opacity-60" />
-            </motion.a>
-          </div>
+          <motion.a
+            href="/Roman-Farooq-CV.pdf"
+            download
+            variants={variants}
+            initial="hidden"
+            animate="visible"
+            transition={{ delay: 2 }}
+            className="mt-4 flex items-center gap-2 rounded-full border border-black/10 bg-white/10 px-7 py-2 text-xl outline-hidden transition hover:scale-110 focus-visible:scale-110 active:scale-105"
+          >
+            Download CV
+            <HiDownload className="text-white opacity-60" />
+          </motion.a>
         </div>
       </div>
       {/* Mobile View */}
-      <div className="relative flex h-[80vh] flex-col space-y-6 md:hidden">
+      <div className="relative flex h-[85vh] flex-col space-y-6 md:hidden">
         <motion.p
           className="text-4xl font-medium"
           variants={variants}
