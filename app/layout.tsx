@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { Viewport } from "next";
 import { Funnel_Display } from "next/font/google";
 import "./globals.css";
 
@@ -101,8 +102,11 @@ export const metadata: Metadata = {
     github: "https://github.com/romanfarooq",
     linkedin: "https://linkedin.com/in/roman-farooq",
     instagram: "https://instagram.com/roman_farooq",
-    "theme-color": "#02020B",
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#02020B",
 };
 
 export default function RootLayout({

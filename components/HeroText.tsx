@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { FlipWords } from "./FlipWords";
+import { HiDownload } from "react-icons/hi";
 
 const words = ["Secure", "Modern", "Scalable"];
 
@@ -12,7 +13,7 @@ export function HeroText() {
   return (
     <div className="z-10 mt-20 rounded-3xl bg-clip-text text-center md:mt-40 md:text-left">
       {/* Desktop View */}
-      <div className="c-space hidden flex-col md:flex">
+      <div className="c-space relative hidden h-[60vh] w-screen flex-col md:flex">
         <motion.h1
           className="text-4xl font-medium"
           variants={variants}
@@ -20,7 +21,7 @@ export function HeroText() {
           animate="visible"
           transition={{ delay: 1 }}
         >
-          Hi I&apos;m Ali
+          Hi I&apos;m Roman
         </motion.h1>
         <div className="flex flex-col items-start">
           <motion.p
@@ -52,10 +53,24 @@ export function HeroText() {
           >
             Web Solutions
           </motion.p>
+          <div className="absolute bottom-1 right-24">
+            <motion.a
+              href="/Roman-Farooq-CV.pdf"
+              download
+              variants={variants}
+              initial="hidden"
+              animate="visible"
+              transition={{ delay: 2 }}
+              className="flex items-center gap-2 rounded-full border border-black/10 bg-white px-7 py-2 outline-hidden transition hover:scale-110 focus-visible:scale-110 active:scale-105 dark:bg-white/10"
+            >
+              Download CV
+              <HiDownload className="text-white opacity-60" />
+            </motion.a>
+          </div>
         </div>
       </div>
       {/* Mobile View */}
-      <div className="flex- flex-col space-y-6 md:hidden">
+      <div className="relative flex h-[80vh] flex-col space-y-6 md:hidden">
         <motion.p
           className="text-4xl font-medium"
           variants={variants}
@@ -63,7 +78,7 @@ export function HeroText() {
           animate="visible"
           transition={{ delay: 1 }}
         >
-          Hi,I&apos;m Ali
+          Hi, I&apos;m Roman
         </motion.p>
         <div>
           <motion.p
@@ -95,6 +110,20 @@ export function HeroText() {
           >
             Web Applications
           </motion.p>
+        </div>
+        <div className="absolute bottom-0 flex w-full justify-center">
+          <motion.a
+            href="/Roman-Farooq-CV.pdf"
+            download
+            variants={variants}
+            initial="hidden"
+            animate="visible"
+            transition={{ delay: 2 }}
+            className="flex items-center gap-2 rounded-full border border-black/10 bg-white px-7 py-2 outline-hidden transition hover:scale-110 focus-visible:scale-110 active:scale-105 dark:bg-white/10"
+          >
+            Download CV
+            <HiDownload className="text-white opacity-60" />
+          </motion.a>
         </div>
       </div>
     </div>

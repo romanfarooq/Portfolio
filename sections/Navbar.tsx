@@ -34,14 +34,14 @@ const Navigation = () => {
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="bg-primary/40 fixed inset-x-0 z-20 w-full backdrop-blur-lg">
+    <div className="bg-primary/40 fixed inset-x-0 z-50 w-full backdrop-blur-lg">
       <div className="c-space mx-auto max-w-7xl">
         <div className="flex items-center justify-between py-2 sm:py-0">
           <a
             href="/"
             className="text-xl font-bold text-neutral-400 transition-colors hover:text-white"
           >
-            Ali
+            Roman Farooq
           </a>
           <button
             onClick={() => setIsOpen(!isOpen)}
