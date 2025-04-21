@@ -35,9 +35,8 @@ export function CopyEmailButton() {
           >
             <Image
               src="/assets/icons/copy-done.svg"
-              className="w-5"
-              width={20}
-              height={20}
+              width={24}
+              height={24}
               alt="copy Icon"
             />
             Email has Copied
@@ -53,9 +52,8 @@ export function CopyEmailButton() {
           >
             <Image
               src="/assets/icons/copy.svg"
-              className="w-5"
-              width={20}
-              height={20}
+              width={24}
+              height={24}
               alt="copy icon"
             />
             Copy Email Address

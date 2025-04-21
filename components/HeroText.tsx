@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { motion } from "motion/react";
 import { FlipWords } from "./FlipWords";
 import { HiDownload } from "react-icons/hi";
@@ -63,7 +64,12 @@ export function HeroText() {
             className="mt-4 flex items-center gap-2 rounded-full border border-black/10 bg-white/10 px-7 py-2 text-xl outline-hidden transition hover:scale-110 focus-visible:scale-110 active:scale-105"
           >
             Download CV
-            <HiDownload className="text-white opacity-60" />
+            <Image
+              src="/assets/icons/arrow-down.svg"
+              alt="Download Icon"
+              width={24}
+              height={24}
+            />
           </motion.a>
         </div>
       </div>

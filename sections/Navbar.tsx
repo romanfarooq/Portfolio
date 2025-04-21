@@ -52,7 +52,6 @@ export default function Navbar() {
               src={
                 isOpen ? "/assets/icons/close.svg" : "/assets/icons/menu.svg"
               }
-              className="h-6 w-6"
               width={24}
               height={24}
               alt="toggle"
