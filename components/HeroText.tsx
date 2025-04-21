@@ -54,7 +54,7 @@ export function HeroText() {
             Web Solutions
           </motion.p>
           <motion.a
-            href="/Roman-Farooq-CV.pdf"
+            href="/documents/Roman-Farooq-CV.pdf"
             download
             variants={variants}
             initial="hidden"

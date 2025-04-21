@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { motion } from "motion/react";
@@ -37,18 +38,20 @@ export default function Navbar() {
     <div className="bg-primary/40 fixed inset-x-0 z-50 w-full backdrop-blur-lg">
       <div className="c-space mx-auto max-w-7xl">
         <div className="flex items-center justify-between py-2 sm:py-0">
-          <a
+          <Link
             href="/"
             className="text-xl font-bold text-neutral-400 transition-colors hover:text-white"
           >
             Roman Farooq
-          </a>
+          </Link>
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="flex cursor-pointer text-neutral-400 hover:text-white focus:outline-none sm:hidden"
           >
             <Image
-              src={isOpen ? "/assets/close.svg" : "/assets/menu.svg"}
+              src={
+                isOpen ? "/assets/icons/close.svg" : "/assets/icons/menu.svg"
+              }
               className="h-6 w-6"
               width={24}
               height={24}

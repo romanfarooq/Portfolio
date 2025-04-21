@@ -25,7 +25,7 @@ export default function Footer() {
           </a>
         ))}
       </div>
-      <p>© 2025 Ali. All rights reserved.</p>
+      <p>&copy; {new Date().getFullYear()} Roman. All rights reserved.</p>
     </section>
   );
 }

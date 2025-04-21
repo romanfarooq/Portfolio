@@ -52,7 +52,7 @@ export default function About() {
           className="grid-default-color grid-1 flex items-end"
         >
           <Image
-            src="/assets/coding-pov.webp"
+            src="/assets/images/coding-pov.webp"
             className="absolute -top-[1rem] -right-[5rem] scale-[1.75] md:inset-y-10 md:left-50 md:scale-[3] lg:scale-[2.5]"
             alt="Coding POV"
             quality={100}
@@ -106,17 +106,17 @@ export default function About() {
             />
             <Card
               style={{ rotate: "30deg", top: "70%", left: "70%" }}
-              image="assets/logos/cplusplus.webp"
+              image="/assets/images/cplusplus.webp"
               containerRef={gridContainer}
             />
             <Card
               style={{ rotate: "-45deg", top: "70%", left: "25%" }}
-              image="assets/logos/javascript.webp"
+              image="/assets/images/javascript.webp"
               containerRef={gridContainer}
             />
             <Card
               style={{ rotate: "-45deg", top: "5%", left: "10%" }}
-              image="assets/logos/dart.webp"
+              image="/assets/images/nextjs.webp"
               containerRef={gridContainer}
             />
           </div>
@@ -150,8 +150,8 @@ export default function About() {
               Proficient in Full-Stack Web and Mobile Development with key
               languages like Python, JavaScript, and TypeScript. Experienced in
               frameworks such as React.js, Next.js, Node.js, Express.js, and
-              Flutter. Also skilled in Database Management (MongoDB, MySQL) and
-              utilizing tools like Git and GitHub to build optimized and
+              Flutter. Also skilled in Database Management (MongoDB, PostgreSQL)
+              and utilizing tools like Git and GitHub to build optimized and
               scalable applications.
             </p>
           </div>

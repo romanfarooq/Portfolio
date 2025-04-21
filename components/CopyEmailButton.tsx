@@ -34,7 +34,7 @@ export function CopyEmailButton() {
             transition={{ duration: 0.1, ease: "easeInOut" }}
           >
             <Image
-              src="/assets/copy-done.svg"
+              src="/assets/icons/copy-done.svg"
               className="w-5"
               width={20}
               height={20}
@@ -52,7 +52,7 @@ export function CopyEmailButton() {
             transition={{ duration: 0.1 }}
           >
             <Image
-              src="/assets/copy.svg"
+              src="/assets/icons/copy.svg"
               className="w-5"
               width={20}
               height={20}

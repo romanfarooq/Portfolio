@@ -1,5 +1,4 @@
-import type { Metadata } from "next";
-import type { Viewport } from "next";
+import type { Metadata, Viewport } from "next";
 import { Funnel_Display } from "next/font/google";
 import "./globals.css";
 
@@ -53,7 +52,7 @@ export const metadata: Metadata = {
     siteName: "Roman Farooq's Portfolio",
     images: [
       {
-        url: "/my-image.webp",
+        url: "/assets/images/roman.webp",
         width: 1200,
         height: 630,
         alt: "Roman Farooq",
@@ -76,7 +75,7 @@ export const metadata: Metadata = {
     title: "Roman Farooq's Portfolio",
     description:
       "Roman Farooq is a full-stack web developer with a passion for building beautiful and functional websites.",
-    images: ["/my-image.webp"],
+    images: ["/assets/images/roman.webp"],
     creator: "@TheRomanFarooq",
   },
   verification: {
