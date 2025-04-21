@@ -14,7 +14,12 @@ export default function Footer() {
       </div>
       <div className="flex gap-3">
         {mySocials.map((social, index) => (
-          <a href={social.href} key={index}>
+          <a
+            key={index}
+            href={social.href}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Image src={social.icon} width={20} height={20} alt={social.name} />
           </a>
         ))}
