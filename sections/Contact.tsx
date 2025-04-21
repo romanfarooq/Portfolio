@@ -67,7 +67,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="c-space section-spacing relative flex scroll-mt-12 items-center"
+      className="c-space section-spacing relative flex items-center"
     >
       <Particles
         className="absolute inset-0 -z-50"
@@ -77,7 +77,7 @@ export default function Contact() {
         refresh
       />
       {alert.show && <Alert type={alert.type} text={alert.message} />}
-      <div className="bg-primary mx-auto flex max-w-md flex-col items-center justify-center rounded-2xl border border-white/10 p-5">
+      <div className="bg-primary m-10 mx-auto flex max-w-md flex-col items-center justify-center rounded-2xl border border-white/10 p-5">
         <div className="mb-10 flex w-full flex-col items-start gap-5">
           <h2 className="text-heading">Let's Talk</h2>
           <p className="font-normal text-neutral-400">
