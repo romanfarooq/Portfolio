@@ -1,11 +1,9 @@
-"use client";
-
 import Image from "next/image";
 import { mySocials } from "../constants";
 
 export default function Footer() {
   return (
-    <section className="c-space flex flex-wrap items-center justify-between gap-5 border-t border-white/10 pb-3 text-sm text-neutral-400">
+    <section className="flex flex-wrap items-center justify-between gap-5 border-t border-white/10 px-5 pb-3 text-sm text-neutral-400 sm:px-10 lg:px-15">
       <div className="w-full bg-gradient-to-r from-transparent via-neutral-700 to-transparent" />
       <div className="flex gap-2">
         <p>Terms & Conditions</p>
@@ -20,7 +18,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image src={social.icon} width={20} height={20} alt={social.name} />
+            <Image src={social.icon} alt={social.name} width={20} height={20} />
           </a>
         ))}
       </div>

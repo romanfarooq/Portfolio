@@ -7,24 +7,36 @@ import { motion } from "motion/react";
 
 const Navigation = () => {
   return (
-    <ul className="nav-ul">
-      <li className="nav-li">
-        <a className="nav-link" href="#home">
+    <ul className="relative z-20 flex flex-col items-center gap-4 sm:flex-row md:gap-6">
+      <li className="py-2 text-neutral-400 hover:text-white max-sm:w-full max-sm:rounded-md max-sm:px-5">
+        <a
+          className="text-lg transition-colors hover:text-white md:text-base"
+          href="#home"
+        >
           Home
         </a>
       </li>
-      <li className="nav-li">
-        <a className="nav-link" href="#about">
+      <li className="py-2 text-neutral-400 hover:text-white max-sm:w-full max-sm:rounded-md max-sm:px-5">
+        <a
+          className="text-lg transition-colors hover:text-white md:text-base"
+          href="#about"
+        >
           About
         </a>
       </li>
-      <li className="nav-li">
-        <a className="nav-link" href="#work">
+      <li className="py-2 text-neutral-400 hover:text-white max-sm:w-full max-sm:rounded-md max-sm:px-5">
+        <a
+          className="text-lg transition-colors hover:text-white md:text-base"
+          href="#work"
+        >
           Work
         </a>
       </li>
-      <li className="nav-li">
-        <a className="nav-link" href="#contact">
+      <li className="py-2 text-neutral-400 hover:text-white max-sm:w-full max-sm:rounded-md max-sm:px-5">
+        <a
+          className="text-lg transition-colors hover:text-white md:text-base"
+          href="#contact"
+        >
           Contact
         </a>
       </li>
@@ -36,7 +48,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="bg-primary/40 fixed inset-x-0 z-50 w-full backdrop-blur-lg">
-      <div className="c-space mx-auto max-w-7xl">
+      <div className="mx-auto max-w-7xl px-5 sm:px-10 lg:px-15">
         <div className="flex items-center justify-between py-2 sm:py-0">
           <Link
             href="/"
@@ -52,9 +64,9 @@ export default function Navbar() {
               src={
                 isOpen ? "/assets/icons/close.svg" : "/assets/icons/menu.svg"
               }
+              alt="toggle menu icon"
               width={24}
               height={24}
-              alt="toggle"
             />
           </button>
           <nav className="hidden sm:flex">

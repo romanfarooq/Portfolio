@@ -115,7 +115,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="!scroll-smooth">
-      <body className={`${funnelDisplay.variable} antialiased`}>
+      <body
+        className={`${funnelDisplay.variable} overflow-x-hidden bg-[#030412] antialiased`}
+      >
         {children}
       </body>
     </html>

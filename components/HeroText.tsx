@@ -13,7 +13,7 @@ export function HeroText() {
   return (
     <div className="z-10 mt-20 rounded-3xl bg-clip-text text-center md:mt-40 md:text-left">
       {/* Desktop View */}
-      <div className="c-space hidden flex-col md:flex">
+      <div className="hidden flex-col px-5 sm:px-10 md:flex lg:px-15">
         <motion.h1
           className="text-3xl font-medium"
           variants={variants}

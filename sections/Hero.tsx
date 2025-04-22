@@ -15,7 +15,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="c-space flex min-h-screen items-start justify-center overflow-hidden md:items-start md:justify-start"
+      className="flex min-h-screen items-start justify-center overflow-hidden px-5 sm:px-10 md:items-start md:justify-start lg:px-15"
     >
       <HeroText />
       <ParallaxBackground />

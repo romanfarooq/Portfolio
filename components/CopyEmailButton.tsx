@@ -35,9 +35,9 @@ export function CopyEmailButton() {
           >
             <Image
               src="/assets/icons/copy-done.svg"
+              alt="copy Icon"
               width={24}
               height={24}
-              alt="copy Icon"
             />
             Email has Copied
           </motion.p>
@@ -52,9 +52,9 @@ export function CopyEmailButton() {
           >
             <Image
               src="/assets/icons/copy.svg"
+              alt="copy icon"
               width={24}
               height={24}
-              alt="copy icon"
             />
             Copy Email Address
           </motion.p>

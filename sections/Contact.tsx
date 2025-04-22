@@ -8,9 +8,11 @@ import { sendEmail } from "../actions/email";
 import { Particles } from "../components/Particles";
 import { contactFormSchema, ContactFormData } from "../lib/validations";
 
+type AlertType = "success" | "danger";
+
 interface AlertState {
   show: boolean;
-  type: "success" | "danger";
+  type: AlertType;
   message: string;
 }
 
@@ -35,7 +37,13 @@ export default function Contact() {
     },
   });
 
-  const showAlertMessage = (type: "success" | "danger", message: string) => {
+  const showAlertMessage = ({
+    type,
+    message,
+  }: {
+    type: AlertType;
+    message: string;
+  }) => {
     setAlert({ show: true, type, message });
     setTimeout(() => {
       setAlert((prev) => ({ ...prev, show: false }));
@@ -52,34 +60,43 @@ export default function Contact() {
       const result = await sendEmail(formData);
 
       if (!result?.success) {
-        showAlertMessage("danger", result?.error || "Something went wrong!");
+        showAlertMessage({
+          type: "danger",
+          message: result?.error || "Something went wrong!",
+        });
         return;
       }
 
       reset();
-      showAlertMessage("success", "Your message has been sent!");
+      showAlertMessage({
+        type: "success",
+        message: "Your message has been sent!",
+      });
     } catch (error) {
       console.error(error);
-      showAlertMessage("danger", "Something went wrong!");
+      showAlertMessage({
+        type: "danger",
+        message: "Something went wrong!",
+      });
     }
   };
 
   return (
     <section
       id="contact"
-      className="c-space section-spacing relative flex items-center"
+      className="relative mt-20 flex min-h-screen items-center px-5 sm:px-10 md:mt-30 lg:px-15"
     >
       <Particles
         className="absolute inset-0 -z-50"
-        quantity={100}
         ease={80}
-        color={"#ffffff"}
+        quantity={100}
+        color="#ffffff"
         refresh
       />
       {alert.show && <Alert type={alert.type} text={alert.message} />}
       <div className="bg-primary m-10 mx-auto flex max-w-md flex-col items-center justify-center rounded-2xl border border-white/10 p-5">
         <div className="mb-10 flex w-full flex-col items-start gap-5">
-          <h2 className="text-heading">Let's Talk</h2>
+          <h2 className="text-3xl font-bold md:text-4xl">Let's Talk</h2>
           <p className="font-normal text-neutral-400">
             Whether you're looking to build a new website, improve your existing
             platform, or bring a unique project to life, I'm here to help
@@ -92,7 +109,7 @@ export default function Contact() {
             </label>
             <input
               id="name"
-              className="field-input field-input-focus"
+              className="mt-2 min-h-10 w-full rounded-md border border-white/10 bg-white/10 px-3 py-2 text-sm placeholder-neutral-500 transition duration-200 focus-visible:ring-2 focus-visible:ring-white/20 focus-visible:outline-none"
               placeholder="John Doe"
               autoComplete="name"
               {...register("name")}
@@ -109,7 +126,7 @@ export default function Contact() {
             </label>
             <input
               id="email"
-              className="field-input field-input-focus"
+              className="mt-2 min-h-10 w-full rounded-md border border-white/10 bg-white/10 px-3 py-2 text-sm placeholder-neutral-500 transition duration-200 focus-visible:ring-2 focus-visible:ring-white/20 focus-visible:outline-none"
               placeholder="JohnDoe@email.com"
               autoComplete="email"
               {...register("email")}
@@ -127,7 +144,7 @@ export default function Contact() {
             <textarea
               id="message"
               rows={4}
-              className="field-input field-input-focus"
+              className="mt-2 min-h-10 w-full rounded-md border border-white/10 bg-white/10 px-3 py-2 text-sm placeholder-neutral-500 transition duration-200 focus-visible:ring-2 focus-visible:ring-white/20 focus-visible:outline-none"
               placeholder="Share your thoughts..."
               {...register("message")}
             />
@@ -139,7 +156,7 @@ export default function Contact() {
           </div>
           <button
             type="submit"
-            className="from-lavender to-royal hover-animation w-full cursor-pointer rounded-md bg-radial px-1 py-3 text-center text-lg"
+            className="from-lavender to-royal w-full cursor-pointer rounded-md bg-radial px-1 py-3 text-center text-lg duration-200 hover:-translate-y-1"
             disabled={isSubmitting}
           >
             {isSubmitting ? "Sending..." : "Send"}

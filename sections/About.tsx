@@ -43,26 +43,29 @@ export default function About() {
   }, []);
 
   return (
-    <section id="about" className="c-space section-spacing scroll-mt-12">
-      <h2 className="text-heading">About Me</h2>
+    <section
+      id="about"
+      className="mt-20 min-h-screen scroll-mt-12 px-5 sm:px-10 md:mt-30 lg:px-15"
+    >
+      <h2 className="text-3xl font-bold md:text-4xl">About Me</h2>
       <div className="mt-12 grid grid-cols-1 gap-4 md:auto-rows-[18rem] md:grid-cols-6">
         {/* Grid 1 */}
         <div
           ref={grid1Ref}
-          className="grid-default-color grid-1 flex items-end"
+          className="from-storm to-indigo relative row-span-2 flex h-[15rem] items-end overflow-hidden rounded-2xl bg-gradient-to-b p-6 duration-200 md:col-span-3 md:h-full"
         >
           <Image
             src="/assets/images/coding-pov.webp"
-            className="absolute -top-[1rem] -right-[5rem] scale-[1.75] md:inset-y-10 md:left-50 md:scale-[3] lg:scale-[2.5]"
             alt="Coding POV"
             quality={100}
             priority={true}
             width={1828}
             height={813}
+            className="absolute -top-[1rem] -right-[5rem] scale-[1.75] md:inset-y-10 md:left-50 md:scale-[3] lg:scale-[2.5]"
           />
           <div className="z-10">
-            <p className="headtext">Hi, I'm Roman Farooq</p>
-            <p className="subtext">
+            <p className="mt-2 mb-2 text-xl">Hi, I'm Roman Farooq</p>
+            <p className="text-sm text-pretty text-neutral-400 md:text-base">
               A dedicated Full-Stack Developer skilled in modern frameworks like
               React, Next.js, and Express.js, delivering optimized and
               responsive web and mobile applications.
@@ -71,7 +74,10 @@ export default function About() {
           <div className="pointer-evets-none from-indigo absolute inset-x-0 -bottom-4 h-1/2 bg-gradient-to-t sm:h-1/3" />
         </div>
         {/* Grid 2 */}
-        <div ref={grid2Ref} className="grid-default-color grid-2">
+        <div
+          ref={grid2Ref}
+          className="from-storm to-indigo relative row-span-1 h-[15rem] overflow-hidden rounded-2xl bg-gradient-to-b p-6 duration-200 md:col-span-3 md:h-full"
+        >
           <div
             ref={gridContainer}
             className="flex h-full w-full items-center justify-center"
@@ -122,10 +128,13 @@ export default function About() {
           </div>
         </div>
         {/* Grid 3 */}
-        <div ref={grid3Ref} className="grid-black-color grid-3">
+        <div
+          ref={grid3Ref}
+          className="relative row-span-1 h-[15rem] overflow-hidden rounded-2xl bg-gradient-to-tl from-[#3A3A3A] via-[#242424] to-[#3A3A3A] p-6 duration-200 md:col-span-3 md:h-full"
+        >
           <div className="z-10 w-[50%]">
-            <p className="headtext">Time Zone</p>
-            <p className="subtext">
+            <p className="mt-2 mb-2 text-xl">Time Zone</p>
+            <p className="text-sm text-pretty text-neutral-400 md:text-base">
               I'm based in Lahore, Pakistan, and open to remote work worldwide
             </p>
           </div>
@@ -134,25 +143,28 @@ export default function About() {
           </figure>
         </div>
         {/* Grid 4 */}
-        <div ref={grid4Ref} className="grid-special-color grid-4">
+        <div
+          ref={grid4Ref}
+          className="from-royal to-lavender relative row-span-1 h-[15rem] overflow-hidden rounded-2xl bg-gradient-to-b p-6 duration-200 md:col-span-2 md:h-full"
+        >
           <div className="flex size-full flex-col items-center justify-center gap-4">
-            <p className="headtext text-center">
+            <p className="mt-2 mb-2 text-center text-xl">
               Do you want to start a project together?
             </p>
             <CopyEmailButton />
           </div>
         </div>
         {/* Grid 5 */}
-        <div ref={grid5Ref} className="grid-default-color grid-5">
+        <div
+          ref={grid5Ref}
+          className="from-storm to-indigo relative row-span-1 h-[15rem] overflow-hidden rounded-2xl bg-gradient-to-b p-6 duration-200 md:col-span-4 md:h-full"
+        >
           <div className="z-10 w-[50%]">
-            <p className="headText">Tech Stack</p>
-            <p className="subtext text-justify">
-              Proficient in Full-Stack Web and Mobile Development with key
-              languages like Python, JavaScript, and TypeScript. Experienced in
-              frameworks such as React.js, Next.js, Node.js, Express.js, and
-              Flutter. Also skilled in Database Management (MongoDB, PostgreSQL)
-              and utilizing tools like Git and GitHub to build optimized and
-              scalable applications.
+            <p className="mt-2 mb-2 text-xl">Tech Stack</p>
+            <p className="text-xs text-pretty text-neutral-400 sm:text-sm md:text-base">
+              Skilled in Full-Stack Development with React, Next.js, Node.js,
+              and Flutter. Proficient in Python, JavaScript, TypeScript, and
+              Database Management (MongoDB, PostgreSQL).
             </p>
           </div>
           <div className="absolute inset-y-0 start-[50%] h-full w-full md:inset-y-9 md:scale-125">
