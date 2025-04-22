@@ -1,5 +1,5 @@
 {
-  "name": "new-portfolio",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -21,11 +21,12 @@
     "next": "15.3.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-hook-form": "^7.56.0",
+    "react-hook-form": "^7.56.1",
     "react-responsive": "^10.0.1",
-    "resend": "^4.3.0",
+    "resend": "^4.4.0",
     "tailwind-merge": "^3.2.0",
     "three": "^0.175.0",
+    "use-debounce": "^10.0.4",
     "vanilla-tilt": "^1.8.1",
     "zod": "^3.24.3"
   },
