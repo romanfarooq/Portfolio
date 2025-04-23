@@ -48,3 +48,11 @@
     }
   }
 }
+
+@layer utilities {
+  @media (hover: none) {
+    .preview-img {
+      @apply hidden;
+    }
+  }
+}

@@ -73,7 +73,7 @@ export function HeroText() {
         </div>
       </div>
       {/* Mobile View */}
-      <div className="relative flex h-[85vh] flex-col space-y-6 md:hidden">
+      <div className="relative flex h-[80vh] flex-col space-y-6 md:hidden">
         <motion.p
           className="text-4xl font-medium"
           variants={variants}
@@ -114,7 +114,7 @@ export function HeroText() {
             Web Applications
           </motion.p>
         </div>
-        <div className="absolute bottom-0 flex w-full justify-center">
+        <div className="absolute bottom-5 flex w-full justify-center">
           <motion.a
             href="/documents/Roman-Farooq-CV.pdf"
             download
