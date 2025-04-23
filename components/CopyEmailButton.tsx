@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
-import { AnimatePresence, motion } from "motion/react";
+import { motion, AnimatePresence } from "motion/react";
 
 const CONTACT_EMAIL = "theromanfarooq@gmail.com";
 

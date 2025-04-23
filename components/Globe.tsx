@@ -1,5 +1,3 @@
-"use client";
-
 import { cn } from "@/lib/utils";
 import { useEffect, useRef } from "react";
 import { useMotionValue, useSpring } from "motion/react";
