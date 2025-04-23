@@ -13,8 +13,8 @@ export function FlipWords({
   duration = 3000,
   className,
 }: FlipWordsProps) {
-  const [currentWord, setCurrentWord] = useState(words[0]);
   const [isAnimating, setIsAnimating] = useState(false);
+  const [currentWord, setCurrentWord] = useState(words[0]);
 
   const startAnimation = useCallback(() => {
     const word = words[words.indexOf(currentWord) + 1] || words[0];
