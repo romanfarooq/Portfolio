@@ -88,10 +88,8 @@ export default function Contact() {
     >
       <Particles
         className="absolute inset-0 -z-50"
-        ease={80}
-        quantity={100}
+        quantity={200}
         color="#ffffff"
-        refresh
       />
       {alert.show && <Alert type={alert.type} text={alert.message} />}
       <div className="bg-primary m-10 mx-auto flex max-w-md flex-col items-center justify-center rounded-2xl border border-white/10 p-5">
