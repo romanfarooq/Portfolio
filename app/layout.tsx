@@ -12,27 +12,46 @@ const funnelDisplay = Funnel_Display({
 export const metadata: Metadata = {
   title: "Roman Farooq's Portfolio",
   description:
-    "Roman Farooq is a full-stack web developer with a passion for building beautiful and functional websites.",
+    "Roman Farooq is a full-stack developer dedicated to crafting secure, modern, and scalable web solutions. Specializing in React, Next.js, and the latest web technologies, Roman delivers high-quality, responsive, and user-focused applications for clients worldwide.",
   metadataBase: new URL("https://roman-farooq-portfolio.vercel.app"),
   authors: [{ name: "Roman Farooq", url: "https://github.com/romanfarooq" }],
   creator: "Roman Farooq",
   publisher: "Roman Farooq",
   keywords: [
     "Roman Farooq",
-    "web developer",
-    "full-stack developer",
-    "frontend developer",
-    "backend developer",
-    "mobile app developer",
-    "software engineer",
-    "portfolio",
+    "Web Developer",
+    "Full-Stack Developer",
+    "Frontend Developer",
+    "Backend Developer",
+    "Mobile App Developer",
+    "Software Engineer",
     "React",
+    "React Native",
     "Next.js",
     "TypeScript",
     "JavaScript",
+    "Node.js",
+    "Express.js",
+    "Shadcn",
+    "Python",
+    "Flutter",
+    "MongoDB",
+    "SQL",
+    "PostgreSQL",
+    "Three.js",
+    "Motion",
+    "GSAP",
+    "Tailwind CSS",
+    "UI/UX",
+    "Open Source",
+    "Remote Work",
+    "Pakistan",
+    "Lahore",
+    "Projects",
+    "Portfolio Website",
   ],
   alternates: {
-    canonical: "/",
+    canonical: "https://roman-farooq-portfolio.vercel.app/",
     languages: {
       "en-US": "/",
     },
@@ -48,7 +67,7 @@ export const metadata: Metadata = {
     url: "https://roman-farooq-portfolio.vercel.app",
     title: "Roman Farooq's Portfolio",
     description:
-      "Roman Farooq is a full-stack web developer with a passion for building beautiful and functional websites.",
+      "Roman Farooq is a full-stack developer dedicated to crafting secure, modern, and scalable web solutions. Specializing in React, Next.js, and the latest web technologies, Roman delivers high-quality, responsive, and user-focused applications for clients worldwide.",
     siteName: "Roman Farooq's Portfolio",
     images: [
       {
@@ -71,12 +90,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "Roman Farooq Portfolio",
     title: "Roman Farooq's Portfolio",
     description:
-      "Roman Farooq is a full-stack web developer with a passion for building beautiful and functional websites.",
+      "Roman Farooq is a full-stack developer dedicated to crafting secure, modern, and scalable web solutions. Specializing in React, Next.js, and the latest web technologies, Roman delivers high-quality, responsive, and user-focused applications for clients worldwide.",
     images: ["/assets/images/roman.webp"],
-    creator: "@TheRomanFarooq",
+    site: "@RomanDev92",
+    creator: "@RomanDev92",
   },
   verification: {
     google: "kp1SzfMW4-YoGuTNP3YrE5AzIZ9lAfpXXmocVTl5zVg",
@@ -100,12 +119,18 @@ export const metadata: Metadata = {
     github: "https://github.com/romanfarooq",
     linkedin: "https://linkedin.com/in/roman-farooq",
     instagram: "https://instagram.com/roman_farooq",
+    email: "theromanfarooq@gmail.com",
+    location: "Lahore, Pakistan",
   },
 };
 
 export const viewport: Viewport = {
   themeColor: "#02020B",
   colorScheme: "dark",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 };
 
 export default function RootLayout({
