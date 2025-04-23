@@ -1,16 +1,11 @@
-import * as THREE from "three";
-import { useEffect, useRef } from "react";
-import { useFrame } from "@react-three/fiber";
+import { useRef, useEffect } from "react";
+import { type Group, type SkinnedMesh } from "three";
+import { type ThreeElements, useFrame } from "@react-three/fiber";
 import { useGLTF, useAnimations } from "@react-three/drei";
-import { useMotionValue, useSpring } from "motion/react";
+import { useSpring, useMotionValue } from "motion/react";
 
-interface AstronautProps {
-  scale: number | undefined;
-  position: [number, number, number] | undefined;
-}
-
-export function Astronaut(props: AstronautProps) {
-  const group = useRef<THREE.Group>(null);
+export function Astronaut(props: ThreeElements["group"]) {
+  const group = useRef<Group>(null);
 
   const { nodes, materials, animations } = useGLTF(
     "/models/tenhun_falling_spaceman_fanart.glb",
@@ -54,63 +49,63 @@ export function Astronaut(props: AstronautProps) {
               <primitive object={nodes.metarig_rootJoint} />
               <skinnedMesh
                 name="Cube001_0"
-                geometry={(nodes.Cube001_0 as THREE.SkinnedMesh).geometry}
+                geometry={(nodes.Cube001_0 as SkinnedMesh).geometry}
                 material={materials["AstronautFallingTexture.png"]}
-                skeleton={(nodes.Cube001_0 as THREE.SkinnedMesh).skeleton}
+                skeleton={(nodes.Cube001_0 as SkinnedMesh).skeleton}
               />
               <skinnedMesh
                 name="Cube005_0"
-                geometry={(nodes.Cube005_0 as THREE.SkinnedMesh).geometry}
+                geometry={(nodes.Cube005_0 as SkinnedMesh).geometry}
                 material={materials["AstronautFallingTexture.png"]}
-                skeleton={(nodes.Cube005_0 as THREE.SkinnedMesh).skeleton}
+                skeleton={(nodes.Cube005_0 as SkinnedMesh).skeleton}
               />
               <skinnedMesh
                 name="Cube002_0"
-                geometry={(nodes.Cube002_0 as THREE.SkinnedMesh).geometry}
+                geometry={(nodes.Cube002_0 as SkinnedMesh).geometry}
                 material={materials["AstronautFallingTexture.png"]}
-                skeleton={(nodes.Cube002_0 as THREE.SkinnedMesh).skeleton}
+                skeleton={(nodes.Cube002_0 as SkinnedMesh).skeleton}
               />
               <skinnedMesh
                 name="Plane_0"
-                geometry={(nodes.Plane_0 as THREE.SkinnedMesh).geometry}
+                geometry={(nodes.Plane_0 as SkinnedMesh).geometry}
                 material={materials["AstronautFallingTexture.png"]}
-                skeleton={(nodes.Plane_0 as THREE.SkinnedMesh).skeleton}
+                skeleton={(nodes.Plane_0 as SkinnedMesh).skeleton}
               />
               <skinnedMesh
                 name="Cube008_0"
-                geometry={(nodes.Cube008_0 as THREE.SkinnedMesh).geometry}
+                geometry={(nodes.Cube008_0 as SkinnedMesh).geometry}
                 material={materials["AstronautFallingTexture.png"]}
-                skeleton={(nodes.Cube008_0 as THREE.SkinnedMesh).skeleton}
+                skeleton={(nodes.Cube008_0 as SkinnedMesh).skeleton}
               />
               <skinnedMesh
                 name="Cube004_0"
-                geometry={(nodes.Cube004_0 as THREE.SkinnedMesh).geometry}
+                geometry={(nodes.Cube004_0 as SkinnedMesh).geometry}
                 material={materials["AstronautFallingTexture.png"]}
-                skeleton={(nodes.Cube004_0 as THREE.SkinnedMesh).skeleton}
+                skeleton={(nodes.Cube004_0 as SkinnedMesh).skeleton}
               />
               <skinnedMesh
                 name="Cube003_0"
-                geometry={(nodes.Cube003_0 as THREE.SkinnedMesh).geometry}
+                geometry={(nodes.Cube003_0 as SkinnedMesh).geometry}
                 material={materials["AstronautFallingTexture.png"]}
-                skeleton={(nodes.Cube003_0 as THREE.SkinnedMesh).skeleton}
+                skeleton={(nodes.Cube003_0 as SkinnedMesh).skeleton}
               />
               <skinnedMesh
                 name="Cube_0"
-                geometry={(nodes.Cube_0 as THREE.SkinnedMesh).geometry}
+                geometry={(nodes.Cube_0 as SkinnedMesh).geometry}
                 material={materials["AstronautFallingTexture.png"]}
-                skeleton={(nodes.Cube_0 as THREE.SkinnedMesh).skeleton}
+                skeleton={(nodes.Cube_0 as SkinnedMesh).skeleton}
               />
               <skinnedMesh
                 name="Cube009_0"
-                geometry={(nodes.Cube009_0 as THREE.SkinnedMesh).geometry}
+                geometry={(nodes.Cube009_0 as SkinnedMesh).geometry}
                 material={materials["AstronautFallingTexture.png"]}
-                skeleton={(nodes.Cube009_0 as THREE.SkinnedMesh).skeleton}
+                skeleton={(nodes.Cube009_0 as SkinnedMesh).skeleton}
               />
               <skinnedMesh
                 name="Cube011_0"
-                geometry={(nodes.Cube011_0 as THREE.SkinnedMesh).geometry}
+                geometry={(nodes.Cube011_0 as SkinnedMesh).geometry}
                 material={materials["AstronautFallingTexture.png"]}
-                skeleton={(nodes.Cube011_0 as THREE.SkinnedMesh).skeleton}
+                skeleton={(nodes.Cube011_0 as SkinnedMesh).skeleton}
               />
               <group name="Cube001" />
               <group name="Cube005" />

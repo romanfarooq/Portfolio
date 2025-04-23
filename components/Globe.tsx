@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
-import { useEffect, useRef } from "react";
-import { useMotionValue, useSpring } from "motion/react";
+import { useRef, useEffect } from "react";
+import { useSpring, useMotionValue } from "motion/react";
 import createGlobe, { type COBEOptions } from "cobe";
 
 const MOVEMENT_DAMPING = 1400;

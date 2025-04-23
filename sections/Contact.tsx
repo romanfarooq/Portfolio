@@ -6,7 +6,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Alert } from "@/components/Alert";
 import { sendEmail } from "@/actions/email";
 import { Particles } from "@/components/Particles";
-import { contactFormSchema, ContactFormData } from "@/lib/validations";
+import { ContactFormData, contactFormSchema } from "@/lib/validations";
 
 type AlertType = "success" | "danger";
 

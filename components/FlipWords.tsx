@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "motion/react";
-import { useCallback, useEffect, useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 interface FlipWordsProps {
   words: string[];
