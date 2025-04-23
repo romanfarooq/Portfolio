@@ -1,8 +1,8 @@
 "use server";
 
 import { Resend } from "resend";
-import { ContactEmail } from "../emails/ContactEmail";
-import { contactFormSchema } from "../lib/validations";
+import { ContactEmail } from "@/emails/ContactEmail";
+import { contactFormSchema } from "@/lib/validations";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 

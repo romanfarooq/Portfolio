@@ -5,10 +5,10 @@ import { Suspense } from "react";
 import { Float } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Loader } from "../components/Loader";
-import { HeroText } from "../components/HeroText";
-import { Astronaut } from "../components/Astronaut";
-import { ParallaxBackground } from "../components/ParallaxBackground";
+import { Loader } from "@/components/Loader";
+import { HeroText } from "@/components/HeroText";
+import { Astronaut } from "@/components/Astronaut";
+import { ParallaxBackground } from "@/components/ParallaxBackground";
 
 export default function Hero() {
   const isMobile = useMediaQuery({ maxWidth: 853 });

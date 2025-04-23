@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { motion } from "motion/react";
-import { FlipWords } from "./FlipWords";
+import { FlipWords } from "@/components/FlipWords";
 
 const words = ["Secure", "Modern", "Scalable"];
 

@@ -3,10 +3,10 @@
 import Image from "next/image";
 import VanillaTilt, { type HTMLVanillaTiltElement } from "vanilla-tilt";
 import { useRef, useEffect } from "react";
-import { Card } from "../components/Card";
-import { Globe } from "../components/Globe";
-import { Frameworks } from "../components/Frameworks";
-import { CopyEmailButton } from "../components/CopyEmailButton";
+import { Card } from "@/components/Card";
+import { Globe } from "@/components/Globe";
+import { Frameworks } from "@/components/Frameworks";
+import { CopyEmailButton } from "@/components/CopyEmailButton";
 
 export default function About() {
   const gridContainer = useRef<HTMLDivElement>(null!);

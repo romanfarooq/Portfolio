@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { mySocials } from "../constants";
+import { mySocials } from "@/constants/data";
 
 export default function Footer() {
   return (

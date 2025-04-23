@@ -1,6 +1,6 @@
 import { useRef, useEffect, useCallback } from "react";
-import { cn, hexToRgb, remapValue } from "../lib/utils";
-import { useMousePosition } from "../hooks/useMousePosition";
+import { cn, hexToRgb, remapValue } from "@/lib/utils";
+import { useMousePosition } from "@/hooks/useMousePosition";
 
 interface Circle {
   x: number;
