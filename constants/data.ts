@@ -8,7 +8,6 @@ export interface Project {
   description: string;
   subDescription: string[];
   href: string;
-  logo: string;
   image: string;
   tags: Tag[];
 }
@@ -45,7 +44,6 @@ export const myProjects: Project[] = [
       "Styled with Tailwind CSS, used Axios and Framer Motion for UI animations.",
     ],
     href: "",
-    logo: "",
     image: "/assets/projects/trend-tale.webp",
     tags: [
       { name: "React", path: "/assets/logos/react.svg" },
@@ -65,7 +63,6 @@ export const myProjects: Project[] = [
       "Added in-app purchases for premium features and context persistence.",
     ],
     href: "",
-    logo: "",
     image: "/assets/projects/ease-gpt.webp",
     tags: [
       { name: "JavaScript", path: "/assets/logos/javascript.svg" },
@@ -83,7 +80,6 @@ export const myProjects: Project[] = [
       "Integrated Stripe and Coinbase for fiat and crypto payments.",
     ],
     href: "",
-    logo: "",
     image: "/assets/projects/sweep-stakes.webp",
     tags: [
       { name: "React", path: "/assets/logos/react.svg" },
@@ -103,7 +99,6 @@ export const myProjects: Project[] = [
       "Integrated Firebase Auth for secure admin login.",
     ],
     href: "",
-    logo: "",
     image: "/assets/projects/sweep-stakes-admin.webp",
     tags: [
       { name: "Django", path: "/assets/logos/django.svg" },
@@ -122,7 +117,6 @@ export const myProjects: Project[] = [
       "Deployed on DigitalOcean Droplet with Nginx and SSL configuration.",
     ],
     href: "",
-    logo: "",
     image: "/assets/projects/auto-hub360.webp",
     tags: [
       { name: "Next.js", path: "/assets/logos/nextjs.svg" },
@@ -141,7 +135,6 @@ export const myProjects: Project[] = [
       "Added Islamic calendar and prayer time calculations based on user location.",
     ],
     href: "",
-    logo: "",
     image: "/assets/projects/saaf.webp",
     tags: [
       { name: "React", path: "/assets/logos/react.svg" },
@@ -161,7 +154,6 @@ export const myProjects: Project[] = [
       "Utilized React Icons for interactive elements and modern UI practices.",
     ],
     href: "",
-    logo: "",
     image: "/assets/projects/black-pearls.webp",
     tags: [
       { name: "React", path: "/assets/logos/react.svg" },
@@ -180,7 +172,6 @@ export const myProjects: Project[] = [
       "Integrated two-factor authentication and Excel file import for recipient list.",
     ],
     href: "",
-    logo: "",
     image: "/assets/projects/mailer.webp",
     tags: [
       { name: "Next.js", path: "/assets/logos/nextjs.svg" },
@@ -200,7 +191,6 @@ export const myProjects: Project[] = [
       "Designed a user-friendly dashboard for maintenance reminders.",
     ],
     href: "",
-    logo: "",
     image: "/assets/projects/car-care-pro.webp",
     tags: [
       { name: "Flutter", path: "/assets/logos/flutter.svg" },

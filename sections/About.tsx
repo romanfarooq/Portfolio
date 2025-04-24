@@ -67,9 +67,9 @@ export default function About() {
           <div className="z-10">
             <p className="mt-2 mb-2 text-xl">Hi, I'm Roman Farooq</p>
             <p className="text-sm text-pretty text-neutral-400 md:text-base">
-              A dedicated Full-Stack Developer skilled in modern frameworks like
-              React, Next.js, and Express.js, delivering optimized and
-              responsive web and mobile applications.
+              A dedicated Full-Stack Developer passionate about crafting
+              intuitive user experiences on the client side and building
+              scalable server solutions with modern tools and best practices.
             </p>
           </div>
           <div className="pointer-evets-none from-indigo absolute inset-x-0 -bottom-4 h-1/2 bg-gradient-to-t sm:h-1/3" />
@@ -158,17 +158,18 @@ export default function About() {
         {/* Grid 5 */}
         <div
           ref={grid5Ref}
-          className="from-storm to-indigo relative row-span-1 h-[15rem] overflow-hidden rounded-2xl bg-gradient-to-b p-6 duration-200 md:col-span-4 md:h-full"
+          className="from-storm to-indigo relative row-span-1 h-[15rem] overflow-hidden rounded-2xl bg-gradient-to-b px-6 py-2 duration-200 sm:p-6 md:col-span-4 md:h-full"
         >
           <div className="z-10 w-[50%]">
-            <p className="mt-2 mb-2 text-xl">Tech Stack</p>
+            <p className="mb-2 text-base sm:text-xl">Tech Stack</p>
             <p className="text-xs text-pretty text-neutral-400 sm:text-sm md:text-base">
-              Skilled in Full-Stack Development with React, Next.js, Node.js,
-              and Flutter. Proficient in Python, JavaScript, TypeScript, and
-              Database Management (MongoDB, PostgreSQL).
+              Proficient in TypeScript, React, Next.js, Node.js, and Express.js.
+              Skilled in database management (MongoDB, PostgreSQL) and CSS
+              frameworks like Tailwind CSS. Familiar with Docker, Prisma, Redux,
+              Flutter, and backend development using Python and Django.
             </p>
           </div>
-          <div className="absolute inset-y-0 start-[50%] h-full w-full md:inset-y-9 md:scale-125">
+          <div className="absolute inset-y-0 start-[55%] h-full w-full sm:start-[50%] md:inset-y-9 md:scale-125">
             <Frameworks />
           </div>
         </div>
