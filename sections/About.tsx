@@ -21,6 +21,7 @@ export default function About() {
       max: 5,
       speed: 400,
       glare: true,
+      gyroscope: false,
       "max-glare": 0.2,
     };
     const nodes = [

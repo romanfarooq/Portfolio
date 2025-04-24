@@ -5,13 +5,18 @@ import Image from "next/image";
 import { useState } from "react";
 import { motion } from "motion/react";
 
-const Navigation = () => {
+interface NavigationProps {
+  onLinkClick?: () => void;
+}
+
+const Navigation = ({ onLinkClick }: NavigationProps) => {
   return (
     <ul className="relative z-20 flex flex-col items-center gap-4 sm:flex-row md:gap-6">
       <li className="py-2 text-neutral-400 hover:text-white max-sm:w-full max-sm:rounded-md max-sm:px-5">
         <a
           className="text-lg transition-colors hover:text-white md:text-base"
           href="#home"
+          onClick={onLinkClick}
         >
           Home
         </a>
@@ -20,6 +25,7 @@ const Navigation = () => {
         <a
           className="text-lg transition-colors hover:text-white md:text-base"
           href="#about"
+          onClick={onLinkClick}
         >
           About
         </a>
@@ -28,6 +34,7 @@ const Navigation = () => {
         <a
           className="text-lg transition-colors hover:text-white md:text-base"
           href="#work"
+          onClick={onLinkClick}
         >
           Work
         </a>
@@ -36,6 +43,7 @@ const Navigation = () => {
         <a
           className="text-lg transition-colors hover:text-white md:text-base"
           href="#contact"
+          onClick={onLinkClick}
         >
           Contact
         </a>
@@ -82,7 +90,7 @@ export default function Navbar() {
           transition={{ duration: 1 }}
         >
           <nav className="pb-5">
-            <Navigation />
+            <Navigation onLinkClick={() => setIsOpen(false)} />
           </nav>
         </motion.div>
       )}
