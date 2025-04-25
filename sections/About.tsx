@@ -1,15 +1,18 @@
 "use client";
 
 import Image from "next/image";
-import VanillaTilt, { type HTMLVanillaTiltElement } from "vanilla-tilt";
 import { useRef, useEffect } from "react";
 import { Card } from "@/components/Card";
 import { Globe } from "@/components/Globe";
 import { Frameworks } from "@/components/Frameworks";
 import { CopyEmailButton } from "@/components/CopyEmailButton";
+import VanillaTilt, {
+  type TiltOptions,
+  type HTMLVanillaTiltElement,
+} from "vanilla-tilt";
 
 export default function About() {
-  const gridContainer = useRef<HTMLDivElement>(null!);
+  const containerRef = useRef<HTMLDivElement>(null!);
   const grid1Ref = useRef<HTMLDivElement>(null);
   const grid2Ref = useRef<HTMLDivElement>(null);
   const grid3Ref = useRef<HTMLDivElement>(null);
@@ -17,7 +20,7 @@ export default function About() {
   const grid5Ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const options = {
+    const options: TiltOptions = {
       max: 5,
       speed: 400,
       glare: true,
@@ -80,7 +83,7 @@ export default function About() {
           className="from-storm to-indigo relative row-span-1 h-[15rem] overflow-hidden rounded-2xl bg-gradient-to-b p-6 duration-200 md:col-span-3 md:h-full"
         >
           <div
-            ref={gridContainer}
+            ref={containerRef}
             className="flex h-full w-full items-center justify-center"
           >
             <p className="flex items-end text-5xl text-gray-500">
@@ -89,42 +92,42 @@ export default function About() {
             <Card
               style={{ rotate: "75deg", top: "30%", left: "20%" }}
               text="React.js"
-              containerRef={gridContainer}
+              containerRef={containerRef}
             />
             <Card
               style={{ rotate: "-30deg", top: "60%", left: "45%" }}
               text="Next.js"
-              containerRef={gridContainer}
+              containerRef={containerRef}
             />
             <Card
               style={{ rotate: "90deg", bottom: "40%", left: "80%" }}
               text="Node.js"
-              containerRef={gridContainer}
+              containerRef={containerRef}
             />
             <Card
               style={{ rotate: "-45deg", top: "55%", left: "0%" }}
               text="Flutter"
-              containerRef={gridContainer}
+              containerRef={containerRef}
             />
             <Card
               style={{ rotate: "20deg", top: "10%", left: "38%" }}
               text="Python"
-              containerRef={gridContainer}
+              containerRef={containerRef}
             />
             <Card
               style={{ rotate: "30deg", top: "70%", left: "70%" }}
               image="/assets/images/cplusplus.webp"
-              containerRef={gridContainer}
+              containerRef={containerRef}
             />
             <Card
               style={{ rotate: "-45deg", top: "70%", left: "25%" }}
               image="/assets/images/javascript.webp"
-              containerRef={gridContainer}
+              containerRef={containerRef}
             />
             <Card
               style={{ rotate: "-45deg", top: "5%", left: "10%" }}
               image="/assets/images/nextjs.webp"
-              containerRef={gridContainer}
+              containerRef={containerRef}
             />
           </div>
         </div>
