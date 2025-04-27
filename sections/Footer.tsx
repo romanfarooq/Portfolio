@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { mySocials } from "@/constants/data";
+import { socials } from "@/constants/data";
 
 export default function Footer() {
   return (
@@ -17,7 +17,7 @@ export default function Footer() {
           </Link>
         </div>
         <div className="order-3 flex gap-3 sm:order-2">
-          {mySocials.map((social, index) => (
+          {socials.map((social, index) => (
             <a
               key={index}
               href={social.href}

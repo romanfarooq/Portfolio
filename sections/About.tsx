@@ -165,7 +165,7 @@ export default function About() {
         >
           <div className="z-10 w-[50%]">
             <p className="mb-2 text-base sm:text-xl">Tech Stack</p>
-            <p className="text-xs text-pretty text-neutral-400 sm:text-sm md:text-base">
+            <p className="text-xs text-pretty text-neutral-400 md:text-sm lg:text-base">
               Proficient in TypeScript, React, Next.js, Node.js, and Express.js.
               Skilled in database management (MongoDB, PostgreSQL) and CSS
               frameworks like Tailwind CSS. Familiar with Docker, Prisma, Redux,

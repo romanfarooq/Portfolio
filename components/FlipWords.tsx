@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "motion/react";
-import { useState, useEffect, useCallback } from "react";
+import { useRef, useState, useEffect, useCallback } from "react";
 
 interface FlipWordsProps {
   words: string[];
@@ -13,44 +13,32 @@ export function FlipWords({
   duration = 3000,
   className,
 }: FlipWordsProps) {
-  const [isAnimating, setIsAnimating] = useState(false);
-  const [currentWord, setCurrentWord] = useState(words[0]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const timeoutRef = useRef<NodeJS.Timeout>(null);
+  const currentWord = words[currentIndex % words.length];
 
-  const startAnimation = useCallback(() => {
-    const word = words[words.indexOf(currentWord) + 1] || words[0];
-    setCurrentWord(word);
-    setIsAnimating(true);
-  }, [currentWord, words]);
+  const scheduleNext = useCallback(() => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    timeoutRef.current = setTimeout(() => {
+      setCurrentIndex((prev) => prev + 1);
+    }, duration);
+  }, [duration]);
 
   useEffect(() => {
-    if (!isAnimating)
-      setTimeout(() => {
-        startAnimation();
-      }, duration);
-  }, [isAnimating, duration, startAnimation]);
+    scheduleNext();
+    return () => {
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
+  }, [scheduleNext]);
 
   return (
-    <AnimatePresence
-      onExitComplete={() => {
-        setIsAnimating(false);
-      }}
-    >
+    <AnimatePresence onExitComplete={scheduleNext}>
       <motion.div
         key={currentWord}
         className={cn("relative z-10 inline-block text-left", className)}
-        initial={{
-          opacity: 0,
-          y: 10,
-        }}
-        animate={{
-          opacity: 1,
-          y: 0,
-        }}
-        transition={{
-          type: "spring",
-          stiffness: 100,
-          damping: 10,
-        }}
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ type: "spring", stiffness: 100, damping: 10 }}
         exit={{
           opacity: 0,
           y: -40,
@@ -66,10 +54,7 @@ export function FlipWords({
             className="inline-block whitespace-nowrap"
             initial={{ opacity: 0, y: 10, filter: "blur(8px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-            transition={{
-              delay: wordIndex * 0.3,
-              duration: 0.3,
-            }}
+            transition={{ delay: wordIndex * 0.3, duration: 0.3 }}
           >
             {word.split("").map((letter, letterIndex) => (
               <motion.span

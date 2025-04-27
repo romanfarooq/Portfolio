@@ -1,10 +1,9 @@
 "use client";
 
-import { easing } from "maath";
 import { Suspense } from "react";
 import { Float } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
-import { Canvas, useFrame } from "@react-three/fiber";
+import { Canvas } from "@react-three/fiber";
 import { Loader } from "@/components/Loader";
 import { HeroText } from "@/components/HeroText";
 import { Astronaut } from "@/components/Astronaut";
@@ -28,22 +27,9 @@ export default function Hero() {
                 position={isMobile ? [0, -1.5, 0] : undefined}
               />
             </Float>
-            <Rig />
           </Suspense>
         </Canvas>
       </figure>
     </section>
   );
-}
-
-function Rig() {
-  useFrame((state, delta) => {
-    easing.damp3(
-      state.camera.position,
-      [state.pointer.x / 10, 1 + state.pointer.y / 10, 3],
-      0.5,
-      delta,
-    );
-  });
-  return null;
 }

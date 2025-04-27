@@ -14,36 +14,36 @@ const Navigation = ({ onLinkClick }: NavigationProps) => {
     <ul className="relative z-20 flex flex-col items-center gap-4 sm:flex-row md:gap-6">
       <li className="py-2 text-neutral-400 hover:text-white max-sm:w-full max-sm:rounded-md max-sm:px-5">
         <a
-          className="text-lg transition-colors hover:text-white md:text-base"
           href="#home"
           onClick={onLinkClick}
+          className="text-lg transition-colors hover:text-white md:text-base"
         >
           Home
         </a>
       </li>
       <li className="py-2 text-neutral-400 hover:text-white max-sm:w-full max-sm:rounded-md max-sm:px-5">
         <a
-          className="text-lg transition-colors hover:text-white md:text-base"
           href="#about"
           onClick={onLinkClick}
+          className="text-lg transition-colors hover:text-white md:text-base"
         >
           About
         </a>
       </li>
       <li className="py-2 text-neutral-400 hover:text-white max-sm:w-full max-sm:rounded-md max-sm:px-5">
         <a
-          className="text-lg transition-colors hover:text-white md:text-base"
           href="#work"
           onClick={onLinkClick}
+          className="text-lg transition-colors hover:text-white md:text-base"
         >
           Work
         </a>
       </li>
       <li className="py-2 text-neutral-400 hover:text-white max-sm:w-full max-sm:rounded-md max-sm:px-5">
         <a
-          className="text-lg transition-colors hover:text-white md:text-base"
           href="#contact"
           onClick={onLinkClick}
+          className="text-lg transition-colors hover:text-white md:text-base"
         >
           Contact
         </a>
