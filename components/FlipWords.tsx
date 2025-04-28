@@ -35,7 +35,7 @@ export function FlipWords({
     <AnimatePresence onExitComplete={scheduleNext}>
       <motion.div
         key={currentWord}
-        className={cn("relative z-10 inline-block text-left", className)}
+        className={cn("relative z-10 inline-block", className)}
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ type: "spring", stiffness: 100, damping: 10 }}

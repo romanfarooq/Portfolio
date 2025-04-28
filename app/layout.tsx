@@ -144,6 +144,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="!scroll-smooth">
+      <head>
+        <link
+          rel="prefetch"
+          as="fetch"
+          href="https://www.gstatic.com/draco/versioned/decoders/1.5.5/draco_decoder.wasm"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="prefetch"
+          as="script"
+          href="https://www.gstatic.com/draco/versioned/decoders/1.5.5/draco_wasm_wrapper.js"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body
         className={`${funnelDisplay.variable} overflow-x-hidden bg-[#030412] antialiased`}
       >
