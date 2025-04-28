@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="w-full border-t border-white/10 bg-transparent">
       <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-neutral-700 to-transparent" />
-      <div className="flex flex-col items-center justify-between gap-4 px-5 pt-4 pb-3 text-sm text-neutral-400 sm:flex-row sm:gap-5 sm:px-10 lg:px-20">
+      <div className="flex flex-col items-center justify-between gap-4 px-5 pt-4 pb-3 text-sm text-neutral-300 sm:flex-row sm:gap-5 sm:px-10 lg:px-20">
         <div className="order-2 flex gap-2 sm:order-1">
           <Link href="/" className="hover:underline">
             Terms & Conditions

@@ -12,7 +12,7 @@ interface NavigationProps {
 const Navigation = ({ onLinkClick }: NavigationProps) => {
   return (
     <ul className="relative z-20 flex flex-col items-center gap-4 sm:flex-row md:gap-6">
-      <li className="py-2 text-neutral-400 hover:text-white max-sm:w-full max-sm:rounded-md max-sm:px-5">
+      <li className="py-2 text-neutral-300 hover:text-white max-sm:w-full max-sm:rounded-md max-sm:px-5">
         <a
           href="#home"
           onClick={onLinkClick}
@@ -21,7 +21,7 @@ const Navigation = ({ onLinkClick }: NavigationProps) => {
           Home
         </a>
       </li>
-      <li className="py-2 text-neutral-400 hover:text-white max-sm:w-full max-sm:rounded-md max-sm:px-5">
+      <li className="py-2 text-neutral-300 hover:text-white max-sm:w-full max-sm:rounded-md max-sm:px-5">
         <a
           href="#about"
           onClick={onLinkClick}
@@ -30,7 +30,7 @@ const Navigation = ({ onLinkClick }: NavigationProps) => {
           About
         </a>
       </li>
-      <li className="py-2 text-neutral-400 hover:text-white max-sm:w-full max-sm:rounded-md max-sm:px-5">
+      <li className="py-2 text-neutral-300 hover:text-white max-sm:w-full max-sm:rounded-md max-sm:px-5">
         <a
           href="#work"
           onClick={onLinkClick}
@@ -39,7 +39,7 @@ const Navigation = ({ onLinkClick }: NavigationProps) => {
           Work
         </a>
       </li>
-      <li className="py-2 text-neutral-400 hover:text-white max-sm:w-full max-sm:rounded-md max-sm:px-5">
+      <li className="py-2 text-neutral-300 hover:text-white max-sm:w-full max-sm:rounded-md max-sm:px-5">
         <a
           href="#contact"
           onClick={onLinkClick}
@@ -60,13 +60,13 @@ export default function Navbar() {
         <div className="flex items-center justify-between py-2 sm:py-0">
           <Link
             href="/"
-            className="text-xl font-bold text-neutral-400 transition-colors hover:text-white"
+            className="text-xl font-bold text-neutral-300 transition-colors hover:text-white"
           >
             Roman Farooq
           </Link>
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="flex cursor-pointer text-neutral-400 hover:text-white focus:outline-none sm:hidden"
+            className="flex cursor-pointer text-neutral-300 hover:text-white focus:outline-none sm:hidden"
           >
             <Image
               src={

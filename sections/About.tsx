@@ -69,7 +69,7 @@ export default function About() {
           />
           <div className="z-10">
             <p className="mt-2 mb-2 text-xl">Hi, I'm Roman Farooq</p>
-            <p className="text-sm text-pretty text-neutral-400 md:text-base">
+            <p className="text-sm text-pretty text-neutral-300 md:text-base">
               A dedicated Full-Stack Developer passionate about crafting
               intuitive user experiences on the client side and building
               scalable server solutions with modern tools and best practices.
@@ -138,7 +138,7 @@ export default function About() {
         >
           <div className="z-10 w-[50%]">
             <p className="mt-2 mb-2 text-xl">Time Zone</p>
-            <p className="text-sm text-pretty text-neutral-400 md:text-base">
+            <p className="text-sm text-pretty text-neutral-300 md:text-base">
               I'm based in Lahore, Pakistan, and open to remote work worldwide
             </p>
           </div>
@@ -165,7 +165,7 @@ export default function About() {
         >
           <div className="z-10 w-[50%]">
             <p className="mb-2 text-base sm:text-xl">Tech Stack</p>
-            <p className="text-xs text-pretty text-neutral-400 md:text-sm lg:text-base">
+            <p className="text-xs text-pretty text-neutral-300 md:text-sm lg:text-base">
               Proficient in TypeScript, React, Next.js, Node.js, and Express.js.
               Skilled in database management (MongoDB, PostgreSQL) and CSS
               frameworks like Tailwind CSS. Familiar with Docker, Prisma, Redux,

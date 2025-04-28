@@ -95,7 +95,7 @@ export default function Contact() {
       <div className="bg-primary m-10 mx-auto flex max-w-md flex-col items-center justify-center rounded-2xl border border-white/10 p-5">
         <div className="mb-10 flex w-full flex-col items-start gap-5">
           <h2 className="text-3xl font-bold md:text-4xl">Let's Talk</h2>
-          <p className="font-normal text-neutral-400">
+          <p className="font-normal text-neutral-300">
             Whether you're looking to build a new website, improve your existing
             platform, or bring a unique project to life, I'm here to help
           </p>
