@@ -9,7 +9,6 @@ export function Astronaut(props: ThreeElements["group"]) {
 
   const { nodes, materials, animations } = useGLTF(
     "/models/tenhun_falling_spaceman_fanart.glb",
-    true,
   );
 
   const { actions } = useAnimations(animations, group);
@@ -35,14 +34,7 @@ export function Astronaut(props: ThreeElements["group"]) {
   });
 
   return (
-    <group
-      {...props}
-      ref={group}
-      dispose={null}
-      rotation={[-Math.PI / 2, -0.2, 2.2]}
-      scale={props.scale || 0.3}
-      position={props.position || [1.3, -1, 0]}
-    >
+    <group {...props} ref={group} dispose={null}>
       <group name="Sketchfab_Scene">
         <group name="Sketchfab_model">
           <group name="Root">
@@ -68,20 +60,6 @@ export function Astronaut(props: ThreeElements["group"]) {
                   skeleton={(nodes[name] as SkinnedMesh).skeleton}
                 />
               ))}
-              <group name="Cube001" />
-              <group name="Cube005" />
-              <group name="Cube002" />
-              <group name="Plane" />
-              <group name="Cube008" />
-              <group name="Cube004" />
-              <group name="Cube003" />
-              <group name="Cube" />
-              <group
-                name="Cube009"
-                scale={1.307}
-                rotation={[-2.708, 0.013, -1.447]}
-              />
-              <group name="Cube011" />
             </group>
           </group>
         </group>
@@ -90,4 +68,4 @@ export function Astronaut(props: ThreeElements["group"]) {
   );
 }
 
-useGLTF.preload("/models/tenhun_falling_spaceman_fanart.glb", true);
+useGLTF.preload("/models/tenhun_falling_spaceman_fanart.glb");
