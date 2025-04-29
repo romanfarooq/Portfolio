@@ -44,7 +44,7 @@ export function HeroText() {
           >
             <FlipWords
               words={words}
-              className="text-center text-7xl font-bold text-white md:text-left md:text-8xl md:font-black"
+              className="text-7xl font-bold text-white md:text-8xl md:font-black"
             />
           </motion.div>
           <motion.p
@@ -57,7 +57,7 @@ export function HeroText() {
             Web Solutions
           </motion.p>
         </div>
-        <div className="absolute bottom-5 flex w-full justify-center md:static md:justify-start">
+        <div className="absolute bottom-5 left-0 flex w-full justify-center md:static md:justify-start">
           <motion.a
             href="/documents/Roman-Farooq-CV.pdf"
             download
