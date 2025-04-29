@@ -34,6 +34,26 @@ export interface Review {
 
 export const projects = [
   {
+    title: "Threado Studio",
+    description:
+      "A web-based 3D clothing customizer enabling users to design apparel by applying and manipulating decals on 3D models.",
+    subDescription: [
+      "Built with Next.js and integrated Three.js using react-three-fiber for 3D rendering.",
+      "Implemented real-time image/text decal placement with drag, resize, and rotate functionalities.",
+      "Managed application state using Zustand for reactive and modular state management.",
+      "Styled with Tailwind CSS, providing a modern and responsive UI.",
+      "Included interactive dashboard with color pickers and text formatting tools for personalization.",
+    ],
+    href: "",
+    image: "/assets/projects/threado.webp",
+    tags: [
+      { name: "Next.js", path: "/assets/logos/nextjs.svg" },
+      { name: "Three.js", path: "/assets/logos/threejs.svg" },
+      { name: "TailwindCSS", path: "/assets/logos/tailwindcss.svg" },
+      { name: "Zustand", path: "/assets/logos/zustand.svg" },
+    ],
+  },
+  {
     title: "TrendTale",
     description:
       "A web/mobile app that scrapes Google Trends and generates YouTube content using GPT-4.",
