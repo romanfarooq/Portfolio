@@ -1,62 +1,29 @@
 "use client";
 
 import Image from "next/image";
-import { useRef, useEffect } from "react";
-import { Card } from "@/components/Card";
+import Tilt from "react-parallax-tilt";
 import { Globe } from "@/components/Globe";
 import { Frameworks } from "@/components/Frameworks";
 import { CopyEmailButton } from "@/components/CopyEmailButton";
-import VanillaTilt, {
-  type TiltOptions,
-  type HTMLVanillaTiltElement,
-} from "vanilla-tilt";
 
 export default function About() {
-  const containerRef = useRef<HTMLDivElement>(null!);
-  const grid1Ref = useRef<HTMLDivElement>(null);
-  const grid2Ref = useRef<HTMLDivElement>(null);
-  const grid3Ref = useRef<HTMLDivElement>(null);
-  const grid4Ref = useRef<HTMLDivElement>(null);
-  const grid5Ref = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const options: TiltOptions = {
-      max: 5,
-      speed: 400,
-      glare: true,
-      gyroscope: false,
-      "max-glare": 0.2,
-    };
-    const nodes = [
-      grid1Ref.current,
-      grid2Ref.current,
-      grid3Ref.current,
-      grid4Ref.current,
-      grid5Ref.current,
-    ];
-    nodes.forEach((node) => {
-      if (node) VanillaTilt.init(node, options);
-    });
-    return () => {
-      nodes.forEach((node) => {
-        if (node && (node as unknown as HTMLVanillaTiltElement).vanillaTilt) {
-          (node as unknown as HTMLVanillaTiltElement).vanillaTilt.destroy();
-        }
-      });
-    };
-  }, []);
-
   return (
     <section
       id="about"
       className="mt-20 min-h-screen scroll-mt-12 px-5 sm:px-10 md:mt-30 lg:px-15"
     >
       <h2 className="text-3xl font-bold md:text-4xl">About Me</h2>
-      <div className="mt-12 grid grid-cols-1 gap-4 md:auto-rows-[18rem] md:grid-cols-6">
-        {/* Grid 1 */}
-        <div
-          ref={grid1Ref}
-          className="from-storm to-indigo relative row-span-2 flex h-[15rem] items-end overflow-hidden rounded-2xl bg-gradient-to-b p-6 duration-200 md:col-span-3 md:h-full"
+      <div className="mt-12 grid grid-cols-1 gap-4 md:auto-rows-fr md:grid-cols-6">
+        <Tilt
+          tiltMaxAngleX={5}
+          tiltMaxAngleY={5}
+          gyroscope={false}
+          glareEnable={true}
+          glareMaxOpacity={0.2}
+          glareColor="#fff"
+          glarePosition="all"
+          transitionSpeed={400}
+          className="from-storm to-indigo relative row-span-2 flex h-60 items-end overflow-hidden rounded-2xl bg-gradient-to-b p-6 duration-200 md:col-span-3 md:h-full"
         >
           <Image
             src="/assets/images/coding-pov.webp"
@@ -65,7 +32,7 @@ export default function About() {
             priority={true}
             width={1828}
             height={813}
-            className="absolute -top-[1rem] -right-[5rem] scale-[1.75] md:inset-y-10 md:left-50 md:scale-[3] lg:scale-[2.5]"
+            className="absolute -top-4 -right-20 scale-[1.75] md:inset-y-10 md:left-50 md:scale-[3] lg:scale-[2.5]"
           />
           <div className="z-10">
             <p className="mt-2 mb-2 text-xl">Hi, I'm Roman Farooq</p>
@@ -76,80 +43,102 @@ export default function About() {
             </p>
           </div>
           <div className="pointer-evets-none from-indigo absolute inset-x-0 -bottom-4 h-1/2 bg-gradient-to-t sm:h-1/3" />
-        </div>
-        {/* Grid 2 */}
-        <div
-          ref={grid2Ref}
-          className="from-storm to-indigo relative row-span-1 h-[15rem] overflow-hidden rounded-2xl bg-gradient-to-b p-6 duration-200 md:col-span-3 md:h-full"
+        </Tilt>
+        <Tilt
+          tiltMaxAngleX={5}
+          tiltMaxAngleY={5}
+          gyroscope={false}
+          glareEnable={true}
+          glareMaxOpacity={0.2}
+          glareColor="#fff"
+          glarePosition="all"
+          transitionSpeed={400}
+          className="from-royal to-lavender relative row-span-1 h-full overflow-hidden rounded-2xl bg-gradient-to-b px-6 py-4 duration-200 md:col-span-3 md:p-6"
         >
-          <div
-            ref={containerRef}
-            className="flex h-full w-full items-center justify-center"
-          >
-            <p className="flex items-end text-5xl text-gray-500">
-              CODE IS CRAFT
+          <div className="flex h-full w-full flex-col items-center justify-center gap-4">
+            <div className="flex items-center gap-4">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/20 p-2 md:h-16 md:w-16">
+                <Image
+                  src="/assets/logos/meta.svg"
+                  alt="Meta Logo"
+                  width={40}
+                  height={40}
+                />
+              </div>
+              <div className="flex flex-col">
+                <h3 className="text-base font-bold text-white md:text-xl">
+                  Meta Front-End Developer
+                </h3>
+                <p className="text-sm text-white/80">
+                  Professional Certificate
+                </p>
+              </div>
+            </div>
+            <p className="text-justify text-xs text-pretty text-neutral-300 md:text-left md:text-sm">
+              Earned through Meta&apos;s rigorous program via Coursera, this
+              certification validates proficiency in front-end development,
+              including React, JavaScript, UI design principles, debugging,
+              version control with Git, and deploying production-ready web
+              applications.
             </p>
-            <Card
-              style={{ rotate: "75deg", top: "30%", left: "20%" }}
-              text="React.js"
-              containerRef={containerRef}
-            />
-            <Card
-              style={{ rotate: "-30deg", top: "60%", left: "45%" }}
-              text="Next.js"
-              containerRef={containerRef}
-            />
-            <Card
-              style={{ rotate: "90deg", bottom: "40%", left: "80%" }}
-              text="Node.js"
-              containerRef={containerRef}
-            />
-            <Card
-              style={{ rotate: "-45deg", top: "55%", left: "0%" }}
-              text="Flutter"
-              containerRef={containerRef}
-            />
-            <Card
-              style={{ rotate: "20deg", top: "10%", left: "38%" }}
-              text="Python"
-              containerRef={containerRef}
-            />
-            <Card
-              style={{ rotate: "30deg", top: "70%", left: "70%" }}
-              image="/assets/images/cplusplus.webp"
-              containerRef={containerRef}
-            />
-            <Card
-              style={{ rotate: "-45deg", top: "70%", left: "25%" }}
-              image="/assets/images/javascript.webp"
-              containerRef={containerRef}
-            />
-            <Card
-              style={{ rotate: "-45deg", top: "5%", left: "10%" }}
-              image="/assets/images/nextjs.webp"
-              containerRef={containerRef}
-            />
+            <div className="flex flex-wrap justify-center gap-2 text-xs">
+              <span className="inline-block rounded-full bg-white/20 px-1.5 py-0.5 md:px-3 md:py-1">
+                React
+              </span>
+              <span className="inline-block rounded-full bg-white/20 px-1.5 py-0.5 md:px-3 md:py-1">
+                JavaScript
+              </span>
+              <span className="inline-block rounded-full bg-white/20 px-1.5 py-0.5 md:px-3 md:py-1">
+                HTML/CSS
+              </span>
+              <span className="inline-block rounded-full bg-white/20 px-1.5 py-0.5 md:px-3 md:py-1">
+                Git/GitHub
+              </span>
+              <span className="inline-block rounded-full bg-white/20 px-1.5 py-0.5 md:px-3 md:py-1">
+                UI/UX Principles
+              </span>
+            </div>
+            <a
+              href="https://www.coursera.org/account/accomplishments/professional-cert/XEPX26FAB3MY"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block rounded-full border border-white/30 bg-white/20 px-3 py-1.5 text-xs font-semibold text-white backdrop-blur-md transition-all duration-300 hover:scale-105 hover:border-white/50 hover:bg-white/30 focus:ring-2 focus:ring-white/50 focus:outline-none md:px-5 md:py-2 md:text-sm"
+            >
+              🎓 View Certificate
+            </a>
           </div>
-        </div>
-        {/* Grid 3 */}
-        <div
-          ref={grid3Ref}
-          className="relative row-span-1 h-[15rem] overflow-hidden rounded-2xl bg-gradient-to-tl from-[#3A3A3A] via-[#242424] to-[#3A3A3A] p-6 duration-200 md:col-span-3 md:h-full"
+        </Tilt>
+        <Tilt
+          tiltMaxAngleX={5}
+          tiltMaxAngleY={5}
+          gyroscope={false}
+          glareEnable={true}
+          glareMaxOpacity={0.2}
+          glareColor="#fff"
+          glarePosition="all"
+          transitionSpeed={400}
+          className="relative row-span-1 h-60 overflow-hidden rounded-2xl bg-gradient-to-tl from-[#3A3A3A] via-[#242424] to-[#3A3A3A] p-6 duration-200 md:col-span-3 md:h-full"
         >
-          <div className="z-10 w-[50%]">
+          <div className="z-10 w-1/2">
             <p className="mt-2 mb-2 text-xl">Time Zone</p>
             <p className="text-sm text-pretty text-neutral-300 md:text-base">
               I'm based in Lahore, Pakistan, and open to remote work worldwide
             </p>
           </div>
-          <figure className="absolute top-[10%] left-[30%]">
+          <figure className="absolute top-1/12 left-1/4 md:left-1/3">
             <Globe />
           </figure>
-        </div>
-        {/* Grid 4 */}
-        <div
-          ref={grid4Ref}
-          className="from-royal to-lavender relative row-span-1 h-[15rem] overflow-hidden rounded-2xl bg-gradient-to-b p-6 duration-200 md:col-span-2 md:h-full"
+        </Tilt>
+        <Tilt
+          tiltMaxAngleX={5}
+          tiltMaxAngleY={5}
+          gyroscope={false}
+          glareEnable={true}
+          glareMaxOpacity={0.2}
+          glareColor="#fff"
+          glarePosition="all"
+          transitionSpeed={400}
+          className="from-royal to-lavender relative row-span-1 h-60 overflow-hidden rounded-2xl bg-gradient-to-b p-6 duration-200 md:col-span-2 md:h-full"
         >
           <div className="flex size-full flex-col items-center justify-center gap-4">
             <p className="mt-2 mb-2 text-center text-xl">
@@ -157,13 +146,19 @@ export default function About() {
             </p>
             <CopyEmailButton />
           </div>
-        </div>
-        {/* Grid 5 */}
-        <div
-          ref={grid5Ref}
-          className="from-storm to-indigo relative row-span-1 h-[15rem] overflow-hidden rounded-2xl bg-gradient-to-b px-6 py-2 duration-200 sm:p-6 md:col-span-4 md:h-full"
+        </Tilt>
+        <Tilt
+          tiltMaxAngleX={5}
+          tiltMaxAngleY={5}
+          gyroscope={false}
+          glareEnable={true}
+          glareMaxOpacity={0.2}
+          glareColor="#fff"
+          glarePosition="all"
+          transitionSpeed={400}
+          className="from-storm to-indigo relative row-span-1 h-60 overflow-hidden rounded-2xl bg-gradient-to-b px-6 py-2 duration-200 sm:p-6 md:col-span-4 md:h-full"
         >
-          <div className="z-10 w-[50%]">
+          <div className="z-10 w-1/2">
             <p className="mb-2 text-base sm:text-xl">Tech Stack</p>
             <p className="text-xs text-pretty text-neutral-300 md:text-sm lg:text-base">
               Proficient in TypeScript, React, Next.js, Node.js, and Express.js.
@@ -172,10 +167,10 @@ export default function About() {
               Flutter, and backend development using Python and Django.
             </p>
           </div>
-          <div className="absolute inset-y-0 start-[55%] h-full w-full sm:start-[50%] md:inset-y-9 md:scale-125">
+          <div className="absolute inset-y-0 start-7/12 h-full w-full sm:start-1/2 md:inset-y-9 md:scale-125">
             <Frameworks />
           </div>
-        </div>
+        </Tilt>
       </div>
     </section>
   );
