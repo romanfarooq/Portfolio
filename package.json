@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
-    "@react-email/components": "^0.0.36",
+    "@react-email/components": "^0.0.37",
     "@react-three/drei": "^10.0.7",
     "@react-three/fiber": "^9.1.2",
     "babel-plugin-react-compiler": "19.1.0-rc.1",
@@ -23,7 +23,7 @@
     "react-hook-form": "^7.56.1",
     "react-parallax-tilt": "^1.7.294",
     "react-responsive": "^10.0.1",
-    "resend": "^4.4.1",
+    "resend": "^4.5.0",
     "tailwind-merge": "^3.2.0",
     "three": "^0.176.0",
     "zod": "^3.24.3"
