@@ -28,33 +28,25 @@ export function ParallaxBackground() {
         {/* Mountain Layer 3 - Use transform hardware acceleration */}
         <motion.div
           className="absolute inset-0 -z-40 bg-[url('/assets/images/mountain-3.webp')] bg-cover bg-bottom"
-          style={{
-            y: mountain3Y,
-          }}
+          style={{ y: mountain3Y }}
         />
 
         {/* Planets */}
         <motion.div
           className="absolute inset-0 -z-30 bg-[url('/assets/images/planets.webp')] bg-cover bg-bottom"
-          style={{
-            x: planetsX,
-          }}
+          style={{ x: planetsX }}
         />
 
         {/* Mountain Layer 2 */}
         <motion.div
           className="absolute inset-0 -z-20 bg-[url('/assets/images/mountain-2.webp')] bg-cover bg-bottom"
-          style={{
-            y: mountain2Y,
-          }}
+          style={{ y: mountain2Y }}
         />
 
         {/* Mountain Layer 1 */}
         <motion.div
           className="absolute inset-0 -z-10 bg-[url('/assets/images/mountain-1.webp')] bg-cover bg-bottom"
-          style={{
-            y: mountain1Y,
-          }}
+          style={{ y: mountain1Y }}
         />
       </div>
     </section>
