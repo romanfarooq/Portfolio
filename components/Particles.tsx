@@ -164,20 +164,21 @@ export function Particles({
   useEffect(() => {
     initCanvas();
     animate();
+
     if (canvasRef.current) {
       context.current = canvasRef.current?.getContext("2d");
     }
 
     const handleResize = () => {
-      clearTimeout(resizeTimeout.current!);
+      if (resizeTimeout.current) clearTimeout(resizeTimeout.current);
       resizeTimeout.current = setTimeout(initCanvas, 200);
     };
 
     window.addEventListener("resize", handleResize);
     return () => {
-      window.cancelAnimationFrame(rafID.current!);
       window.removeEventListener("resize", handleResize);
-      clearTimeout(resizeTimeout.current!);
+      if (rafID.current) window.cancelAnimationFrame(rafID.current);
+      if (resizeTimeout.current) clearTimeout(resizeTimeout.current);
     };
   }, [initCanvas, animate]);
 

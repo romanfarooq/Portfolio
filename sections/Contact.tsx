@@ -53,9 +53,10 @@ export default function Contact() {
   const onSubmit = async (data: ContactFormData) => {
     try {
       const formData = new FormData();
-      formData.append("name", data.name);
-      formData.append("email", data.email);
-      formData.append("message", data.message);
+
+      Object.entries(data).forEach(([key, value]) =>
+        formData.append(key, value),
+      );
 
       const result = await sendEmail(formData);
 
@@ -68,6 +69,7 @@ export default function Contact() {
       }
 
       reset();
+
       showAlertMessage({
         type: "success",
         message: "Your message has been sent!",
