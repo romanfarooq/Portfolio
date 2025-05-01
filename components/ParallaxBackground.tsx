@@ -22,46 +22,38 @@ export function ParallaxBackground() {
   return (
     <section ref={backgroundRef} className="absolute inset-0 bg-black/40">
       <div className="relative h-screen overflow-y-hidden will-change-transform">
-        <div
-          className="absolute inset-0 -z-50 h-screen w-full bg-cover bg-bottom"
-          style={{
-            backgroundImage: "url(/assets/images/sky.webp)",
-          }}
-        />
+        {/* Background Layer - Sky */}
+        <div className="absolute inset-0 -z-50 h-screen w-full bg-[url('/assets/images/sky.webp')] bg-cover bg-bottom" />
 
         {/* Mountain Layer 3 - Use transform hardware acceleration */}
         <motion.div
-          className="absolute inset-0 -z-40 bg-cover bg-bottom"
+          className="absolute inset-0 -z-40 bg-[url('/assets/images/mountain-3.webp')] bg-cover bg-bottom"
           style={{
             y: mountain3Y,
-            backgroundImage: "url(/assets/images/mountain-3.webp)",
           }}
         />
 
         {/* Planets */}
         <motion.div
-          className="absolute inset-0 -z-30 bg-cover bg-bottom"
+          className="absolute inset-0 -z-30 bg-[url('/assets/images/planets.webp')] bg-cover bg-bottom"
           style={{
             x: planetsX,
-            backgroundImage: "url(/assets/images/planets.webp)",
           }}
         />
 
         {/* Mountain Layer 2 */}
         <motion.div
-          className="absolute inset-0 -z-20 bg-cover bg-bottom"
+          className="absolute inset-0 -z-20 bg-[url('/assets/images/mountain-2.webp')] bg-cover bg-bottom"
           style={{
             y: mountain2Y,
-            backgroundImage: "url(/assets/images/mountain-2.webp)",
           }}
         />
 
         {/* Mountain Layer 1 */}
         <motion.div
-          className="absolute inset-0 -z-10 bg-cover bg-bottom"
+          className="absolute inset-0 -z-10 bg-[url('/assets/images/mountain-1.webp')] bg-cover bg-bottom"
           style={{
             y: mountain1Y,
-            backgroundImage: "url(/assets/images/mountain-1.webp)",
           }}
         />
       </div>

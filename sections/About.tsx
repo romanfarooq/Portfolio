@@ -17,12 +17,9 @@ export default function About() {
         <Tilt
           tiltMaxAngleX={5}
           tiltMaxAngleY={5}
-          gyroscope={false}
           glareEnable={true}
           glareMaxOpacity={0.2}
-          glareColor="#fff"
           glarePosition="all"
-          transitionSpeed={400}
           className="from-storm to-indigo relative row-span-2 flex h-60 items-end overflow-hidden rounded-2xl bg-gradient-to-b p-6 duration-200 md:col-span-3 md:h-full"
         >
           <Image
@@ -47,12 +44,9 @@ export default function About() {
         <Tilt
           tiltMaxAngleX={5}
           tiltMaxAngleY={5}
-          gyroscope={false}
           glareEnable={true}
           glareMaxOpacity={0.2}
-          glareColor="#fff"
           glarePosition="all"
-          transitionSpeed={400}
           className="from-royal to-lavender relative row-span-1 h-full overflow-hidden rounded-2xl bg-gradient-to-b px-6 py-4 duration-200 md:col-span-3 md:p-6"
         >
           <div className="flex h-full w-full flex-col items-center justify-center gap-4">
@@ -111,12 +105,9 @@ export default function About() {
         <Tilt
           tiltMaxAngleX={5}
           tiltMaxAngleY={5}
-          gyroscope={false}
           glareEnable={true}
           glareMaxOpacity={0.2}
-          glareColor="#fff"
           glarePosition="all"
-          transitionSpeed={400}
           className="relative row-span-1 h-60 overflow-hidden rounded-2xl bg-gradient-to-tl from-[#3A3A3A] via-[#242424] to-[#3A3A3A] p-6 duration-200 md:col-span-3 md:h-full"
         >
           <div className="z-10 w-1/2">
@@ -132,12 +123,9 @@ export default function About() {
         <Tilt
           tiltMaxAngleX={5}
           tiltMaxAngleY={5}
-          gyroscope={false}
           glareEnable={true}
           glareMaxOpacity={0.2}
-          glareColor="#fff"
           glarePosition="all"
-          transitionSpeed={400}
           className="from-royal to-lavender relative row-span-1 h-60 overflow-hidden rounded-2xl bg-gradient-to-b p-6 duration-200 md:col-span-2 md:h-full"
         >
           <div className="flex size-full flex-col items-center justify-center gap-4">
@@ -150,12 +138,9 @@ export default function About() {
         <Tilt
           tiltMaxAngleX={5}
           tiltMaxAngleY={5}
-          gyroscope={false}
           glareEnable={true}
           glareMaxOpacity={0.2}
-          glareColor="#fff"
           glarePosition="all"
-          transitionSpeed={400}
           className="from-storm to-indigo relative row-span-1 h-60 overflow-hidden rounded-2xl bg-gradient-to-b px-6 py-2 duration-200 sm:p-6 md:col-span-4 md:h-full"
         >
           <div className="z-10 w-1/2">
