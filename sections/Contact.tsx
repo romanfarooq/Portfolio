@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import { AnimatePresence } from "motion/react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Alert } from "@/components/Alert";
 import { sendEmail } from "@/actions/email";
@@ -88,12 +89,16 @@ export default function Contact() {
       id="contact"
       className="relative mt-20 flex min-h-screen items-center px-5 sm:px-10 md:mt-30 lg:px-15"
     >
-      <Particles
-        className="absolute inset-0 -z-50"
-        quantity={200}
-        color="#ffffff"
-      />
-      {alert.show && <Alert type={alert.type} text={alert.message} />}
+      <Particles className="absolute inset-0 -z-50" quantity={200} />
+      <AnimatePresence>
+        {alert.show && (
+          <Alert
+            type={alert.type}
+            text={alert.message}
+            key={`${alert.type}-${alert.message}`}
+          />
+        )}
+      </AnimatePresence>
       <div className="bg-primary m-10 mx-auto flex max-w-md flex-col items-center justify-center rounded-2xl border border-white/10 p-5">
         <div className="mb-10 flex w-full flex-col items-start gap-5">
           <h2 className="text-3xl font-bold md:text-4xl">Let's Talk</h2>

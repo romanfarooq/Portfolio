@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { motion, AnimatePresence } from "motion/react";
+import { motion } from "motion/react";
 
 interface AlertProps {
   text: string;
@@ -14,32 +14,30 @@ const alertVarients = {
 
 export function Alert({ text, type }: AlertProps) {
   return (
-    <AnimatePresence>
-      <motion.div
-        className="fixed right-5 bottom-5 z-50 flex items-center justify-center"
-        initial="hidden"
-        animate="visible"
-        exit="exit"
-        variants={alertVarients}
-        transition={{ duration: 0.3, ease: "easeInOut" }}
+    <motion.div
+      className="fixed right-5 bottom-5 z-50 flex items-center justify-center"
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+      variants={alertVarients}
+      transition={{ duration: 0.3, ease: "easeInOut" }}
+    >
+      <div
+        className={cn(
+          "flex items-center rounded-md p-2 leading-none text-indigo-100 lg:inline-flex lg:rounded-full",
+          type === "danger" ? "bg-red-800" : "bg-royal",
+        )}
       >
-        <div
+        <p
           className={cn(
-            "flex items-center rounded-md p-2 leading-none text-indigo-100 lg:inline-flex lg:rounded-full",
-            type === "danger" ? "bg-red-800" : "bg-royal",
+            "mr-3 flex rounded-full px-2 py-1 text-xs font-semibold uppercase",
+            type === "danger" ? "bg-red-500" : "bg-lavender",
           )}
         >
-          <p
-            className={cn(
-              "mr-3 flex rounded-full px-2 py-1 text-xs font-semibold uppercase",
-              type === "danger" ? "bg-red-500" : "bg-lavender",
-            )}
-          >
-            {type === "danger" ? "Failed" : "Success"}
-          </p>
-          <p className="mr-2 text-left">{text}</p>
-        </div>
-      </motion.div>
-    </AnimatePresence>
+          {type === "danger" ? "Failed" : "Success"}
+        </p>
+        <p className="mr-2 text-left">{text}</p>
+      </div>
+    </motion.div>
   );
 }

@@ -162,12 +162,12 @@ export function Particles({
   }, [resizeCanvas, drawParticles]);
 
   useEffect(() => {
-    initCanvas();
-    animate();
-
     if (canvasRef.current) {
       context.current = canvasRef.current?.getContext("2d");
     }
+
+    initCanvas();
+    animate();
 
     const handleResize = () => {
       if (resizeTimeout.current) clearTimeout(resizeTimeout.current);
