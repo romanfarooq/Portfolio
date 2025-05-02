@@ -104,7 +104,10 @@ export default function Contact() {
         </div>
         <form className="w-full" onSubmit={handleSubmit(onSubmit)}>
           <div className="mb-5">
-            <label htmlFor="name" className="feild-label">
+            <label
+              htmlFor="name"
+              className="text-sm leading-none font-medium peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+            >
               Full Name
             </label>
             <input
@@ -121,7 +124,10 @@ export default function Contact() {
             )}
           </div>
           <div className="mb-5">
-            <label htmlFor="email" className="feild-label">
+            <label
+              htmlFor="email"
+              className="text-sm leading-none font-medium peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+            >
               Email
             </label>
             <input
@@ -138,7 +144,10 @@ export default function Contact() {
             )}
           </div>
           <div className="mb-5">
-            <label htmlFor="message" className="feild-label">
+            <label
+              htmlFor="message"
+              className="text-sm leading-none font-medium peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+            >
               Message
             </label>
             <textarea
