@@ -100,7 +100,7 @@ export function Globe({ className, config = GLOBE_CONFIG }: GlobeProps) {
       globe.destroy();
       window.removeEventListener("resize", onResize);
     };
-  }, [rs, config]);
+  }, [config]);
 
   return (
     <div className={cn("mx-auto aspect-[1/1] w-full max-w-[600px]", className)}>
