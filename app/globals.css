@@ -20,6 +20,8 @@ html body[data-scroll-locked] {
   --color-orange: oklch(0.61 0.1494 41.82);
   --color-sand: oklch(0.73 0.1068 64.78);
   --color-coral: oklch(0.65 0.2026 2.14);
+  --color-charcoal: oklch(0.35 0 0);
+  --color-jet: oklch(0.26 0 0);
 }
 
 @theme inline {

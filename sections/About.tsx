@@ -33,7 +33,7 @@ export default function About() {
           />
           <div className="z-10">
             <p className="mt-2 mb-2 text-xl">Hi, I'm Roman Farooq</p>
-            <p className="text-sm text-pretty text-neutral-300 md:text-base">
+            <p className="text-sm text-pretty text-neutral-200 md:text-base">
               A dedicated Full-Stack Developer passionate about crafting
               intuitive user experiences on the client side and building
               scalable server solutions with modern tools and best practices.
@@ -68,7 +68,7 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <p className="text-justify text-xs text-pretty text-neutral-300 md:text-left md:text-sm">
+            <p className="text-justify text-xs text-pretty text-neutral-200 md:text-left md:text-sm">
               Earned through Meta&apos;s rigorous program via Coursera, this
               certification validates proficiency in front-end development,
               including React, JavaScript, UI design principles, debugging,
@@ -108,11 +108,11 @@ export default function About() {
           glareEnable={true}
           glareMaxOpacity={0.2}
           glarePosition="all"
-          className="relative row-span-1 h-60 overflow-hidden rounded-2xl bg-gradient-to-tl from-[#3A3A3A] via-[#242424] to-[#3A3A3A] p-6 duration-200 md:col-span-3 md:h-full"
+          className="from-charcoal via-jet to-charcoal relative row-span-1 h-60 overflow-hidden rounded-2xl bg-gradient-to-tl p-6 duration-200 md:col-span-3 md:h-full"
         >
           <div className="z-10 w-1/2">
             <p className="mt-2 mb-2 text-xl">Time Zone</p>
-            <p className="text-sm text-pretty text-neutral-300 md:text-base">
+            <p className="text-sm text-pretty text-neutral-200 md:text-base">
               I'm based in Lahore, Pakistan, and open to remote work worldwide
             </p>
           </div>
@@ -126,7 +126,7 @@ export default function About() {
           glareEnable={true}
           glareMaxOpacity={0.2}
           glarePosition="all"
-          className="from-royal to-lavender relative row-span-1 h-60 overflow-hidden rounded-2xl bg-gradient-to-b p-6 duration-200 md:col-span-2 md:h-full"
+          className="from-orange to-coral relative row-span-1 h-60 overflow-hidden rounded-2xl bg-gradient-to-b p-6 duration-200 md:col-span-2 md:h-full"
         >
           <div className="flex size-full flex-col items-center justify-center gap-4">
             <p className="mt-2 mb-2 text-center text-xl">
@@ -141,11 +141,11 @@ export default function About() {
           glareEnable={true}
           glareMaxOpacity={0.2}
           glarePosition="all"
-          className="from-storm to-indigo relative row-span-1 h-60 overflow-hidden rounded-2xl bg-gradient-to-b px-6 py-2 duration-200 sm:p-6 md:col-span-4 md:h-full"
+          className="relative row-span-1 h-60 overflow-hidden rounded-2xl bg-gradient-to-b from-emerald-900 to-emerald-700 px-6 py-2 duration-200 sm:p-6 md:col-span-4 md:h-full"
         >
           <div className="z-10 w-1/2">
             <p className="mb-2 text-base sm:text-xl">Tech Stack</p>
-            <p className="text-xs text-pretty text-neutral-300 md:text-sm lg:text-base">
+            <p className="text-xs text-pretty text-neutral-200 md:text-sm lg:text-base">
               Proficient in TypeScript, React, Next.js, Node.js, and Express.js.
               Skilled in database management (MongoDB, PostgreSQL) and CSS
               frameworks like Tailwind CSS. Familiar with Docker, Prisma, Redux,
