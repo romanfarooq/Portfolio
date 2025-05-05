@@ -159,7 +159,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${funnelDisplay.variable} overflow-x-hidden bg-[#030412] antialiased`}
+        className={`${funnelDisplay.variable} bg-primary overflow-x-hidden antialiased`}
       >
         {children}
       </body>
