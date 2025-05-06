@@ -141,7 +141,7 @@ export default function About() {
           glareEnable={true}
           glareMaxOpacity={0.2}
           glarePosition="all"
-          className="relative row-span-1 h-60 overflow-hidden rounded-2xl bg-gradient-to-b from-emerald-900 to-emerald-700 px-6 py-2 duration-200 sm:p-6 md:col-span-4 md:h-full"
+          className="relative row-span-1 h-60 overflow-hidden rounded-2xl bg-gradient-to-b from-emerald-950 to-emerald-900 px-6 py-2 duration-200 sm:p-6 md:col-span-4 md:h-full"
         >
           <div className="z-10 w-1/2">
             <p className="mb-2 text-base sm:text-xl">Tech Stack</p>
