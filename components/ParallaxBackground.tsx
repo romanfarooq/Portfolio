@@ -25,7 +25,7 @@ export function ParallaxBackground() {
         {/* Background Layer - Sky */}
         <div className="absolute inset-0 -z-50 h-screen w-full bg-[url('/assets/images/sky.webp')] bg-cover bg-bottom" />
 
-        {/* Mountain Layer 3 - Use transform hardware acceleration */}
+        {/* Mountain Layer 3 */}
         <motion.div
           className="absolute inset-0 -z-40 bg-[url('/assets/images/mountain-3.webp')] bg-cover bg-bottom"
           style={{ y: mountain3Y }}
