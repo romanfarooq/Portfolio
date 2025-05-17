@@ -68,14 +68,21 @@ export default function Navbar() {
             onClick={() => setIsOpen(!isOpen)}
             className="flex cursor-pointer text-neutral-300 hover:text-white focus:outline-none sm:hidden"
           >
-            <Image
-              src={
-                isOpen ? "/assets/icons/close.svg" : "/assets/icons/menu.svg"
-              }
-              alt="toggle menu icon"
-              width={24}
-              height={24}
-            />
+            {isOpen ? (
+              <Image
+                src="/assets/icons/close.svg"
+                alt="close menu icon"
+                width={24}
+                height={24}
+              />
+            ) : (
+              <Image
+                src="/assets/icons/menu.svg"
+                alt="hamburger menu icon"
+                width={24}
+                height={24}
+              />
+            )}
           </button>
           <nav className="hidden sm:flex">
             <Navigation />
