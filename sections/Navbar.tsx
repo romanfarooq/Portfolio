@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import { motion } from "motion/react";
+import { motion, AnimatePresence } from "motion/react";
 
 interface NavigationProps {
   onLinkClick?: () => void;
@@ -82,18 +82,20 @@ export default function Navbar() {
           </nav>
         </div>
       </div>
-      {isOpen && (
-        <motion.div
-          className="block max-h-screen overflow-hidden text-center sm:hidden"
-          initial={{ opacity: 0, x: -10 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-        >
-          <nav className="pb-5">
-            <Navigation onLinkClick={() => setIsOpen(false)} />
-          </nav>
-        </motion.div>
-      )}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            className="block max-h-screen overflow-hidden text-center sm:hidden"
+            initial={{ opacity: 0, x: -10 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+          >
+            <nav className="pb-5">
+              <Navigation onLinkClick={() => setIsOpen(false)} />
+            </nav>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
