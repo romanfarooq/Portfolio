@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Funnel_Display } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 const funnelDisplay = Funnel_Display({
@@ -162,6 +163,7 @@ export default function RootLayout({
         className={`${funnelDisplay.variable} bg-primary overflow-x-hidden antialiased`}
       >
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
