@@ -33,7 +33,7 @@ export function MobileNavbar() {
         </Link>
         <button
           onClick={() => setIsOpen((prev) => !prev)}
-          className="flex cursor-pointer text-neutral-300 hover:text-white focus:outline-none"
+          className="cursor-pointer text-neutral-300 hover:text-white focus:outline-none"
         >
           {isOpen ? (
             <Image
@@ -61,16 +61,13 @@ export function MobileNavbar() {
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
           >
-            <ul className="relative z-20 flex flex-col items-center gap-4 py-4">
+            <ul className="flex flex-col items-center gap-4 py-4">
               {["home", "about", "work", "contact"].map(
                 (section) => (
-                  <li
-                    key={section}
-                    className="py-2 text-center max-sm:w-full max-sm:rounded-md max-sm:px-5"
-                  >
+                  <li key={section} className="py-2">
                     <a
                       onClick={(e) => handleNavClick(e, section)}
-                      className="inline-block w-full cursor-pointer text-lg text-neutral-300 capitalize transition-colors hover:text-white"
+                      className="cursor-pointer text-lg text-neutral-300 capitalize transition-colors hover:text-white"
                     >
                       {section}
                     </a>

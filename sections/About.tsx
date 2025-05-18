@@ -33,13 +33,12 @@ export default function About() {
           />
           <div className="z-10">
             <p className="mt-2 mb-2 text-xl">Hi, I'm Roman Farooq</p>
-            <p className="text-sm text-pretty text-neutral-200 md:text-base">
+            <p className="text-sm text-neutral-200 md:text-base">
               A dedicated Full-Stack Developer passionate about crafting
               intuitive user experiences on the client side and building
               scalable server solutions with modern tools and best practices.
             </p>
           </div>
-          <div className="pointer-evets-none from-indigo absolute inset-x-0 -bottom-4 h-1/2 bg-gradient-to-t sm:h-1/3" />
         </Tilt>
         <Tilt
           tiltMaxAngleX={5}
@@ -47,9 +46,9 @@ export default function About() {
           glareEnable={true}
           glareMaxOpacity={0.2}
           glarePosition="all"
-          className="from-royal to-lavender relative row-span-1 h-full overflow-hidden rounded-2xl bg-gradient-to-b px-6 py-4 duration-200 md:col-span-3 md:p-6"
+          className="from-royal to-lavender row-span-1 h-full overflow-hidden rounded-2xl bg-gradient-to-b px-6 py-4 duration-200 md:col-span-3 md:p-6"
         >
-          <div className="flex h-full w-full flex-col items-center justify-center gap-4">
+          <div className="flex h-full flex-col items-center justify-center gap-4">
             <div className="flex items-center gap-4">
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/20 p-2 md:h-16 md:w-16">
                 <Image
@@ -68,27 +67,27 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <p className="text-justify text-xs text-pretty text-neutral-200 md:text-left md:text-sm">
-              Earned through Meta&apos;s rigorous program via Coursera, this
+            <p className="text-xs text-neutral-200 md:text-sm">
+              Earned through Meta's rigorous program via Coursera, this
               certification validates proficiency in front-end development,
               including React, JavaScript, UI design principles, debugging,
               version control with Git, and deploying production-ready web
               applications.
             </p>
             <div className="flex flex-wrap justify-center gap-2 text-xs">
-              <span className="inline-block rounded-full bg-white/20 px-1.5 py-0.5 md:px-3 md:py-1">
+              <span className="rounded-full bg-white/20 px-1.5 py-0.5 md:px-3 md:py-1">
                 React
               </span>
-              <span className="inline-block rounded-full bg-white/20 px-1.5 py-0.5 md:px-3 md:py-1">
+              <span className="rounded-full bg-white/20 px-1.5 py-0.5 md:px-3 md:py-1">
                 JavaScript
               </span>
-              <span className="inline-block rounded-full bg-white/20 px-1.5 py-0.5 md:px-3 md:py-1">
+              <span className="rounded-full bg-white/20 px-1.5 py-0.5 md:px-3 md:py-1">
                 HTML/CSS
               </span>
-              <span className="inline-block rounded-full bg-white/20 px-1.5 py-0.5 md:px-3 md:py-1">
+              <span className="rounded-full bg-white/20 px-1.5 py-0.5 md:px-3 md:py-1">
                 Git/GitHub
               </span>
-              <span className="inline-block rounded-full bg-white/20 px-1.5 py-0.5 md:px-3 md:py-1">
+              <span className="rounded-full bg-white/20 px-1.5 py-0.5 md:px-3 md:py-1">
                 UI/UX Principles
               </span>
             </div>
@@ -96,7 +95,7 @@ export default function About() {
               href="https://www.coursera.org/account/accomplishments/professional-cert/XEPX26FAB3MY"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block rounded-full border border-white/30 bg-white/20 px-3 py-1.5 text-xs font-semibold text-white backdrop-blur-md transition-all duration-300 hover:scale-105 hover:border-white/50 hover:bg-white/30 focus:ring-2 focus:ring-white/50 focus:outline-none md:px-5 md:py-2 md:text-sm"
+              className="rounded-full border border-white/30 bg-white/20 px-3 py-1.5 text-xs font-semibold text-white backdrop-blur-md transition-all duration-300 hover:scale-105 hover:border-white/50 hover:bg-white/30 focus:ring-2 focus:ring-white/50 focus:outline-none md:px-5 md:py-2 md:text-sm"
             >
               🎓 View Certificate
             </a>
@@ -112,7 +111,7 @@ export default function About() {
         >
           <div className="z-10 w-1/2">
             <p className="mt-2 mb-2 text-xl">Time Zone</p>
-            <p className="text-sm text-pretty text-neutral-200 md:text-base">
+            <p className="text-sm text-neutral-200 md:text-base">
               I'm based in Lahore, Pakistan, and open to remote work worldwide
             </p>
           </div>
@@ -145,7 +144,7 @@ export default function About() {
         >
           <div className="z-10 w-1/2">
             <p className="mb-2 text-base sm:text-xl">Tech Stack</p>
-            <p className="text-xs text-pretty text-neutral-200 md:text-sm lg:text-base">
+            <p className="text-xs text-neutral-200 md:text-sm lg:text-base">
               Proficient in TypeScript, React, Next.js, Node.js, and Express.js.
               Skilled in database management (MongoDB, PostgreSQL) and CSS
               frameworks like Tailwind CSS. Familiar with Docker, Prisma, Redux,
