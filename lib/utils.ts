@@ -25,13 +25,11 @@ export function hexToRgb(hex: string) {
 
 export function remapValue(
   value: number,
-  start1: number,
-  end1: number,
-  start2: number,
-  end2: number,
+  inMin: number,
+  inMax: number,
+  outMin: number,
+  outMax: number,
 ) {
-  const numerator = (value - start1) * (end2 - start2);
-  const denominator = end1 - start1;
-  const remapped = numerator / denominator + start2;
-  return remapped > 0 ? remapped : 0;
+  if (inMax === inMin) return outMin;
+  return Math.max(((value - inMin) * (outMax - outMin)) / (inMax - inMin) + outMin, 0);
 }
