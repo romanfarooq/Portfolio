@@ -1,8 +1,8 @@
 import { useRef, useEffect } from "react";
 import { type Group, type SkinnedMesh } from "three";
-import { type ThreeElements, useFrame } from "@react-three/fiber";
-import { useGLTF, useAnimations } from "@react-three/drei";
 import { useSpring, useMotionValue } from "motion/react";
+import { useGLTF, useAnimations } from "@react-three/drei";
+import { type ThreeElements, useFrame } from "@react-three/fiber";
 
 export function Astronaut(props: ThreeElements["group"]) {
   const group = useRef<Group>(null);
