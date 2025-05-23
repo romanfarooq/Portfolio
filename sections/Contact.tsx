@@ -9,12 +9,13 @@ import { sendEmail } from "@/actions/email";
 import { Particles } from "@/components/Particles";
 import { ContactFormData, contactFormSchema } from "@/lib/validations";
 
-type AlertType = "success" | "danger";
-
-interface AlertState {
-  show: boolean;
-  type: AlertType;
+interface AlertMessage {
+  type: "success" | "danger";
   message: string;
+}
+
+interface AlertState extends AlertMessage {
+  show: boolean;
 }
 
 export default function Contact() {
@@ -38,13 +39,7 @@ export default function Contact() {
     },
   });
 
-  const showAlertMessage = ({
-    type,
-    message,
-  }: {
-    type: AlertType;
-    message: string;
-  }) => {
+  const showAlertMessage = ({ type, message }: AlertMessage) => {
     setAlert({ show: true, type, message });
     setTimeout(() => {
       setAlert((prev) => ({ ...prev, show: false }));
