@@ -7,21 +7,21 @@ html body[data-scroll-locked] {
 }
 
 @theme {
-  --color-primary: oklch(0.12 0.0352 274.49);
-  --color-midnight: oklch(0.15 0.0467 272.68);
+  --color-jet: oklch(0.26 0 0);
   --color-navy: oklch(0.23 0.045 274.77);
-  --color-indigo: oklch(0.25 0.0504 283.83);
-  --color-storm: oklch(0.3 0.0577 278.29);
   --color-aqua: oklch(0.75 0.1161 202.1);
   --color-mint: oklch(0.8 0.153 157.22);
-  --color-royal: oklch(0.47 0.2181 287.03);
-  --color-lavender: oklch(0.56 0.1926 291.15);
-  --color-fuchsia: oklch(0.58 0.2075 349.04);
-  --color-orange: oklch(0.61 0.1494 41.82);
   --color-sand: oklch(0.73 0.1068 64.78);
+  --color-royal: oklch(0.47 0.2181 287.03);
   --color-coral: oklch(0.65 0.2026 2.14);
+  --color-storm: oklch(0.3 0.0577 278.29);
+  --color-indigo: oklch(0.25 0.0504 283.83);
+  --color-orange: oklch(0.61 0.1494 41.82);
+  --color-fuchsia: oklch(0.58 0.2075 349.04);
+  --color-primary: oklch(0.12 0.0352 274.49);
+  --color-midnight: oklch(0.15 0.0467 272.68);
+  --color-lavender: oklch(0.56 0.1926 291.15);
   --color-charcoal: oklch(0.35 0 0);
-  --color-jet: oklch(0.26 0 0);
 }
 
 @theme inline {
