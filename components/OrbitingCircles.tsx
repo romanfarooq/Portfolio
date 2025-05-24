@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { Children } from "react";
+import { Fragment, Children } from "react";
 
 interface OrbitingCirclesProps extends React.HTMLAttributes<HTMLDivElement> {
   children?: React.ReactNode;
@@ -25,7 +25,7 @@ export function OrbitingCircles({
 }: OrbitingCirclesProps) {
   const calculatedDuration = duration / speed;
   return (
-    <>
+    <Fragment>
       {path && (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -64,6 +64,6 @@ export function OrbitingCircles({
           </div>
         );
       })}
-    </>
+    </Fragment>
   );
 }

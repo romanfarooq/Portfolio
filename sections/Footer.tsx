@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { socials } from "@/constants/data";
 
-export default function Footer() {
+export function Footer() {
   return (
     <footer className="w-full border-t border-white/10 bg-transparent">
       <div className="h-0.5 w-full bg-gradient-to-r from-transparent via-neutral-700 to-transparent" />

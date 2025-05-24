@@ -18,7 +18,7 @@ interface AlertState extends AlertMessage {
   show: boolean;
 }
 
-export default function Contact() {
+export function Contact() {
   const [alert, setAlert] = useState<AlertState>({
     show: false,
     type: "success",
@@ -84,7 +84,10 @@ export default function Contact() {
       id="contact"
       className="relative mt-20 flex min-h-screen items-center px-5 sm:px-10 md:mt-30 lg:px-15"
     >
-      <Particles className="absolute inset-0 -z-50" quantity={200} />
+      <Particles
+        className="absolute inset-0 left-1/2 -z-50 w-screen -translate-x-1/2"
+        quantity={200}
+      />
       <AnimatePresence>
         {alert.show && (
           <Alert

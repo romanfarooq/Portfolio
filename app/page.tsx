@@ -1,21 +1,24 @@
-import Navbar from "@/sections/Navbar";
-import Hero from "@/sections/Hero";
-import About from "@/sections/About";
-import Projects from "@/sections/Projects";
-import Testimonial from "@/sections/Testimonial";
-import Contact from "@/sections/Contact";
-import Footer from "@/sections/Footer";
+import { Fragment } from "react";
+import { Hero } from "@/sections/Hero";
+import { About } from "@/sections/About";
+import { Navbar } from "@/sections/Navbar";
+import { Footer } from "@/sections/Footer";
+import { Contact } from "@/sections/Contact";
+import { Projects } from "@/sections/Projects";
+import { Testimonial } from "@/sections/Testimonial";
 
 export default function Home() {
   return (
-    <div className="container mx-auto max-w-7xl">
+    <Fragment>
       <Navbar />
-      <Hero />
-      <About />
-      <Projects />
-      <Testimonial />
-      <Contact />
+      <main className="container mx-auto max-w-7xl">
+        <Hero />
+        <About />
+        <Projects />
+        <Testimonial />
+        <Contact />
+      </main>
       <Footer />
-    </div>
+    </Fragment>
   );
 }

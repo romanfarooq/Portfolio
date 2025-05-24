@@ -6,7 +6,7 @@ import { Globe } from "@/components/Globe";
 import { Frameworks } from "@/components/Frameworks";
 import { CopyEmailButton } from "@/components/CopyEmailButton";
 
-export default function About() {
+export function About() {
   return (
     <section
       id="about"
