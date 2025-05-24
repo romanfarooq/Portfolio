@@ -4,32 +4,32 @@ import { cn, hexToRgb, remapValue } from "@/lib/utils";
 interface Circle {
   x: number;
   y: number;
-  translateX: number;
-  translateY: number;
-  size: number;
-  alpha: number;
-  targetAlpha: number;
   dx: number;
   dy: number;
+  size: number;
+  alpha: number;
   magnetism: number;
+  translateX: number;
+  translateY: number;
+  targetAlpha: number;
 }
 
 interface ParticlesProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
-  quantity?: number;
-  size?: number;
-  color?: string;
   vx?: number;
   vy?: number;
+  size?: number;
+  quantity?: number;
+  color?: string;
 }
 
 export function Particles({
-  className = "",
-  quantity = 100,
-  size = 0.4,
-  color = "#ffffff",
+  className,
   vx = 0,
   vy = 0,
+  size = 0.4,
+  quantity = 100,
+  color = "#ffffff",
   ...props
 }: ParticlesProps) {
   const rgb = hexToRgb(color);
@@ -185,8 +185,8 @@ export function Particles({
   return (
     <div
       ref={canvasContainerRef}
-      aria-hidden="true"
       className={cn("pointer-events-none", className)}
+      aria-hidden="true"
       {...props}
     >
       <canvas ref={canvasRef} className="size-full" />

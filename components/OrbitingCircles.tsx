@@ -2,26 +2,25 @@ import { cn } from "@/lib/utils";
 import { Children } from "react";
 
 interface OrbitingCirclesProps extends React.HTMLAttributes<HTMLDivElement> {
-  className?: string;
   children?: React.ReactNode;
+  className?: string;
   reverse?: boolean;
-  duration?: number;
-  delay?: number;
-  radius?: number;
   path?: boolean;
-  iconSize?: number;
   speed?: number;
+  radius?: number;
+  duration?: number;
+  iconSize?: number;
 }
 
 export function OrbitingCircles({
-  className,
   children,
+  className,
   reverse,
-  duration = 20,
-  radius = 160,
   path = true,
-  iconSize = 30,
   speed = 1,
+  radius = 160,
+  duration = 20,
+  iconSize = 30,
   ...props
 }: OrbitingCirclesProps) {
   const calculatedDuration = duration / speed;
