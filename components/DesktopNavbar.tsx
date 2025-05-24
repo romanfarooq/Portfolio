@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function DesktopNavbar() {
   return (
-    <nav className="flex items-center justify-between">
+    <nav className="hidden items-center justify-between sm:flex">
       <Link
         href="/"
         className="text-xl font-bold text-neutral-300 transition-colors hover:text-white"
