@@ -53,7 +53,7 @@ export function About() {
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/20 p-2 md:h-16 md:w-16">
                 <Image
                   src="/assets/logos/meta.svg"
-                  alt="Meta Logo"
+                  alt="meta icon"
                   width={40}
                   height={40}
                 />

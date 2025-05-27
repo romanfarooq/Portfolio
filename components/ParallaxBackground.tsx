@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { motion, useScroll, useSpring, useTransform } from "motion/react";
 
 export function ParallaxBackground() {
-  const backgroundRef = useRef<HTMLElement>(null);
+  const backgroundRef = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress } = useScroll({
     target: backgroundRef,
@@ -20,8 +20,8 @@ export function ParallaxBackground() {
   const mountain1Y = useTransform(smoothProgress, [0, 0.5], ["0%", "5%"]);
 
   return (
-    <section ref={backgroundRef} className="absolute inset-0 bg-black/40">
-      <div className="relative h-screen overflow-y-hidden will-change-transform">
+    <div ref={backgroundRef} className="absolute inset-0 bg-black/40">
+      <figure className="relative h-screen overflow-y-hidden will-change-transform">
         {/* Background Layer - Sky */}
         <div className="absolute inset-0 -z-50 h-screen w-full bg-[url('/assets/images/sky.webp')] bg-cover bg-bottom" />
 
@@ -48,7 +48,7 @@ export function ParallaxBackground() {
           className="absolute inset-0 -z-10 bg-[url('/assets/images/mountain-1.webp')] bg-cover bg-bottom"
           style={{ y: mountain1Y }}
         />
-      </div>
-    </section>
+      </figure>
+    </div>
   );
 }
