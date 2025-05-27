@@ -2,8 +2,8 @@
 
 import { Suspense } from "react";
 import { Float } from "@react-three/drei";
-import { useMediaQuery } from "react-responsive";
 import { Canvas } from "@react-three/fiber";
+import { useMediaQuery } from "react-responsive";
 import { Loader } from "@/components/Loader";
 import { HeroText } from "@/components/HeroText";
 import { Astronaut } from "@/components/Astronaut";
