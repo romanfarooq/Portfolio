@@ -11,8 +11,8 @@ const variants = {
 
 export function HeroText() {
   return (
-    <div className="z-10 mt-20 rounded-3xl bg-clip-text text-center md:mt-36 md:text-left">
-      <div className="relative flex h-[80vh] flex-col gap-5 px-5 sm:px-10 md:h-auto md:px-5 lg:px-15">
+    <div className="z-10 flex h-screen w-full flex-col justify-between bg-clip-text pt-20 text-center md:justify-center md:text-left">
+      <div className="flex flex-col gap-5 px-5 sm:px-10 md:px-5 lg:px-15">
         <motion.h1
           className="text-4xl font-medium md:text-3xl"
           variants={variants}
@@ -57,25 +57,25 @@ export function HeroText() {
             Web Solutions
           </motion.p>
         </div>
-        <div className="absolute bottom-5 left-0 flex w-full justify-center md:static md:justify-start">
-          <motion.a
-            href="/documents/Roman-Farooq-CV.pdf"
-            download
-            variants={variants}
-            initial="hidden"
-            animate="visible"
-            transition={{ delay: 2 }}
-            className="flex items-center gap-2 rounded-full border border-black/10 bg-white px-7 py-2 text-xl outline-hidden transition hover:scale-110 focus-visible:scale-110 active:scale-105 md:bg-white/10 md:text-xl dark:bg-white/10"
-          >
-            Download CV
-            <Image
-              src="/assets/icons/arrow-down.svg"
-              alt="Download Icon"
-              width={24}
-              height={24}
-            />
-          </motion.a>
-        </div>
+      </div>
+      <div className="flex w-full justify-center px-5 pb-20 sm:px-10 md:mt-8 md:justify-start md:px-5 md:pb-0 lg:px-15">
+        <motion.a
+          href="/documents/Roman-Farooq-CV.pdf"
+          download
+          variants={variants}
+          initial="hidden"
+          animate="visible"
+          transition={{ delay: 2 }}
+          className="flex items-center gap-2 rounded-full border border-black/10 bg-white px-7 py-2 text-xl outline-hidden transition hover:scale-110 focus-visible:scale-110 active:scale-105 md:bg-white/10 md:text-xl dark:bg-white/10"
+        >
+          Download CV
+          <Image
+            src="/assets/icons/arrow-down.svg"
+            alt="Download Icon"
+            width={24}
+            height={24}
+          />
+        </motion.a>
       </div>
     </div>
   );
