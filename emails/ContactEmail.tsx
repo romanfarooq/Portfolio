@@ -19,7 +19,6 @@ interface ContactEmailProps {
 }
 
 export function ContactEmail({ name, email, message }: ContactEmailProps) {
-  const currentYear = new Date().getFullYear();
   return (
     <Html>
       <Head />
@@ -76,8 +75,8 @@ export function ContactEmail({ name, email, message }: ContactEmailProps) {
 
             <Section className="text-center">
               <Text className="text-xs text-gray-500">
-                © {currentYear} | This email was automatically generated from
-                your portfolio contact form.
+                &copy; {new Date().getFullYear()} | This email was automatically
+                generated from your portfolio contact form.
               </Text>
               <Text className="mt-1 text-xs text-gray-400">
                 Please do not reply directly to this email.
