@@ -66,7 +66,7 @@ export function HeroText() {
           initial="hidden"
           animate="visible"
           transition={{ delay: 2 }}
-          className="flex items-center gap-2 rounded-full border border-black/10 bg-white px-7 py-2 text-xl outline-hidden transition hover:scale-110 focus-visible:scale-110 active:scale-105 md:bg-white/10 md:text-xl dark:bg-white/10"
+          className="flex items-center gap-2 rounded-full border border-black/10 bg-white/10 px-7 py-2 text-xl outline-hidden transition hover:scale-110 focus-visible:scale-110 active:scale-105 md:text-xl"
         >
           Download CV
           <Image
