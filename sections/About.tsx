@@ -1,7 +1,4 @@
-"use client";
-
 import Image from "next/image";
-import Tilt from "react-parallax-tilt";
 import { Globe } from "@/components/Globe";
 import { Frameworks } from "@/components/Frameworks";
 import { CopyEmailButton } from "@/components/CopyEmailButton";
@@ -14,14 +11,7 @@ export function About() {
     >
       <h2 className="text-3xl font-bold md:text-4xl">About Me</h2>
       <div className="mt-12 grid grid-cols-1 gap-4 md:auto-rows-fr md:grid-cols-6">
-        <Tilt
-          tiltMaxAngleX={5}
-          tiltMaxAngleY={5}
-          glareEnable={true}
-          glareMaxOpacity={0.2}
-          glarePosition="all"
-          className="from-storm to-indigo relative row-span-2 flex h-60 items-end overflow-hidden rounded-2xl bg-gradient-to-b p-6 duration-200 md:col-span-3 md:h-full"
-        >
+        <header className="from-storm to-indigo relative row-span-2 flex h-60 items-end overflow-hidden rounded-2xl bg-gradient-to-b p-6 duration-200 hover:-translate-y-1 md:col-span-3 md:h-full">
           <Image
             src="/assets/images/coding-pov.webp"
             alt="Coding POV"
@@ -39,15 +29,8 @@ export function About() {
               scalable server solutions with modern tools and best practices.
             </p>
           </div>
-        </Tilt>
-        <Tilt
-          tiltMaxAngleX={5}
-          tiltMaxAngleY={5}
-          glareEnable={true}
-          glareMaxOpacity={0.2}
-          glarePosition="all"
-          className="from-royal to-lavender row-span-1 h-full overflow-hidden rounded-2xl bg-gradient-to-b px-6 py-4 duration-200 md:col-span-3 md:p-6"
-        >
+        </header>
+        <article className="from-royal to-lavender row-span-1 h-full overflow-hidden rounded-2xl bg-gradient-to-b px-6 py-4 duration-200 hover:-translate-y-1 md:col-span-3 md:p-6">
           <div className="flex h-full flex-col items-center justify-center gap-4">
             <div className="flex items-center gap-4">
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/20 p-2 md:h-16 md:w-16">
@@ -100,15 +83,8 @@ export function About() {
               🎓 View Certificate
             </a>
           </div>
-        </Tilt>
-        <Tilt
-          tiltMaxAngleX={5}
-          tiltMaxAngleY={5}
-          glareEnable={true}
-          glareMaxOpacity={0.2}
-          glarePosition="all"
-          className="from-charcoal via-jet to-charcoal relative row-span-1 h-60 overflow-hidden rounded-2xl bg-gradient-to-tl p-6 duration-200 md:col-span-3 md:h-full"
-        >
+        </article>
+        <aside className="from-charcoal via-jet to-charcoal relative row-span-1 h-60 overflow-hidden rounded-2xl bg-gradient-to-tl p-6 duration-200 hover:-translate-y-1 md:col-span-3 md:h-full">
           <div className="z-10 w-1/2">
             <p className="mt-2 mb-2 text-xl">Time Zone</p>
             <p className="text-sm text-neutral-200 md:text-base">
@@ -118,30 +94,16 @@ export function About() {
           <figure className="absolute top-1/12 left-1/4 md:left-1/3">
             <Globe />
           </figure>
-        </Tilt>
-        <Tilt
-          tiltMaxAngleX={5}
-          tiltMaxAngleY={5}
-          glareEnable={true}
-          glareMaxOpacity={0.2}
-          glarePosition="all"
-          className="from-orange to-coral relative row-span-1 h-60 overflow-hidden rounded-2xl bg-gradient-to-b p-6 duration-200 md:col-span-2 md:h-full"
-        >
+        </aside>
+        <aside className="from-orange to-coral relative row-span-1 h-60 overflow-hidden rounded-2xl bg-gradient-to-b p-6 duration-200 hover:-translate-y-1 md:col-span-2 md:h-full">
           <div className="flex size-full flex-col items-center justify-center gap-4">
             <p className="mt-2 mb-2 text-center text-xl">
               Do you want to start a project together?
             </p>
             <CopyEmailButton />
           </div>
-        </Tilt>
-        <Tilt
-          tiltMaxAngleX={5}
-          tiltMaxAngleY={5}
-          glareEnable={true}
-          glareMaxOpacity={0.2}
-          glarePosition="all"
-          className="relative row-span-1 h-60 overflow-hidden rounded-2xl bg-gradient-to-b from-emerald-950 to-emerald-900 px-6 py-2 duration-200 sm:p-6 md:col-span-4 md:h-full"
-        >
+        </aside>
+        <article className="relative row-span-1 h-60 overflow-hidden rounded-2xl bg-gradient-to-b from-emerald-950 to-emerald-900 px-6 py-2 duration-200 hover:-translate-y-1 sm:p-6 md:col-span-4 md:h-full">
           <div className="z-10 w-1/2">
             <p className="mb-2 text-base sm:text-xl">Tech Stack</p>
             <p className="text-xs text-neutral-200 md:text-sm lg:text-base">
@@ -154,7 +116,7 @@ export function About() {
           <div className="absolute inset-y-0 start-7/12 h-full w-full sm:start-1/2 md:inset-y-9 md:scale-125">
             <Frameworks />
           </div>
-        </Tilt>
+        </article>
       </div>
     </section>
   );
