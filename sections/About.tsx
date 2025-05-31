@@ -22,7 +22,7 @@ export function About() {
             className="absolute -top-4 -right-20 scale-[1.75] md:inset-y-10 md:left-50 md:scale-[3] lg:scale-[2.5]"
           />
           <div className="z-10">
-            <p className="mt-2 mb-2 text-xl">Hi, I'm Roman Farooq</p>
+            <h3 className="mt-2 mb-2 text-xl">Hi, I'm Roman Farooq</h3>
             <p className="text-sm text-neutral-200 md:text-base">
               A dedicated Full-Stack Developer passionate about crafting
               intuitive user experiences on the client side and building
@@ -86,7 +86,7 @@ export function About() {
         </article>
         <aside className="from-charcoal via-jet to-charcoal relative row-span-1 h-60 overflow-hidden rounded-2xl bg-gradient-to-tl p-6 duration-200 hover:-translate-y-1 md:col-span-3 md:h-full">
           <div className="z-10 w-1/2">
-            <p className="mt-2 mb-2 text-xl">Time Zone</p>
+            <h3 className="mt-2 mb-2 text-xl">Time Zone</h3>
             <p className="text-sm text-neutral-200 md:text-base">
               I'm based in Lahore, Pakistan, and open to remote work worldwide
             </p>
@@ -97,15 +97,15 @@ export function About() {
         </aside>
         <aside className="from-orange to-coral relative row-span-1 h-60 overflow-hidden rounded-2xl bg-gradient-to-b p-6 duration-200 hover:-translate-y-1 md:col-span-2 md:h-full">
           <div className="flex size-full flex-col items-center justify-center gap-4">
-            <p className="mt-2 mb-2 text-center text-xl">
+            <h3 className="mt-2 mb-2 text-center text-xl">
               Do you want to start a project together?
-            </p>
+            </h3>
             <CopyEmailButton />
           </div>
         </aside>
         <article className="relative row-span-1 h-60 overflow-hidden rounded-2xl bg-gradient-to-b from-emerald-950 to-emerald-900 px-6 py-2 duration-200 hover:-translate-y-1 sm:p-6 md:col-span-4 md:h-full">
           <div className="z-10 w-1/2">
-            <p className="mb-2 text-base sm:text-xl">Tech Stack</p>
+            <h3 className="mb-2 text-base sm:text-xl">Tech Stack</h3>
             <p className="text-xs text-neutral-200 md:text-sm lg:text-base">
               Proficient in TypeScript, React, Next.js, Node.js, and Express.js.
               Skilled in database management (MongoDB, PostgreSQL) and CSS
