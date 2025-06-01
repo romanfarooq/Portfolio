@@ -56,8 +56,8 @@ export function Astronaut(props: ThreeElements["group"]) {
                   key={name}
                   name={name}
                   geometry={(nodes[name] as SkinnedMesh).geometry}
-                  material={materials["AstronautFallingTexture.png"]}
                   skeleton={(nodes[name] as SkinnedMesh).skeleton}
+                  material={materials["AstronautFallingTexture.png"]}
                 />
               ))}
             </group>
