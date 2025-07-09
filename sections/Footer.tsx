@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { socials } from "@/constants/data";
 
 export function Footer() {
@@ -17,21 +16,20 @@ export function Footer() {
           </Link>
         </nav>
         <nav className="order-3 flex gap-3 sm:order-2">
-          {socials.map((social, index) => (
-            <a
-              key={index}
-              href={social.href}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src={social.icon}
-                alt={`${social.name} icon`}
-                width={20}
-                height={20}
-              />
-            </a>
-          ))}
+          {socials.map((social, index) => {
+            const Icon = social.icon;
+            return (
+              <a
+                key={index}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={social.name}
+              >
+                <Icon width={20} height={20} />
+              </a>
+            );
+          })}
         </nav>
         <p className="order-1 sm:order-3">
           &copy; {new Date().getFullYear()} Roman. All rights reserved.

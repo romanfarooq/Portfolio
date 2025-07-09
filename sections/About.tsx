@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Meta } from "@/components/logos";
 import { Globe } from "@/components/Globe";
 import { Frameworks } from "@/components/Frameworks";
 import { CopyEmailButton } from "@/components/CopyEmailButton";
@@ -34,12 +35,7 @@ export function About() {
           <div className="flex h-full flex-col items-center justify-center gap-4">
             <div className="flex items-center gap-4">
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/20 p-2 md:h-16 md:w-16">
-                <Image
-                  src="/assets/logos/meta.svg"
-                  alt="meta icon"
-                  width={40}
-                  height={40}
-                />
+                <Meta width={40} height={40} />
               </div>
               <div className="flex flex-col">
                 <h3 className="text-base font-bold text-white md:text-xl">

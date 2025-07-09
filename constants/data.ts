@@ -1,21 +1,24 @@
+import * as Logos from "@/components/logos";
+import * as Icons from "@/components/socials";
+
 export interface Tag {
   name: string;
-  path: string;
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
 }
 
 export interface Project {
   title: string;
-  description: string;
-  subDescription: string[];
   href: string;
   image: string;
   tags: Tag[];
+  description: string;
+  subDescription: string[];
 }
 
 export interface Social {
   name: string;
   href: string;
-  icon: string;
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
 }
 
 export interface Experience {
@@ -27,12 +30,40 @@ export interface Experience {
 
 export interface Review {
   name: string;
-  username: string;
-  body: string;
   img: string;
+  body: string;
+  username: string;
+}
+
+export interface Skill {
+  name: string;
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
 }
 
 export const projects = [
+  {
+    title: "Dynamic Menu",
+    description:
+      "A mobile app that uses AI (GPT-4o) to generate custom recipes from user diets. Built with React Native (Expo), TypeScript, Supabase, and Express. Features freemium access, paywalled premium tools, and a modular, responsive UI.",
+    subDescription: [
+      "Built with React Native (Expo) and TypeScript for cross-platform mobile development.",
+      "Supabase used for authentication and backend services.",
+      "Integrated GPT-4o API for AI-powered diet analysis and recipe generation.",
+      "Freemium model with paywalled premium features and modular architecture.",
+      "Responsive UI, simple text input, and future-ready for weekly menus/history.",
+    ],
+    href: "",
+    image: "/assets/projects/dynamic-menu.webp",
+    tags: [
+      { name: "React", icon: Logos.React },
+      { name: "Expo", icon: Logos.Expo },
+      { name: "TypeScript", icon: Logos.TypeScript },
+      { name: "React Query", icon: Logos.TanStackQuery },
+      { name: "Express.js", icon: Logos.ExpressJS },
+      { name: "Stripe", icon: Logos.Stripe },
+      { name: "GPT-4o", icon: Logos.ChatGPT },
+    ],
+  },
   {
     title: "Threado Studio",
     description:
@@ -47,10 +78,10 @@ export const projects = [
     href: "",
     image: "/assets/projects/threado.webp",
     tags: [
-      { name: "Next.js", path: "/assets/logos/nextjs.svg" },
-      { name: "Three.js", path: "/assets/logos/threejs.svg" },
-      { name: "TailwindCSS", path: "/assets/logos/tailwindcss.svg" },
-      { name: "Zustand", path: "/assets/logos/zustand.svg" },
+      { name: "Next.js", icon: Logos.NextJS },
+      { name: "Three.js", icon: Logos.ThreeJS },
+      { name: "TailwindCSS", icon: Logos.TailwindCSS },
+      { name: "Zustand", icon: Logos.Zustand },
     ],
   },
   {
@@ -66,11 +97,11 @@ export const projects = [
     href: "",
     image: "/assets/projects/trend-tale.webp",
     tags: [
-      { name: "React", path: "/assets/logos/react.svg" },
-      { name: "FastAPI", path: "/assets/logos/fastapi.svg" },
-      { name: "React Native", path: "/assets/logos/expo.svg" },
-      { name: "TailwindCSS", path: "/assets/logos/tailwindcss.svg" },
-      { name: "GPT-4", path: "/assets/logos/chatgpt.svg" },
+      { name: "React", icon: Logos.React },
+      { name: "FastAPI", icon: Logos.FastAPI },
+      { name: "React Native", icon: Logos.Expo },
+      { name: "TailwindCSS", icon: Logos.TailwindCSS },
+      { name: "GPT-4", icon: Logos.ChatGPT },
     ],
   },
   {
@@ -85,9 +116,9 @@ export const projects = [
     href: "",
     image: "/assets/projects/ease-gpt.webp",
     tags: [
-      { name: "JavaScript", path: "/assets/logos/javascript.svg" },
-      { name: "Chrome Extension", path: "/assets/logos/chrome.svg" },
-      { name: "Google Analytics", path: "/assets/logos/googleanalytics.svg" },
+      { name: "JavaScript", icon: Logos.JavaScript },
+      { name: "Chrome Extension", icon: Logos.Chrome },
+      { name: "Google Analytics", icon: Logos.GoogleAnalytics },
     ],
   },
   {
@@ -102,11 +133,11 @@ export const projects = [
     href: "",
     image: "/assets/projects/sweep-stakes.webp",
     tags: [
-      { name: "React", path: "/assets/logos/react.svg" },
-      { name: "TanStack Query", path: "/assets/logos/tanstackquery.svg" },
-      { name: "TailwindCSS", path: "/assets/logos/tailwindcss.svg" },
-      { name: "Stripe", path: "/assets/logos/stripe.svg" },
-      { name: "Firebase", path: "/assets/logos/firebase.svg" },
+      { name: "React", icon: Logos.React },
+      { name: "TanStack Query", icon: Logos.TanStackQuery },
+      { name: "TailwindCSS", icon: Logos.TailwindCSS },
+      { name: "Stripe", icon: Logos.Stripe },
+      { name: "Firebase", icon: Logos.Firebase },
     ],
   },
   {
@@ -121,10 +152,10 @@ export const projects = [
     href: "",
     image: "/assets/projects/sweep-stakes-admin.webp",
     tags: [
-      { name: "Django", path: "/assets/logos/django.svg" },
-      { name: "React", path: "/assets/logos/react.svg" },
-      { name: "Chart.js", path: "/assets/logos/chartjs.svg" },
-      { name: "Firebase", path: "/assets/logos/firebase.svg" },
+      { name: "Django", icon: Logos.Django },
+      { name: "React", icon: Logos.React },
+      { name: "Chart.js", icon: Logos.Chartjs },
+      { name: "Firebase", icon: Logos.Firebase },
     ],
   },
   {
@@ -139,10 +170,10 @@ export const projects = [
     href: "",
     image: "/assets/projects/auto-hub360.webp",
     tags: [
-      { name: "Next.js", path: "/assets/logos/nextjs.svg" },
-      { name: "Socket.io", path: "/assets/logos/socketio.svg" },
-      { name: "Puppeteer", path: "/assets/logos/puppeteer.svg" },
-      { name: "Cheerio", path: "/assets/logos/cheerio.svg" },
+      { name: "Next.js", icon: Logos.NextJS },
+      { name: "Socket.io", icon: Logos.SocketIO },
+      { name: "Puppeteer", icon: Logos.Puppeteer },
+      { name: "Cheerio", icon: Logos.Cheerio },
     ],
   },
   {
@@ -157,10 +188,10 @@ export const projects = [
     href: "",
     image: "/assets/projects/saaf.webp",
     tags: [
-      { name: "React", path: "/assets/logos/react.svg" },
-      { name: "Express.js", path: "/assets/logos/expressjs.svg" },
-      { name: "MongoDB", path: "/assets/logos/mongodb.svg" },
-      { name: "Stripe", path: "/assets/logos/stripe.svg" },
+      { name: "React", icon: Logos.React },
+      { name: "Express.js", icon: Logos.ExpressJS },
+      { name: "MongoDB", icon: Logos.MongoDB },
+      { name: "Stripe", icon: Logos.Stripe },
     ],
   },
   {
@@ -176,10 +207,10 @@ export const projects = [
     href: "",
     image: "/assets/projects/black-pearls.webp",
     tags: [
-      { name: "React", path: "/assets/logos/react.svg" },
-      { name: "TailwindCSS", path: "/assets/logos/tailwindcss.svg" },
-      { name: "i18next", path: "/assets/logos/i18next.svg" },
-      { name: "Framer Motion", path: "/assets/logos/motion.svg" },
+      { name: "React", icon: Logos.React },
+      { name: "TailwindCSS", icon: Logos.TailwindCSS },
+      { name: "i18next", icon: Logos.I18next },
+      { name: "Framer Motion", icon: Logos.Motion },
     ],
   },
   {
@@ -194,10 +225,10 @@ export const projects = [
     href: "",
     image: "/assets/projects/mailer.webp",
     tags: [
-      { name: "Next.js", path: "/assets/logos/nextjs.svg" },
-      { name: "Prisma", path: "/assets/logos/prisma.svg" },
-      { name: "PostgreSQL", path: "/assets/logos/postgresql.svg" },
-      { name: "React Quill", path: "/assets/logos/reactquill.svg" },
+      { name: "Next.js", icon: Logos.NextJS },
+      { name: "Prisma", icon: Logos.Prisma },
+      { name: "PostgreSQL", icon: Logos.PostgreSQL },
+      { name: "React Quill", icon: Logos.ReactQuill },
     ],
   },
   {
@@ -213,10 +244,10 @@ export const projects = [
     href: "",
     image: "/assets/projects/car-care-pro.webp",
     tags: [
-      { name: "Flutter", path: "/assets/logos/flutter.svg" },
-      { name: "Firebase", path: "/assets/logos/firebase.svg" },
-      { name: "Google Maps", path: "/assets/logos/googlemaps.svg" },
-      { name: "Machine Learning", path: "/assets/logos/ai.svg" },
+      { name: "Flutter", icon: Logos.Flutter },
+      { name: "Firebase", icon: Logos.Firebase },
+      { name: "Google Maps", icon: Logos.GoogleMaps },
+      { name: "Machine Learning", icon: Logos.AI },
     ],
   },
 ];
@@ -225,17 +256,17 @@ export const socials = [
   {
     name: "GitHub",
     href: "https://github.com/romanfarooq",
-    icon: "/assets/socials/github.svg",
+    icon: Icons.Github,
   },
   {
-    name: "Linkedin",
+    name: "LinkedIn",
     href: "https://www.linkedin.com/in/roman-farooq",
-    icon: "/assets/socials/linkedIn.svg",
+    icon: Icons.LinkedIn,
   },
   {
     name: "Instagram",
     href: "https://www.instagram.com/roman_farooq",
-    icon: "/assets/socials/instagram.svg",
+    icon: Icons.Instagram,
   },
 ];
 
@@ -292,39 +323,39 @@ export const reviews = [
 ];
 
 export const skills = [
-  "html5",
-  "css3",
-  "cplusplus",
-  "git",
-  "github",
-  "stripe",
-  "expressjs",
-  "javascript",
-  "typescript",
-  "react",
-  "redux",
-  "tanstackquery",
-  "expo",
-  "vitejs",
-  "nextjs",
-  "nodejs",
-  "socketio",
-  "flutter",
-  "tailwindcss",
-  "bootstrap",
-  "threejs",
-  "material-ui",
-  "motion",
-  "chartjs",
-  "prisma",
-  "sql",
-  "sqlite",
-  "postgresql",
-  "mongodb",
-  "firebase",
-  "flask",
-  "fastapi",
-  "django",
-  "python",
-  "docker",
+  { name: "html5", icon: Logos.HTML5 },
+  { name: "css3", icon: Logos.CSS3 },
+  { name: "cplusplus", icon: Logos.CPlusPlus },
+  { name: "git", icon: Logos.Git },
+  { name: "github", icon: Logos.GitHub },
+  { name: "stripe", icon: Logos.Stripe },
+  { name: "expressjs", icon: Logos.ExpressJS },
+  { name: "javascript", icon: Logos.JavaScript },
+  { name: "typescript", icon: Logos.TypeScript },
+  { name: "react", icon: Logos.React },
+  { name: "redux", icon: Logos.Redux },
+  { name: "tanstackquery", icon: Logos.TanStackQuery },
+  { name: "expo", icon: Logos.Expo },
+  { name: "vitejs", icon: Logos.ViteJS },
+  { name: "nextjs", icon: Logos.NextJS },
+  { name: "nodejs", icon: Logos.NodeJS },
+  { name: "socketio", icon: Logos.SocketIO },
+  { name: "flutter", icon: Logos.Flutter },
+  { name: "tailwindcss", icon: Logos.TailwindCSS },
+  { name: "bootstrap", icon: Logos.Bootstrap },
+  { name: "threejs", icon: Logos.ThreeJS },
+  { name: "material-ui", icon: Logos.MaterialUI },
+  { name: "motion", icon: Logos.Motion },
+  { name: "chartjs", icon: Logos.Chartjs },
+  { name: "prisma", icon: Logos.Prisma },
+  { name: "sql", icon: Logos.SQL },
+  { name: "sqlite", icon: Logos.SQLite },
+  { name: "postgresql", icon: Logos.PostgreSQL },
+  { name: "mongodb", icon: Logos.MongoDB },
+  { name: "firebase", icon: Logos.Firebase },
+  { name: "flask", icon: Logos.Flask },
+  { name: "fastapi", icon: Logos.FastAPI },
+  { name: "django", icon: Logos.Django },
+  { name: "python", icon: Logos.Python },
+  { name: "docker", icon: Logos.Docker },
 ];

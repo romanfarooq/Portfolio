@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import { useState } from "react";
+import { Copy, CopyDone } from "./icons";
 import { motion, AnimatePresence } from "motion/react";
 
 const CONTACT_EMAIL = "theromanfarooq@gmail.com";
@@ -35,12 +35,7 @@ export function CopyEmailButton() {
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.1, ease: "easeInOut" }}
           >
-            <Image
-              src="/assets/icons/copy-done.svg"
-              alt="copy Icon"
-              width={24}
-              height={24}
-            />
+            <CopyDone width={24} height={24} />
             Email has Copied
           </motion.p>
         ) : (
@@ -52,12 +47,7 @@ export function CopyEmailButton() {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.1 }}
           >
-            <Image
-              src="/assets/icons/copy.svg"
-              alt="copy icon"
-              width={24}
-              height={24}
-            />
+            <Copy width={24} height={24} />
             Copy Email Address
           </motion.p>
         )}

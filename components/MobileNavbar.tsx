@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { useState } from "react";
+import { Close, Menu } from "./icons";
 import { motion, AnimatePresence } from "motion/react";
 
 export function MobileNavbar() {
@@ -36,19 +36,9 @@ export function MobileNavbar() {
           className="cursor-pointer text-neutral-300 hover:text-white focus:outline-none"
         >
           {isOpen ? (
-            <Image
-              src="/assets/icons/close.svg"
-              alt="close menu icon"
-              width={24}
-              height={24}
-            />
+            <Close width={24} height={24} />
           ) : (
-            <Image
-              src="/assets/icons/menu.svg"
-              alt="hamburger menu icon"
-              width={24}
-              height={24}
-            />
+            <Menu width={24} height={24} />
           )}
         </button>
       </div>
