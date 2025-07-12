@@ -15,7 +15,7 @@ export async function sendEmail(formData: FormData) {
     if (!result.success) {
       return {
         success: false,
-        error: result.error.errors.map((error) => error.message).join(", "),
+        error: result.error.issues.map((error) => error.message).join(", "),
       };
     }
 

@@ -1,5 +1,5 @@
 import * as Logos from "@/components/logos";
-import * as Icons from "@/components/socials";
+import * as Socials from "@/components/socials";
 
 export interface Tag {
   name: string;
@@ -256,17 +256,17 @@ export const socials = [
   {
     name: "GitHub",
     href: "https://github.com/romanfarooq",
-    icon: Icons.Github,
+    icon: Socials.Github,
   },
   {
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/roman-farooq",
-    icon: Icons.LinkedIn,
+    icon: Socials.LinkedIn,
   },
   {
     name: "Instagram",
     href: "https://www.instagram.com/roman_farooq",
-    icon: Icons.Instagram,
+    icon: Socials.Instagram,
   },
 ];
 
