@@ -14,7 +14,7 @@ export function HeroText() {
     <div className="z-10 flex h-screen w-full flex-col justify-between bg-clip-text pt-20 text-center md:justify-center md:text-left">
       <div className="flex flex-col gap-5 px-5 sm:px-10 md:px-5 lg:px-15">
         <motion.h1
-          className="text-4xl font-medium md:text-3xl"
+          className="text-4xl font-medium text-white md:text-3xl"
           variants={variants}
           initial="hidden"
           animate="visible"
@@ -24,7 +24,7 @@ export function HeroText() {
         </motion.h1>
         <div className="flex w-full flex-col items-center md:items-start">
           <motion.p
-            className="text-5xl font-medium text-neutral-300 md:text-5xl md:font-medium"
+            className="text-5xl font-medium text-neutral-100 md:text-5xl md:font-medium"
             variants={variants}
             initial="hidden"
             animate="visible"
@@ -48,7 +48,7 @@ export function HeroText() {
             />
           </motion.div>
           <motion.p
-            className="pt-3 text-4xl font-black text-neutral-300 md:text-4xl md:font-medium"
+            className="pt-3 text-4xl font-black text-neutral-100 md:text-4xl md:font-medium"
             variants={variants}
             initial="hidden"
             animate="visible"
