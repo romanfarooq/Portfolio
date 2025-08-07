@@ -2,7 +2,7 @@ import { SVGProps } from "react";
 
 export const Flask = (props: SVGProps<SVGSVGElement>) => (
   <svg
-    fill="#000000"
+    fill="#ffffff"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
     width="800px"
