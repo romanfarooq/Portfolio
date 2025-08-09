@@ -1,8 +1,7 @@
 import { motion } from "motion/react";
 import { ArrowDown } from "./icons";
 import { FlipWords } from "@/components/FlipWords";
-
-const words = ["Secure", "Modern", "Scalable"];
+import { useTranslations } from "next-intl";
 
 const variants = {
   hidden: { opacity: 0, x: -50 },
@@ -10,6 +9,8 @@ const variants = {
 };
 
 export function HeroText() {
+  const t = useTranslations("hero");
+
   return (
     <div className="z-10 flex h-screen w-full flex-col justify-between bg-clip-text pt-20 text-center md:justify-center md:text-left">
       <div className="flex flex-col gap-5 px-5 sm:px-10 md:px-5 lg:px-15">
@@ -20,7 +21,7 @@ export function HeroText() {
           animate="visible"
           transition={{ delay: 1 }}
         >
-          Hi, I&apos;m Roman
+          {t("greeting")}
         </motion.h1>
         <div className="flex w-full flex-col items-center md:items-start">
           <motion.p
@@ -31,10 +32,10 @@ export function HeroText() {
             transition={{ delay: 1.2 }}
           >
             <span className="hidden md:inline">
-              A Developer
-              <br /> Dedicated to Crafting
+              {t("developerText")}
+              <br /> {t("dedicatedText")}
             </span>
-            <span className="md:hidden">Building</span>
+            <span className="md:hidden">{t("buildingText")}</span>
           </motion.p>
           <motion.div
             variants={variants}
@@ -43,7 +44,7 @@ export function HeroText() {
             transition={{ delay: 1.5 }}
           >
             <FlipWords
-              words={words}
+              words={t.raw("flipWords")}
               className="text-7xl font-bold text-white md:text-8xl md:font-black"
             />
           </motion.div>
@@ -54,7 +55,7 @@ export function HeroText() {
             animate="visible"
             transition={{ delay: 1.8 }}
           >
-            Web Solutions
+            {t("webSolutions")}
           </motion.p>
         </div>
       </div>
@@ -68,7 +69,7 @@ export function HeroText() {
           transition={{ delay: 2 }}
           className="flex items-center gap-2 rounded-full border border-black/10 bg-white/10 px-7 py-2 text-xl outline-hidden transition hover:scale-110 focus-visible:scale-110 active:scale-105 md:text-xl"
         >
-          Download CV
+          {t("downloadCV")}
           <ArrowDown width={24} height={24} />
         </motion.a>
       </div>

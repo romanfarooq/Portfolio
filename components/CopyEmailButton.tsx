@@ -3,10 +3,12 @@
 import { useState } from "react";
 import { Copy, CopyDone } from "./icons";
 import { motion, AnimatePresence } from "motion/react";
+import { useTranslations } from "next-intl";
 
-const CONTACT_EMAIL = "theromanfarooq@gmail.com";
+const CONTACT_EMAIL = "romanfarooq@outlook.com";
 
 export function CopyEmailButton() {
+  const t = useTranslations("copyEmail");
   const [copied, setCopied] = useState(false);
 
   const copyToClipboard = () => {
@@ -36,7 +38,7 @@ export function CopyEmailButton() {
             transition={{ duration: 0.1, ease: "easeInOut" }}
           >
             <CopyDone width={24} height={24} />
-            Email has Copied
+            {t("copiedMessage")}
           </motion.p>
         ) : (
           <motion.p
@@ -48,7 +50,7 @@ export function CopyEmailButton() {
             transition={{ duration: 0.1 }}
           >
             <Copy width={24} height={24} />
-            Copy Email Address
+            {t("copyButton")}
           </motion.p>
         )}
       </AnimatePresence>

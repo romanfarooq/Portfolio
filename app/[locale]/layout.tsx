@@ -1,7 +1,11 @@
 import type { Metadata, Viewport } from "next";
+import { routing } from "@/i18n/routing";
+import { notFound } from "next/navigation";
 import { Funnel_Display } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import "./globals.css";
+import { NextIntlClientProvider, hasLocale } from "next-intl";
+
+import "../globals.css";
 
 const funnelDisplay = Funnel_Display({
   variable: "--font-funnel-display",
@@ -54,7 +58,8 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://roman-farooq-portfolio.vercel.app/",
     languages: {
-      "en-US": "/",
+      "en-US": "/en",
+      "zh-CN": "/zh",
     },
   },
   icons: {
@@ -120,7 +125,7 @@ export const metadata: Metadata = {
     github: "https://github.com/romanfarooq",
     linkedin: "https://linkedin.com/in/roman-farooq",
     instagram: "https://instagram.com/roman_farooq",
-    email: "theromanfarooq@gmail.com",
+    email: "romanfarooq@outlook.com",
     location: "Lahore, Pakistan",
   },
 };
@@ -138,13 +143,21 @@ export const viewport: Viewport = {
   interactiveWidget: "resizes-visual",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }>) {
+  const { locale } = await params;
+
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
+
   return (
-    <html lang="en" className="!scroll-smooth">
+    <html lang={locale} className="!scroll-smooth">
       <head>
         <link
           rel="prefetch"
@@ -162,7 +175,7 @@ export default function RootLayout({
       <body
         className={`${funnelDisplay.variable} bg-primary overflow-x-hidden antialiased`}
       >
-        {children}
+        <NextIntlClientProvider>{children}</NextIntlClientProvider>
         <SpeedInsights />
       </body>
     </html>
