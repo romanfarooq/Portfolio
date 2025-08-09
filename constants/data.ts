@@ -8,7 +8,6 @@ export interface Tag {
 
 export interface Project {
   title: string;
-  href: string;
   image: string;
   tags: Tag[];
   description: string;
@@ -52,7 +51,6 @@ export const projects = [
       "Freemium model with paywalled premium features and modular architecture.",
       "Responsive UI, simple text input, and future-ready for weekly menus/history.",
     ],
-    href: "",
     image: "/assets/projects/dynamic-menu.webp",
     tags: [
       { name: "React", icon: Logos.React },
@@ -75,7 +73,6 @@ export const projects = [
       "Styled with Tailwind CSS, providing a modern and responsive UI.",
       "Included interactive dashboard with color pickers and text formatting tools for personalization.",
     ],
-    href: "",
     image: "/assets/projects/threado.webp",
     tags: [
       { name: "Next.js", icon: Logos.NextJS },
@@ -94,7 +91,6 @@ export const projects = [
       "Integrated advanced filters and authentication system.",
       "Styled with Tailwind CSS, used Axios and Framer Motion for UI animations.",
     ],
-    href: "",
     image: "/assets/projects/trend-tale.webp",
     tags: [
       { name: "React", icon: Logos.React },
@@ -113,7 +109,6 @@ export const projects = [
       "Integrated Google Analytics for usage tracking and QA.",
       "Added in-app purchases for premium features and context persistence.",
     ],
-    href: "",
     image: "/assets/projects/ease-gpt.webp",
     tags: [
       { name: "JavaScript", icon: Logos.JavaScript },
@@ -130,7 +125,6 @@ export const projects = [
       "React frontend using TanStack Query, Chart.js, and Firebase Auth.",
       "Integrated Stripe and Coinbase for fiat and crypto payments.",
     ],
-    href: "",
     image: "/assets/projects/sweep-stakes.webp",
     tags: [
       { name: "React", icon: Logos.React },
@@ -149,7 +143,6 @@ export const projects = [
       "Built real-time analytics dashboards using Chart.js.",
       "Integrated Firebase Auth for secure admin login.",
     ],
-    href: "",
     image: "/assets/projects/sweep-stakes-admin.webp",
     tags: [
       { name: "Django", icon: Logos.Django },
@@ -167,7 +160,6 @@ export const projects = [
       "Developed auction system with Socket.io for live bidding and notifications.",
       "Deployed on DigitalOcean Droplet with Nginx and SSL configuration.",
     ],
-    href: "",
     image: "/assets/projects/auto-hub360.webp",
     tags: [
       { name: "Next.js", icon: Logos.NextJS },
@@ -185,7 +177,6 @@ export const projects = [
       "Integrated Stripe, Google Pay, and Apple Pay for donations.",
       "Added Islamic calendar and prayer time calculations based on user location.",
     ],
-    href: "",
     image: "/assets/projects/saaf.webp",
     tags: [
       { name: "React", icon: Logos.React },
@@ -204,7 +195,6 @@ export const projects = [
       "Configured localization support in English and Arabic via i18next.",
       "Utilized React Icons for interactive elements and modern UI practices.",
     ],
-    href: "",
     image: "/assets/projects/black-pearls.webp",
     tags: [
       { name: "React", icon: Logos.React },
@@ -222,7 +212,6 @@ export const projects = [
       "Used React Quill for email editing and React Email for templating.",
       "Integrated two-factor authentication and Excel file import for recipient list.",
     ],
-    href: "",
     image: "/assets/projects/mailer.webp",
     tags: [
       { name: "Next.js", icon: Logos.NextJS },
@@ -241,7 +230,6 @@ export const projects = [
       "Integrated Google Maps to locate workshops and predict maintenance with ML.",
       "Designed a user-friendly dashboard for maintenance reminders.",
     ],
-    href: "",
     image: "/assets/projects/car-care-pro.webp",
     tags: [
       { name: "Flutter", icon: Logos.Flutter },
