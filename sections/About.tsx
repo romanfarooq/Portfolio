@@ -32,7 +32,7 @@ export async function About() {
             </p>
           </div>
         </header>
-        <article className="from-royal to-lavender row-span-1 h-full overflow-hidden rounded-2xl bg-gradient-to-b px-6 py-4 duration-200 hover:-translate-y-1 md:col-span-3 md:p-6">
+        <article className="from-royal to-lavender row-span-1 h-full min-h-60 overflow-hidden rounded-2xl bg-gradient-to-b px-6 py-4 duration-200 hover:-translate-y-1 md:col-span-3 md:p-6">
           <div className="flex h-full flex-col items-center justify-center gap-4">
             <div className="flex items-center gap-4">
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/20 p-2 md:h-16 md:w-16">
