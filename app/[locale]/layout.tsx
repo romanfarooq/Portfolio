@@ -41,16 +41,16 @@ export async function generateMetadata({ params }: PageParams) {
     },
     icons: {
       icon: "/favicon.ico",
-      shortcut: "/favicon.ico",
       apple: "/favicon.ico",
+      shortcut: "/favicon.ico",
     },
     openGraph: {
       type: "website",
       locale: locale === "en" ? "en_US" : "zh_CN",
       url: "https://roman-farooq-portfolio.vercel.app",
       title: t("openGraphTitle"),
-      description: t("openGraphDescription"),
       siteName: t("openGraphSiteName"),
+      description: t("openGraphDescription"),
       images: [
         {
           url: "/assets/images/roman.webp",

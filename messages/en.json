@@ -92,11 +92,11 @@
     "readMore": "Read More",
     "dynamicMenu": {
       "title": "Dynamic Menu",
-      "description": "An AI-powered mobile app that generates custom recipes from user diets using GPT-4o. Combines data parsing, nutritional analysis, and a scalable architecture for rapid iteration.",
+      "description": "An AI-powered mobile app that generates custom recipes from user diets using advanced natural language processing and nutritional analysis. Designed for scalability and rapid iteration.",
       "subDescription": [
         "Built with React Native (Expo) and TypeScript for cross-platform mobile development.",
         "Supabase used for authentication and backend services.",
-        "Integrated GPT-4o API for AI-powered diet analysis and personalized recipe generation.",
+        "Integrated AI models for intelligent diet analysis and personalized recipe generation.",
         "Freemium model with paywalled premium features and modular architecture.",
         "Responsive UI, simple text input, and future-ready for weekly menus/history."
       ]
@@ -114,21 +114,21 @@
     },
     "trendTale": {
       "title": "TrendTale",
-      "description": "A web/mobile platform that scrapes Google Trends, processes data, and uses GPT-4 to generate YouTube content — combining web scraping, data analytics, and AI content creation.",
+      "description": "A web/mobile platform that scrapes Google Trends, processes data, and uses AI to generate YouTube content — combining web scraping, data analytics, and intelligent content creation.",
       "subDescription": [
         "Built with FastAPI and React for the web, React Native for mobile.",
-        "Used OpenAI GPT-4 API for generating YouTube content and metadata.",
+        "Used AI models for generating YouTube content and metadata.",
         "Integrated advanced filters and authentication system.",
         "Styled with Tailwind CSS, used Axios and Framer Motion for UI animations."
       ]
     },
     "easeGPT": {
-      "title": "Ease-GPT Chrome Extension",
-      "description": "A productivity-focused Chrome extension that extends ChatGPT’s capabilities with smart features, data persistence, and premium AI-powered utilities.",
+      "title": "EaseGPT Chrome Extension",
+      "description": "A productivity-focused Chrome extension that enhances the ChatGPT experience with advanced features, smart search, and premium AI-powered tools.",
       "subDescription": [
-        "Implemented custom variables, smart search, and tabbed chat UI.",
-        "Integrated Google Analytics for usage tracking and QA.",
-        "Added in-app purchases for premium features and context persistence."
+        "Implemented custom variables, intelligent search, and tabbed chat UI for improved workflow.",
+        "Integrated Google Analytics for usage tracking and quality assurance.",
+        "Added in-app purchases for premium AI features and persistent context."
       ]
     },
     "sweepstakesBetting": {

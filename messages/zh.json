@@ -92,13 +92,13 @@
     "readMore": "阅读更多",
     "dynamicMenu": {
       "title": "动态菜单",
-      "description": "AI驱动的移动应用，利用GPT-4o解析用户饮食数据并进行营养分析，生成个性化食谱，具备可扩展架构。",
+      "description": "AI驱动的移动应用，采用高级自然语言处理与营养分析技术，根据用户饮食生成个性化食谱。架构设计支持快速迭代与弹性扩展。",
       "subDescription": [
-        "基于React Native(Expo)+TypeScript跨平台开发",
-        "Supabase实现身份验证与后端服务",
-        "集成GPT-4o API进行饮食分析与食谱生成",
-        "采用免费增值模式与模块化架构",
-        "响应式UI设计，支持未来菜单/历史功能扩展"
+        "使用 React Native (Expo) 和 TypeScript 构建跨平台移动应用",
+        "Supabase 实现身份验证与后端服务",
+        "集成AI模型进行智能饮食分析与个性化食谱生成",
+        "免费增值模式+模块化架构，高级功能需订阅",
+        "响应式界面与简洁输入，支持未来每周菜单/历史功能"
       ]
     },
     "threadoStudio": {
@@ -114,22 +114,21 @@
     },
     "trendTale": {
       "title": "TrendTale",
-      "description": "Web/移动平台，通过爬取Google趋势数据，利用GPT-4生成YouTube视频内容。",
+      "description": "Web/移动平台，抓取Google趋势数据并通过AI生成YouTube内容——整合数据爬取、分析与智慧型内容创作。",
       "subDescription": [
-        "Web端：FastAPI+React，移动端：React Native",
-        "OpenAI GPT-4 API生成视频内容与元数据",
-        "集成高级过滤器与认证系统",
-        "Tailwind CSS+Axios+Framer Motion实现动态UI"
+        "网页端：FastAPI+React，移动端：React Native",
+        "调用AI模型生成YouTube内容与元数据",
+        "集成高级筛选与身份验证系统",
+        "Tailwind CSS样式设计，Axios+Framer Motion实现UI动效"
       ]
     },
     "easeGPT": {
-      "title": "Ease-GPT Chrome扩展",
-      "description": "提升ChatGPT生产力的浏览器扩展，提供智能功能与数据持久化。",
+      "title": "EaseGPT Chrome扩展",
+      "description": "提升ChatGPT生产力的Chrome扩展，集成高级功能、智能搜索与增值版AI工具。",
       "subDescription": [
-        "实现自定义变量与智能搜索功能",
-        "标签式聊天界面设计",
-        "集成Google Analytics数据分析",
-        "应用内购买解锁高级功能"
+        "实现自定义变量、智能搜索与标签式聊天界面",
+        "集成Google Analytics用于使用追踪与质量保障",
+        "支持应用内购买获取增值功能与持久化上下文"
       ]
     },
     "sweepstakesBetting": {
