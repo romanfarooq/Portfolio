@@ -28,9 +28,15 @@ export function MobileNavbar() {
     }, 100);
   };
 
-  const handleLocaleChange = (newLocale: "en" | "zh") => {
+  const handleLocaleChange = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    newLocale: "en" | "zh",
+  ) => {
+    e.preventDefault();
     setIsOpen(false);
-    router.push("/", { locale: newLocale });
+    if (locale !== newLocale) {
+      router.push("/", { locale: newLocale });
+    }
   };
 
   return (
@@ -78,21 +84,21 @@ export function MobileNavbar() {
               <li className="flex w-full justify-center border-t border-white/10 pt-4">
                 <div className="flex items-center gap-3">
                   <a
-                    onClick={() => handleLocaleChange("en")}
+                    onClick={(e) => handleLocaleChange(e, "en")}
                     className={cn(
-                      "rounded px-3 py-2 text-sm transition-colors",
+                      "cursor-pointer rounded px-3 py-2 text-sm transition-colors",
                       locale === "en"
                         ? "bg-white/20 text-white"
                         : "text-neutral-300 hover:bg-white/10 hover:text-white",
                     )}
                   >
-                    English
+                    EN
                   </a>
                   <span className="text-neutral-500">|</span>
                   <a
-                    onClick={() => handleLocaleChange("zh")}
+                    onClick={(e) => handleLocaleChange(e, "zh")}
                     className={cn(
-                      "rounded px-3 py-2 text-sm transition-colors",
+                      "cursor-pointer rounded px-3 py-2 text-sm transition-colors",
                       locale === "zh"
                         ? "bg-white/20 text-white"
                         : "text-neutral-300 hover:bg-white/10 hover:text-white",

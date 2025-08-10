@@ -138,7 +138,7 @@ export default async function RootLayout({ children, params }: LayoutProps) {
   setRequestLocale(locale);
 
   return (
-    <html lang={locale} className="!scroll-smooth">
+    <html lang={locale} data-scroll-behavior="smooth">
       <body className={`${funnelDisplay.variable} bg-primary overflow-x-hidden antialiased`}>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
         <SpeedInsights />
