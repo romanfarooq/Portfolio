@@ -7,7 +7,7 @@ export async function DesktopNavbar() {
   const t = await getTranslations("navbar");
 
   return (
-    <nav className="hidden items-center justify-between sm:flex">
+    <nav className="hidden items-center justify-between md:flex">
       <Link
         href="/"
         className="text-xl font-bold text-neutral-300 transition-colors hover:text-white"

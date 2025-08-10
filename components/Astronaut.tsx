@@ -9,6 +9,7 @@ export function Astronaut(props: ThreeElements["group"]) {
 
   const { nodes, materials, animations } = useGLTF(
     "/models/tenhun_falling_spaceman_fanart.glb",
+    "/draco/",
   );
 
   const { actions } = useAnimations(animations, group);
@@ -68,4 +69,4 @@ export function Astronaut(props: ThreeElements["group"]) {
   );
 }
 
-useGLTF.preload("/models/tenhun_falling_spaceman_fanart.glb");
+useGLTF.preload("/models/tenhun_falling_spaceman_fanart.glb", "/draco/");

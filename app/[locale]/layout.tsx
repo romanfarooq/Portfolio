@@ -91,9 +91,9 @@ export async function generateMetadata({ params }: PageParams) {
         index: true,
         follow: true,
         noimageindex: false,
+        "max-snippet": -1,
         "max-video-preview": -1,
         "max-image-preview": "large",
-        "max-snippet": -1,
       },
     },
     other: {
@@ -139,23 +139,7 @@ export default async function RootLayout({ children, params }: LayoutProps) {
 
   return (
     <html lang={locale} className="!scroll-smooth">
-      <head>
-        <link
-          rel="prefetch"
-          as="fetch"
-          href="https://www.gstatic.com/draco/versioned/decoders/1.5.5/draco_decoder.wasm"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="prefetch"
-          as="script"
-          href="https://www.gstatic.com/draco/versioned/decoders/1.5.5/draco_wasm_wrapper.js"
-          crossOrigin="anonymous"
-        />
-      </head>
-      <body
-        className={`${funnelDisplay.variable} bg-primary overflow-x-hidden antialiased`}
-      >
+      <body className={`${funnelDisplay.variable} bg-primary overflow-x-hidden antialiased`}>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
         <SpeedInsights />
       </body>

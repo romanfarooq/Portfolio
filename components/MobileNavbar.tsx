@@ -34,7 +34,7 @@ export function MobileNavbar() {
   };
 
   return (
-    <nav className="sm:hidden">
+    <nav className="md:hidden">
       <div className="flex items-center justify-between py-2">
         <Link
           href="/"
