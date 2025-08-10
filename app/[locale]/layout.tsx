@@ -1,3 +1,4 @@
+import type { Metadata, Viewport } from "next";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
 import { Funnel_Display } from "next/font/google";
@@ -20,7 +21,7 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-export async function generateMetadata({ params }: PageParams) {
+export async function generateMetadata({ params }: PageParams): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
@@ -65,10 +66,10 @@ export async function generateMetadata({ params }: PageParams) {
     classification: t("classification"),
     referrer: "origin-when-cross-origin",
     formatDetection: {
-      telephone: false,
+      date: false,
       email: false,
       address: false,
-      date: false,
+      telephone: false,
     },
     twitter: {
       card: "summary_large_image",
@@ -106,7 +107,7 @@ export async function generateMetadata({ params }: PageParams) {
   };
 }
 
-export function generateViewport() {
+export function generateViewport(): Viewport {
   return {
     themeColor: "#030412",
     colorScheme: "dark",
