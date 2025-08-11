@@ -1,5 +1,5 @@
 {
-  "Metadata": {
+  "metadata": {
     "title": "Roman Farooq 的人工智能与软件工程作品集",
     "description": "Roman Farooq 是一名专注于人工智能的软件工程师兼数据科学爱好者，致力于构建智能化、数据驱动、可扩展的解决方案。擅长 Python、React、Next.js 以及现代机器学习集成，将高级数据分析与以用户为中心的设计相结合，打造创新应用。",
     "openGraphTitle": "Roman Farooq 的人工智能与软件工程作品集",
@@ -197,49 +197,34 @@
       ]
     }
   },
-  "testimonials": {
-    "title": "客户评价",
-    "reviews": {
-      "adelAhmed": {
-        "name": "Adeel Ahmed",
-        "username": "@adeel_ahmed23",
-        "body": "维护提醒和谷歌地图集成运行完美"
-      },
-      "mariamKhan": {
-        "name": "Mariam Khan",
-        "username": "@mariam.khan88",
-        "body": "管理面板非常稳定，捐款管理简单高效"
-      },
-      "diegoRamirez": {
-        "name": "Diego Ramirez",
-        "username": "@d.ramirez_91",
-        "body": "GPT-4内容生成令人惊叹，前后端响应迅速"
-      },
-      "claraDupont": {
-        "name": "Clara Dupont",
-        "username": "@clara_dupontFR",
-        "body": "AutoHub360拍卖系统实时更新流畅"
-      },
-      "ahmedSiddiqui": {
-        "name": "Ahmed Siddiqui",
-        "username": "@ahmed_siddiqi_7",
-        "body": "邮件系统批量发送和模板功能运行完美"
-      },
-      "ariaThompson": {
-        "name": "Aria Thompson",
-        "username": "@ariathompsonX",
-        "body": "基于角色的管理面板与数据分析直观易用"
-      },
-      "meiChen": {
-        "name": "Mei Chen",
-        "username": "@mei.chen_1995",
-        "body": "Chrome扩展的智能搜索和标签功能运行流畅"
-      },
-      "kaiAnderson": {
-        "name": "Kai Anderson",
-        "username": "@kai_anderson_07",
-        "body": "Next.js作品集时尚响应且易于维护"
-      }
+  "education": {
+    "title": "教育背景",
+    "bachelors": {
+      "title": "计算机科学理学学士",
+      "institute": "旁遮普中央大学（拉合尔）",
+      "date": "2020年10月 - 2024年7月",
+      "contents": [
+        "毕业平均绩点(CGPA): 3.42",
+        "2020年10月至2024年7月获得50%的CGPA奖学金",
+        "核心课程: 编程、数据结构、算法、数据库系统、Web开发、人工智能与深度学习",
+        "毕业设计: 基于高级软件工程与人工智能概念的项目"
+      ]
+    },
+    "intermediate": {
+      "title": "高中计算机科学（物理方向）",
+      "institute": "旁遮普学院（拉合尔）",
+      "date": "2018年9月 - 2020年6月",
+      "contents": ["毕业成绩: A等", "主修方向: 计算机科学与物理"]
+    },
+    "matriculation": {
+      "title": "初中毕业（理科）",
+      "institute": "旁遮普学校（拉合尔）",
+      "date": "2016年3月 - 2018年5月",
+      "contents": [
+        "毕业成绩: A等",
+        "八年级英语写作比赛（班级组）第一名",
+        "校际乒乓球团体赛冠军"
+      ]
     }
   },
   "contact": {

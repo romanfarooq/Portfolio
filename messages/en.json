@@ -1,5 +1,5 @@
 {
-  "Metadata": {
+  "metadata": {
     "title": "Roman Farooq's AI & Software Engineering Portfolio",
     "description": "Roman Farooq is an AI-focused software engineer and data science enthusiast dedicated to building intelligent, data-driven, and scalable solutions. Specializing in Python, React, Next.js, and modern machine learning integrations, Roman delivers innovative applications combining advanced analytics with user-focused design.",
     "openGraphTitle": "Roman Farooq's AI & Software Engineering Portfolio",
@@ -197,49 +197,37 @@
       ]
     }
   },
-  "testimonials": {
-    "title": "Hear From My Clients",
-    "reviews": {
-      "adelAhmed": {
-        "name": "Adeel Ahmed",
-        "username": "@adeel_ahmed23",
-        "body": "Maintenance reminders and Google Maps integration work flawlessly."
-      },
-      "mariamKhan": {
-        "name": "Mariam Khan",
-        "username": "@mariam.khan88",
-        "body": "The admin panel is rock-solid; managing donations and media uploads is easy."
-      },
-      "diegoRamirez": {
-        "name": "Diego Ramirez",
-        "username": "@d.ramirez_91",
-        "body": "GPT-4 content generation blew us away; FastAPI backend and React frontend are clean and fast."
-      },
-      "claraDupont": {
-        "name": "Clara Dupont",
-        "username": "@clara_dupontFR",
-        "body": "AutoHub360 auctions run seamlessly with real-time updates."
-      },
-      "ahmedSiddiqui": {
-        "name": "Ahmed Siddiqui",
-        "username": "@ahmed_siddiqi_7",
-        "body": "Mailer transformed our campaigns; bulk sends, templates, and 2FA work perfectly."
-      },
-      "ariaThompson": {
-        "name": "Aria Thompson",
-        "username": "@ariathompsonX",
-        "body": "Admin Panel is intuitive with role-based controls and Chart.js analytics."
-      },
-      "meiChen": {
-        "name": "Mei Chen",
-        "username": "@mei.chen_1995",
-        "body": "Ease-GPT Chrome Extension's smart search and tabbed chats work flawlessly."
-      },
-      "kaiAnderson": {
-        "name": "Kai Anderson",
-        "username": "@kai_anderson_07",
-        "body": "Portfolio built with Next.js and Tailwind is sleek, responsive, and easy to maintain."
-      }
+  "education": {
+    "title": "My Education",
+    "bachelors": {
+      "title": "Bachelor of Science in Computer Science",
+      "institute": "University of Central Punjab, Lahore",
+      "date": "Oct 2020 - Jul 2024",
+      "contents": [
+        "Graduated with a CGPA of 3.42.",
+        "Awarded 50% CGPA-based scholarship from October 2020 to July 2024.",
+        "Completed coursework in key subjects including Programming, Data Structures, Algorithms, Database Systems, Web Development, Artificial Intelligence, and Deep Learning.",
+        "Completed a Final Year Project involving advanced software engineering and AI concepts."
+      ]
+    },
+    "intermediate": {
+      "title": "Intermediate in Computer Science (Physics)",
+      "institute": "Punjab College, Lahore",
+      "date": "Sep 2018 - Jun 2020",
+      "contents": [
+        "Graduated with Grade A.",
+        "Specialized in Computer Science and Physics."
+      ]
+    },
+    "matriculation": {
+      "title": "Matriculation (Science)",
+      "institute": "The Punjab School, Lahore",
+      "date": "Mar 2016 - May 2018",
+      "contents": [
+        "Graduated with Grade A.",
+        "Won first place in an inter-section English writing competition in 8th grade.",
+        "Achieved victory in an inter-campus table tennis competition with my team."
+      ]
     }
   },
   "contact": {

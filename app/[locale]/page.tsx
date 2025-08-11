@@ -5,7 +5,7 @@ import { Navbar } from "@/sections/Navbar";
 import { Footer } from "@/sections/Footer";
 import { Contact } from "@/sections/Contact";
 import { Projects } from "@/sections/Projects";
-import { Testimonial } from "@/sections/Testimonial";
+import { Education } from "@/sections/Education";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
         <Hero />
         <About />
         <Projects />
-        <Testimonial />
+        <Education />
         <Contact />
       </main>
       <Footer />
