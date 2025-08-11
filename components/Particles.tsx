@@ -163,7 +163,7 @@ export function Particles({
 
   useEffect(() => {
     if (canvasRef.current) {
-      context.current = canvasRef.current?.getContext("2d");
+      context.current = canvasRef.current.getContext("2d");
     }
 
     initCanvas();
