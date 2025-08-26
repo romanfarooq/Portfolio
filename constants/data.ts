@@ -8,8 +8,8 @@ export interface Tag {
 
 export interface Project {
   id: string;
-  image: string;
   tags: Tag[];
+  image: string;
 }
 
 export const projects = [
@@ -148,11 +148,7 @@ export const socials = [
 ];
 
 
-export const education = [
-  "bachelors",
-  "intermediate",
-  "matriculation",
-];
+export const education = ["bachelors", "intermediate", "matriculation"];
 
 export const skills = [
   { name: "html5", icon: Logos.HTML5 },

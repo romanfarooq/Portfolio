@@ -1,4 +1,4 @@
-import { SVGProps } from "react";
+import type { SVGProps } from "react";
 
 export const TanStackQuery = (props: SVGProps<SVGSVGElement>) => (
   <svg

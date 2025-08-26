@@ -1,4 +1,4 @@
-import { SVGProps } from "react";
+import type { SVGProps } from "react";
 
 export const SQL = (props: SVGProps<SVGSVGElement>) => (
   <svg

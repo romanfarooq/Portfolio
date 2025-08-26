@@ -40,11 +40,11 @@ export function FlipWords({
         animate={{ opacity: 1, y: 0 }}
         transition={{ type: "spring", stiffness: 100, damping: 10 }}
         exit={{
-          opacity: 0,
-          y: -40,
           x: 40,
-          filter: "blur(8px)",
+          y: -40,
           scale: 2,
+          opacity: 0,
+          filter: "blur(8px)",
           position: "absolute",
         }}
       >
@@ -63,8 +63,8 @@ export function FlipWords({
                 initial={{ opacity: 0, y: 10, filter: "blur(8px)" }}
                 animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                 transition={{
-                  delay: wordIndex * 0.3 + letterIndex * 0.05,
                   duration: 0.2,
+                  delay: wordIndex * 0.3 + letterIndex * 0.05,
                 }}
               >
                 {letter}

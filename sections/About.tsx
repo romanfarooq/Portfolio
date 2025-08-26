@@ -2,8 +2,8 @@ import Image from "next/image";
 import { Meta } from "@/components/logos";
 import { Globe } from "@/components/Globe";
 import { Frameworks } from "@/components/Frameworks";
-import { CopyEmailButton } from "@/components/CopyEmailButton";
 import { getTranslations } from "next-intl/server";
+import { CopyEmailButton } from "@/components/CopyEmailButton";
 
 export async function About() {
   const t = await getTranslations("about");
@@ -19,7 +19,6 @@ export async function About() {
           <Image
             src="/assets/images/coding-pov.webp"
             alt="Coding POV"
-            quality={100}
             priority={true}
             width={1828}
             height={813}

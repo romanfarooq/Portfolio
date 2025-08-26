@@ -1,4 +1,4 @@
-import { SVGProps } from "react";
+import type { SVGProps } from "react";
 
 export const Instagram = (props: SVGProps<SVGSVGElement>) => (
   <svg

@@ -15,7 +15,6 @@ interface Circle {
 }
 
 interface ParticlesProps extends React.HTMLAttributes<HTMLDivElement> {
-  className?: string;
   vx?: number;
   vy?: number;
   size?: number;
@@ -80,6 +79,7 @@ export function Particles({
     (circle: Circle, update = false) => {
       if (context.current) {
         const { x, y, translateX, translateY, size, alpha } = circle;
+
         context.current.translate(translateX, translateY);
         context.current.beginPath();
         context.current.arc(x, y, size, 0, 2 * Math.PI);
@@ -129,6 +129,7 @@ export function Particles({
         circle.y + circle.translateY - circle.size,
         canvasSize.current.h - circle.y - circle.translateY - circle.size,
       ];
+
       const closestEdge = edge.reduce((a, b) => Math.min(a, b));
       const remapClosestEdge = remapValue(closestEdge, 0, 20, 0, 1);
 

@@ -1,4 +1,4 @@
-import { SVGProps } from "react";
+import type { SVGProps } from "react";
 
 export const CSS3 = (props: SVGProps<SVGSVGElement>) => (
   <svg
