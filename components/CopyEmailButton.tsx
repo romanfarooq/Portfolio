@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import { Copy, CopyDone } from "./icons";
-import { motion, AnimatePresence } from "motion/react";
 import { useTranslations } from "next-intl";
+import { motion, AnimatePresence } from "motion/react";
 
 const CONTACT_EMAIL = "romanfarooq@outlook.com";
 

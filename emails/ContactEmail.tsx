@@ -37,7 +37,7 @@ export function ContactEmail({ name, email, message }: ContactEmailProps) {
 
             <Section className="px-2">
               <Text className="mb-4 text-base text-gray-500">
-                You've received a new message from your portfolio website:
+                You&apos;ve received a new message from your portfolio website:
               </Text>
             </Section>
 
@@ -67,7 +67,7 @@ export function ContactEmail({ name, email, message }: ContactEmailProps) {
                 Message Content
               </Heading>
               <Text className="rounded border border-gray-200 bg-white p-3 text-base whitespace-pre-wrap text-gray-700 italic">
-                "{message}"
+                &quot;{message}&quot;
               </Text>
             </Section>
 
