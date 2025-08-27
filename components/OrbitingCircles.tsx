@@ -3,7 +3,6 @@ import { Fragment, Children } from "react";
 
 interface OrbitingCirclesProps extends React.HTMLAttributes<HTMLDivElement> {
   children?: React.ReactNode;
-  className?: string;
   reverse?: boolean;
   path?: boolean;
   speed?: number;
