@@ -82,7 +82,7 @@ export async function generateMetadata({ params }: PageParams): Promise<Metadata
     verification: {
       google: "kp1SzfMW4-YoGuTNP3YrE5AzIZ9lAfpXXmocVTl5zVg",
       yandex: "b13e5b1aac4144f0",
-      me: "mailto:theromanfarooq@gmail.com",
+      me: "mailto:romanfarooq@outlook.com",
     },
     robots: {
       index: true,

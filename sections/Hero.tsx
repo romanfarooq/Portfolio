@@ -32,6 +32,7 @@ const ASTRONAUT_CONFIG: AstronautConfig = {
 
 export function Hero() {
   const isMobile = useMediaQuery({ maxWidth: 768 });
+
   return (
     <section
       id="home"
