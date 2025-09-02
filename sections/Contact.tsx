@@ -110,8 +110,8 @@ export function Contact() {
       className="relative mt-20 flex min-h-screen items-center px-5 sm:px-10 md:mt-30 lg:px-15"
     >
       <Particles
+        quantity={400}
         className="absolute inset-0 left-1/2 -z-50 w-screen -translate-x-1/2"
-        quantity={200}
       />
       <AnimatePresence>
         {alert.show && (

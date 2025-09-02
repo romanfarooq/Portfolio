@@ -33,3 +33,9 @@ export function remapValue(
   if (inMax === inMin) return outMin;
   return Math.max(((value - inMin) * (outMax - outMin)) / (inMax - inMin) + outMin, 0);
 }
+
+export function getDevicePixelRatio() {
+  return typeof window !== "undefined" && window.devicePixelRatio
+    ? window.devicePixelRatio
+    : 1;
+}
