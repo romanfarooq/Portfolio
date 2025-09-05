@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { cn } from "@/lib/utils";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
 import { Funnel_Display } from "next/font/google";
@@ -12,7 +13,9 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-export async function generateMetadata({ params }: PageProps<"/[locale]">): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: Omit<PageProps<"/[locale]">, "searchParams">): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "metadata" });
 
@@ -120,7 +123,10 @@ const funnelDisplay = Funnel_Display({
   weight: ["300", "400", "500", "600", "700", "800"],
 });
 
-export default async function RootLayout({ children, params }: LayoutProps<"/[locale]">) {
+export default async function RootLayout({
+  params,
+  children,
+}: LayoutProps<"/[locale]">) {
   const { locale } = await params;
 
   if (!hasLocale(routing.locales, locale)) {
@@ -131,7 +137,12 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[lo
 
   return (
     <html lang={locale} data-scroll-behavior="smooth">
-      <body className={`${funnelDisplay.variable} bg-primary overflow-x-hidden antialiased`}>
+      <body
+        className={cn(
+          funnelDisplay.variable,
+          "bg-primary overflow-x-hidden antialiased",
+        )}
+      >
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
         <SpeedInsights />
       </body>
