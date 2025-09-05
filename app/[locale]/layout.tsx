@@ -8,20 +8,11 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 
 import "../globals.css";
 
-interface PageParams {
-  params: Promise<{ locale: string }>;
-}
-
-interface LayoutProps {
-  children: React.ReactNode;
-  params: Promise<{ locale: string }>;
-}
-
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-export async function generateMetadata({ params }: PageParams): Promise<Metadata> {
+export async function generateMetadata({ params }: PageProps<"/[locale]">): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "metadata" });
 
@@ -129,7 +120,7 @@ const funnelDisplay = Funnel_Display({
   weight: ["300", "400", "500", "600", "700", "800"],
 });
 
-export default async function RootLayout({ children, params }: LayoutProps) {
+export default async function RootLayout({ children, params }: LayoutProps<"/[locale]">) {
   const { locale } = await params;
 
   if (!hasLocale(routing.locales, locale)) {
