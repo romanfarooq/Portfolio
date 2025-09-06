@@ -3,7 +3,6 @@ import { cn } from "@/lib/utils";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
 import { Funnel_Display } from "next/font/google";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 
@@ -137,14 +136,8 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} data-scroll-behavior="smooth">
-      <body
-        className={cn(
-          funnelDisplay.variable,
-          "bg-primary overflow-x-hidden antialiased",
-        )}
-      >
+      <body className={cn(funnelDisplay.variable, "bg-primary overflow-x-hidden antialiased")}>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
-        <SpeedInsights />
       </body>
     </html>
   );
