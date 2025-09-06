@@ -12,20 +12,15 @@ export function MobileNavbar() {
   const locale = useLocale();
   const t = useTranslations("navbar");
 
-  const [isOpen, setIsOpen] = useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
   const handleNavClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
     hash: string,
   ) => {
     e.preventDefault();
-    setIsOpen(false);
-    setTimeout(() => {
-      const targetElement = document.getElementById(hash);
-      if (targetElement) {
-        targetElement.scrollIntoView({ behavior: "smooth" });
-      }
-    }, 100);
+    setIsNavOpen(false);
+    setTimeout(() => document.getElementById(hash)?.scrollIntoView({ behavior: "smooth" }), 100);
   };
 
   const handleLocaleChange = (
@@ -33,10 +28,8 @@ export function MobileNavbar() {
     newLocale: "en" | "zh",
   ) => {
     e.preventDefault();
-    setIsOpen(false);
-    if (locale !== newLocale) {
-      router.push("/", { locale: newLocale });
-    }
+    setIsNavOpen(false);
+    if (locale !== newLocale) router.push("/", { locale: newLocale });
   };
 
   return (
@@ -49,10 +42,10 @@ export function MobileNavbar() {
           Roman Farooq
         </Link>
         <button
-          onClick={() => setIsOpen((prev) => !prev)}
+          onClick={() => setIsNavOpen((prev) => !prev)}
           className="cursor-pointer text-neutral-300 hover:text-white focus:outline-none"
         >
-          {isOpen ? (
+          {isNavOpen ? (
             <Close width={24} height={24} />
           ) : (
             <Menu width={24} height={24} />
@@ -60,7 +53,7 @@ export function MobileNavbar() {
         </button>
       </div>
       <AnimatePresence>
-        {isOpen && (
+        {isNavOpen && (
           <motion.div
             className="overflow-hidden"
             initial={{ height: 0, opacity: 0 }}
