@@ -145,7 +145,9 @@ export function Particles({
   const animateParticles = useCallback(() => {
     clearContext();
 
-    circles.current.forEach((circle, index) => {
+    for (let index = 0; index < circles.current.length; index++) {
+      const circle = circles.current[index];
+      
       updateCirclePosition(circle);
 
       renderCircleParticle(circle);
@@ -153,7 +155,7 @@ export function Particles({
       if (isCircleOutOfBounds(circle)) {
         circles.current[index] = createCircle();
       }
-    });
+    }
 
     rafID.current = requestAnimationFrame(animateParticles);
   }, [
