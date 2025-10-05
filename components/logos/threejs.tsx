@@ -12,7 +12,7 @@ export const ThreeJS = (props: SVGProps<SVGSVGElement>) => (
       fillRule: "evenodd",
       clipRule: "evenodd",
       strokeLinejoin: "round",
-      strokeMiterlimit: 10,
+      strokeMiterlimit: 10
     }}
     {...props}
   >
@@ -24,7 +24,7 @@ export const ThreeJS = (props: SVGProps<SVGSVGElement>) => (
             style={{
               fill: "none",
               stroke: "white",
-              strokeWidth: 4,
+              strokeWidth: 4
             }}
           />
           <path
@@ -32,7 +32,7 @@ export const ThreeJS = (props: SVGProps<SVGSVGElement>) => (
             style={{
               fill: "none",
               stroke: "white",
-              strokeWidth: 4,
+              strokeWidth: 4
             }}
           />
           <path
@@ -40,7 +40,7 @@ export const ThreeJS = (props: SVGProps<SVGSVGElement>) => (
             style={{
               fill: "none",
               stroke: "white",
-              strokeWidth: 4,
+              strokeWidth: 4
             }}
           />
           <path
@@ -48,7 +48,7 @@ export const ThreeJS = (props: SVGProps<SVGSVGElement>) => (
             style={{
               fill: "none",
               stroke: "white",
-              strokeWidth: 4,
+              strokeWidth: 4
             }}
           />
           <path
@@ -56,7 +56,7 @@ export const ThreeJS = (props: SVGProps<SVGSVGElement>) => (
             style={{
               fill: "none",
               stroke: "white",
-              strokeWidth: 4,
+              strokeWidth: 4
             }}
           />
           <path
@@ -64,7 +64,7 @@ export const ThreeJS = (props: SVGProps<SVGSVGElement>) => (
             style={{
               fill: "none",
               stroke: "white",
-              strokeWidth: 4,
+              strokeWidth: 4
             }}
           />
         </g>

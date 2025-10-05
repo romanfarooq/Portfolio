@@ -47,7 +47,7 @@ export function Particles({
       0,
       0,
       canvasSize.current.w,
-      canvasSize.current.h,
+      canvasSize.current.h
     );
   }, []);
 
@@ -62,7 +62,7 @@ export function Particles({
       magnetism: 0.1 + Math.random() * 4,
       translateX: 0,
       translateY: 0,
-      targetAlpha: parseFloat((Math.random() * 0.6 + 0.1).toFixed(1)),
+      targetAlpha: parseFloat((Math.random() * 0.6 + 0.1).toFixed(1))
     };
   }, [size]);
 
@@ -78,7 +78,7 @@ export function Particles({
       context.current.fill();
       context.current.restore();
     },
-    [rgb],
+    [rgb]
   );
 
   const updateCirclePosition = useCallback(
@@ -87,7 +87,7 @@ export function Particles({
         circle.x + circle.translateX - circle.size,
         canvasSize.current.w - circle.x - circle.translateX - circle.size,
         circle.y + circle.translateY - circle.size,
-        canvasSize.current.h - circle.y - circle.translateY - circle.size,
+        canvasSize.current.h - circle.y - circle.translateY - circle.size
       ];
 
       const closestEdge = Math.min(...edge);
@@ -101,7 +101,7 @@ export function Particles({
       circle.x += circle.dx + vx;
       circle.y += circle.dy + vy;
     },
-    [vx, vy],
+    [vx, vy]
   );
 
   const isCircleOutOfBounds = useCallback((circle: Circle): boolean => {
@@ -122,7 +122,8 @@ export function Particles({
   }, [quantity, createCircle, renderCircleParticle]);
 
   const setupCanvas = useCallback(() => {
-    if (!canvasContainerRef.current || !canvasRef.current || !context.current) return;
+    if (!canvasContainerRef.current || !canvasRef.current || !context.current)
+      return;
 
     canvasSize.current.w = canvasContainerRef.current.offsetWidth;
     canvasSize.current.h = canvasContainerRef.current.offsetHeight;
@@ -147,7 +148,7 @@ export function Particles({
 
     for (let index = 0; index < circles.current.length; index++) {
       const circle = circles.current[index];
-      
+
       updateCirclePosition(circle);
 
       renderCircleParticle(circle);
@@ -163,7 +164,7 @@ export function Particles({
     clearContext,
     isCircleOutOfBounds,
     updateCirclePosition,
-    renderCircleParticle,
+    renderCircleParticle
   ]);
 
   useEffect(() => {

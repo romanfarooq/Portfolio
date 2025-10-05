@@ -25,43 +25,43 @@ export function Contact() {
   const [alert, setAlert] = useState<AlertState>({
     show: false,
     type: "success",
-    message: "",
+    message: ""
   });
 
   const contactFormSchema = z.object({
     name: z
       .string()
       .nonempty({
-        message: t("form.validation.nameRequired"),
+        message: t("form.validation.nameRequired")
       })
       .max(50, {
-        message: t("form.validation.nameMaxLength"),
+        message: t("form.validation.nameMaxLength")
       }),
     email: z.email({
-      message: t("form.validation.emailInvalid"),
+      message: t("form.validation.emailInvalid")
     }),
     message: z
       .string()
       .min(10, {
-        message: t("form.validation.messageMinLength"),
+        message: t("form.validation.messageMinLength")
       })
       .max(1000, {
-        message: t("form.validation.messageMaxLength"),
-      }),
+        message: t("form.validation.messageMaxLength")
+      })
   });
 
   const {
     reset,
     register,
     handleSubmit,
-    formState: { isSubmitting, errors },
+    formState: { isSubmitting, errors }
   } = useForm<z.infer<typeof contactFormSchema>>({
     resolver: zodResolver(contactFormSchema),
     defaultValues: {
       name: "",
       email: "",
-      message: "",
-    },
+      message: ""
+    }
   });
 
   const showAlertMessage = ({ type, message }: AlertMessage) => {
@@ -76,7 +76,7 @@ export function Contact() {
       const formData = new FormData();
 
       Object.entries(data).forEach(([key, value]) =>
-        formData.append(key, value),
+        formData.append(key, value)
       );
 
       const result = await sendEmail(formData);
@@ -84,7 +84,7 @@ export function Contact() {
       if (!result?.success) {
         showAlertMessage({
           type: "danger",
-          message: result?.error || t("alerts.error"),
+          message: result?.error || t("alerts.error")
         });
         return;
       }
@@ -93,13 +93,13 @@ export function Contact() {
 
       showAlertMessage({
         type: "success",
-        message: t("alerts.success"),
+        message: t("alerts.success")
       });
     } catch (error) {
       console.error(error);
       showAlertMessage({
         type: "danger",
-        message: t("alerts.error"),
+        message: t("alerts.error")
       });
     }
   };

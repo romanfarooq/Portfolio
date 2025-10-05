@@ -16,16 +16,20 @@ export function MobileNavbar() {
 
   const handleNavClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
-    hash: string,
+    hash: string
   ) => {
     e.preventDefault();
     setIsNavOpen(false);
-    setTimeout(() => document.getElementById(hash)?.scrollIntoView({ behavior: "smooth" }), 100);
+    setTimeout(
+      () =>
+        document.getElementById(hash)?.scrollIntoView({ behavior: "smooth" }),
+      100
+    );
   };
 
   const handleLocaleChange = (
     e: React.MouseEvent<HTMLAnchorElement>,
-    newLocale: "en" | "zh",
+    newLocale: "en" | "zh"
   ) => {
     e.preventDefault();
     setIsNavOpen(false);
@@ -72,7 +76,7 @@ export function MobileNavbar() {
                       {t(section)}
                     </a>
                   </li>
-                ),
+                )
               )}
               <li className="flex w-full justify-center border-t border-white/10 pt-4">
                 <div className="flex items-center gap-3">
@@ -82,7 +86,7 @@ export function MobileNavbar() {
                       "cursor-pointer rounded px-3 py-2 text-sm transition-colors",
                       locale === "en"
                         ? "bg-white/20 text-white"
-                        : "text-neutral-300 hover:bg-white/10 hover:text-white",
+                        : "text-neutral-300 hover:bg-white/10 hover:text-white"
                     )}
                   >
                     EN
@@ -94,7 +98,7 @@ export function MobileNavbar() {
                       "cursor-pointer rounded px-3 py-2 text-sm transition-colors",
                       locale === "zh"
                         ? "bg-white/20 text-white"
-                        : "text-neutral-300 hover:bg-white/10 hover:text-white",
+                        : "text-neutral-300 hover:bg-white/10 hover:text-white"
                     )}
                   >
                     中文

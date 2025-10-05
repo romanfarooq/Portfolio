@@ -9,7 +9,7 @@ interface AlertProps {
 const alertVarients = {
   hidden: { opacity: 0, y: 50, scale: 0.8 },
   visible: { opacity: 1, y: 0, scale: 1 },
-  exit: { opacity: 0, y: -50, scale: 0.8 },
+  exit: { opacity: 0, y: -50, scale: 0.8 }
 };
 
 export function Alert({ text, type }: AlertProps) {
@@ -25,13 +25,13 @@ export function Alert({ text, type }: AlertProps) {
       <div
         className={cn(
           "flex items-center rounded-md p-2 leading-none text-indigo-100 lg:inline-flex lg:rounded-full",
-          type === "danger" ? "bg-red-800" : "bg-royal",
+          type === "danger" ? "bg-red-800" : "bg-royal"
         )}
       >
         <p
           className={cn(
             "mr-3 flex rounded-full px-2 py-1 text-xs font-semibold uppercase",
-            type === "danger" ? "bg-red-500" : "bg-lavender",
+            type === "danger" ? "bg-red-500" : "bg-lavender"
           )}
         >
           {type === "danger" ? "Failed" : "Success"}

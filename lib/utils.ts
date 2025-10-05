@@ -28,10 +28,13 @@ export function remapValue(
   inMin: number,
   inMax: number,
   outMin: number,
-  outMax: number,
+  outMax: number
 ) {
   if (inMax === inMin) return outMin;
-  return Math.max(((value - inMin) * (outMax - outMin)) / (inMax - inMin) + outMin, 0);
+  return Math.max(
+    ((value - inMin) * (outMax - outMin)) / (inMax - inMin) + outMin,
+    0
+  );
 }
 
 export function getDevicePixelRatio() {

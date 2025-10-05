@@ -7,7 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const compat = new FlatCompat({
-  baseDirectory: __dirname,
+  baseDirectory: __dirname
 });
 
 const ignores = [
@@ -15,11 +15,11 @@ const ignores = [
   ".next/**",
   "out/**",
   "build/**",
-  "public/**",
-  "next-env.d.ts",
+  "public/draco/**",
+  "next-env.d.ts"
 ];
 
 export default defineConfig([
   { ignores },
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
+  ...compat.extends("next/core-web-vitals", "next/typescript")
 ]);

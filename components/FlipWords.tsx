@@ -11,7 +11,7 @@ interface FlipWordsProps {
 export function FlipWords({
   words,
   duration = 3000,
-  className,
+  className
 }: FlipWordsProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const timeoutRef = useRef<NodeJS.Timeout>(null);
@@ -45,7 +45,7 @@ export function FlipWords({
           scale: 2,
           opacity: 0,
           filter: "blur(8px)",
-          position: "absolute",
+          position: "absolute"
         }}
       >
         {currentWord.split(" ").map((word, wordIndex) => (
@@ -64,7 +64,7 @@ export function FlipWords({
                 animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                 transition={{
                   duration: 0.2,
-                  delay: wordIndex * 0.3 + letterIndex * 0.05,
+                  delay: wordIndex * 0.3 + letterIndex * 0.05
                 }}
               >
                 {letter}

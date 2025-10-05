@@ -21,13 +21,13 @@ const ASTRONAUT_CONFIG: AstronautConfig = {
   mobile: {
     scale: 1.2,
     position: [0.1, -1, 0],
-    rotation: [Math.PI / 6, Math.PI * 0.7, -Math.PI * 0.2],
+    rotation: [Math.PI / 6, Math.PI * 0.7, -Math.PI * 0.2]
   },
   desktop: {
     scale: 1.5,
     position: [1.5, -1, 0],
-    rotation: [Math.PI / 6, Math.PI * 0.7, -Math.PI * 0.2],
-  },
+    rotation: [Math.PI / 6, Math.PI * 0.7, -Math.PI * 0.2]
+  }
 };
 
 export function Hero() {

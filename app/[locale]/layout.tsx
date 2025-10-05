@@ -13,7 +13,7 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({
-  params,
+  params
 }: Omit<PageProps<"/[locale]">, "searchParams">): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "metadata" });
@@ -30,13 +30,13 @@ export async function generateMetadata({
       canonical: "https://roman-farooq-portfolio.vercel.app/",
       languages: {
         "en-US": "/en",
-        "zh-CN": "/zh",
-      },
+        "zh-CN": "/zh"
+      }
     },
     icons: {
       icon: "/favicon.ico",
       apple: "/favicon.ico",
-      shortcut: "/favicon.ico",
+      shortcut: "/favicon.ico"
     },
     openGraph: {
       type: "website",
@@ -50,9 +50,9 @@ export async function generateMetadata({
           url: "/assets/images/roman.webp",
           width: 1200,
           height: 630,
-          alt: "Roman Farooq",
-        },
-      ],
+          alt: "Roman Farooq"
+        }
+      ]
     },
     applicationName: t("applicationName"),
     category: t("category"),
@@ -62,7 +62,7 @@ export async function generateMetadata({
       date: false,
       email: false,
       address: false,
-      telephone: false,
+      telephone: false
     },
     twitter: {
       card: "summary_large_image",
@@ -70,12 +70,12 @@ export async function generateMetadata({
       description: t("twitterDescription"),
       images: ["/assets/images/roman.webp"],
       site: "@TheRomanFarooq",
-      creator: "@TheRomanFarooq",
+      creator: "@TheRomanFarooq"
     },
     verification: {
       google: "kp1SzfMW4-YoGuTNP3YrE5AzIZ9lAfpXXmocVTl5zVg",
       yandex: "b13e5b1aac4144f0",
-      me: "mailto:romanfarooq@outlook.com",
+      me: "mailto:romanfarooq@outlook.com"
     },
     robots: {
       index: true,
@@ -87,16 +87,16 @@ export async function generateMetadata({
         noimageindex: false,
         "max-snippet": -1,
         "max-video-preview": -1,
-        "max-image-preview": "large",
-      },
+        "max-image-preview": "large"
+      }
     },
     other: {
       github: "https://github.com/romanfarooq",
       linkedin: "https://linkedin.com/in/roman-farooq",
       instagram: "https://instagram.com/roman_farooq",
       email: "romanfarooq@outlook.com",
-      location: "Lahore, Pakistan",
-    },
+      location: "Lahore, Pakistan"
+    }
   };
 }
 
@@ -111,7 +111,7 @@ export function generateViewport(): Viewport {
     maximumScale: 5,
     userScalable: true,
     viewportFit: "cover",
-    interactiveWidget: "resizes-visual",
+    interactiveWidget: "resizes-visual"
   };
 }
 
@@ -119,12 +119,12 @@ const funnelDisplay = Funnel_Display({
   variable: "--font-funnel-display",
   display: "swap",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
+  weight: ["300", "400", "500", "600", "700", "800"]
 });
 
 export default async function RootLayout({
   params,
-  children,
+  children
 }: LayoutProps<"/[locale]">) {
   const { locale } = await params;
 
@@ -136,7 +136,12 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} data-scroll-behavior="smooth">
-      <body className={cn(funnelDisplay.variable, "bg-primary overflow-x-hidden antialiased")}>
+      <body
+        className={cn(
+          funnelDisplay.variable,
+          "bg-primary overflow-x-hidden antialiased"
+        )}
+      >
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>

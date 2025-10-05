@@ -9,7 +9,7 @@ export function Astronaut(props: ThreeElements["group"]) {
 
   const { nodes, materials, animations } = useGLTF(
     "/models/tenhun_falling_spaceman_fanart.glb",
-    "/draco/",
+    "/draco/"
   );
 
   const { actions } = useAnimations(animations, group);
@@ -51,7 +51,7 @@ export function Astronaut(props: ThreeElements["group"]) {
                 "Cube003_0",
                 "Cube_0",
                 "Cube009_0",
-                "Cube011_0",
+                "Cube011_0"
               ].map((name) => (
                 <skinnedMesh
                   key={name}

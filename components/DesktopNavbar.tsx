@@ -35,7 +35,7 @@ export async function DesktopNavbar() {
               "rounded px-2 py-1 text-sm transition-colors",
               locale === "en"
                 ? "bg-white/20 text-white"
-                : "text-neutral-300 hover:bg-white/10 hover:text-white",
+                : "text-neutral-300 hover:bg-white/10 hover:text-white"
             )}
           >
             EN
@@ -48,7 +48,7 @@ export async function DesktopNavbar() {
               "rounded px-2 py-1 text-sm transition-colors",
               locale === "zh"
                 ? "bg-white/20 text-white"
-                : "text-neutral-300 hover:bg-white/10 hover:text-white",
+                : "text-neutral-300 hover:bg-white/10 hover:text-white"
             )}
           >
             中文

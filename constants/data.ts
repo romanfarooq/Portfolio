@@ -23,8 +23,8 @@ export const projects = [
       { name: "React Query", icon: Logos.TanStackQuery },
       { name: "Express.js", icon: Logos.ExpressJS },
       { name: "Stripe", icon: Logos.Stripe },
-      { name: "GPT-4o", icon: Logos.ChatGPT },
-    ],
+      { name: "GPT-4o", icon: Logos.ChatGPT }
+    ]
   },
   {
     id: "threadoStudio",
@@ -33,8 +33,8 @@ export const projects = [
       { name: "Next.js", icon: Logos.NextJS },
       { name: "Three.js", icon: Logos.ThreeJS },
       { name: "TailwindCSS", icon: Logos.TailwindCSS },
-      { name: "Zustand", icon: Logos.Zustand },
-    ],
+      { name: "Zustand", icon: Logos.Zustand }
+    ]
   },
   {
     id: "trendTale",
@@ -44,8 +44,8 @@ export const projects = [
       { name: "FastAPI", icon: Logos.FastAPI },
       { name: "React Native", icon: Logos.Expo },
       { name: "TailwindCSS", icon: Logos.TailwindCSS },
-      { name: "GPT-4", icon: Logos.ChatGPT },
-    ],
+      { name: "GPT-4", icon: Logos.ChatGPT }
+    ]
   },
   {
     id: "easeGPT",
@@ -53,8 +53,8 @@ export const projects = [
     tags: [
       { name: "JavaScript", icon: Logos.JavaScript },
       { name: "Chrome Extension", icon: Logos.Chrome },
-      { name: "Google Analytics", icon: Logos.GoogleAnalytics },
-    ],
+      { name: "Google Analytics", icon: Logos.GoogleAnalytics }
+    ]
   },
   {
     id: "sweepstakesBetting",
@@ -64,8 +64,8 @@ export const projects = [
       { name: "TanStack Query", icon: Logos.TanStackQuery },
       { name: "TailwindCSS", icon: Logos.TailwindCSS },
       { name: "Stripe", icon: Logos.Stripe },
-      { name: "Firebase", icon: Logos.Firebase },
-    ],
+      { name: "Firebase", icon: Logos.Firebase }
+    ]
   },
   {
     id: "sweepstakesAdmin",
@@ -74,8 +74,8 @@ export const projects = [
       { name: "Django", icon: Logos.Django },
       { name: "React", icon: Logos.React },
       { name: "Chart.js", icon: Logos.Chartjs },
-      { name: "Firebase", icon: Logos.Firebase },
-    ],
+      { name: "Firebase", icon: Logos.Firebase }
+    ]
   },
   {
     id: "autoHub360",
@@ -84,8 +84,8 @@ export const projects = [
       { name: "Next.js", icon: Logos.NextJS },
       { name: "Socket.io", icon: Logos.SocketIO },
       { name: "Puppeteer", icon: Logos.Puppeteer },
-      { name: "Cheerio", icon: Logos.Cheerio },
-    ],
+      { name: "Cheerio", icon: Logos.Cheerio }
+    ]
   },
   {
     id: "saaf",
@@ -94,8 +94,8 @@ export const projects = [
       { name: "React", icon: Logos.React },
       { name: "Express.js", icon: Logos.ExpressJS },
       { name: "MongoDB", icon: Logos.MongoDB },
-      { name: "Stripe", icon: Logos.Stripe },
-    ],
+      { name: "Stripe", icon: Logos.Stripe }
+    ]
   },
   {
     id: "blackPearls",
@@ -104,8 +104,8 @@ export const projects = [
       { name: "React", icon: Logos.React },
       { name: "TailwindCSS", icon: Logos.TailwindCSS },
       { name: "i18next", icon: Logos.I18next },
-      { name: "Framer Motion", icon: Logos.Motion },
-    ],
+      { name: "Framer Motion", icon: Logos.Motion }
+    ]
   },
   {
     id: "mailer",
@@ -114,8 +114,8 @@ export const projects = [
       { name: "Next.js", icon: Logos.NextJS },
       { name: "Prisma", icon: Logos.Prisma },
       { name: "PostgreSQL", icon: Logos.PostgreSQL },
-      { name: "React Quill", icon: Logos.ReactQuill },
-    ],
+      { name: "React Quill", icon: Logos.ReactQuill }
+    ]
   },
   {
     id: "carCarePro",
@@ -124,27 +124,27 @@ export const projects = [
       { name: "Flutter", icon: Logos.Flutter },
       { name: "Firebase", icon: Logos.Firebase },
       { name: "Google Maps", icon: Logos.GoogleMaps },
-      { name: "Machine Learning", icon: Logos.AI },
-    ],
-  },
+      { name: "Machine Learning", icon: Logos.AI }
+    ]
+  }
 ];
 
 export const socials = [
   {
     name: "GitHub",
     href: "https://github.com/romanfarooq",
-    icon: Socials.Github,
+    icon: Socials.Github
   },
   {
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/roman-farooq",
-    icon: Socials.LinkedIn,
+    icon: Socials.LinkedIn
   },
   {
     name: "Instagram",
     href: "https://www.instagram.com/roman_farooq",
-    icon: Socials.Instagram,
-  },
+    icon: Socials.Instagram
+  }
 ];
 
 
@@ -185,5 +185,5 @@ export const skills = [
   { name: "fastapi", icon: Logos.FastAPI },
   { name: "django", icon: Logos.Django },
   { name: "python", icon: Logos.Python },
-  { name: "docker", icon: Logos.Docker },
+  { name: "docker", icon: Logos.Docker }
 ];

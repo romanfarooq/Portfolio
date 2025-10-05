@@ -32,8 +32,8 @@ const GLOBE_CONFIG: COBEOptions = {
     { location: [14.5995, 120.9842], size: 0.03 },
     { location: [39.9042, 116.4074], size: 0.08 },
     { location: [34.6937, 135.5022], size: 0.05 },
-    { location: [-23.5505, -46.6333], size: 0.05 },
-  ],
+    { location: [-23.5505, -46.6333], size: 0.05 }
+  ]
 };
 
 interface GlobeProps {
@@ -52,7 +52,7 @@ export function Globe({ className, config = GLOBE_CONFIG }: GlobeProps) {
   const rs = useSpring(r, {
     mass: 1,
     damping: 30,
-    stiffness: 100,
+    stiffness: 100
   });
 
   const updatePointerInteraction = (value: number | null) => {
@@ -89,7 +89,7 @@ export function Globe({ className, config = GLOBE_CONFIG }: GlobeProps) {
         state.phi = phi.current + rs.get();
         state.width = width.current * 2;
         state.height = width.current * 2;
-      },
+      }
     });
 
     setTimeout(() => {

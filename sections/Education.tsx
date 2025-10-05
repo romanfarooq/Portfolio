@@ -11,7 +11,7 @@ export function Education() {
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start 10%", "end 50%"],
+    offset: ["start 10%", "end 50%"]
   });
 
   const scaleY = useTransform(scrollYProgress, [0, 1], [0, 1]);

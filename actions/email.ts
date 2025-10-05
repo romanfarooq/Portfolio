@@ -15,22 +15,22 @@ export async function sendEmail(formData: FormData) {
       name: z
         .string()
         .nonempty({
-          message: t("form.validation.nameRequired"),
+          message: t("form.validation.nameRequired")
         })
         .max(50, {
-          message: t("form.validation.nameMaxLength"),
+          message: t("form.validation.nameMaxLength")
         }),
       email: z.email({
-        message: t("form.validation.emailInvalid"),
+        message: t("form.validation.emailInvalid")
       }),
       message: z
         .string()
         .min(10, {
-          message: t("form.validation.messageMinLength"),
+          message: t("form.validation.messageMinLength")
         })
         .max(1000, {
-          message: t("form.validation.messageMaxLength"),
-        }),
+          message: t("form.validation.messageMaxLength")
+        })
     });
 
     const data = Object.fromEntries(formData.entries());
@@ -40,7 +40,7 @@ export async function sendEmail(formData: FormData) {
     if (!result.success) {
       return {
         success: false,
-        error: result.error.issues.map((error) => error.message).join(", "),
+        error: result.error.issues.map((error) => error.message).join(", ")
       };
     }
 
@@ -53,26 +53,26 @@ export async function sendEmail(formData: FormData) {
       react: ContactEmail({
         name: validatedData.name,
         email: validatedData.email,
-        message: validatedData.message,
-      }),
+        message: validatedData.message
+      })
     });
 
     if (response.data?.id) {
       return {
         success: true,
-        message: t("alerts.success"),
+        message: t("alerts.success")
       };
     } else if (response.error) {
       return {
         success: false,
-        error: t("alerts.emailError"),
+        error: t("alerts.emailError")
       };
     }
   } catch (error) {
     console.error("Error sending email:", error);
     return {
       success: false,
-      error: t("alerts.emailError"),
+      error: t("alerts.emailError")
     };
   }
 }

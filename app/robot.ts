@@ -4,8 +4,8 @@ export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       allow: "/",
-      userAgent: "*",
+      userAgent: "*"
     },
-    sitemap: "https://roman-farooq-portfolio.vercel.app/sitemap.xml",
+    sitemap: "https://roman-farooq-portfolio.vercel.app/sitemap.xml"
   };
 }

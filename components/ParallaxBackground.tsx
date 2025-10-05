@@ -6,12 +6,12 @@ export function ParallaxBackground() {
 
   const { scrollYProgress } = useScroll({
     target: backgroundRef,
-    offset: ["start start", "end start"],
+    offset: ["start start", "end start"]
   });
 
   const smoothProgress = useSpring(scrollYProgress, {
     damping: 30,
-    stiffness: 80,
+    stiffness: 80
   });
 
   const mountain3Y = useTransform(smoothProgress, [0, 0.5], ["0%", "30%"]);

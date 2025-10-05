@@ -4,8 +4,8 @@ import createNextIntlPlugin from "next-intl/plugin";
 const nextConfig: NextConfig = {
   typedRoutes: true,
   experimental: {
-    reactCompiler: true,
-  },
+    reactCompiler: true
+  }
 };
 
 const withNextIntl = createNextIntlPlugin();
