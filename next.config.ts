@@ -6,16 +6,6 @@ const nextConfig: NextConfig = {
   experimental: {
     reactCompiler: true,
   },
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "robohash.org",
-        port: "",
-        pathname: "/**",
-      },
-    ],
-  },
 };
 
 const withNextIntl = createNextIntlPlugin();
