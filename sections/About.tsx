@@ -19,9 +19,9 @@ export async function About() {
           <Image
             src="/assets/images/coding-pov.webp"
             alt="Coding POV"
+            width={1280}
+            height={720}
             priority={true}
-            width={1828}
-            height={813}
             className="absolute -top-4 -right-20 scale-[1.75] md:inset-y-10 md:left-50 md:scale-[3] lg:scale-[2.5]"
           />
           <div className="z-10">
