@@ -69,8 +69,8 @@ export async function generateMetadata({
       title: t("twitterTitle"),
       description: t("twitterDescription"),
       images: ["/assets/images/roman.webp"],
-      site: "@RomanDev92",
-      creator: "@RomanDev92",
+      site: "@TheRomanFarooq",
+      creator: "@TheRomanFarooq",
     },
     verification: {
       google: "kp1SzfMW4-YoGuTNP3YrE5AzIZ9lAfpXXmocVTl5zVg",
