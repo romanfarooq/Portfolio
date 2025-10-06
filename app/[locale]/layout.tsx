@@ -116,7 +116,6 @@ export function generateViewport(): Viewport {
 }
 
 const funnelDisplay = Funnel_Display({
-  variable: "--font-funnel-display",
   display: "swap",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800"]
@@ -138,7 +137,7 @@ export default async function RootLayout({
     <html lang={locale} data-scroll-behavior="smooth">
       <body
         className={cn(
-          funnelDisplay.variable,
+          funnelDisplay.className,
           "bg-primary overflow-x-hidden antialiased"
         )}
       >
