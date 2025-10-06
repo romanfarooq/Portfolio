@@ -27,7 +27,7 @@ export async function generateMetadata({
     publisher: "Roman Farooq",
     keywords: t.raw("keywords"),
     generator: "Next.js",
-    manifest: "/manifest.json",
+    manifest: "/manifest.webmanifest",
     assets: ["/assets", "/draco", "/models"],
     pinterest: {
       richPin: true
