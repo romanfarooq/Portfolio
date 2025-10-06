@@ -1,9 +1,10 @@
 "use client";
 
+import createGlobe from "cobe";
 import { cn } from "@/lib/utils";
 import { useRef, useEffect } from "react";
 import { useSpring, useMotionValue } from "motion/react";
-import createGlobe, { type COBEOptions } from "cobe";
+import type { COBEOptions } from "cobe";
 
 const MOVEMENT_DAMPING = 1400;
 
