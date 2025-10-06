@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       userAgent: "*"
     },
-    sitemap: "https://roman-farooq-portfolio.vercel.app/sitemap.xml"
+    sitemap: "https://romanfarooq.vercel.app/sitemap.xml"
   };
 }

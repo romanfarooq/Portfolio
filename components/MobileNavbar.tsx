@@ -20,11 +20,10 @@ export function MobileNavbar() {
   ) => {
     e.preventDefault();
     setIsNavOpen(false);
-    setTimeout(
-      () =>
-        document.getElementById(hash)?.scrollIntoView({ behavior: "smooth" }),
-      100
-    );
+    setTimeout(() => {
+      const element = document.getElementById(hash);
+      if (element) element.scrollIntoView({ behavior: "smooth" });
+    }, 100);
   };
 
   const handleLocaleChange = (

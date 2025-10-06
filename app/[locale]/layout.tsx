@@ -21,13 +21,24 @@ export async function generateMetadata({
   return {
     title: t("title"),
     description: t("description"),
-    metadataBase: new URL("https://roman-farooq-portfolio.vercel.app"),
+    metadataBase: new URL("https://romanfarooq.vercel.app"),
     authors: [{ name: "Roman Farooq", url: "https://github.com/romanfarooq" }],
     creator: "Roman Farooq",
     publisher: "Roman Farooq",
     keywords: t.raw("keywords"),
+    generator: "Next.js",
+    manifest: "/manifest.json",
+    assets: ["/assets", "/draco", "/models"],
+    pinterest: {
+      richPin: true
+    },
+    appleWebApp: {
+      capable: true,
+      title: t("title"),
+      statusBarStyle: "black-translucent"
+    },
     alternates: {
-      canonical: "https://roman-farooq-portfolio.vercel.app/",
+      canonical: "https://romanfarooq.vercel.app/",
       languages: {
         "en-US": "/en",
         "zh-CN": "/zh"
@@ -40,8 +51,10 @@ export async function generateMetadata({
     },
     openGraph: {
       type: "website",
+      countryName: "Pakistan",
+      emails: ["romanfarooq@outlook.com"],
       locale: locale === "en" ? "en_US" : "zh_CN",
-      url: "https://roman-farooq-portfolio.vercel.app",
+      url: "https://romanfarooq.vercel.app",
       title: t("openGraphTitle"),
       siteName: t("openGraphSiteName"),
       description: t("openGraphDescription"),
@@ -81,9 +94,14 @@ export async function generateMetadata({
       index: true,
       follow: true,
       nocache: false,
+      noimageindex: false,
+      "max-snippet": -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
       googleBot: {
         index: true,
         follow: true,
+        nocache: false,
         noimageindex: false,
         "max-snippet": -1,
         "max-video-preview": -1,
@@ -92,10 +110,8 @@ export async function generateMetadata({
     },
     other: {
       github: "https://github.com/romanfarooq",
-      linkedin: "https://linkedin.com/in/roman-farooq",
       instagram: "https://instagram.com/roman_farooq",
-      email: "romanfarooq@outlook.com",
-      location: "Lahore, Pakistan"
+      linkedin: "https://linkedin.com/in/roman-farooq"
     }
   };
 }
