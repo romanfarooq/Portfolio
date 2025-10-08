@@ -108,18 +108,16 @@ export function Globe({ className, config = GLOBE_CONFIG }: GlobeProps) {
   return (
     <div className={cn("mx-auto aspect-square w-full max-w-xl", className)}>
       <canvas
-        className="size-[30rem] opacity-0 transition-opacity duration-500 contain-layout contain-paint contain-size"
         ref={canvasRef}
+        className="size-[30rem] opacity-0 transition-opacity duration-500 contain-layout contain-paint contain-size"
+        onPointerUp={() => updatePointerInteraction(null)}
+        onPointerOut={() => updatePointerInteraction(null)}
+        onMouseMove={(e) => updateMovement(e.clientX)}
+        onTouchMove={(e) => updateMovement(e.touches[0].clientX)}
         onPointerDown={(e) => {
           pointerInteracting.current = e.clientX;
           updatePointerInteraction(e.clientX);
         }}
-        onPointerUp={() => updatePointerInteraction(null)}
-        onPointerOut={() => updatePointerInteraction(null)}
-        onMouseMove={(e) => updateMovement(e.clientX)}
-        onTouchMove={(e) =>
-          e.touches[0] && updateMovement(e.touches[0].clientX)
-        }
       />
     </div>
   );
