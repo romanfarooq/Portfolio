@@ -5,7 +5,7 @@ import { Copy, CopyDone } from "./icons";
 import { useTranslations } from "next-intl";
 import { motion, AnimatePresence } from "motion/react";
 
-const CONTACT_EMAIL = "romanfarooq@outlook.com";
+const CONTACT_EMAIL = "theromanfarooq@gmail.com";
 
 export function CopyEmailButton() {
   const t = useTranslations("copyEmail");

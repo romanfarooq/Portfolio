@@ -52,7 +52,7 @@ export async function generateMetadata({
     openGraph: {
       type: "website",
       countryName: "Pakistan",
-      emails: ["romanfarooq@outlook.com"],
+      emails: ["theromanfarooq@gmail.com"],
       locale: locale === "en" ? "en_US" : "zh_CN",
       url: "https://romanfarooq.vercel.app",
       title: t("openGraphTitle"),
@@ -88,7 +88,7 @@ export async function generateMetadata({
     verification: {
       google: "kp1SzfMW4-YoGuTNP3YrE5AzIZ9lAfpXXmocVTl5zVg",
       yandex: "b13e5b1aac4144f0",
-      me: "mailto:romanfarooq@outlook.com"
+      me: "mailto:theromanfarooq@gmail.com"
     },
     robots: {
       index: true,
