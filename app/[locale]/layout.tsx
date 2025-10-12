@@ -27,8 +27,12 @@ export async function generateMetadata({
     publisher: "Roman Farooq",
     keywords: t.raw("keywords"),
     generator: "Next.js",
-    manifest: "/manifest.webmanifest",
-    assets: ["/assets", "/draco", "/models"],
+    manifest: "https://romanfarooq.vercel.app/manifest.webmanifest",
+    assets: [
+      "https://romanfarooq.vercel.app/draco",
+      "https://romanfarooq.vercel.app/models",
+      "https://romanfarooq.vercel.app/assets"
+    ],
     pinterest: {
       richPin: true
     },
@@ -38,16 +42,16 @@ export async function generateMetadata({
       statusBarStyle: "black-translucent"
     },
     alternates: {
-      canonical: "https://romanfarooq.vercel.app/",
+      canonical: "https://romanfarooq.vercel.app",
       languages: {
-        "en-US": "/en",
-        "zh-CN": "/zh"
+        "en-US": "https://romanfarooq.vercel.app/en",
+        "zh-CN": "https://romanfarooq.vercel.app/zh"
       }
     },
     icons: {
-      icon: "/favicon.ico",
-      apple: "/favicon.ico",
-      shortcut: "/favicon.ico"
+      icon: "https://romanfarooq.vercel.app/favicon.ico",
+      apple: "https://romanfarooq.vercel.app/favicon.ico",
+      shortcut: "https://romanfarooq.vercel.app/favicon.ico"
     },
     openGraph: {
       type: "website",
@@ -60,7 +64,7 @@ export async function generateMetadata({
       description: t("openGraphDescription"),
       images: [
         {
-          url: "/assets/images/roman.webp",
+          url: "https://romanfarooq.vercel.app/assets/images/roman.webp",
           width: 1200,
           height: 630,
           alt: "Roman Farooq"
@@ -81,7 +85,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: t("twitterTitle"),
       description: t("twitterDescription"),
-      images: ["/assets/images/roman.webp"],
+      images: ["https://romanfarooq.vercel.app/assets/images/roman.webp"],
       site: "@TheRomanFarooq",
       creator: "@TheRomanFarooq"
     },
