@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
-import { cn } from "@/lib/utils";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
+import { cn, localeToLang } from "@/lib/utils";
 import { Funnel_Display } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { setRequestLocale, getTranslations } from "next-intl/server";
@@ -154,7 +154,7 @@ export default async function RootLayout({
   setRequestLocale(locale);
 
   return (
-    <html lang={locale} data-scroll-behavior="smooth">
+    <html lang={localeToLang(locale)} data-scroll-behavior="smooth">
       <body
         className={cn(
           funnelDisplay.className,

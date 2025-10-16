@@ -43,3 +43,14 @@ export function getDevicePixelRatio() {
     ? window.devicePixelRatio
     : 1;
 }
+
+export function localeToLang(locale: string) {
+  switch (locale) {
+    case "en":
+      return "en-US";
+    case "zh":
+      return "zh-CN";
+    default:
+      return "en-US";
+  }
+}
