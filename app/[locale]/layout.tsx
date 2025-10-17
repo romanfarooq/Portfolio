@@ -155,12 +155,7 @@ export default async function RootLayout({
 
   return (
     <html lang={localeToLang(locale)} data-scroll-behavior="smooth">
-      <body
-        className={cn(
-          funnelDisplay.className,
-          "bg-primary overflow-x-hidden antialiased"
-        )}
-      >
+      <body className={cn(funnelDisplay.className, "bg-primary overflow-x-hidden antialiased")}>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>

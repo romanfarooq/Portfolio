@@ -32,10 +32,7 @@ export function remapValue(
   outMax: number
 ) {
   if (inMax === inMin) return outMin;
-  return Math.max(
-    ((value - inMin) * (outMax - outMin)) / (inMax - inMin) + outMin,
-    0
-  );
+  return Math.max(((value - inMin) * (outMax - outMin)) / (inMax - inMin) + outMin, 0);
 }
 
 export function getDevicePixelRatio() {
