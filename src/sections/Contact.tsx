@@ -32,7 +32,7 @@ export function Contact() {
   const contactFormSchema = z.object({
     name: z
       .string()
-      .nonempty({
+      .min(1, {
         message: t("form.validation.nameRequired")
       })
       .max(50, {
