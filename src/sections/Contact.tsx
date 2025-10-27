@@ -1,6 +1,5 @@
 "use client";
 
-import { z } from "zod";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useTranslations } from "next-intl";
@@ -10,6 +9,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Alert } from "@/components/Alert";
 import { sendEmail } from "@/actions/email";
 import { Particles } from "@/components/Particles";
+import { createContactFormSchema, ContactFormData } from "@/lib/schema";
 
 interface AlertMessage {
   type: "success" | "danger";
@@ -22,6 +22,7 @@ interface AlertState extends AlertMessage {
 
 export function Contact() {
   const t = useTranslations("contact");
+  const contactFormSchema = createContactFormSchema(t);
 
   const [alert, setAlert] = useState<AlertState>({
     show: false,
@@ -29,34 +30,13 @@ export function Contact() {
     message: ""
   });
 
-  const contactFormSchema = z.object({
-    name: z
-      .string()
-      .min(1, {
-        message: t("form.validation.nameRequired")
-      })
-      .max(50, {
-        message: t("form.validation.nameMaxLength")
-      }),
-    email: z.email({
-      message: t("form.validation.emailInvalid")
-    }),
-    message: z
-      .string()
-      .min(10, {
-        message: t("form.validation.messageMinLength")
-      })
-      .max(1000, {
-        message: t("form.validation.messageMaxLength")
-      })
-  });
 
   const {
     reset,
     register,
     handleSubmit,
     formState: { isSubmitting, errors }
-  } = useForm<z.infer<typeof contactFormSchema>>({
+  } = useForm<ContactFormData>({
     resolver: zodResolver(contactFormSchema),
     defaultValues: {
       name: "",
@@ -67,12 +47,10 @@ export function Contact() {
 
   const showAlertMessage = ({ type, message }: AlertMessage) => {
     setAlert({ show: true, type, message });
-    setTimeout(() => {
-      setAlert((prev) => ({ ...prev, show: false }));
-    }, 5000);
+    setTimeout(() => setAlert((prev) => ({ ...prev, show: false })), 5000);
   };
 
-  const onSubmit = async (data: z.infer<typeof contactFormSchema>) => {
+  const onSubmit = async (data: ContactFormData) => {
     try {
       const formData = new FormData();
 

@@ -1,10 +1,10 @@
 "use server";
 
-import { z } from "zod";
 import { Resend } from "resend";
 import { getTranslations } from "next-intl/server";
 
 import { ContactEmail } from "@/components/ContactEmail";
+import { createContactFormSchema } from "@/lib/schema";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -12,30 +12,8 @@ export async function sendEmail(formData: FormData) {
   const t = await getTranslations("contact");
 
   try {
-    const contactFormSchema = z.object({
-      name: z
-        .string()
-        .min(1, {
-          message: t("form.validation.nameRequired")
-        })
-        .max(50, {
-          message: t("form.validation.nameMaxLength")
-        }),
-      email: z.email({
-        message: t("form.validation.emailInvalid")
-      }),
-      message: z
-        .string()
-        .min(10, {
-          message: t("form.validation.messageMinLength")
-        })
-        .max(1000, {
-          message: t("form.validation.messageMaxLength")
-        })
-    });
-
     const data = Object.fromEntries(formData.entries());
-
+    const contactFormSchema = createContactFormSchema(t);
     const result = contactFormSchema.safeParse(data);
 
     if (!result.success) {

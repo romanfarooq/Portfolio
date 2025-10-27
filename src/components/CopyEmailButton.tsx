@@ -15,9 +15,7 @@ export function CopyEmailButton() {
   const copyToClipboard = () => {
     navigator.clipboard.writeText(CONTACT_EMAIL).then(() => {
       setCopied(true);
-      setTimeout(() => {
-        setCopied(false);
-      }, 2000);
+      setTimeout(() => setCopied(false), 2000);
     });
   };
 
