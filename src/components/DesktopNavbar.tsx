@@ -17,7 +17,7 @@ export async function DesktopNavbar() {
       </Link>
       <div className="flex items-center gap-6">
         <ul className="flex flex-row items-center gap-6">
-          {["home", "about", "work", "contact"].map((section) => (
+          {["home", "about", "work", "education", "contact"].map((section) => (
             <li key={section} className="py-2">
               <a
                 href={`#${section}`}
