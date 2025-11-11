@@ -9,7 +9,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Alert } from "@/components/Alert";
 import { sendEmail } from "@/actions/email";
 import { Particles } from "@/components/Particles";
-import { createContactFormSchema, ContactFormData } from "@/lib/schema";
+import { createContactFormSchema, type ContactFormData } from "@/lib/schema";
 
 interface AlertMessage {
   type: "success" | "danger";
