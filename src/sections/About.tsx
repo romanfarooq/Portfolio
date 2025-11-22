@@ -16,7 +16,7 @@ export async function About() {
     >
       <h2 className="text-3xl font-bold md:text-4xl">{t("title")}</h2>
       <div className="mt-12 grid grid-cols-1 gap-4 md:auto-rows-fr md:grid-cols-6">
-        <header className="from-storm to-indigo relative row-span-2 flex h-60 items-end overflow-hidden rounded-2xl bg-gradient-to-b p-6 duration-200 hover:-translate-y-1 md:col-span-3 md:h-full">
+        <header className="from-storm to-indigo relative row-span-2 flex h-60 items-end overflow-hidden rounded-2xl bg-linear-to-b p-6 duration-200 hover:-translate-y-1 md:col-span-3 md:h-full">
           <Image
             src="/assets/images/coding-pov.webp"
             alt="Coding POV"
@@ -32,7 +32,7 @@ export async function About() {
             </p>
           </div>
         </header>
-        <article className="from-royal to-lavender row-span-1 h-full min-h-60 overflow-hidden rounded-2xl bg-gradient-to-b px-6 py-4 duration-200 hover:-translate-y-1 md:col-span-3 md:p-6">
+        <article className="from-royal to-lavender row-span-1 h-full min-h-60 overflow-hidden rounded-2xl bg-linear-to-b px-6 py-4 duration-200 hover:-translate-y-1 md:col-span-3 md:p-6">
           <div className="flex h-full flex-col items-center justify-center gap-4">
             <div className="flex items-center gap-4">
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/20 p-2 md:h-16 md:w-16">
@@ -75,7 +75,7 @@ export async function About() {
             </a>
           </div>
         </article>
-        <aside className="from-charcoal via-jet to-charcoal relative row-span-1 h-60 overflow-hidden rounded-2xl bg-gradient-to-tl p-6 duration-200 hover:-translate-y-1 md:col-span-3 md:h-full">
+        <aside className="from-charcoal via-jet to-charcoal relative row-span-1 h-60 overflow-hidden rounded-2xl bg-linear-to-tl p-6 duration-200 hover:-translate-y-1 md:col-span-3 md:h-full">
           <div className="z-10 w-1/2">
             <h3 className="mt-2 mb-2 text-xl">{t("locationTitle")}</h3>
             <p className="text-sm text-neutral-200 md:text-base">
@@ -86,7 +86,7 @@ export async function About() {
             <Globe />
           </figure>
         </aside>
-        <aside className="from-orange to-coral relative row-span-1 h-60 overflow-hidden rounded-2xl bg-gradient-to-b p-6 duration-200 hover:-translate-y-1 md:col-span-2 md:h-full">
+        <aside className="from-orange to-coral relative row-span-1 h-60 overflow-hidden rounded-2xl bg-linear-to-b p-6 duration-200 hover:-translate-y-1 md:col-span-2 md:h-full">
           <div className="flex size-full flex-col items-center justify-center gap-4">
             <h3 className="mt-2 mb-2 text-center text-xl">
               {t("academicCollaboration")}
@@ -94,7 +94,7 @@ export async function About() {
             <CopyEmailButton />
           </div>
         </aside>
-        <article className="relative row-span-1 h-60 overflow-hidden rounded-2xl bg-gradient-to-b from-emerald-950 to-emerald-900 px-6 py-2 duration-200 hover:-translate-y-1 sm:p-6 md:col-span-4 md:h-full">
+        <article className="relative row-span-1 h-60 overflow-hidden rounded-2xl bg-linear-to-b from-emerald-950 to-emerald-900 px-6 py-2 duration-200 hover:-translate-y-1 sm:p-6 md:col-span-4 md:h-full">
           <div className="z-10 w-1/2">
             <h3 className="mb-2 text-base sm:text-xl">{t("techStackTitle")}</h3>
             <p className="text-xs text-neutral-200 md:text-sm lg:text-base">

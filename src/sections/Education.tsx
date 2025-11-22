@@ -72,9 +72,9 @@ export function Education() {
               </div>
             </article>
           ))}
-          <div className="absolute top-0 left-5 z-10 h-full w-0.5 overflow-hidden bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-0% via-neutral-700 to-transparent to-100% [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] md:left-1">
+          <div className="absolute top-0 left-5 z-10 h-full w-0.5 overflow-hidden bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-0% via-neutral-700 to-transparent to-100% mask-[linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] md:left-1">
             <motion.div
-              className="via-lavender/50 absolute inset-x-0 top-0 h-full w-0.5 origin-top rounded-full bg-gradient-to-t from-purple-500 from-0% via-10% to-transparent"
+              className="via-lavender/50 absolute inset-x-0 top-0 h-full w-0.5 origin-top rounded-full bg-linear-to-t from-purple-500 from-0% via-10% to-transparent"
               style={{ scaleY: scaleY, opacity: opacityTransform }}
             />
           </div>

@@ -24,9 +24,9 @@ export function ContactEmail({ name, email, message }: ContactEmailProps) {
       <Head />
       <Preview>New contact form submission from {name}</Preview>
       <Tailwind>
-        <Body className="bg-gradient-to-br from-gray-50 to-gray-100 font-sans">
+        <Body className="bg-linear-to-br from-gray-50 to-gray-100 font-sans">
           <Container className="mx-auto my-10 max-w-md rounded-lg border border-gray-200 bg-white p-6 shadow-lg">
-            <Section className="mb-4 rounded-t-lg bg-gradient-to-r from-blue-600 to-purple-600 p-5">
+            <Section className="mb-4 rounded-t-lg bg-linear-to-r from-blue-600 to-purple-600 p-5">
               <Heading className="text-center text-2xl font-bold text-white">
                 New Message Received
               </Heading>

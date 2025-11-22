@@ -30,7 +30,6 @@ export function Contact() {
     message: ""
   });
 
-
   const {
     reset,
     register,
