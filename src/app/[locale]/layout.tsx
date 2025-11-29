@@ -102,8 +102,8 @@ export async function generateMetadata({
       creator: "@TheRomanFarooq"
     },
     verification: {
-      google: "kp1SzfMW4-YoGuTNP3YrE5AzIZ9lAfpXXmocVTl5zVg",
-      yandex: "b13e5b1aac4144f0",
+      google: "hy8q7z_u8DNxT5VPRKgf2etAJl3ZVcO0m6K73d3vZUo",
+      yandex: "854875a833bcda72",
       me: "mailto:theromanfarooq@gmail.com"
     },
     robots: {
