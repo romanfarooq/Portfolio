@@ -102,7 +102,6 @@ export async function generateMetadata({
       creator: "@TheRomanFarooq"
     },
     verification: {
-      google: "hy8q7z_u8DNxT5VPRKgf2etAJl3ZVcO0m6K73d3vZUo",
       yandex: "854875a833bcda72",
       me: "mailto:theromanfarooq@gmail.com"
     },
