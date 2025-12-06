@@ -1,5 +1,5 @@
 import { createJiti } from "jiti";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath } from "url";
 import { type NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
 
