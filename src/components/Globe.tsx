@@ -12,7 +12,6 @@ const MOVEMENT_DAMPING = 1400;
 const GLOBE_CONFIG: COBEOptions = {
   width: 800,
   height: 800,
-  onRender: () => {},
   devicePixelRatio: 2,
   phi: 0,
   dark: 1,
@@ -23,19 +22,7 @@ const GLOBE_CONFIG: COBEOptions = {
   baseColor: [1, 1, 1],
   glowColor: [1, 1, 1],
   markerColor: [1, 1, 1],
-  markers: [
-    { location: [19.076, 72.8777], size: 0.05 },
-    { location: [40.7128, -74.006], size: 0.1 },
-    { location: [31.5204, 74.3587], size: 0.1 },
-    { location: [23.8103, 90.4125], size: 0.05 },
-    { location: [30.0444, 31.2357], size: 0.07 },
-    { location: [19.4326, -99.1332], size: 0.1 },
-    { location: [41.0082, 28.9784], size: 0.06 },
-    { location: [14.5995, 120.9842], size: 0.03 },
-    { location: [39.9042, 116.4074], size: 0.08 },
-    { location: [34.6937, 135.5022], size: 0.05 },
-    { location: [-23.5505, -46.6333], size: 0.05 }
-  ]
+  markers: [{ location: [31.5204, 74.3587], size: 0.05 }]
 };
 
 interface GlobeProps {
@@ -73,6 +60,8 @@ export function Globe({ className, config = GLOBE_CONFIG }: GlobeProps) {
   };
 
   useEffect(() => {
+    let animationFrame = 0;
+
     const onResize = () => {
       if (canvasRef.current) {
         width.current = canvasRef.current.offsetWidth;
@@ -85,14 +74,22 @@ export function Globe({ className, config = GLOBE_CONFIG }: GlobeProps) {
     const globe = createGlobe(canvasRef.current!, {
       ...config,
       width: width.current * 2,
-      height: width.current * 2,
-      onRender: (state) => {
-        if (!pointerInteracting.current) phi.current += 0.005;
-        state.phi = phi.current + rs.get();
-        state.width = width.current * 2;
-        state.height = width.current * 2;
-      }
+      height: width.current * 2
     });
+
+    const animate = () => {
+      if (pointerInteracting.current === null) phi.current += 0.005;
+
+      globe.update({
+        phi: phi.current + rs.get(),
+        width: width.current * 2,
+        height: width.current * 2
+      });
+
+      animationFrame = requestAnimationFrame(animate);
+    };
+
+    animate();
 
     setTimeout(() => {
       if (canvasRef.current) {
@@ -101,6 +98,7 @@ export function Globe({ className, config = GLOBE_CONFIG }: GlobeProps) {
     }, 0);
 
     return () => {
+      cancelAnimationFrame(animationFrame);
       globe.destroy();
       window.removeEventListener("resize", onResize);
     };

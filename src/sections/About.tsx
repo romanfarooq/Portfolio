@@ -101,7 +101,7 @@ export async function About() {
               {t("techStackDescription")}
             </p>
           </div>
-          <div className="absolute inset-y-0 start-7/12 h-full w-full sm:start-1/2 md:inset-y-9 md:scale-125">
+          <div className="absolute inset-y-0 inset-s-7/12 h-full w-full sm:inset-s-1/2 md:inset-y-9 md:scale-125">
             <Frameworks />
           </div>
         </article>
