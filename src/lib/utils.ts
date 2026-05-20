@@ -51,3 +51,20 @@ export function localeToLang(locale: string) {
       return "en-US";
   }
 }
+
+export const getRotationForLocation = ([latitude, longitude]: [
+  number,
+  number
+]) => {
+  const latitudeRadians = (latitude * Math.PI) / 180;
+  const longitudeRadians = (longitude * Math.PI) / 180;
+  const cosLatitude = Math.cos(latitudeRadians);
+  const x = cosLatitude * Math.cos(longitudeRadians);
+  const y = Math.sin(latitudeRadians);
+  const z = -cosLatitude * Math.sin(longitudeRadians);
+
+  return {
+    phi: Math.atan2(-x, z),
+    theta: Math.atan2(y, Math.hypot(x, z))
+  };
+};
