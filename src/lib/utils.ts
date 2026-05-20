@@ -68,3 +68,10 @@ export const getRotationForLocation = ([latitude, longitude]: [
     theta: Math.atan2(y, Math.hypot(x, z))
   };
 };
+
+export function getResponsiveConfig<T>(
+  config: { mobile: T; desktop: T },
+  isMobile: boolean
+) {
+  return isMobile ? config.mobile : config.desktop;
+}
