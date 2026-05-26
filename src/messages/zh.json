@@ -1,12 +1,12 @@
 {
   "metadata": {
     "title": "Roman Farooq 的人工智能与软件工程作品集",
-    "description": "Roman Farooq 是一名专注于人工智能的软件工程师兼数据科学爱好者，致力于构建智能化、数据驱动、可扩展的解决方案。擅长 Python、React、Next.js 以及现代机器学习集成，将高级数据分析与以用户为中心的设计相结合，打造创新应用。",
+    "description": "Roman Farooq 是一名专注于人工智能的软件工程师兼数据科学爱好者，致力于构建智能化、数据驱动且可扩展的解决方案。专长于 Python、React、Next.js 和现代机器学习集成，将高级分析与以用户为中心的设计结合起来，交付创新应用。",
     "openGraphTitle": "Roman Farooq 的人工智能与软件工程作品集",
-    "openGraphDescription": "Roman Farooq 是一名专注于人工智能的软件工程师兼数据科学爱好者，致力于构建智能化、数据驱动、可扩展的解决方案。擅长 Python、React、Next.js 以及现代机器学习集成，将高级数据分析与以用户为中心的设计相结合，打造创新应用。",
+    "openGraphDescription": "Roman Farooq 是一名专注于人工智能的软件工程师兼数据科学爱好者，致力于构建智能化、数据驱动且可扩展的解决方案。专长于 Python、React、Next.js 和现代机器学习集成，将高级分析与以用户为中心的设计结合起来，交付创新应用。",
     "openGraphSiteName": "Roman Farooq 的人工智能与软件工程作品集",
     "twitterTitle": "Roman Farooq 的人工智能与软件工程作品集",
-    "twitterDescription": "Roman Farooq 是一名专注于人工智能的软件工程师兼数据科学爱好者，致力于构建智能化、数据驱动、可扩展的解决方案。擅长 Python、React、Next.js 以及现代机器学习集成，将高级数据分析与以用户为中心的设计相结合，打造创新应用。",
+    "twitterDescription": "Roman Farooq 是一名专注于人工智能的软件工程师兼数据科学爱好者，致力于构建智能化、数据驱动且可扩展的解决方案。专长于 Python、React、Next.js 和现代机器学习集成，将高级分析与以用户为中心的设计结合起来，交付创新应用。",
     "applicationName": "Roman Farooq 的人工智能与软件工程作品集",
     "category": "作品集",
     "classification": "作品集, 人工智能, 数据科学, 软件工程",
@@ -46,7 +46,7 @@
       "UI/UX",
       "OpenAI",
       "GPT",
-      "开源项目",
+      "开源",
       "远程工作",
       "巴基斯坦",
       "拉合尔",
@@ -72,87 +72,90 @@
   "about": {
     "title": "关于我",
     "greeting": "你好，我是 Roman Farooq",
-    "description": "一名专注于人工智能的全栈软件工程师，热衷于开发智能化的数据驱动应用。擅长创建直观的用户体验、设计可扩展的后端系统，并将机器学习模型集成到实际解决方案中。",
+    "description": "一名专注于人工智能的软件工程师，热衷于开发智能化、数据驱动的应用。我擅长打造直观的用户体验、设计可扩展的后端系统，并将机器学习模型集成到真实场景解决方案中。",
     "metaCertTitle": "Meta 前端开发者",
     "metaCertSubtitle": "专业证书",
-    "metaCertDescription": "通过Coursera平台的Meta认证课程获得，此证书验证了前端开发能力，包括React、JavaScript、UI设计原则、调试、Git版本控制及生产环境应用部署。",
+    "metaCertDescription": "通过 Coursera 上的 Meta 严格课程获得，此认证验证了前端开发能力，包括 React、JavaScript、UI 设计原则、调试、Git 版本控制以及生产环境应用部署。",
     "viewCertificate": "🎓 查看证书",
     "locationTitle": "所在地",
     "locationDescription": "我位于巴基斯坦拉合尔",
-    "academicCollaboration": "开放人工智能/机器学习研究和数据科学项目的学术合作。",
+    "academicCollaboration": "欢迎人工智能/机器学习研究和数据科学项目的学术合作。",
     "techStackTitle": "技术栈",
-    "techStackDescription": "精通Python(Pandas、NumPy、Matplotlib、FastAPI)、JavaScript/TypeScript及React、Next.js、Node.js等框架；擅长数据库管理(MongoDB、PostgreSQL)、AI API集成与云部署；熟悉Tailwind CSS、Docker、Prisma、Redux、Flutter等技术，具备可扩展后端架构经验。"
+    "techStackDescription": "精通 Python（Pandas、NumPy、Matplotlib、FastAPI）、JavaScript/TypeScript，以及 React、Next.js、Node.js 等框架。擅长数据库管理（MongoDB、PostgreSQL）、AI API 集成和云部署。熟悉 Tailwind CSS，并了解 Docker、Prisma、Redux、Flutter 和可扩展后端架构。"
   },
   "copyEmail": {
     "copyButton": "复制邮箱地址",
     "copiedMessage": "邮箱已复制"
   },
   "education": {
-    "title": "教育背景",
+    "title": "我的教育背景",
     "bachelors": {
       "title": "计算机科学理学学士",
-      "institute": "旁遮普中央大学（拉合尔）",
+      "institute": "中央旁遮普大学，拉合尔",
       "date": "2020年10月 - 2024年7月",
       "contents": [
-        "毕业平均绩点(CGPA): 3.42",
-        "2020年10月至2024年7月获得50%的CGPA奖学金",
-        "核心课程: 编程、数据结构、算法、数据库系统、Web开发、人工智能与深度学习",
-        "毕业设计: 基于高级软件工程与人工智能概念的项目"
+        "毕业平均绩点为 3.42。",
+        "2020年10月至2024年7月期间获得 50% 的基于 CGPA 奖学金。",
+        "完成了编程、数据结构、算法、数据库系统、Web 开发、人工智能和深度学习等核心课程。",
+        "完成了一个涉及高级软件工程和 AI 概念的毕业设计项目。"
       ]
     },
     "intermediate": {
-      "title": "高中计算机科学（物理方向）",
-      "institute": "旁遮普学院（拉合尔）",
+      "title": "计算机科学预科（物理方向）",
+      "institute": "旁遮普学院，拉合尔",
       "date": "2018年9月 - 2020年6月",
-      "contents": ["毕业成绩: A等", "主修方向: 计算机科学与物理"]
+      "contents": [
+        "以 A 等成绩毕业。",
+        "主修计算机科学和物理。"
+      ]
     },
     "matriculation": {
-      "title": "初中毕业（理科）",
-      "institute": "旁遮普学校（拉合尔）",
+      "title": "中学毕业（理科）",
+      "institute": "The Punjab School，拉合尔",
       "date": "2016年3月 - 2018年5月",
       "contents": [
-        "毕业成绩: A等",
-        "八年级英语写作比赛（班级组）第一名",
-        "校际乒乓球团体赛冠军"
+        "以 A 等成绩毕业。",
+        "在八年级班级组英语写作比赛中获得第一名。",
+        "与团队一起赢得了校际乒乓球比赛。"
       ]
     }
   },
   "contact": {
-    "title": "联系我",
-    "description": "无论您需要开发新网站、优化现有平台，还是实现独特项目，我将为您提供专业支持",
+    "title": "让我们聊聊",
+    "description": "无论你是想打造一个新网站、改进现有平台，还是将独特项目落地，我都可以提供帮助",
     "form": {
       "legend": "联系信息",
       "name": {
-        "label": "姓名",
-        "placeholder": "张明"
+        "label": "全名",
+        "placeholder": "张三"
       },
       "email": {
         "label": "邮箱",
-        "placeholder": "您的邮箱@example.com"
+        "placeholder": "JohnDoe@email.com"
       },
       "message": {
         "label": "消息",
-        "placeholder": "请分享您的需求..."
+        "placeholder": "分享你的想法..."
       },
       "submit": "发送",
       "submitting": "发送中...",
       "validation": {
         "nameRequired": "姓名为必填项",
-        "nameMaxLength": "姓名不能超过50个字符",
+        "nameMaxLength": "姓名必须少于 50 个字符",
         "emailInvalid": "请输入有效的邮箱地址",
-        "messageMinLength": "消息长度至少为10个字符",
-        "messageMaxLength": "消息不能超过1000个字符"
+        "messageMinLength": "消息必须至少 10 个字符",
+        "messageMaxLength": "消息必须少于 1000 个字符"
       }
     },
     "alerts": {
-      "success": "消息发送成功！",
-      "error": "发送出错！",
-      "emailError": "邮件发送失败"
+      "success": "你的消息已发送！",
+      "error": "出了点问题！",
+      "emailError": "发送邮件失败"
     }
   },
   "footer": {
     "termsConditions": "条款与条件",
     "privacyPolicy": "隐私政策",
-    "copyright": "保留所有权利"
+    "copyright": "版权所有。"
   }
 }
