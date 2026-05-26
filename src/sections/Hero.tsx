@@ -61,6 +61,7 @@ const STATION_CONFIG: ModelConfig = {
     ]
   }
 };
+
 export function Hero() {
   const isMobile = useMediaQuery({ maxWidth: 768 });
   const viewportPreset = isMobile ? "mobile" : "desktop";

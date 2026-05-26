@@ -2,9 +2,9 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Roman Farooq's AI & Software Engineering Portfolio",
+    name: "Roman Farooq's AI, Software & Space Technology Portfolio",
     short_name: "Roman Farooq - Portfolio",
-    description: "Roman Farooq is an AI-focused software engineer and data science enthusiast dedicated to building intelligent, data-driven, and scalable solutions. Specializing in Python, React, Next.js, and modern machine learning integrations, Roman delivers innovative applications combining advanced analytics with user-focused design.",
+    description: "Roman Farooq is a Software and AI Engineer focused on RF systems, satellite communication, GIS, remote sensing, space technology, and engineering software systems.",
     lang: "en-US",
     start_url: "/",
     scope: "/",
@@ -12,7 +12,7 @@ export default function manifest(): MetadataRoute.Manifest {
     background_color: "#030412",
     theme_color: "#030412",
     orientation: "portrait-primary",
-    categories: ["portfolio", "developer", "technology"],
+    categories: ["portfolio", "developer", "technology", "engineering"],
     icons: [
       {
         src: "/assets/images/icon-192x192.png",

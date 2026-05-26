@@ -88,13 +88,13 @@ export async function About() {
         </aside>
         <aside className="from-orange to-coral relative row-span-1 h-60 overflow-hidden rounded-2xl bg-linear-to-b p-6 duration-200 hover:-translate-y-1 md:col-span-2 md:h-full">
           <div className="flex size-full flex-col items-center justify-center gap-4">
-            <h3 className="mt-2 mb-2 text-center text-xl">
+            <h3 className="mt-2 mb-2 text-center text-base md:text-xl">
               {t("academicCollaboration")}
             </h3>
             <CopyEmailButton />
           </div>
         </aside>
-        <article className="relative row-span-1 h-60 overflow-hidden rounded-2xl bg-linear-to-b from-emerald-950 to-emerald-900 px-6 py-2 duration-200 hover:-translate-y-1 sm:p-6 md:col-span-4 md:h-full">
+        <article className="relative row-span-1 h-full overflow-hidden rounded-2xl bg-linear-to-b from-emerald-950 to-emerald-900 px-6 py-2 duration-200 hover:-translate-y-1 sm:p-6 md:col-span-4">
           <div className="z-10 w-1/2">
             <h3 className="mb-2 text-base sm:text-xl">{t("techStackTitle")}</h3>
             <p className="text-xs text-neutral-200 md:text-sm lg:text-base">
