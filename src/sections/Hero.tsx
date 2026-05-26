@@ -11,7 +11,6 @@ import { HeroText } from "@/components/HeroText";
 import { Astronaut } from "@/components/Astronaut";
 import { SpaceStation } from "@/components/SpaceStation";
 import { ParallaxBackground } from "@/components/ParallaxBackground";
-import { getResponsiveConfig } from "@/lib/utils";
 
 type ModelConfig = {
   [key in "mobile" | "desktop"]: {
@@ -64,9 +63,10 @@ const STATION_CONFIG: ModelConfig = {
 };
 export function Hero() {
   const isMobile = useMediaQuery({ maxWidth: 768 });
+  const viewportPreset = isMobile ? "mobile" : "desktop";
 
-  const astronautConfig = getResponsiveConfig(ASTRONAUT_CONFIG, isMobile);
-  const spaceStationConfig = getResponsiveConfig(STATION_CONFIG, isMobile);
+  const astronautConfig = ASTRONAUT_CONFIG[viewportPreset];
+  const spaceStationConfig = STATION_CONFIG[viewportPreset];
 
   return (
     <section
