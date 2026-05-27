@@ -67,7 +67,12 @@ export function LanguageSwitcher({
             <span className="truncate">{localeLabels[currentLocale]}</span>
           </span>
         </SelectTrigger>
-        <SelectContent align="end" sideOffset={8} className="min-w-44">
+        <SelectContent
+          side="bottom"
+          align="center"
+          sideOffset={8}
+          className="min-w-44"
+        >
           {locales.map((locale) => (
             <SelectItem key={locale} value={locale} className="py-2.5">
               <span className="flex items-center gap-2">

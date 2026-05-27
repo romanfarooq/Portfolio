@@ -31,7 +31,7 @@ function SelectTrigger({
     <SelectPrimitive.Trigger
       data-slot="select-trigger"
       className={cn(
-        "flex h-10 min-w-32 items-center justify-between gap-2 rounded-md border border-white/10 bg-white/10 px-3 py-2 text-sm text-white shadow-sm transition-colors outline-none hover:bg-white/15 focus:border-white/30 focus:ring-2 focus:ring-white/10 disabled:cursor-not-allowed disabled:opacity-50 data-[placeholder]:text-neutral-400",
+        "flex h-10 min-w-32 items-center justify-between gap-2 rounded-md border border-white/10 bg-white/10 px-3 py-2 text-sm text-white shadow-sm transition-colors outline-none hover:bg-white/15 focus:border-white/30 focus:ring-2 focus:ring-white/10 disabled:cursor-not-allowed disabled:opacity-50 data-placeholder:text-neutral-400",
         className
       )}
       {...props}
@@ -140,7 +140,7 @@ function SelectItem({
     <SelectPrimitive.Item
       data-slot="select-item"
       className={cn(
-        "relative flex w-full cursor-pointer items-center gap-2 rounded-sm py-2 pr-8 pl-2 text-sm outline-none select-none focus:bg-white/10 focus:text-white data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
+        "relative flex w-full cursor-pointer items-center gap-2 rounded-sm py-2 pr-8 pl-2 text-sm outline-none select-none focus:bg-white/10 focus:text-white data-disabled:pointer-events-none data-disabled:opacity-50",
         className
       )}
       {...props}
