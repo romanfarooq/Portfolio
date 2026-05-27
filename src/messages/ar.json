@@ -1,0 +1,193 @@
+{
+  "metadata": {
+    "title": "Roman Farooq | مهندس ذكاء اصطناعي وبرمجيات | RF والاتصالات الفضائية وتقنية الفضاء",
+    "description": "رومان فاروق مهندس برمجيات وذكاء اصطناعي يركز على بناء أنظمة هندسية ذكية في مجالات البرمجيات والذكاء الاصطناعي وأنظمة RF والاتصالات الفضائية وGIS والاستشعار عن بعد وتقنية الفضاء. يجمع عمله بين تطوير full-stack وAI/ML والتطبيقات المعتمدة على البيانات والتقنيات الجغرافية المكانية ومعالجة الإشارات الرقمية وبرمجيات الهندسة للعمليات التقنية الواقعية.",
+    "openGraphTitle": "Roman Farooq | مهندس ذكاء اصطناعي وبرمجيات | RF والاتصالات الفضائية وتقنية الفضاء",
+    "openGraphDescription": "رومان فاروق مهندس برمجيات وذكاء اصطناعي مع تركيز متزايد على أنظمة RF والاتصالات الفضائية وGIS والاستشعار عن بعد وتقنية الفضاء. يبني أنظمة برمجية ذكية تربط AI والبيانات وسير العمل الهندسي والتحليل الجغرافي المكاني والعمليات التقنية الواقعية.",
+    "openGraphSiteName": "ملف Roman Farooq للذكاء الاصطناعي والبرمجيات وتقنية الفضاء",
+    "twitterTitle": "Roman Farooq | مهندس ذكاء اصطناعي وبرمجيات | RF وتقنية الفضاء",
+    "twitterDescription": "مهندس برمجيات وذكاء اصطناعي يركز على أنظمة RF والاتصالات الفضائية وGIS والاستشعار عن بعد وتقنية الفضاء وبرمجيات الهندسة الذكية.",
+    "applicationName": "ملف Roman Farooq للذكاء الاصطناعي والبرمجيات وتقنية الفضاء",
+    "category": "ملف أعمال",
+    "classification": "ملف أعمال، هندسة برمجيات، ذكاء اصطناعي، أنظمة RF، اتصالات فضائية، GIS، استشعار عن بعد، تقنية الفضاء، برمجيات هندسية",
+    "keywords": [
+      "Roman Farooq",
+      "AI Engineer",
+      "Software Engineer",
+      "Artificial Intelligence",
+      "Machine Learning Engineer",
+      "Deep Learning",
+      "Natural Language Processing",
+      "NLP",
+      "LLM Applications",
+      "RAG",
+      "LangChain",
+      "Engineering Software",
+      "RF Systems",
+      "RF Engineering",
+      "Satellite Communication",
+      "Satellite Communications",
+      "Space Technology",
+      "Ground Station Operations",
+      "Spectrum Monitoring",
+      "Carrier Monitoring",
+      "Antenna Systems",
+      "Link Budgeting",
+      "VSAT",
+      "C-band",
+      "Ku-band",
+      "Ka-band",
+      "HTS",
+      "GIS",
+      "Geographic Information Systems",
+      "Remote Sensing",
+      "Earth Observation",
+      "Geospatial Analysis",
+      "Hyperspectral Imaging",
+      "Digital Signal Processing",
+      "DSP",
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "scikit-learn",
+      "PyTorch",
+      "TensorFlow",
+      "FastAPI",
+      "React",
+      "React Native",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "Node.js",
+      "Express.js",
+      "Flutter",
+      "MongoDB",
+      "SQL",
+      "PostgreSQL",
+      "Prisma",
+      "Docker",
+      "Tailwind CSS",
+      "QGIS",
+      "ESA SNAP",
+      "Google Earth Engine",
+      "GDAL",
+      "Rasterio",
+      "GeoPandas",
+      "Leaflet",
+      "Open Source",
+      "Remote Work",
+      "Pakistan",
+      "Lahore",
+      "Portfolio Website"
+    ]
+  },
+  "navbar": {
+    "home": "الرئيسية",
+    "about": "نبذة",
+    "work": "الأعمال",
+    "education": "التعليم",
+    "contact": "تواصل"
+  },
+  "hero": {
+    "greeting": "مرحباً، أنا Roman",
+    "developerText": "مهندس ذكاء اصطناعي وبرمجيات",
+    "dedicatedText": "مكرس لصناعة",
+    "buildingText": "بناء",
+    "webSolutions": "حلول ذكية",
+    "flipWords": [
+      "معتمدة على البيانات",
+      "قابلة للتوسع",
+      "مبتكرة"
+    ]
+  },
+  "about": {
+    "title": "نبذة عني",
+    "greeting": "مرحباً، أنا Roman Farooq",
+    "description": "أنا مهندس برمجيات وذكاء اصطناعي مع تركيز متزايد على أنظمة RF والاتصالات الفضائية وGIS والاستشعار عن بعد وتقنية الفضاء. أهتم ببناء أنظمة هندسية ذكية تربط البرمجيات وAI والبيانات والعمليات التقنية الواقعية.",
+    "metaCertTitle": "مطوّر واجهات أمامية من Meta",
+    "metaCertSubtitle": "شهادة احترافية",
+    "metaCertDescription": "تم الحصول عليها من خلال برنامج Meta المكثف عبر Coursera، وتؤكد هذه الشهادة الكفاءة في تطوير الواجهات الأمامية، بما في ذلك React وJavaScript ومبادئ تصميم UI وتصحيح الأخطاء والتحكم في الإصدارات باستخدام Git ونشر التطبيقات الجاهزة للإنتاج.",
+    "viewCertificate": "🎓 عرض الشهادة",
+    "locationTitle": "الموقع",
+    "locationDescription": "أنا مقيم في لاهور، باكستان",
+    "academicCollaboration": "منفتح على التعاون الأكاديمي وأبحاث AI/ML وأنظمة RF والاتصالات الفضائية وGIS والاستشعار عن بعد ومشاريع برمجيات الهندسة.",
+    "techStackTitle": "المكدس التقني",
+    "techStackDescription": "متمكن من Python (Pandas وNumPy وMatplotlib وFastAPI) وJavaScript/TypeScript وأطر عمل مثل React وNext.js وNode.js وReact Native. ماهر في إدارة قواعد البيانات (MongoDB وPostgreSQL)، وتكاملات API للذكاء الاصطناعي، وLLM workflows، والنشر السحابي. لديه خبرة مع scikit-learn وPyTorch وTensorFlow وLangChain وTailwind CSS وDocker وPrisma وRedux وFlutter وQGIS وESA SNAP وGoogle Earth Engine وGDAL وRasterio وGeoPandas وLeaflet وبنية backend قابلة للتوسع."
+  },
+  "copyEmail": {
+    "copyButton": "نسخ عنوان البريد الإلكتروني",
+    "copiedMessage": "تم نسخ البريد الإلكتروني"
+  },
+  "education": {
+    "title": "تعليمي",
+    "bachelors": {
+      "title": "بكالوريوس علوم في علوم الحاسوب",
+      "institute": "University of Central Punjab، Lahore",
+      "date": "أكتوبر 2020 - يوليو 2024",
+      "contents": [
+        "تخرجت بمعدل CGPA يبلغ 3.42.",
+        "حصلت على منحة بنسبة 50% مبنية على CGPA من أكتوبر 2020 إلى يوليو 2024.",
+        "أكملت مقررات في مواد أساسية تشمل البرمجة وهياكل البيانات والخوارزميات وأنظمة قواعد البيانات وتطوير الويب والذكاء الاصطناعي وdeep learning.",
+        "أكملت مشروع تخرج يتضمن مفاهيم متقدمة في هندسة البرمجيات والذكاء الاصطناعي."
+      ]
+    },
+    "intermediate": {
+      "title": "المرحلة المتوسطة في علوم الحاسوب (فيزياء)",
+      "institute": "Punjab College، Lahore",
+      "date": "سبتمبر 2018 - يونيو 2020",
+      "contents": [
+        "تخرجت بتقدير A.",
+        "تخصصت في علوم الحاسوب والفيزياء."
+      ]
+    },
+    "matriculation": {
+      "title": "الشهادة المدرسية (علوم)",
+      "institute": "The Punjab School، Lahore",
+      "date": "مارس 2016 - مايو 2018",
+      "contents": [
+        "تخرجت بتقدير A.",
+        "فزت بالمركز الأول في مسابقة كتابة باللغة الإنجليزية بين الشعب في الصف الثامن.",
+        "حققت الفوز مع فريقي في مسابقة تنس طاولة بين الفروع."
+      ]
+    }
+  },
+  "contact": {
+    "title": "لنتحدث",
+    "description": "سواء كنت تريد بناء موقع جديد، أو تحسين منصتك الحالية، أو تحويل مشروع فريد إلى واقع، فأنا هنا للمساعدة.",
+    "form": {
+      "legend": "معلومات التواصل",
+      "name": {
+        "label": "الاسم الكامل",
+        "placeholder": "محمد علي"
+      },
+      "email": {
+        "label": "البريد الإلكتروني",
+        "placeholder": "email@example.com"
+      },
+      "message": {
+        "label": "الرسالة",
+        "placeholder": "شارك أفكارك..."
+      },
+      "submit": "إرسال",
+      "submitting": "جارٍ الإرسال...",
+      "validation": {
+        "nameRequired": "الاسم مطلوب",
+        "nameMaxLength": "يجب أن يكون الاسم أقل من 50 حرفاً",
+        "emailInvalid": "يرجى إدخال عنوان بريد إلكتروني صالح",
+        "messageMinLength": "يجب أن تكون الرسالة 10 أحرف على الأقل",
+        "messageMaxLength": "يجب أن تكون الرسالة أقل من 1000 حرف"
+      }
+    },
+    "alerts": {
+      "success": "تم إرسال رسالتك!",
+      "error": "حدث خطأ ما!",
+      "emailError": "فشل إرسال البريد الإلكتروني"
+    }
+  },
+  "footer": {
+    "termsConditions": "الشروط والأحكام",
+    "privacyPolicy": "سياسة الخصوصية",
+    "copyright": "جميع الحقوق محفوظة."
+  }
+}

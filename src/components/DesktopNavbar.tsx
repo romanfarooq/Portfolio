@@ -1,10 +1,9 @@
-import { getLocale, getTranslations } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 
-import { cn } from "@/lib/utils";
 import { Link } from "@/i18n/navigation";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
 export async function DesktopNavbar() {
-  const locale = await getLocale();
   const t = await getTranslations("navbar");
 
   return (
@@ -30,33 +29,7 @@ export async function DesktopNavbar() {
             )
           )}
         </ul>
-        <div className="ml-4 flex items-center gap-2">
-          <Link
-            href="/"
-            locale="en"
-            className={cn(
-              "rounded px-2 py-1 text-sm transition-colors",
-              locale === "en"
-                ? "bg-white/20 text-white"
-                : "text-neutral-300 hover:bg-white/10 hover:text-white"
-            )}
-          >
-            EN
-          </Link>
-          <span className="text-neutral-500">|</span>
-          <Link
-            href="/"
-            locale="zh"
-            className={cn(
-              "rounded px-2 py-1 text-sm transition-colors",
-              locale === "zh"
-                ? "bg-white/20 text-white"
-                : "text-neutral-300 hover:bg-white/10 hover:text-white"
-            )}
-          >
-            中文
-          </Link>
-        </div>
+        <LanguageSwitcher className="ml-4" />
       </div>
     </nav>
   );

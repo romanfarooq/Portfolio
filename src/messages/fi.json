@@ -1,0 +1,193 @@
+{
+  "metadata": {
+    "title": "Roman Farooq | AI- ja ohjelmistoinsinööri | RF, satelliittiviestintä ja avaruusteknologia",
+    "description": "Roman Farooq on ohjelmisto- ja AI-insinööri, joka keskittyy rakentamaan älykkäitä insinöörijärjestelmiä ohjelmistojen, tekoälyn, RF-järjestelmien, satelliittiviestinnän, GIS:n, kaukokartoituksen ja avaruusteknologian alueilla. Hänen työnsä yhdistää full-stack-kehityksen, AI/ML:n, datavetoiset sovellukset, geospatiaaliset teknologiat, digitaalisen signaalinkäsittelyn ja insinööriohjelmistot todellisiin teknisiin operaatioihin.",
+    "openGraphTitle": "Roman Farooq | AI- ja ohjelmistoinsinööri | RF, satelliittiviestintä ja avaruusteknologia",
+    "openGraphDescription": "Roman Farooq on ohjelmisto- ja AI-insinööri, jonka kasvava painopiste on RF-järjestelmissä, satelliittiviestinnässä, GIS:ssä, kaukokartoituksessa ja avaruusteknologiassa. Hän rakentaa älykkäitä ohjelmistojärjestelmiä, jotka yhdistävät AI:n, datan, insinöörityönkulut, geospatiaalisen analyysin ja todelliset tekniset operaatiot.",
+    "openGraphSiteName": "Roman Farooqin AI-, ohjelmisto- ja avaruusteknologiaportfolio",
+    "twitterTitle": "Roman Farooq | AI- ja ohjelmistoinsinööri | RF ja avaruusteknologia",
+    "twitterDescription": "Ohjelmisto- ja AI-insinööri, joka keskittyy RF-järjestelmiin, satelliittiviestintään, GIS:ään, kaukokartoitukseen, avaruusteknologiaan ja älykkäisiin insinööriohjelmistoihin.",
+    "applicationName": "Roman Farooqin AI-, ohjelmisto- ja avaruusteknologiaportfolio",
+    "category": "Portfolio",
+    "classification": "Portfolio, ohjelmistotekniikka, tekoäly, RF-järjestelmät, satelliittiviestintä, GIS, kaukokartoitus, avaruusteknologia, insinööriohjelmisto",
+    "keywords": [
+      "Roman Farooq",
+      "AI Engineer",
+      "Software Engineer",
+      "Artificial Intelligence",
+      "Machine Learning Engineer",
+      "Deep Learning",
+      "Natural Language Processing",
+      "NLP",
+      "LLM Applications",
+      "RAG",
+      "LangChain",
+      "Engineering Software",
+      "RF Systems",
+      "RF Engineering",
+      "Satellite Communication",
+      "Satellite Communications",
+      "Space Technology",
+      "Ground Station Operations",
+      "Spectrum Monitoring",
+      "Carrier Monitoring",
+      "Antenna Systems",
+      "Link Budgeting",
+      "VSAT",
+      "C-band",
+      "Ku-band",
+      "Ka-band",
+      "HTS",
+      "GIS",
+      "Geographic Information Systems",
+      "Remote Sensing",
+      "Earth Observation",
+      "Geospatial Analysis",
+      "Hyperspectral Imaging",
+      "Digital Signal Processing",
+      "DSP",
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "scikit-learn",
+      "PyTorch",
+      "TensorFlow",
+      "FastAPI",
+      "React",
+      "React Native",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "Node.js",
+      "Express.js",
+      "Flutter",
+      "MongoDB",
+      "SQL",
+      "PostgreSQL",
+      "Prisma",
+      "Docker",
+      "Tailwind CSS",
+      "QGIS",
+      "ESA SNAP",
+      "Google Earth Engine",
+      "GDAL",
+      "Rasterio",
+      "GeoPandas",
+      "Leaflet",
+      "Open Source",
+      "Remote Work",
+      "Pakistan",
+      "Lahore",
+      "Portfolio Website"
+    ]
+  },
+  "navbar": {
+    "home": "Etusivu",
+    "about": "Tietoa",
+    "work": "Työt",
+    "education": "Koulutus",
+    "contact": "Yhteys"
+  },
+  "hero": {
+    "greeting": "Hei, olen Roman",
+    "developerText": "AI- ja ohjelmistoinsinööri",
+    "dedicatedText": "Omistautunut rakentamaan",
+    "buildingText": "Rakennan",
+    "webSolutions": "älykkäitä ratkaisuja",
+    "flipWords": [
+      "Datavetoisia",
+      "Skaalautuvia",
+      "Innovatiivisia"
+    ]
+  },
+  "about": {
+    "title": "Tietoa minusta",
+    "greeting": "Hei, olen Roman Farooq",
+    "description": "Olen ohjelmisto- ja AI-insinööri, jonka kasvava painopiste on RF-järjestelmissä, satelliittiviestinnässä, GIS:ssä, kaukokartoituksessa ja avaruusteknologiassa. Minua kiinnostaa rakentaa älykkäitä insinöörijärjestelmiä, jotka yhdistävät ohjelmistot, AI:n, datan ja todelliset tekniset operaatiot.",
+    "metaCertTitle": "Meta front-end -kehittäjä",
+    "metaCertSubtitle": "Ammatillinen sertifikaatti",
+    "metaCertDescription": "Suoritettu Metan vaativan Coursera-ohjelman kautta; sertifikaatti vahvistaa osaamisen front-end-kehityksessä, kuten Reactissa, JavaScriptissä, UI-suunnittelun periaatteissa, virheenkorjauksessa, Git-versionhallinnassa ja tuotantovalmiiden sovellusten käyttöönotossa.",
+    "viewCertificate": "🎓 Näytä sertifikaatti",
+    "locationTitle": "Sijainti",
+    "locationDescription": "Asun Lahoressa, Pakistanissa",
+    "academicCollaboration": "Avoin akateemiselle yhteistyölle, AI/ML-tutkimukselle, RF-järjestelmille, satelliittiviestinnälle, GIS:lle, kaukokartoitukselle ja insinööriohjelmistoprojekteille.",
+    "techStackTitle": "Teknologiapino",
+    "techStackDescription": "Osaamista Pythonissa (Pandas, NumPy, Matplotlib, FastAPI), JavaScript/TypeScriptissä sekä frameworkeissa kuten React, Next.js, Node.js ja React Native. Kokemusta tietokantojen hallinnasta (MongoDB, PostgreSQL), AI-API-integraatioista, LLM-työnkuluista ja pilvikäyttöönotosta. Tuttu scikit-learnin, PyTorchin, TensorFlow’n, LangChainin, Tailwind CSS:n, Dockerin, Prisman, Reduxin, Flutterin, QGIS:n, ESA SNAPin, Google Earth Enginen, GDALin, Rasterion, GeoPandan, Leafletin ja skaalautuvan backend-arkkitehtuurin kanssa."
+  },
+  "copyEmail": {
+    "copyButton": "Kopioi sähköpostiosoite",
+    "copiedMessage": "Sähköposti kopioitu"
+  },
+  "education": {
+    "title": "Koulutukseni",
+    "bachelors": {
+      "title": "Luonnontieteiden kandidaatti, tietojenkäsittelytiede",
+      "institute": "University of Central Punjab, Lahore",
+      "date": "loka 2020 - heinä 2024",
+      "contents": [
+        "Valmistuin CGPA-arvosanalla 3,42.",
+        "Sain 50% CGPA-pohjaisen stipendin lokakuusta 2020 heinäkuuhun 2024.",
+        "Suoritin keskeisiä kursseja, kuten ohjelmointi, tietorakenteet, algoritmit, tietokantajärjestelmät, web-kehitys, tekoäly ja deep learning.",
+        "Suoritin lopputyöprojektin, joka sisälsi edistyneitä ohjelmistotekniikan ja AI:n käsitteitä."
+      ]
+    },
+    "intermediate": {
+      "title": "Intermediate in Computer Science (fysiikka)",
+      "institute": "Punjab College, Lahore",
+      "date": "syys 2018 - kesä 2020",
+      "contents": [
+        "Valmistuin arvosanalla A.",
+        "Erikoistuin tietojenkäsittelytieteeseen ja fysiikkaan."
+      ]
+    },
+    "matriculation": {
+      "title": "Matriculation (luonnontieteet)",
+      "institute": "The Punjab School, Lahore",
+      "date": "maalis 2016 - touko 2018",
+      "contents": [
+        "Valmistuin arvosanalla A.",
+        "Voitin ensimmäisen sijan 8. luokan osastojen välisessä englannin kirjoituskilpailussa.",
+        "Voitin kampusten välisen pöytätenniskilpailun yhdessä tiimini kanssa."
+      ]
+    }
+  },
+  "contact": {
+    "title": "Jutellaan",
+    "description": "Jos haluat rakentaa uuden verkkosivuston, parantaa nykyistä alustaa tai toteuttaa ainutlaatuisen projektin, olen täällä auttamassa.",
+    "form": {
+      "legend": "Yhteystiedot",
+      "name": {
+        "label": "Koko nimi",
+        "placeholder": "Matti Meikäläinen"
+      },
+      "email": {
+        "label": "Sähköposti",
+        "placeholder": "matti@email.com"
+      },
+      "message": {
+        "label": "Viesti",
+        "placeholder": "Jaa ajatuksesi..."
+      },
+      "submit": "Lähetä",
+      "submitting": "Lähetetään...",
+      "validation": {
+        "nameRequired": "Nimi on pakollinen",
+        "nameMaxLength": "Nimen on oltava alle 50 merkkiä",
+        "emailInvalid": "Anna kelvollinen sähköpostiosoite",
+        "messageMinLength": "Viestin on oltava vähintään 10 merkkiä pitkä",
+        "messageMaxLength": "Viestin on oltava alle 1000 merkkiä"
+      }
+    },
+    "alerts": {
+      "success": "Viestisi on lähetetty!",
+      "error": "Jokin meni pieleen!",
+      "emailError": "Sähköpostin lähetys epäonnistui"
+    }
+  },
+  "footer": {
+    "termsConditions": "Käyttöehdot",
+    "privacyPolicy": "Tietosuojakäytäntö",
+    "copyright": "Kaikki oikeudet pidätetään."
+  }
+}

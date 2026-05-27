@@ -1,0 +1,193 @@
+{
+  "metadata": {
+    "title": "Roman Farooq | AI・ソフトウェアエンジニア | RF、衛星通信、宇宙技術",
+    "description": "Roman Farooq は、ソフトウェア、人工知能、RFシステム、衛星通信、GIS、リモートセンシング、宇宙技術にまたがるインテリジェントなエンジニアリングシステムの構築に取り組むソフトウェア・AIエンジニアです。彼の仕事は、full-stack開発、AI/ML、データ駆動型アプリケーション、地理空間技術、デジタル信号処理、実際の技術運用向けのエンジニアリングソフトウェアを組み合わせています。",
+    "openGraphTitle": "Roman Farooq | AI・ソフトウェアエンジニア | RF、衛星通信、宇宙技術",
+    "openGraphDescription": "Roman Farooq は、RFシステム、衛星通信、GIS、リモートセンシング、宇宙技術への関心を深めているソフトウェア・AIエンジニアです。AI、データ、エンジニアリングワークフロー、地理空間分析、実際の技術運用をつなぐインテリジェントなソフトウェアシステムを構築しています。",
+    "openGraphSiteName": "Roman Farooq の AI・ソフトウェア・宇宙技術ポートフォリオ",
+    "twitterTitle": "Roman Farooq | AI・ソフトウェアエンジニア | RF・宇宙技術",
+    "twitterDescription": "RFシステム、衛星通信、GIS、リモートセンシング、宇宙技術、インテリジェントなエンジニアリングソフトウェアに注力するソフトウェア・AIエンジニア。",
+    "applicationName": "Roman Farooq の AI・ソフトウェア・宇宙技術ポートフォリオ",
+    "category": "ポートフォリオ",
+    "classification": "ポートフォリオ, ソフトウェアエンジニアリング, 人工知能, RFシステム, 衛星通信, GIS, リモートセンシング, 宇宙技術, エンジニアリングソフトウェア",
+    "keywords": [
+      "Roman Farooq",
+      "AI Engineer",
+      "Software Engineer",
+      "Artificial Intelligence",
+      "Machine Learning Engineer",
+      "Deep Learning",
+      "Natural Language Processing",
+      "NLP",
+      "LLM Applications",
+      "RAG",
+      "LangChain",
+      "Engineering Software",
+      "RF Systems",
+      "RF Engineering",
+      "Satellite Communication",
+      "Satellite Communications",
+      "Space Technology",
+      "Ground Station Operations",
+      "Spectrum Monitoring",
+      "Carrier Monitoring",
+      "Antenna Systems",
+      "Link Budgeting",
+      "VSAT",
+      "C-band",
+      "Ku-band",
+      "Ka-band",
+      "HTS",
+      "GIS",
+      "Geographic Information Systems",
+      "Remote Sensing",
+      "Earth Observation",
+      "Geospatial Analysis",
+      "Hyperspectral Imaging",
+      "Digital Signal Processing",
+      "DSP",
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "scikit-learn",
+      "PyTorch",
+      "TensorFlow",
+      "FastAPI",
+      "React",
+      "React Native",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "Node.js",
+      "Express.js",
+      "Flutter",
+      "MongoDB",
+      "SQL",
+      "PostgreSQL",
+      "Prisma",
+      "Docker",
+      "Tailwind CSS",
+      "QGIS",
+      "ESA SNAP",
+      "Google Earth Engine",
+      "GDAL",
+      "Rasterio",
+      "GeoPandas",
+      "Leaflet",
+      "Open Source",
+      "Remote Work",
+      "Pakistan",
+      "Lahore",
+      "Portfolio Website"
+    ]
+  },
+  "navbar": {
+    "home": "ホーム",
+    "about": "自己紹介",
+    "work": "実績",
+    "education": "学歴",
+    "contact": "連絡先"
+  },
+  "hero": {
+    "greeting": "こんにちは、Romanです",
+    "developerText": "AI・ソフトウェアエンジニア",
+    "dedicatedText": "創造に取り組む",
+    "buildingText": "構築",
+    "webSolutions": "インテリジェントなソリューション",
+    "flipWords": [
+      "データ駆動",
+      "スケーラブル",
+      "革新的"
+    ]
+  },
+  "about": {
+    "title": "自己紹介",
+    "greeting": "こんにちは、Roman Farooqです",
+    "description": "RFシステム、衛星通信、GIS、リモートセンシング、宇宙技術への関心を深めているソフトウェア・AIエンジニアです。ソフトウェア、AI、データ、実際の技術運用をつなぐインテリジェントなエンジニアリングシステムの構築に興味があります。",
+    "metaCertTitle": "Meta フロントエンド開発者",
+    "metaCertSubtitle": "プロフェッショナル認定",
+    "metaCertDescription": "Coursera の Meta による厳格なプログラムを通じて取得しました。この認定は、React、JavaScript、UI設計原則、デバッグ、Gitによるバージョン管理、プロダクション対応アプリケーションのデプロイを含むフロントエンド開発の能力を証明します。",
+    "viewCertificate": "🎓 証明書を見る",
+    "locationTitle": "所在地",
+    "locationDescription": "パキスタンのラホールを拠点にしています",
+    "academicCollaboration": "学術連携、AI/ML研究、RFシステム、衛星通信、GIS、リモートセンシング、エンジニアリングソフトウェアプロジェクトに関心があります。",
+    "techStackTitle": "技術スタック",
+    "techStackDescription": "Python (Pandas、NumPy、Matplotlib、FastAPI)、JavaScript/TypeScript、React、Next.js、Node.js、React Native などのフレームワークに精通しています。データベース管理 (MongoDB、PostgreSQL)、AI API統合、LLMワークフロー、クラウドデプロイの経験があります。scikit-learn、PyTorch、TensorFlow、LangChain、Tailwind CSS、Docker、Prisma、Redux、Flutter、QGIS、ESA SNAP、Google Earth Engine、GDAL、Rasterio、GeoPandas、Leaflet、スケーラブルなbackendアーキテクチャにも対応できます。"
+  },
+  "copyEmail": {
+    "copyButton": "メールアドレスをコピー",
+    "copiedMessage": "メールをコピーしました"
+  },
+  "education": {
+    "title": "学歴",
+    "bachelors": {
+      "title": "コンピューターサイエンス学士",
+      "institute": "University of Central Punjab、Lahore",
+      "date": "2020年10月 - 2024年7月",
+      "contents": [
+        "CGPA 3.42で卒業しました。",
+        "2020年10月から2024年7月まで、CGPAに基づく50%の奨学金を受けました。",
+        "プログラミング、データ構造、アルゴリズム、データベースシステム、Web開発、人工知能、deep learningなどの主要科目を履修しました。",
+        "高度なソフトウェアエンジニアリングとAIの概念を含む卒業研究プロジェクトを完了しました。"
+      ]
+    },
+    "intermediate": {
+      "title": "コンピューターサイエンス中等課程（物理）",
+      "institute": "Punjab College、Lahore",
+      "date": "2018年9月 - 2020年6月",
+      "contents": [
+        "成績Aで卒業しました。",
+        "コンピューターサイエンスと物理を専攻しました。"
+      ]
+    },
+    "matriculation": {
+      "title": "中等教育修了（理系）",
+      "institute": "The Punjab School、Lahore",
+      "date": "2016年3月 - 2018年5月",
+      "contents": [
+        "成績Aで卒業しました。",
+        "8年生のとき、セクション間の英語ライティングコンテストで1位を獲得しました。",
+        "チームとともにキャンパス間卓球大会で優勝しました。"
+      ]
+    }
+  },
+  "contact": {
+    "title": "話しましょう",
+    "description": "新しいWebサイトを作りたい場合でも、既存のプラットフォームを改善したい場合でも、ユニークなプロジェクトを形にしたい場合でも、私はお手伝いできます。",
+    "form": {
+      "legend": "連絡先情報",
+      "name": {
+        "label": "氏名",
+        "placeholder": "山田 太郎"
+      },
+      "email": {
+        "label": "メール",
+        "placeholder": "taro@email.com"
+      },
+      "message": {
+        "label": "メッセージ",
+        "placeholder": "ご相談内容をお聞かせください..."
+      },
+      "submit": "送信",
+      "submitting": "送信中...",
+      "validation": {
+        "nameRequired": "名前は必須です",
+        "nameMaxLength": "名前は50文字未満にしてください",
+        "emailInvalid": "有効なメールアドレスを入力してください",
+        "messageMinLength": "メッセージは10文字以上で入力してください",
+        "messageMaxLength": "メッセージは1000文字未満にしてください"
+      }
+    },
+    "alerts": {
+      "success": "メッセージを送信しました!",
+      "error": "問題が発生しました!",
+      "emailError": "メール送信に失敗しました"
+    }
+  },
+  "footer": {
+    "termsConditions": "利用規約",
+    "privacyPolicy": "プライバシーポリシー",
+    "copyright": "全著作権所有。"
+  }
+}

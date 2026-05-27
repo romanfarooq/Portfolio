@@ -4,8 +4,13 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import type { Metadata, Viewport } from "next";
 
-import { routing } from "@/i18n/routing";
-import { cn, localeToLang } from "@/lib/utils";
+import { cn } from "@/lib/utils";
+import {
+  routing,
+  isRtlLocale,
+  localePathnames,
+  alternateLanguages
+} from "@/i18n/routing";
 
 import "@/styles/globals.css";
 
@@ -16,7 +21,12 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params
 }: Omit<PageProps<"/[locale]">, "searchParams">): Promise<Metadata> {
-  const { locale } = await params;
+  const { locale: requestedLocale } = await params;
+
+  const locale = hasLocale(routing.locales, requestedLocale)
+    ? requestedLocale
+    : routing.defaultLocale;
+
   const t = await getTranslations({ locale, namespace: "metadata" });
 
   return {
@@ -39,11 +49,8 @@ export async function generateMetadata({
       statusBarStyle: "black-translucent"
     },
     alternates: {
-      canonical: "/",
-      languages: {
-        "en-US": "/en",
-        "zh-CN": "/zh"
-      }
+      canonical: localePathnames[locale],
+      languages: alternateLanguages
     },
     icons: {
       icon: [
@@ -69,8 +76,8 @@ export async function generateMetadata({
       type: "website",
       countryName: "Pakistan",
       emails: ["theromanfarooq@gmail.com"],
-      locale: locale === "en" ? "en_US" : "zh_CN",
-      url: "/",
+      locale: locale,
+      url: localePathnames[locale],
       title: t("openGraphTitle"),
       siteName: t("openGraphSiteName"),
       description: t("openGraphDescription"),
@@ -165,8 +172,17 @@ export default async function RootLayout({
   setRequestLocale(locale);
 
   return (
-    <html lang={localeToLang(locale)} data-scroll-behavior="smooth">
-      <body className={cn(funnelDisplay.className, "bg-primary overflow-x-hidden antialiased")}>
+    <html
+      lang={locale}
+      dir={isRtlLocale(locale) ? "rtl" : "ltr"}
+      data-scroll-behavior="smooth"
+    >
+      <body
+        className={cn(
+          funnelDisplay.className,
+          "bg-primary overflow-x-hidden antialiased"
+        )}
+      >
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>

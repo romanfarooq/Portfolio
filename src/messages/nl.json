@@ -1,0 +1,193 @@
+{
+  "metadata": {
+    "title": "Roman Farooq | AI- en software-engineer | RF, satellietcommunicatie en ruimtetechnologie",
+    "description": "Roman Farooq is een software- en AI-engineer die intelligente engineering-systemen bouwt voor software, kunstmatige intelligentie, RF-systemen, satellietcommunicatie, GIS, remote sensing en ruimtetechnologie. Zijn werk combineert full-stackontwikkeling, AI/ML, datagedreven applicaties, geospatiale technologieën, digitale signaalverwerking en engineering-software voor echte technische operaties.",
+    "openGraphTitle": "Roman Farooq | AI- en software-engineer | RF, satellietcommunicatie en ruimtetechnologie",
+    "openGraphDescription": "Roman Farooq is een software- en AI-engineer met groeiende focus op RF-systemen, satellietcommunicatie, GIS, remote sensing en ruimtetechnologie. Hij bouwt intelligente softwaresystemen die AI, data, engineering-workflows, geospatiale analyse en echte technische operaties verbinden.",
+    "openGraphSiteName": "Roman Farooqs portfolio voor AI, software en ruimtetechnologie",
+    "twitterTitle": "Roman Farooq | AI- en software-engineer | RF en ruimtetechnologie",
+    "twitterDescription": "Software- en AI-engineer gericht op RF-systemen, satellietcommunicatie, GIS, remote sensing, ruimtetechnologie en intelligente engineering-software.",
+    "applicationName": "Roman Farooqs portfolio voor AI, software en ruimtetechnologie",
+    "category": "Portfolio",
+    "classification": "Portfolio, software-engineering, kunstmatige intelligentie, RF-systemen, satellietcommunicatie, GIS, remote sensing, ruimtetechnologie, engineering-software",
+    "keywords": [
+      "Roman Farooq",
+      "AI Engineer",
+      "Software Engineer",
+      "Artificial Intelligence",
+      "Machine Learning Engineer",
+      "Deep Learning",
+      "Natural Language Processing",
+      "NLP",
+      "LLM Applications",
+      "RAG",
+      "LangChain",
+      "Engineering Software",
+      "RF Systems",
+      "RF Engineering",
+      "Satellite Communication",
+      "Satellite Communications",
+      "Space Technology",
+      "Ground Station Operations",
+      "Spectrum Monitoring",
+      "Carrier Monitoring",
+      "Antenna Systems",
+      "Link Budgeting",
+      "VSAT",
+      "C-band",
+      "Ku-band",
+      "Ka-band",
+      "HTS",
+      "GIS",
+      "Geographic Information Systems",
+      "Remote Sensing",
+      "Earth Observation",
+      "Geospatial Analysis",
+      "Hyperspectral Imaging",
+      "Digital Signal Processing",
+      "DSP",
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "scikit-learn",
+      "PyTorch",
+      "TensorFlow",
+      "FastAPI",
+      "React",
+      "React Native",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "Node.js",
+      "Express.js",
+      "Flutter",
+      "MongoDB",
+      "SQL",
+      "PostgreSQL",
+      "Prisma",
+      "Docker",
+      "Tailwind CSS",
+      "QGIS",
+      "ESA SNAP",
+      "Google Earth Engine",
+      "GDAL",
+      "Rasterio",
+      "GeoPandas",
+      "Leaflet",
+      "Open Source",
+      "Remote Work",
+      "Pakistan",
+      "Lahore",
+      "Portfolio Website"
+    ]
+  },
+  "navbar": {
+    "home": "Home",
+    "about": "Over mij",
+    "work": "Werk",
+    "education": "Opleiding",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hoi, ik ben Roman",
+    "developerText": "AI- en software-engineer",
+    "dedicatedText": "Toegewijd aan het maken van",
+    "buildingText": "Bouwen",
+    "webSolutions": "intelligente oplossingen",
+    "flipWords": [
+      "Datagedreven",
+      "Schaalbaar",
+      "Innovatief"
+    ]
+  },
+  "about": {
+    "title": "Over mij",
+    "greeting": "Hoi, ik ben Roman Farooq",
+    "description": "Ik ben software- en AI-engineer met groeiende focus op RF-systemen, satellietcommunicatie, GIS, remote sensing en ruimtetechnologie. Ik ben geïnteresseerd in het bouwen van intelligente engineering-systemen die software, AI, data en echte technische operaties verbinden.",
+    "metaCertTitle": "Meta front-end developer",
+    "metaCertSubtitle": "Professioneel certificaat",
+    "metaCertDescription": "Behaald via het grondige programma van Meta op Coursera; dit certificaat bevestigt vaardigheid in front-endontwikkeling, waaronder React, JavaScript, UI-ontwerpprincipes, debugging, versiebeheer met Git en het deployen van productieklare applicaties.",
+    "viewCertificate": "🎓 Certificaat bekijken",
+    "locationTitle": "Locatie",
+    "locationDescription": "Ik ben gevestigd in Lahore, Pakistan",
+    "academicCollaboration": "Open voor academische samenwerking, AI/ML-onderzoek, RF-systemen, satellietcommunicatie, GIS, remote sensing en engineering-softwareprojecten.",
+    "techStackTitle": "Techstack",
+    "techStackDescription": "Vaardig in Python (Pandas, NumPy, Matplotlib, FastAPI), JavaScript/TypeScript en frameworks zoals React, Next.js, Node.js en React Native. Ervaren in databasebeheer (MongoDB, PostgreSQL), AI-API-integraties, LLM-workflows en clouddeployment. Bekend met scikit-learn, PyTorch, TensorFlow, LangChain, Tailwind CSS, Docker, Prisma, Redux, Flutter, QGIS, ESA SNAP, Google Earth Engine, GDAL, Rasterio, GeoPandas, Leaflet en schaalbare backend-architectuur."
+  },
+  "copyEmail": {
+    "copyButton": "E-mailadres kopiëren",
+    "copiedMessage": "E-mail is gekopieerd"
+  },
+  "education": {
+    "title": "Mijn opleiding",
+    "bachelors": {
+      "title": "Bachelor in computerwetenschappen",
+      "institute": "University of Central Punjab, Lahore",
+      "date": "okt. 2020 - jul. 2024",
+      "contents": [
+        "Afgestudeerd met een CGPA van 3,42.",
+        "Een op CGPA gebaseerde beurs van 50% ontvangen van oktober 2020 tot juli 2024.",
+        "Vakken afgerond in kerngebieden zoals programmeren, datastructuren, algoritmen, databasesystemen, webontwikkeling, kunstmatige intelligentie en deep learning.",
+        "Een afstudeerproject voltooid met geavanceerde concepten uit software-engineering en AI."
+      ]
+    },
+    "intermediate": {
+      "title": "Intermediate in Computer Science (natuurkunde)",
+      "institute": "Punjab College, Lahore",
+      "date": "sep. 2018 - jun. 2020",
+      "contents": [
+        "Afgestudeerd met grade A.",
+        "Gespecialiseerd in informatica en natuurkunde."
+      ]
+    },
+    "matriculation": {
+      "title": "Matriculation (natuurwetenschappen)",
+      "institute": "The Punjab School, Lahore",
+      "date": "mrt. 2016 - mei 2018",
+      "contents": [
+        "Afgestudeerd met grade A.",
+        "Eerste plaats behaald in een Engelse schrijfwedstrijd tussen secties in de 8e klas.",
+        "Met mijn team een intercampus tafeltenniscompetitie gewonnen."
+      ]
+    }
+  },
+  "contact": {
+    "title": "Laten we praten",
+    "description": "Of je nu een nieuwe website wilt bouwen, je bestaande platform wilt verbeteren of een uniek project tot leven wilt brengen, ik help graag.",
+    "form": {
+      "legend": "Contactgegevens",
+      "name": {
+        "label": "Volledige naam",
+        "placeholder": "Jan Jansen"
+      },
+      "email": {
+        "label": "E-mail",
+        "placeholder": "jan@email.com"
+      },
+      "message": {
+        "label": "Bericht",
+        "placeholder": "Deel je gedachten..."
+      },
+      "submit": "Verzenden",
+      "submitting": "Verzenden...",
+      "validation": {
+        "nameRequired": "Naam is verplicht",
+        "nameMaxLength": "Naam moet minder dan 50 tekens bevatten",
+        "emailInvalid": "Voer een geldig e-mailadres in",
+        "messageMinLength": "Bericht moet minstens 10 tekens lang zijn",
+        "messageMaxLength": "Bericht moet minder dan 1000 tekens bevatten"
+      }
+    },
+    "alerts": {
+      "success": "Je bericht is verzonden!",
+      "error": "Er is iets misgegaan!",
+      "emailError": "E-mail verzenden mislukt"
+    }
+  },
+  "footer": {
+    "termsConditions": "Algemene voorwaarden",
+    "privacyPolicy": "Privacybeleid",
+    "copyright": "Alle rechten voorbehouden."
+  }
+}

@@ -94,7 +94,11 @@
     "dedicatedText": "致力于打造",
     "buildingText": "构建",
     "webSolutions": "智能化解决方案",
-    "flipWords": ["数据驱动", "可扩展", "创新"]
+    "flipWords": [
+      "数据驱动",
+      "可扩展",
+      "创新"
+    ]
   },
   "about": {
     "title": "关于我",
@@ -119,7 +123,7 @@
     "bachelors": {
       "title": "计算机科学理学学士",
       "institute": "中央旁遮普大学，拉合尔",
-      "date": "Oct 2020 - Jul 2024",
+      "date": "2020年10月 - 2024年7月",
       "contents": [
         "毕业平均绩点为 3.42。",
         "2020年10月至2024年7月期间获得 50% 的基于 CGPA 奖学金。",
@@ -128,15 +132,18 @@
       ]
     },
     "intermediate": {
-      "title": "计算机科学预科（物理方向）",
+      "title": "计算机科学中级课程（物理）",
       "institute": "旁遮普学院，拉合尔",
-      "date": "Sep 2018 - Jun 2020",
-      "contents": ["以 A 等成绩毕业。", "主修计算机科学和物理。"]
+      "date": "2018年9月 - 2020年6月",
+      "contents": [
+        "以 A 等成绩毕业。",
+        "主修计算机科学和物理。"
+      ]
     },
     "matriculation": {
       "title": "中学毕业（理科）",
       "institute": "The Punjab School，拉合尔",
-      "date": "Mar 2016 - May 2018",
+      "date": "2016年3月 - 2018年5月",
       "contents": [
         "以 A 等成绩毕业。",
         "在八年级班级组英语写作比赛中获得第一名。",

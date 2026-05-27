@@ -41,17 +41,6 @@ export function getDevicePixelRatio() {
     : 1;
 }
 
-export function localeToLang(locale: string) {
-  switch (locale) {
-    case "en":
-      return "en-US";
-    case "zh":
-      return "zh-CN";
-    default:
-      return "en-US";
-  }
-}
-
 export const getRotationForLocation = ([latitude, longitude]: [
   number,
   number

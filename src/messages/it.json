@@ -1,0 +1,193 @@
+{
+  "metadata": {
+    "title": "Roman Farooq | Ingegnere IA e software | RF, comunicazione satellitare e tecnologia spaziale",
+    "description": "Roman Farooq è un ingegnere software e IA concentrato sulla creazione di sistemi di ingegneria intelligenti per software, intelligenza artificiale, sistemi RF, comunicazione satellitare, GIS, telerilevamento e tecnologia spaziale. Il suo lavoro unisce sviluppo full-stack, AI/ML, applicazioni basate sui dati, tecnologie geospaziali, elaborazione digitale dei segnali e software di ingegneria per operazioni tecniche reali.",
+    "openGraphTitle": "Roman Farooq | Ingegnere IA e software | RF, comunicazione satellitare e tecnologia spaziale",
+    "openGraphDescription": "Roman Farooq è un ingegnere software e IA con un crescente interesse per sistemi RF, comunicazione satellitare, GIS, telerilevamento e tecnologia spaziale. Costruisce sistemi software intelligenti che collegano IA, dati, workflow di ingegneria, analisi geospaziale e operazioni tecniche reali.",
+    "openGraphSiteName": "Portfolio IA, software e tecnologia spaziale di Roman Farooq",
+    "twitterTitle": "Roman Farooq | Ingegnere IA e software | RF e tecnologia spaziale",
+    "twitterDescription": "Ingegnere software e IA concentrato su sistemi RF, comunicazione satellitare, GIS, telerilevamento, tecnologia spaziale e software di ingegneria intelligente.",
+    "applicationName": "Portfolio IA, software e tecnologia spaziale di Roman Farooq",
+    "category": "Portfolio",
+    "classification": "Portfolio, ingegneria del software, intelligenza artificiale, sistemi RF, comunicazione satellitare, GIS, telerilevamento, tecnologia spaziale, software di ingegneria",
+    "keywords": [
+      "Roman Farooq",
+      "AI Engineer",
+      "Software Engineer",
+      "Artificial Intelligence",
+      "Machine Learning Engineer",
+      "Deep Learning",
+      "Natural Language Processing",
+      "NLP",
+      "LLM Applications",
+      "RAG",
+      "LangChain",
+      "Engineering Software",
+      "RF Systems",
+      "RF Engineering",
+      "Satellite Communication",
+      "Satellite Communications",
+      "Space Technology",
+      "Ground Station Operations",
+      "Spectrum Monitoring",
+      "Carrier Monitoring",
+      "Antenna Systems",
+      "Link Budgeting",
+      "VSAT",
+      "C-band",
+      "Ku-band",
+      "Ka-band",
+      "HTS",
+      "GIS",
+      "Geographic Information Systems",
+      "Remote Sensing",
+      "Earth Observation",
+      "Geospatial Analysis",
+      "Hyperspectral Imaging",
+      "Digital Signal Processing",
+      "DSP",
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "scikit-learn",
+      "PyTorch",
+      "TensorFlow",
+      "FastAPI",
+      "React",
+      "React Native",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "Node.js",
+      "Express.js",
+      "Flutter",
+      "MongoDB",
+      "SQL",
+      "PostgreSQL",
+      "Prisma",
+      "Docker",
+      "Tailwind CSS",
+      "QGIS",
+      "ESA SNAP",
+      "Google Earth Engine",
+      "GDAL",
+      "Rasterio",
+      "GeoPandas",
+      "Leaflet",
+      "Open Source",
+      "Remote Work",
+      "Pakistan",
+      "Lahore",
+      "Portfolio Website"
+    ]
+  },
+  "navbar": {
+    "home": "Home",
+    "about": "Chi sono",
+    "work": "Lavori",
+    "education": "Formazione",
+    "contact": "Contatto"
+  },
+  "hero": {
+    "greeting": "Ciao, sono Roman",
+    "developerText": "Ingegnere IA e software",
+    "dedicatedText": "Dedicato a creare",
+    "buildingText": "Costruire",
+    "webSolutions": "soluzioni intelligenti",
+    "flipWords": [
+      "Basate sui dati",
+      "Scalabili",
+      "Innovative"
+    ]
+  },
+  "about": {
+    "title": "Chi sono",
+    "greeting": "Ciao, sono Roman Farooq",
+    "description": "Sono un ingegnere software e IA con un crescente interesse per sistemi RF, comunicazione satellitare, GIS, telerilevamento e tecnologia spaziale. Mi interessa costruire sistemi di ingegneria intelligenti che collegano software, IA, dati e operazioni tecniche reali.",
+    "metaCertTitle": "Sviluppatore front-end Meta",
+    "metaCertSubtitle": "Certificato professionale",
+    "metaCertDescription": "Conseguito attraverso il rigoroso programma di Meta su Coursera, questo certificato attesta competenze nello sviluppo front-end, tra cui React, JavaScript, principi di progettazione UI, debug, controllo versione con Git e distribuzione di applicazioni pronte per la produzione.",
+    "viewCertificate": "🎓 Vedi certificato",
+    "locationTitle": "Posizione",
+    "locationDescription": "Vivo a Lahore, Pakistan",
+    "academicCollaboration": "Aperto a collaborazioni accademiche, ricerca AI/ML, sistemi RF, comunicazione satellitare, GIS, telerilevamento e progetti di software di ingegneria.",
+    "techStackTitle": "Stack tecnologico",
+    "techStackDescription": "Competente in Python (Pandas, NumPy, Matplotlib, FastAPI), JavaScript/TypeScript e framework come React, Next.js, Node.js e React Native. Esperto nella gestione di database (MongoDB, PostgreSQL), integrazioni API di IA, workflow LLM e distribuzione cloud. Esperienza con scikit-learn, PyTorch, TensorFlow, LangChain, Tailwind CSS, Docker, Prisma, Redux, Flutter, QGIS, ESA SNAP, Google Earth Engine, GDAL, Rasterio, GeoPandas, Leaflet e architetture backend scalabili."
+  },
+  "copyEmail": {
+    "copyButton": "Copia indirizzo email",
+    "copiedMessage": "Email copiata"
+  },
+  "education": {
+    "title": "La mia formazione",
+    "bachelors": {
+      "title": "Laurea in informatica",
+      "institute": "University of Central Punjab, Lahore",
+      "date": "ott 2020 - lug 2024",
+      "contents": [
+        "Mi sono laureato con un CGPA di 3,42.",
+        "Ho ricevuto una borsa di studio del 50% basata sul CGPA da ottobre 2020 a luglio 2024.",
+        "Ho completato corsi in materie chiave, tra cui programmazione, strutture dati, algoritmi, sistemi di database, sviluppo web, intelligenza artificiale e deep learning.",
+        "Ho completato un progetto finale con concetti avanzati di ingegneria del software e IA."
+      ]
+    },
+    "intermediate": {
+      "title": "Intermediate in informatica (fisica)",
+      "institute": "Punjab College, Lahore",
+      "date": "set 2018 - giu 2020",
+      "contents": [
+        "Mi sono diplomato con voto A.",
+        "Specializzazione in informatica e fisica."
+      ]
+    },
+    "matriculation": {
+      "title": "Matriculation (scienze)",
+      "institute": "The Punjab School, Lahore",
+      "date": "mar 2016 - mag 2018",
+      "contents": [
+        "Mi sono diplomato con voto A.",
+        "Ho vinto il primo posto in una gara di scrittura in inglese tra sezioni durante l’ottava classe.",
+        "Ho ottenuto la vittoria in una competizione inter-campus di tennis da tavolo con il mio team."
+      ]
+    }
+  },
+  "contact": {
+    "title": "Parliamone",
+    "description": "Se vuoi creare un nuovo sito web, migliorare la tua piattaforma esistente o dare vita a un progetto unico, sono qui per aiutarti.",
+    "form": {
+      "legend": "Informazioni di contatto",
+      "name": {
+        "label": "Nome completo",
+        "placeholder": "Mario Rossi"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "mario@email.com"
+      },
+      "message": {
+        "label": "Messaggio",
+        "placeholder": "Condividi i tuoi pensieri..."
+      },
+      "submit": "Invia",
+      "submitting": "Invio...",
+      "validation": {
+        "nameRequired": "Il nome è obbligatorio",
+        "nameMaxLength": "Il nome deve contenere meno di 50 caratteri",
+        "emailInvalid": "Inserisci un indirizzo email valido",
+        "messageMinLength": "Il messaggio deve contenere almeno 10 caratteri",
+        "messageMaxLength": "Il messaggio deve contenere meno di 1000 caratteri"
+      }
+    },
+    "alerts": {
+      "success": "Il tuo messaggio è stato inviato!",
+      "error": "Qualcosa è andato storto!",
+      "emailError": "Invio email non riuscito"
+    }
+  },
+  "footer": {
+    "termsConditions": "Termini e condizioni",
+    "privacyPolicy": "Informativa sulla privacy",
+    "copyright": "Tutti i diritti riservati."
+  }
+}

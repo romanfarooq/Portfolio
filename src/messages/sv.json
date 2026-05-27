@@ -1,0 +1,193 @@
+{
+  "metadata": {
+    "title": "Roman Farooq | AI- och mjukvaruingenjör | RF, satellitkommunikation och rymdteknik",
+    "description": "Roman Farooq är mjukvaru- och AI-ingenjör med fokus på att bygga intelligenta ingenjörssystem inom mjukvara, artificiell intelligens, RF-system, satellitkommunikation, GIS, fjärranalys och rymdteknik. Hans arbete kombinerar fullstackutveckling, AI/ML, datadrivna applikationer, geospatial teknik, digital signalbehandling och ingenjörsmjukvara för verkliga tekniska operationer.",
+    "openGraphTitle": "Roman Farooq | AI- och mjukvaruingenjör | RF, satellitkommunikation och rymdteknik",
+    "openGraphDescription": "Roman Farooq är mjukvaru- och AI-ingenjör med växande fokus på RF-system, satellitkommunikation, GIS, fjärranalys och rymdteknik. Han bygger intelligenta mjukvarusystem som kopplar samman AI, data, ingenjörsflöden, geospatial analys och verkliga tekniska operationer.",
+    "openGraphSiteName": "Roman Farooqs portfolio för AI, mjukvara och rymdteknik",
+    "twitterTitle": "Roman Farooq | AI- och mjukvaruingenjör | RF och rymdteknik",
+    "twitterDescription": "Mjukvaru- och AI-ingenjör med fokus på RF-system, satellitkommunikation, GIS, fjärranalys, rymdteknik och intelligent ingenjörsmjukvara.",
+    "applicationName": "Roman Farooqs portfolio för AI, mjukvara och rymdteknik",
+    "category": "Portfolio",
+    "classification": "Portfolio, mjukvaruutveckling, artificiell intelligens, RF-system, satellitkommunikation, GIS, fjärranalys, rymdteknik, ingenjörsmjukvara",
+    "keywords": [
+      "Roman Farooq",
+      "AI Engineer",
+      "Software Engineer",
+      "Artificial Intelligence",
+      "Machine Learning Engineer",
+      "Deep Learning",
+      "Natural Language Processing",
+      "NLP",
+      "LLM Applications",
+      "RAG",
+      "LangChain",
+      "Engineering Software",
+      "RF Systems",
+      "RF Engineering",
+      "Satellite Communication",
+      "Satellite Communications",
+      "Space Technology",
+      "Ground Station Operations",
+      "Spectrum Monitoring",
+      "Carrier Monitoring",
+      "Antenna Systems",
+      "Link Budgeting",
+      "VSAT",
+      "C-band",
+      "Ku-band",
+      "Ka-band",
+      "HTS",
+      "GIS",
+      "Geographic Information Systems",
+      "Remote Sensing",
+      "Earth Observation",
+      "Geospatial Analysis",
+      "Hyperspectral Imaging",
+      "Digital Signal Processing",
+      "DSP",
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "scikit-learn",
+      "PyTorch",
+      "TensorFlow",
+      "FastAPI",
+      "React",
+      "React Native",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "Node.js",
+      "Express.js",
+      "Flutter",
+      "MongoDB",
+      "SQL",
+      "PostgreSQL",
+      "Prisma",
+      "Docker",
+      "Tailwind CSS",
+      "QGIS",
+      "ESA SNAP",
+      "Google Earth Engine",
+      "GDAL",
+      "Rasterio",
+      "GeoPandas",
+      "Leaflet",
+      "Open Source",
+      "Remote Work",
+      "Pakistan",
+      "Lahore",
+      "Portfolio Website"
+    ]
+  },
+  "navbar": {
+    "home": "Hem",
+    "about": "Om mig",
+    "work": "Arbete",
+    "education": "Utbildning",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "greeting": "Hej, jag är Roman",
+    "developerText": "AI- och mjukvaruingenjör",
+    "dedicatedText": "Dedikerad till att skapa",
+    "buildingText": "Bygger",
+    "webSolutions": "intelligenta lösningar",
+    "flipWords": [
+      "Datadrivna",
+      "Skalbara",
+      "Innovativa"
+    ]
+  },
+  "about": {
+    "title": "Om mig",
+    "greeting": "Hej, jag är Roman Farooq",
+    "description": "Jag är mjukvaru- och AI-ingenjör med växande fokus på RF-system, satellitkommunikation, GIS, fjärranalys och rymdteknik. Jag är intresserad av att bygga intelligenta ingenjörssystem som kopplar samman mjukvara, AI, data och verkliga tekniska operationer.",
+    "metaCertTitle": "Meta front-end-utvecklare",
+    "metaCertSubtitle": "Professionellt certifikat",
+    "metaCertDescription": "Erhållet genom Metas omfattande program via Coursera; certifieringen bekräftar kompetens inom front-end-utveckling, inklusive React, JavaScript, UI-designprinciper, felsökning, versionshantering med Git och driftsättning av produktionsklara applikationer.",
+    "viewCertificate": "🎓 Visa certifikat",
+    "locationTitle": "Plats",
+    "locationDescription": "Jag är baserad i Lahore, Pakistan",
+    "academicCollaboration": "Öppen för akademiskt samarbete, AI/ML-forskning, RF-system, satellitkommunikation, GIS, fjärranalys och projekt inom ingenjörsmjukvara.",
+    "techStackTitle": "Teknikstack",
+    "techStackDescription": "Kunnig i Python (Pandas, NumPy, Matplotlib, FastAPI), JavaScript/TypeScript och ramverk som React, Next.js, Node.js och React Native. Erfaren inom databashantering (MongoDB, PostgreSQL), AI-API-integrationer, LLM-flöden och molndistribution. Van vid scikit-learn, PyTorch, TensorFlow, LangChain, Tailwind CSS, Docker, Prisma, Redux, Flutter, QGIS, ESA SNAP, Google Earth Engine, GDAL, Rasterio, GeoPandas, Leaflet och skalbar backend-arkitektur."
+  },
+  "copyEmail": {
+    "copyButton": "Kopiera e-postadress",
+    "copiedMessage": "E-post har kopierats"
+  },
+  "education": {
+    "title": "Min utbildning",
+    "bachelors": {
+      "title": "Kandidatexamen i datavetenskap",
+      "institute": "University of Central Punjab, Lahore",
+      "date": "okt. 2020 - juli 2024",
+      "contents": [
+        "Tog examen med CGPA 3,42.",
+        "Tilldelades ett CGPA-baserat stipendium på 50% från oktober 2020 till juli 2024.",
+        "Slutförde kurser i centrala ämnen som programmering, datastrukturer, algoritmer, databassystem, webbutveckling, artificiell intelligens och deep learning.",
+        "Slutförde ett examensprojekt med avancerade koncept inom mjukvaruteknik och AI."
+      ]
+    },
+    "intermediate": {
+      "title": "Intermediate i datavetenskap (fysik)",
+      "institute": "Punjab College, Lahore",
+      "date": "sep. 2018 - juni 2020",
+      "contents": [
+        "Tog examen med betyg A.",
+        "Specialiserade mig på datavetenskap och fysik."
+      ]
+    },
+    "matriculation": {
+      "title": "Matriculation (naturvetenskap)",
+      "institute": "The Punjab School, Lahore",
+      "date": "mars 2016 - maj 2018",
+      "contents": [
+        "Tog examen med betyg A.",
+        "Vann första plats i en engelsk skrivtävling mellan sektioner i årskurs 8.",
+        "Vann en intercampustävling i bordtennis tillsammans med mitt lag."
+      ]
+    }
+  },
+  "contact": {
+    "title": "Låt oss prata",
+    "description": "Oavsett om du vill bygga en ny webbplats, förbättra din befintliga plattform eller förverkliga ett unikt projekt hjälper jag gärna till.",
+    "form": {
+      "legend": "Kontaktinformation",
+      "name": {
+        "label": "Fullständigt namn",
+        "placeholder": "Erik Andersson"
+      },
+      "email": {
+        "label": "E-post",
+        "placeholder": "erik@email.com"
+      },
+      "message": {
+        "label": "Meddelande",
+        "placeholder": "Dela dina tankar..."
+      },
+      "submit": "Skicka",
+      "submitting": "Skickar...",
+      "validation": {
+        "nameRequired": "Namn krävs",
+        "nameMaxLength": "Namnet måste vara kortare än 50 tecken",
+        "emailInvalid": "Ange en giltig e-postadress",
+        "messageMinLength": "Meddelandet måste vara minst 10 tecken långt",
+        "messageMaxLength": "Meddelandet måste vara kortare än 1000 tecken"
+      }
+    },
+    "alerts": {
+      "success": "Ditt meddelande har skickats!",
+      "error": "Något gick fel!",
+      "emailError": "Det gick inte att skicka e-post"
+    }
+  },
+  "footer": {
+    "termsConditions": "Villkor",
+    "privacyPolicy": "Integritetspolicy",
+    "copyright": "Alla rättigheter förbehållna."
+  }
+}

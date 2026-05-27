@@ -1,9 +1,5 @@
 @import "tailwindcss";
 
-html[data-scroll-behavior="smooth"] {
-  scroll-behavior: smooth !important;
-}
-
 @theme {
   --color-jet: oklch(0.26 0 0);
   --color-navy: oklch(0.23 0.045 274.77);
@@ -35,6 +31,18 @@ html[data-scroll-behavior="smooth"] {
         translateY(calc(var(--radius) * 1px))
         rotate(calc((var(--angle) * -1deg) - 360deg));
     }
+  }
+}
+
+@layer base {
+  html[data-scroll-behavior="smooth"] {
+    scroll-behavior: smooth !important;
+  }
+
+  body[data-scroll-locked] {
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    margin-right: 0 !important;
   }
 }
 

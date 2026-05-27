@@ -1,0 +1,193 @@
+{
+  "metadata": {
+    "title": "Roman Farooq | KI- und Softwareingenieur | HF, Satellitenkommunikation und Raumfahrttechnologie",
+    "description": "Roman Farooq ist Software- und KI-Ingenieur und entwickelt intelligente Engineering-Systeme für Software, künstliche Intelligenz, HF-Systeme, Satellitenkommunikation, GIS, Fernerkundung und Raumfahrttechnologie. Seine Arbeit verbindet Full-Stack-Entwicklung, AI/ML, datengetriebene Anwendungen, Geotechnologien, digitale Signalverarbeitung und Engineering-Software für reale technische Abläufe.",
+    "openGraphTitle": "Roman Farooq | KI- und Softwareingenieur | HF, Satellitenkommunikation und Raumfahrttechnologie",
+    "openGraphDescription": "Roman Farooq ist Software- und KI-Ingenieur mit wachsendem Fokus auf HF-Systeme, Satellitenkommunikation, GIS, Fernerkundung und Raumfahrttechnologie. Er entwickelt intelligente Softwaresysteme, die KI, Daten, Engineering-Workflows, Geodatenanalyse und reale technische Abläufe verbinden.",
+    "openGraphSiteName": "Roman Farooqs Portfolio für KI, Software und Raumfahrttechnologie",
+    "twitterTitle": "Roman Farooq | KI- und Softwareingenieur | HF und Raumfahrttechnologie",
+    "twitterDescription": "Software- und KI-Ingenieur mit Fokus auf HF-Systeme, Satellitenkommunikation, GIS, Fernerkundung, Raumfahrttechnologie und intelligente Engineering-Software.",
+    "applicationName": "Roman Farooqs Portfolio für KI, Software und Raumfahrttechnologie",
+    "category": "Portfolio",
+    "classification": "Portfolio, Softwareentwicklung, künstliche Intelligenz, HF-Systeme, Satellitenkommunikation, GIS, Fernerkundung, Raumfahrttechnologie, Engineering-Software",
+    "keywords": [
+      "Roman Farooq",
+      "AI Engineer",
+      "Software Engineer",
+      "Artificial Intelligence",
+      "Machine Learning Engineer",
+      "Deep Learning",
+      "Natural Language Processing",
+      "NLP",
+      "LLM Applications",
+      "RAG",
+      "LangChain",
+      "Engineering Software",
+      "RF Systems",
+      "RF Engineering",
+      "Satellite Communication",
+      "Satellite Communications",
+      "Space Technology",
+      "Ground Station Operations",
+      "Spectrum Monitoring",
+      "Carrier Monitoring",
+      "Antenna Systems",
+      "Link Budgeting",
+      "VSAT",
+      "C-band",
+      "Ku-band",
+      "Ka-band",
+      "HTS",
+      "GIS",
+      "Geographic Information Systems",
+      "Remote Sensing",
+      "Earth Observation",
+      "Geospatial Analysis",
+      "Hyperspectral Imaging",
+      "Digital Signal Processing",
+      "DSP",
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "scikit-learn",
+      "PyTorch",
+      "TensorFlow",
+      "FastAPI",
+      "React",
+      "React Native",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "Node.js",
+      "Express.js",
+      "Flutter",
+      "MongoDB",
+      "SQL",
+      "PostgreSQL",
+      "Prisma",
+      "Docker",
+      "Tailwind CSS",
+      "QGIS",
+      "ESA SNAP",
+      "Google Earth Engine",
+      "GDAL",
+      "Rasterio",
+      "GeoPandas",
+      "Leaflet",
+      "Open Source",
+      "Remote Work",
+      "Pakistan",
+      "Lahore",
+      "Portfolio Website"
+    ]
+  },
+  "navbar": {
+    "home": "Start",
+    "about": "Über mich",
+    "work": "Projekte",
+    "education": "Ausbildung",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "greeting": "Hallo, ich bin Roman",
+    "developerText": "KI- und Softwareingenieur",
+    "dedicatedText": "Engagiert für",
+    "buildingText": "Entwicklung",
+    "webSolutions": "intelligente Lösungen",
+    "flipWords": [
+      "Datengetrieben",
+      "Skalierbar",
+      "Innovativ"
+    ]
+  },
+  "about": {
+    "title": "Über mich",
+    "greeting": "Hallo, ich bin Roman Farooq",
+    "description": "Ich bin Software- und KI-Ingenieur mit wachsendem Fokus auf HF-Systeme, Satellitenkommunikation, GIS, Fernerkundung und Raumfahrttechnologie. Mich interessiert der Aufbau intelligenter Engineering-Systeme, die Software, KI, Daten und reale technische Abläufe verbinden.",
+    "metaCertTitle": "Meta Front-End-Entwickler",
+    "metaCertSubtitle": "Berufszertifikat",
+    "metaCertDescription": "Erworben über das anspruchsvolle Programm von Meta auf Coursera; diese Zertifizierung bestätigt Kenntnisse in Front-End-Entwicklung, darunter React, JavaScript, UI-Design-Prinzipien, Debugging, Versionskontrolle mit Git und Deployment produktionsreifer Anwendungen.",
+    "viewCertificate": "🎓 Zertifikat ansehen",
+    "locationTitle": "Standort",
+    "locationDescription": "Ich bin in Lahore, Pakistan, ansässig",
+    "academicCollaboration": "Offen für akademische Zusammenarbeit, AI/ML-Forschung, HF-Systeme, Satellitenkommunikation, GIS, Fernerkundung und Engineering-Softwareprojekte.",
+    "techStackTitle": "Tech-Stack",
+    "techStackDescription": "Erfahren in Python (Pandas, NumPy, Matplotlib, FastAPI), JavaScript/TypeScript und Frameworks wie React, Next.js, Node.js und React Native. Kompetent in Datenbankmanagement (MongoDB, PostgreSQL), KI-API-Integrationen, LLM-Workflows und Cloud-Deployment. Vertraut mit scikit-learn, PyTorch, TensorFlow, LangChain, Tailwind CSS, Docker, Prisma, Redux, Flutter, QGIS, ESA SNAP, Google Earth Engine, GDAL, Rasterio, GeoPandas, Leaflet und skalierbarer Backend-Architektur."
+  },
+  "copyEmail": {
+    "copyButton": "E-Mail-Adresse kopieren",
+    "copiedMessage": "E-Mail wurde kopiert"
+  },
+  "education": {
+    "title": "Meine Ausbildung",
+    "bachelors": {
+      "title": "Bachelor of Science in Informatik",
+      "institute": "University of Central Punjab, Lahore",
+      "date": "Okt. 2020 - Juli 2024",
+      "contents": [
+        "Abschluss mit einem CGPA von 3,42.",
+        "Erhielt von Oktober 2020 bis Juli 2024 ein CGPA-basiertes Stipendium von 50%.",
+        "Absolvierte Kurse in zentralen Fächern wie Programmierung, Datenstrukturen, Algorithmen, Datenbanksysteme, Webentwicklung, künstliche Intelligenz und Deep Learning.",
+        "Schloss ein Abschlussprojekt mit fortgeschrittenen Konzepten aus Software Engineering und KI ab."
+      ]
+    },
+    "intermediate": {
+      "title": "Intermediate in Computer Science (Physik)",
+      "institute": "Punjab College, Lahore",
+      "date": "Sept. 2018 - Juni 2020",
+      "contents": [
+        "Abschluss mit Note A.",
+        "Spezialisierung auf Informatik und Physik."
+      ]
+    },
+    "matriculation": {
+      "title": "Matriculation (Naturwissenschaften)",
+      "institute": "The Punjab School, Lahore",
+      "date": "März 2016 - Mai 2018",
+      "contents": [
+        "Abschluss mit Note A.",
+        "Gewann in der 8. Klasse den ersten Platz in einem klassenübergreifenden englischen Schreibwettbewerb.",
+        "Gewann mit seinem Team einen schulübergreifenden Tischtenniswettbewerb."
+      ]
+    }
+  },
+  "contact": {
+    "title": "Lass uns sprechen",
+    "description": "Ob du eine neue Website erstellen, deine bestehende Plattform verbessern oder ein einzigartiges Projekt zum Leben erwecken möchtest, ich helfe gern.",
+    "form": {
+      "legend": "Kontaktinformationen",
+      "name": {
+        "label": "Vollständiger Name",
+        "placeholder": "Max Mustermann"
+      },
+      "email": {
+        "label": "E-Mail",
+        "placeholder": "max@email.com"
+      },
+      "message": {
+        "label": "Nachricht",
+        "placeholder": "Teile deine Gedanken..."
+      },
+      "submit": "Senden",
+      "submitting": "Wird gesendet...",
+      "validation": {
+        "nameRequired": "Name ist erforderlich",
+        "nameMaxLength": "Name muss weniger als 50 Zeichen enthalten",
+        "emailInvalid": "Bitte gib eine gültige E-Mail-Adresse ein",
+        "messageMinLength": "Die Nachricht muss mindestens 10 Zeichen lang sein",
+        "messageMaxLength": "Die Nachricht muss weniger als 1000 Zeichen enthalten"
+      }
+    },
+    "alerts": {
+      "success": "Deine Nachricht wurde gesendet!",
+      "error": "Etwas ist schiefgelaufen!",
+      "emailError": "E-Mail konnte nicht gesendet werden"
+    }
+  },
+  "footer": {
+    "termsConditions": "Allgemeine Geschäftsbedingungen",
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "copyright": "Alle Rechte vorbehalten."
+  }
+}

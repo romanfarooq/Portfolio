@@ -1,0 +1,193 @@
+{
+  "metadata": {
+    "title": "Roman Farooq | AI اور سافٹ ویئر انجینئر | RF، سیٹلائٹ کمیونیکیشن اور خلائی ٹیکنالوجی",
+    "description": "رومن فاروق ایک سافٹ ویئر اور AI انجینئر ہیں جو سافٹ ویئر، مصنوعی ذہانت، RF سسٹمز، سیٹلائٹ کمیونیکیشن، GIS، ریموٹ سینسنگ اور خلائی ٹیکنالوجی میں ذہین انجینئرنگ سسٹمز بنانے پر کام کرتے ہیں۔ ان کا کام full-stack development، AI/ML، data-driven applications، geospatial technologies، digital signal processing اور engineering software کو حقیقی تکنیکی آپریشنز کے لیے یکجا کرتا ہے۔",
+    "openGraphTitle": "Roman Farooq | AI اور سافٹ ویئر انجینئر | RF، سیٹلائٹ کمیونیکیشن اور خلائی ٹیکنالوجی",
+    "openGraphDescription": "رومن فاروق سافٹ ویئر اور AI انجینئر ہیں جن کی بڑھتی ہوئی توجہ RF سسٹمز، سیٹلائٹ کمیونیکیشن، GIS، ریموٹ سینسنگ اور خلائی ٹیکنالوجی پر ہے۔ وہ ایسے ذہین سافٹ ویئر سسٹمز بناتے ہیں جو AI، data، engineering workflows، geospatial analysis اور حقیقی تکنیکی آپریشنز کو جوڑتے ہیں۔",
+    "openGraphSiteName": "Roman Farooq کا AI، سافٹ ویئر اور خلائی ٹیکنالوجی پورٹ فولیو",
+    "twitterTitle": "Roman Farooq | AI اور سافٹ ویئر انجینئر | RF اور خلائی ٹیکنالوجی",
+    "twitterDescription": "RF سسٹمز، سیٹلائٹ کمیونیکیشن، GIS، ریموٹ سینسنگ، خلائی ٹیکنالوجی اور ذہین engineering software پر کام کرنے والے سافٹ ویئر اور AI انجینئر۔",
+    "applicationName": "Roman Farooq کا AI، سافٹ ویئر اور خلائی ٹیکنالوجی پورٹ فولیو",
+    "category": "پورٹ فولیو",
+    "classification": "پورٹ فولیو، سافٹ ویئر انجینئرنگ، مصنوعی ذہانت، RF سسٹمز، سیٹلائٹ کمیونیکیشن، GIS، ریموٹ سینسنگ، خلائی ٹیکنالوجی، انجینئرنگ سافٹ ویئر",
+    "keywords": [
+      "Roman Farooq",
+      "AI Engineer",
+      "Software Engineer",
+      "Artificial Intelligence",
+      "Machine Learning Engineer",
+      "Deep Learning",
+      "Natural Language Processing",
+      "NLP",
+      "LLM Applications",
+      "RAG",
+      "LangChain",
+      "Engineering Software",
+      "RF Systems",
+      "RF Engineering",
+      "Satellite Communication",
+      "Satellite Communications",
+      "Space Technology",
+      "Ground Station Operations",
+      "Spectrum Monitoring",
+      "Carrier Monitoring",
+      "Antenna Systems",
+      "Link Budgeting",
+      "VSAT",
+      "C-band",
+      "Ku-band",
+      "Ka-band",
+      "HTS",
+      "GIS",
+      "Geographic Information Systems",
+      "Remote Sensing",
+      "Earth Observation",
+      "Geospatial Analysis",
+      "Hyperspectral Imaging",
+      "Digital Signal Processing",
+      "DSP",
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "scikit-learn",
+      "PyTorch",
+      "TensorFlow",
+      "FastAPI",
+      "React",
+      "React Native",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "Node.js",
+      "Express.js",
+      "Flutter",
+      "MongoDB",
+      "SQL",
+      "PostgreSQL",
+      "Prisma",
+      "Docker",
+      "Tailwind CSS",
+      "QGIS",
+      "ESA SNAP",
+      "Google Earth Engine",
+      "GDAL",
+      "Rasterio",
+      "GeoPandas",
+      "Leaflet",
+      "Open Source",
+      "Remote Work",
+      "Pakistan",
+      "Lahore",
+      "Portfolio Website"
+    ]
+  },
+  "navbar": {
+    "home": "ہوم",
+    "about": "تعارف",
+    "work": "کام",
+    "education": "تعلیم",
+    "contact": "رابطہ"
+  },
+  "hero": {
+    "greeting": "سلام، میں Roman ہوں",
+    "developerText": "AI اور سافٹ ویئر انجینئر",
+    "dedicatedText": "بنانے کے لیے وقف",
+    "buildingText": "بنا رہا ہوں",
+    "webSolutions": "ذہین حل",
+    "flipWords": [
+      "ڈیٹا پر مبنی",
+      "قابل توسیع",
+      "جدید"
+    ]
+  },
+  "about": {
+    "title": "میرے بارے میں",
+    "greeting": "سلام، میں Roman Farooq ہوں",
+    "description": "میں ایک سافٹ ویئر اور AI انجینئر ہوں جس کی بڑھتی ہوئی توجہ RF سسٹمز، سیٹلائٹ کمیونیکیشن، GIS، ریموٹ سینسنگ اور خلائی ٹیکنالوجی پر ہے۔ مجھے ایسے ذہین انجینئرنگ سسٹمز بنانے میں دلچسپی ہے جو سافٹ ویئر، AI، data اور حقیقی تکنیکی آپریشنز کو جوڑتے ہیں۔",
+    "metaCertTitle": "Meta فرنٹ اینڈ ڈیولپر",
+    "metaCertSubtitle": "پروفیشنل سرٹیفکیٹ",
+    "metaCertDescription": "Coursera پر Meta کے سخت پروگرام کے ذریعے حاصل کیا گیا، یہ سرٹیفکیٹ front-end development، React، JavaScript، UI design principles، debugging، Git کے ساتھ version control اور production-ready applications deploy کرنے کی مہارت کی توثیق کرتا ہے۔",
+    "viewCertificate": "🎓 سرٹیفکیٹ دیکھیں",
+    "locationTitle": "مقام",
+    "locationDescription": "میں لاہور، پاکستان میں مقیم ہوں",
+    "academicCollaboration": "تعلیمی تعاون، AI/ML research، RF systems، satellite communication، GIS، remote sensing اور engineering software projects کے لیے دستیاب۔",
+    "techStackTitle": "ٹیک اسٹیک",
+    "techStackDescription": "Python (Pandas، NumPy، Matplotlib، FastAPI)، JavaScript/TypeScript اور React، Next.js، Node.js اور React Native جیسے frameworks میں مہارت۔ database management (MongoDB، PostgreSQL)، AI API integrations، LLM workflows اور cloud deployment کا تجربہ۔ scikit-learn، PyTorch، TensorFlow، LangChain، Tailwind CSS، Docker، Prisma، Redux، Flutter، QGIS، ESA SNAP، Google Earth Engine، GDAL، Rasterio، GeoPandas، Leaflet اور scalable backend architecture سے واقفیت۔"
+  },
+  "copyEmail": {
+    "copyButton": "ای میل ایڈریس کاپی کریں",
+    "copiedMessage": "ای میل کاپی ہو گئی"
+  },
+  "education": {
+    "title": "میری تعلیم",
+    "bachelors": {
+      "title": "بیچلر آف سائنس ان کمپیوٹر سائنس",
+      "institute": "University of Central Punjab، Lahore",
+      "date": "اکتوبر 2020 - جولائی 2024",
+      "contents": [
+        "CGPA 3.42 کے ساتھ گریجویشن مکمل کی۔",
+        "اکتوبر 2020 سے جولائی 2024 تک CGPA کی بنیاد پر 50% scholarship حاصل کی۔",
+        "Programming، Data Structures، Algorithms، Database Systems، Web Development، Artificial Intelligence اور Deep Learning جیسے اہم subjects میں coursework مکمل کیا۔",
+        "advanced software engineering اور AI concepts پر مشتمل Final Year Project مکمل کیا۔"
+      ]
+    },
+    "intermediate": {
+      "title": "انٹرمیڈیٹ ان کمپیوٹر سائنس (فزکس)",
+      "institute": "Punjab College، Lahore",
+      "date": "ستمبر 2018 - جون 2020",
+      "contents": [
+        "Grade A کے ساتھ گریجویشن مکمل کی۔",
+        "Computer Science اور Physics میں specialization کی۔"
+      ]
+    },
+    "matriculation": {
+      "title": "میٹرک (سائنس)",
+      "institute": "The Punjab School، Lahore",
+      "date": "مارچ 2016 - مئی 2018",
+      "contents": [
+        "Grade A کے ساتھ گریجویشن مکمل کی۔",
+        "آٹھویں جماعت میں inter-section English writing competition میں پہلی پوزیشن حاصل کی۔",
+        "اپنی ٹیم کے ساتھ inter-campus table tennis competition میں کامیابی حاصل کی۔"
+      ]
+    }
+  },
+  "contact": {
+    "title": "آئیں بات کرتے ہیں",
+    "description": "چاہے آپ نئی ویب سائٹ بنانا چاہتے ہوں، موجودہ platform بہتر کرنا چاہتے ہوں، یا کوئی منفرد project حقیقت بنانا چاہتے ہوں، میں مدد کے لیے حاضر ہوں۔",
+    "form": {
+      "legend": "رابطے کی معلومات",
+      "name": {
+        "label": "پورا نام",
+        "placeholder": "علی خان"
+      },
+      "email": {
+        "label": "ای میل",
+        "placeholder": "email@example.com"
+      },
+      "message": {
+        "label": "پیغام",
+        "placeholder": "اپنے خیالات شیئر کریں..."
+      },
+      "submit": "بھیجیں",
+      "submitting": "بھیجا جا رہا ہے...",
+      "validation": {
+        "nameRequired": "نام ضروری ہے",
+        "nameMaxLength": "نام 50 حروف سے کم ہونا چاہیے",
+        "emailInvalid": "براہ کرم درست ای میل ایڈریس درج کریں",
+        "messageMinLength": "پیغام کم از کم 10 حروف کا ہونا چاہیے",
+        "messageMaxLength": "پیغام 1000 حروف سے کم ہونا چاہیے"
+      }
+    },
+    "alerts": {
+      "success": "آپ کا پیغام بھیج دیا گیا!",
+      "error": "کچھ غلط ہو گیا!",
+      "emailError": "ای میل بھیجنے میں ناکامی"
+    }
+  },
+  "footer": {
+    "termsConditions": "شرائط و ضوابط",
+    "privacyPolicy": "رازداری کی پالیسی",
+    "copyright": "جملہ حقوق محفوظ ہیں۔"
+  }
+}

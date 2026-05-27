@@ -1,0 +1,193 @@
+{
+  "metadata": {
+    "title": "Roman Farooq | Ingénieur IA et logiciel | RF, communication satellite et technologie spatiale",
+    "description": "Roman Farooq est ingénieur logiciel et IA, spécialisé dans la création de systèmes d’ingénierie intelligents couvrant le logiciel, l’intelligence artificielle, les systèmes RF, la communication satellite, les SIG, la télédétection et la technologie spatiale. Son travail associe développement full-stack, AI/ML, applications pilotées par les données, technologies géospatiales, traitement numérique du signal et logiciels d’ingénierie pour des opérations techniques réelles.",
+    "openGraphTitle": "Roman Farooq | Ingénieur IA et logiciel | RF, communication satellite et technologie spatiale",
+    "openGraphDescription": "Roman Farooq est ingénieur logiciel et IA avec un intérêt croissant pour les systèmes RF, la communication satellite, les SIG, la télédétection et la technologie spatiale. Il construit des systèmes logiciels intelligents qui relient IA, données, workflows d’ingénierie, analyse géospatiale et opérations techniques réelles.",
+    "openGraphSiteName": "Portfolio IA, logiciel et technologie spatiale de Roman Farooq",
+    "twitterTitle": "Roman Farooq | Ingénieur IA et logiciel | RF et technologie spatiale",
+    "twitterDescription": "Ingénieur logiciel et IA spécialisé dans les systèmes RF, la communication satellite, les SIG, la télédétection, la technologie spatiale et les logiciels d’ingénierie intelligents.",
+    "applicationName": "Portfolio IA, logiciel et technologie spatiale de Roman Farooq",
+    "category": "Portfolio",
+    "classification": "Portfolio, génie logiciel, intelligence artificielle, systèmes RF, communication satellite, SIG, télédétection, technologie spatiale, logiciel d’ingénierie",
+    "keywords": [
+      "Roman Farooq",
+      "AI Engineer",
+      "Software Engineer",
+      "Artificial Intelligence",
+      "Machine Learning Engineer",
+      "Deep Learning",
+      "Natural Language Processing",
+      "NLP",
+      "LLM Applications",
+      "RAG",
+      "LangChain",
+      "Engineering Software",
+      "RF Systems",
+      "RF Engineering",
+      "Satellite Communication",
+      "Satellite Communications",
+      "Space Technology",
+      "Ground Station Operations",
+      "Spectrum Monitoring",
+      "Carrier Monitoring",
+      "Antenna Systems",
+      "Link Budgeting",
+      "VSAT",
+      "C-band",
+      "Ku-band",
+      "Ka-band",
+      "HTS",
+      "GIS",
+      "Geographic Information Systems",
+      "Remote Sensing",
+      "Earth Observation",
+      "Geospatial Analysis",
+      "Hyperspectral Imaging",
+      "Digital Signal Processing",
+      "DSP",
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "scikit-learn",
+      "PyTorch",
+      "TensorFlow",
+      "FastAPI",
+      "React",
+      "React Native",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "Node.js",
+      "Express.js",
+      "Flutter",
+      "MongoDB",
+      "SQL",
+      "PostgreSQL",
+      "Prisma",
+      "Docker",
+      "Tailwind CSS",
+      "QGIS",
+      "ESA SNAP",
+      "Google Earth Engine",
+      "GDAL",
+      "Rasterio",
+      "GeoPandas",
+      "Leaflet",
+      "Open Source",
+      "Remote Work",
+      "Pakistan",
+      "Lahore",
+      "Portfolio Website"
+    ]
+  },
+  "navbar": {
+    "home": "Accueil",
+    "about": "À propos",
+    "work": "Travaux",
+    "education": "Formation",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Bonjour, je suis Roman",
+    "developerText": "Ingénieur IA et logiciel",
+    "dedicatedText": "Dédié à la création de",
+    "buildingText": "Construire",
+    "webSolutions": "solutions intelligentes",
+    "flipWords": [
+      "Pilotées par les données",
+      "Évolutives",
+      "Innovantes"
+    ]
+  },
+  "about": {
+    "title": "À propos de moi",
+    "greeting": "Bonjour, je suis Roman Farooq",
+    "description": "Ingénieur logiciel et IA avec un intérêt croissant pour les systèmes RF, la communication satellite, les SIG, la télédétection et la technologie spatiale. Je m’intéresse à la création de systèmes d’ingénierie intelligents qui relient logiciel, IA, données et opérations techniques réelles.",
+    "metaCertTitle": "Développeur front-end Meta",
+    "metaCertSubtitle": "Certificat professionnel",
+    "metaCertDescription": "Obtenu grâce au programme rigoureux de Meta sur Coursera, ce certificat valide des compétences en développement front-end, notamment React, JavaScript, principes de conception UI, débogage, gestion de versions avec Git et déploiement d’applications prêtes pour la production.",
+    "viewCertificate": "🎓 Voir le certificat",
+    "locationTitle": "Localisation",
+    "locationDescription": "Je suis basé à Lahore, Pakistan",
+    "academicCollaboration": "Ouvert aux collaborations académiques, à la recherche AI/ML, aux systèmes RF, à la communication satellite, aux SIG, à la télédétection et aux projets de logiciels d’ingénierie.",
+    "techStackTitle": "Stack technique",
+    "techStackDescription": "Compétent en Python (Pandas, NumPy, Matplotlib, FastAPI), JavaScript/TypeScript et avec des frameworks comme React, Next.js, Node.js et React Native. Expérimenté en gestion de bases de données (MongoDB, PostgreSQL), intégrations d’API d’IA, workflows LLM et déploiement cloud. À l’aise avec scikit-learn, PyTorch, TensorFlow, LangChain, Tailwind CSS, Docker, Prisma, Redux, Flutter, QGIS, ESA SNAP, Google Earth Engine, GDAL, Rasterio, GeoPandas, Leaflet et l’architecture backend évolutive."
+  },
+  "copyEmail": {
+    "copyButton": "Copier l’adresse e-mail",
+    "copiedMessage": "E-mail copié"
+  },
+  "education": {
+    "title": "Ma formation",
+    "bachelors": {
+      "title": "Licence en informatique",
+      "institute": "University of Central Punjab, Lahore",
+      "date": "oct. 2020 - juil. 2024",
+      "contents": [
+        "Diplômé avec un CGPA de 3,42.",
+        "A obtenu une bourse de 50 % basée sur le CGPA d’octobre 2020 à juillet 2024.",
+        "A suivi des cours clés, notamment programmation, structures de données, algorithmes, systèmes de bases de données, développement web, intelligence artificielle et deep learning.",
+        "A réalisé un projet de fin d’études impliquant des concepts avancés de génie logiciel et d’IA."
+      ]
+    },
+    "intermediate": {
+      "title": "Études intermédiaires en informatique (physique)",
+      "institute": "Punjab College, Lahore",
+      "date": "sept. 2018 - juin 2020",
+      "contents": [
+        "Diplômé avec la note A.",
+        "Spécialisation en informatique et physique."
+      ]
+    },
+    "matriculation": {
+      "title": "Matriculation (sciences)",
+      "institute": "The Punjab School, Lahore",
+      "date": "mars 2016 - mai 2018",
+      "contents": [
+        "Diplômé avec la note A.",
+        "A remporté la première place lors d’un concours d’écriture en anglais inter-sections en 8e classe.",
+        "A remporté avec son équipe une compétition de tennis de table inter-campus."
+      ]
+    }
+  },
+  "contact": {
+    "title": "Discutons",
+    "description": "Que vous souhaitiez créer un nouveau site web, améliorer votre plateforme existante ou donner vie à un projet unique, je suis là pour vous aider.",
+    "form": {
+      "legend": "Informations de contact",
+      "name": {
+        "label": "Nom complet",
+        "placeholder": "Jean Dupont"
+      },
+      "email": {
+        "label": "E-mail",
+        "placeholder": "jean@email.com"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Partagez vos idées..."
+      },
+      "submit": "Envoyer",
+      "submitting": "Envoi...",
+      "validation": {
+        "nameRequired": "Le nom est obligatoire",
+        "nameMaxLength": "Le nom doit contenir moins de 50 caractères",
+        "emailInvalid": "Veuillez saisir une adresse e-mail valide",
+        "messageMinLength": "Le message doit contenir au moins 10 caractères",
+        "messageMaxLength": "Le message doit contenir moins de 1000 caractères"
+      }
+    },
+    "alerts": {
+      "success": "Votre message a été envoyé!",
+      "error": "Une erreur est survenue!",
+      "emailError": "Échec de l’envoi de l’e-mail"
+    }
+  },
+  "footer": {
+    "termsConditions": "Conditions générales",
+    "privacyPolicy": "Politique de confidentialité",
+    "copyright": "Tous droits réservés."
+  }
+}

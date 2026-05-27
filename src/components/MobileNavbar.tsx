@@ -1,16 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { motion, AnimatePresence } from "motion/react";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
+import { AnimatePresence, motion } from "motion/react";
 
-import { cn } from "@/lib/utils";
+import { Link } from "@/i18n/navigation";
 import { Close, Menu } from "@/components/icons";
-import { Link, useRouter } from "@/i18n/navigation";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
 export function MobileNavbar() {
-  const router = useRouter();
-  const locale = useLocale();
   const t = useTranslations("navbar");
 
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -25,15 +23,6 @@ export function MobileNavbar() {
       const element = document.getElementById(hash);
       if (element) element.scrollIntoView({ behavior: "smooth" });
     }, 100);
-  };
-
-  const handleLocaleChange = (
-    e: React.MouseEvent<HTMLAnchorElement>,
-    newLocale: "en" | "zh"
-  ) => {
-    e.preventDefault();
-    setIsNavOpen(false);
-    if (locale !== newLocale) router.push("/", { locale: newLocale });
   };
 
   return (
@@ -79,31 +68,7 @@ export function MobileNavbar() {
                 )
               )}
               <li className="flex w-full justify-center border-t border-white/10 pt-4">
-                <div className="flex items-center gap-3">
-                  <a
-                    onClick={(e) => handleLocaleChange(e, "en")}
-                    className={cn(
-                      "cursor-pointer rounded px-3 py-2 text-sm transition-colors",
-                      locale === "en"
-                        ? "bg-white/20 text-white"
-                        : "text-neutral-300 hover:bg-white/10 hover:text-white"
-                    )}
-                  >
-                    EN
-                  </a>
-                  <span className="text-neutral-500">|</span>
-                  <a
-                    onClick={(e) => handleLocaleChange(e, "zh")}
-                    className={cn(
-                      "cursor-pointer rounded px-3 py-2 text-sm transition-colors",
-                      locale === "zh"
-                        ? "bg-white/20 text-white"
-                        : "text-neutral-300 hover:bg-white/10 hover:text-white"
-                    )}
-                  >
-                    中文
-                  </a>
-                </div>
+                <LanguageSwitcher onLocaleChange={() => setIsNavOpen(false)} />
               </li>
             </ul>
           </motion.div>
