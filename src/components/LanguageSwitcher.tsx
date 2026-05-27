@@ -1,16 +1,15 @@
 "use client";
 
-import { Languages } from "lucide-react";
 import { useLocale } from "next-intl";
 import { useTransition } from "react";
 
 import { cn } from "@/lib/utils";
+import { Languages } from "@/components/icons";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { localeLabels, locales, type Locale } from "@/i18n/routing";
 import {
   Select,
   SelectItem,
-  SelectValue,
   SelectTrigger,
   SelectContent
 } from "@/components/Select";
@@ -27,6 +26,7 @@ export function LanguageSwitcher({
   selectClassName
 }: LanguageSwitcherProps) {
   const locale = useLocale();
+  const currentLocale = locale as Locale;
   const router = useRouter();
   const pathname = usePathname();
   const [isPending, startTransition] = useTransition();
@@ -48,23 +48,23 @@ export function LanguageSwitcher({
   return (
     <div className={cn("relative", className)}>
       <Select
-        value={locale}
-        onValueChange={(value) => handleChange(value as Locale)}
         disabled={isPending}
+        value={currentLocale}
+        onValueChange={(value) => handleChange(value as Locale)}
       >
         <SelectTrigger
           aria-label="Change language"
           className={cn(
-            "group min-w-36 rounded-full border-white/10 bg-white/[0.07] px-3.5 py-2 text-neutral-100 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] backdrop-blur-md hover:border-white/20 hover:bg-white/[0.11]",
+            "group min-w-36 rounded-full border-white/10 bg-white/[0.07] px-3.5 py-2 text-neutral-100 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] backdrop-blur-md hover:border-white/20 hover:bg-white/11",
             "data-[state=open]:border-white/25 data-[state=open]:bg-white/13",
             selectClassName
           )}
         >
-          <span className="flex min-w-0 items-center gap-2">
-            <span className="flex size-6 items-center justify-center rounded-full bg-white/10 text-neutral-200 transition-colors group-hover:bg-white/15">
+          <span className="flex min-w-0 items-center gap-2.5">
+            <span className="flex size-6 shrink-0 items-center justify-center rounded-full bg-white/10 text-neutral-200 transition-colors group-hover:bg-white/15">
               <Languages className="size-3.5" aria-hidden="true" />
             </span>
-            <SelectValue />
+            <span className="truncate">{localeLabels[currentLocale]}</span>
           </span>
         </SelectTrigger>
         <SelectContent align="end" sideOffset={8} className="min-w-44">
