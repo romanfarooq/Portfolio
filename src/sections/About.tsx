@@ -1,13 +1,17 @@
 import Image from "next/image";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 
 import { Meta } from "@/components/logos";
+import { cn } from "@/lib/utils";
 import { Globe } from "@/components/Globe";
+import { isRtlLocale } from "@/i18n/routing";
 import { Frameworks } from "@/components/Frameworks";
 import { CopyEmailButton } from "@/components/CopyEmailButton";
 
 export async function About() {
+  const locale = await getLocale();
   const t = await getTranslations("about");
+  const isRtl = isRtlLocale(locale);
 
   return (
     <section
@@ -82,11 +86,16 @@ export async function About() {
               {t("locationDescription")}
             </p>
           </div>
-          <figure className="absolute top-1/12 left-1/4 md:left-1/3">
+          <figure
+            className={cn(
+              "absolute top-1/12",
+              isRtl ? "right-1/4 md:right-1/3" : "left-1/4 md:left-1/3"
+            )}
+          >
             <Globe />
           </figure>
         </aside>
-        <aside className="from-orange to-coral relative row-span-1 h-60 overflow-hidden rounded-2xl bg-linear-to-b p-6 duration-200 hover:-translate-y-1 md:col-span-2 md:h-full">
+        <aside className="from-orange to-coral relative row-span-1 h-full overflow-hidden rounded-2xl bg-linear-to-b p-6 duration-200 hover:-translate-y-1 md:col-span-2">
           <div className="flex size-full flex-col items-center justify-center gap-4">
             <h3 className="mt-2 mb-2 text-center text-base md:text-xl">
               {t("academicCollaboration")}

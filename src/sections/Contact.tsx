@@ -89,7 +89,7 @@ export function Contact() {
     >
       <Particles
         quantity={400}
-        className="absolute inset-0 left-1/2 -z-50 w-screen -translate-x-1/2"
+        className="absolute inset-y-0 right-auto left-1/2 -z-50 w-screen -translate-x-1/2"
       />
       <AnimatePresence>
         {alert.show && (

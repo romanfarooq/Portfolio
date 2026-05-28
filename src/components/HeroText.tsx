@@ -1,20 +1,30 @@
 import { motion } from "motion/react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 import { FlipWords } from "@/components/FlipWords";
-
-const variants = {
-  hidden: { opacity: 0, x: -50 },
-  visible: { opacity: 1, x: 0 }
-};
+import { cn } from "@/lib/utils";
+import { isRtlLocale } from "@/i18n/routing";
 
 export function HeroText() {
+  const locale = useLocale();
   const t = useTranslations("hero");
+  const isRtl = isRtlLocale(locale);
+
+  const variants = {
+    hidden: { opacity: 0, x: isRtl ? 50 : -50 },
+    visible: { opacity: 1, x: 0 }
+  };
 
   return (
-    <div className="z-10 flex h-[90vh] w-full flex-col justify-center gap-5 bg-clip-text px-5 pt-20 text-center sm:px-10 md:px-5 md:text-left lg:px-15">
+    <div
+      className={cn(
+        "z-10 flex h-[90vh] w-full flex-col justify-center gap-5 bg-clip-text px-5 pt-20 text-center sm:px-10 md:px-5 lg:px-15",
+        isRtl ? "md:items-end md:text-right" : "md:items-start md:text-left"
+      )}
+      dir={isRtl ? "rtl" : "ltr"}
+    >
       <motion.h1
-        className="text-4xl font-medium text-white md:text-3xl"
+        className="w-full text-4xl font-medium text-white md:text-3xl"
         variants={variants}
         initial="hidden"
         animate="visible"
@@ -22,9 +32,14 @@ export function HeroText() {
       >
         {t("greeting")}
       </motion.h1>
-      <div className="flex w-full flex-col items-center md:items-start">
+      <div
+        className={cn(
+          "flex w-full flex-col items-center",
+          isRtl ? "md:items-end" : "md:items-start"
+        )}
+      >
         <motion.p
-          className="text-5xl font-medium text-neutral-100 md:text-5xl md:font-medium"
+          className="w-full text-5xl font-medium text-neutral-100 [unicode-bidi:plaintext] md:text-5xl md:font-medium"
           variants={variants}
           initial="hidden"
           animate="visible"
@@ -37,6 +52,7 @@ export function HeroText() {
           <span className="md:hidden">{t("buildingText")}</span>
         </motion.p>
         <motion.div
+          className="w-full"
           variants={variants}
           initial="hidden"
           animate="visible"
@@ -48,7 +64,7 @@ export function HeroText() {
           />
         </motion.div>
         <motion.p
-          className="pt-3 text-4xl font-black text-neutral-100 md:text-4xl md:font-medium"
+          className="w-full pt-3 text-4xl font-black text-neutral-100 [unicode-bidi:plaintext] md:text-4xl md:font-medium"
           variants={variants}
           initial="hidden"
           animate="visible"

@@ -20,8 +20,11 @@ export function ParallaxBackground() {
   const mountain1Y = useTransform(smoothProgress, [0, 0.5], ["0%", "5%"]);
 
   return (
-    <div ref={backgroundRef} className="absolute inset-0 bg-black/40">
-      <figure className="relative h-screen overflow-y-hidden will-change-transform">
+    <div
+      ref={backgroundRef}
+      className="absolute inset-0 overflow-hidden bg-black/40"
+    >
+      <figure className="relative h-screen overflow-hidden will-change-transform">
         {/* Background Layer - Sky */}
         <div className="absolute inset-0 -z-50 h-screen w-full bg-[url('/assets/images/sky.webp')] bg-cover bg-bottom" />
 
