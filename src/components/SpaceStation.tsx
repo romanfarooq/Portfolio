@@ -5,7 +5,11 @@ import { useMotionValue, useSpring } from "motion/react";
 import type { Group } from "three";
 import type { ThreeElements } from "@react-three/fiber";
 
-export function SpaceStation(props: ThreeElements["group"]) {
+type SpaceStationProps = ThreeElements["group"] & {
+  isRtl: boolean;
+};
+
+export function SpaceStation({ isRtl, ...props }: SpaceStationProps) {
   const group = useRef<Group>(null);
 
   const { scene } = useGLTF(
@@ -13,7 +17,7 @@ export function SpaceStation(props: ThreeElements["group"]) {
     "/draco/"
   );
 
-  const xPosition = useMotionValue(5);
+  const xPosition = useMotionValue(isRtl ? -5 : 5);
   const xSpring = useSpring(xPosition, { damping: 30 });
 
   useEffect(() => {

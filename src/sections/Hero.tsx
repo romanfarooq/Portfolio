@@ -39,7 +39,7 @@ export function Hero() {
               <Astronaut {...astronautConfig} />
             </Float>
             <Float>
-              <SpaceStation {...spaceStationConfig} />
+              <SpaceStation isRtl={isRtl} {...spaceStationConfig} />
             </Float>
           </Suspense>
         </Canvas>
