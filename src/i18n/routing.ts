@@ -49,21 +49,6 @@ export const localePathnames = {
   ja: "/ja"
 } satisfies Record<Locale, `/${string}`>;
 
-export const alternateLanguages = {
-  en: localePathnames.en,
-  zh: localePathnames.zh,
-  de: localePathnames.de,
-  fr: localePathnames.fr,
-  es: localePathnames.es,
-  it: localePathnames.it,
-  nl: localePathnames.nl,
-  sv: localePathnames.sv,
-  fi: localePathnames.fi,
-  ar: localePathnames.ar,
-  ur: localePathnames.ur,
-  ja: localePathnames.ja
-};
-
 export const routing = defineRouting({
   locales,
   defaultLocale: "en",

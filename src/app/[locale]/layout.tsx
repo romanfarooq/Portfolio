@@ -5,12 +5,7 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 import type { Metadata, Viewport } from "next";
 
 import { cn } from "@/lib/utils";
-import {
-  routing,
-  isRtlLocale,
-  localePathnames,
-  alternateLanguages
-} from "@/i18n/routing";
+import { routing, isRtlLocale, localePathnames } from "@/i18n/routing";
 
 import "@/styles/globals.css";
 
@@ -50,7 +45,7 @@ export async function generateMetadata({
     },
     alternates: {
       canonical: localePathnames[locale],
-      languages: alternateLanguages
+      languages: localePathnames
     },
     icons: {
       icon: [
