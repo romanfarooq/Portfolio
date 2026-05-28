@@ -55,7 +55,7 @@ function adjustAstronautForRtl(config: ModelConfig) {
 
   return {
     ...config,
-    position: [-Math.abs(positionX), positionY, positionZ - 0.1] satisfies [
+    position: [-positionX, positionY, positionZ - 0.1] satisfies [
       number,
       number,
       number
@@ -88,11 +88,11 @@ function mirrorSpaceStationForRtl(config: ModelConfig) {
 }
 
 export function getModelConfigs({
-  isMobile,
-  isRtl
+  isRtl,
+  isMobile
 }: {
-  isMobile: boolean;
   isRtl: boolean;
+  isMobile: boolean;
 }) {
   const viewportPreset: HeroViewportPreset = isMobile ? "mobile" : "desktop";
   const isRtlDesktop = isRtl && viewportPreset === "desktop";
