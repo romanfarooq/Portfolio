@@ -32,7 +32,7 @@ export function MobileNavbar() {
           href="/"
           className="text-xl font-bold text-neutral-300 transition-colors hover:text-white"
         >
-          Roman Farooq
+          {t("brandName")}
         </Link>
         <button
           onClick={() => setIsNavOpen((prev) => !prev)}

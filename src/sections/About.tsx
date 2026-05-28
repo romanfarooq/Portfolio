@@ -12,6 +12,7 @@ export async function About() {
   const locale = await getLocale();
   const t = await getTranslations("about");
   const isRtl = isRtlLocale(locale);
+  const metaCertSkills = t.raw("metaCertSkills") as string[];
 
   return (
     <section
@@ -23,7 +24,7 @@ export async function About() {
         <header className="from-storm to-indigo relative row-span-2 flex h-60 items-end overflow-hidden rounded-2xl bg-linear-to-b p-6 duration-200 hover:-translate-y-1 md:col-span-3 md:h-full">
           <Image
             src="/assets/images/coding-pov.webp"
-            alt="Coding POV"
+            alt={t("codingImageAlt")}
             width={1280}
             height={720}
             priority={true}
@@ -53,21 +54,14 @@ export async function About() {
               {t("metaCertDescription")}
             </p>
             <div className="flex flex-wrap justify-center gap-2 text-xs">
-              <span className="rounded-full bg-white/20 px-1.5 py-0.5 md:px-3 md:py-1">
-                React
-              </span>
-              <span className="rounded-full bg-white/20 px-1.5 py-0.5 md:px-3 md:py-1">
-                JavaScript
-              </span>
-              <span className="rounded-full bg-white/20 px-1.5 py-0.5 md:px-3 md:py-1">
-                HTML/CSS
-              </span>
-              <span className="rounded-full bg-white/20 px-1.5 py-0.5 md:px-3 md:py-1">
-                Git/GitHub
-              </span>
-              <span className="rounded-full bg-white/20 px-1.5 py-0.5 md:px-3 md:py-1">
-                UI/UX Principles
-              </span>
+              {metaCertSkills.map((skill) => (
+                <span
+                  key={skill}
+                  className="rounded-full bg-white/20 px-1.5 py-0.5 md:px-3 md:py-1"
+                >
+                  {skill}
+                </span>
+              ))}
             </div>
             <a
               href="https://www.coursera.org/account/accomplishments/professional-cert/XEPX26FAB3MY"

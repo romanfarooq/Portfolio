@@ -33,7 +33,7 @@ export async function Footer() {
           ))}
         </nav>
         <p className="order-1 sm:order-3">
-          &copy; {new Date().getFullYear()} Roman. {t("copyright")}
+          &copy; {new Date().getFullYear()} {t("ownerShort")}. {t("copyright")}
         </p>
       </div>
     </footer>

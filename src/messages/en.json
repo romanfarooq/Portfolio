@@ -83,6 +83,7 @@
     ]
   },
   "navbar": {
+    "brandName": "Roman Farooq",
     "home": "Home",
     "about": "About",
     "work": "Work",
@@ -95,7 +96,11 @@
     "dedicatedText": "Dedicated to Crafting",
     "buildingText": "Building",
     "webSolutions": "Intelligent Solutions",
-    "flipWords": ["Data-Driven", "Scalable", "Innovative"]
+    "flipWords": [
+      "Data-Driven",
+      "Scalable",
+      "Innovative"
+    ]
   },
   "about": {
     "title": "About Me",
@@ -109,7 +114,15 @@
     "locationDescription": "I'm based in Lahore, Pakistan",
     "academicCollaboration": "Open to academic collaboration, AI/ML research, RF systems, satellite communication, GIS, remote sensing, and engineering software projects.",
     "techStackTitle": "Tech Stack",
-    "techStackDescription": "Proficient in Python (Pandas, NumPy, Matplotlib, FastAPI), JavaScript/TypeScript, and frameworks like React, Next.js, Node.js, and React Native. Skilled in database management (MongoDB, PostgreSQL), AI API integrations, LLM workflows, and cloud deployment. Experienced with scikit-learn, PyTorch, TensorFlow, LangChain, Tailwind CSS, Docker, Prisma, Redux, Flutter, QGIS, ESA SNAP, Google Earth Engine, GDAL, Rasterio, GeoPandas, Leaflet, and scalable backend architecture."
+    "techStackDescription": "Proficient in Python (Pandas, NumPy, Matplotlib, FastAPI), JavaScript/TypeScript, and frameworks like React, Next.js, Node.js, and React Native. Skilled in database management (MongoDB, PostgreSQL), AI API integrations, LLM workflows, and cloud deployment. Experienced with scikit-learn, PyTorch, TensorFlow, LangChain, Tailwind CSS, Docker, Prisma, Redux, Flutter, QGIS, ESA SNAP, Google Earth Engine, GDAL, Rasterio, GeoPandas, Leaflet, and scalable backend architecture.",
+    "codingImageAlt": "Coding point of view",
+    "metaCertSkills": [
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git/GitHub",
+      "UI/UX Principles"
+    ]
   },
   "copyEmail": {
     "copyButton": "Copy Email Address",
@@ -182,8 +195,26 @@
     }
   },
   "footer": {
+    "ownerShort": "Roman",
     "termsConditions": "Terms & Conditions",
     "privacyPolicy": "Privacy Policy",
     "copyright": "All rights reserved."
+  },
+  "languageSwitcher": {
+    "ariaLabel": "Change language",
+    "languages": {
+      "en": "English",
+      "zh": "Chinese",
+      "de": "German",
+      "fr": "French",
+      "es": "Spanish",
+      "it": "Italian",
+      "nl": "Dutch",
+      "sv": "Swedish",
+      "fi": "Finnish",
+      "ar": "Arabic",
+      "ur": "Urdu",
+      "ja": "Japanese"
+    }
   }
 }

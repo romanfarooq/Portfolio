@@ -12,7 +12,7 @@ export async function DesktopNavbar() {
         href="/"
         className="text-xl font-bold text-neutral-300 transition-colors hover:text-white"
       >
-        Roman Farooq
+        {t("brandName")}
       </Link>
       <div className="flex items-center gap-5 xl:gap-7">
         <ul className="flex flex-row items-center gap-5 xl:gap-6">
