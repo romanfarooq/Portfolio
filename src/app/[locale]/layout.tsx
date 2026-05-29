@@ -16,11 +16,11 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params
 }: Omit<PageProps<"/[locale]">, "searchParams">): Promise<Metadata> {
-  const { locale: requestedLocale } = await params;
+  const { locale } = await params;
 
-  const locale = hasLocale(routing.locales, requestedLocale)
-    ? requestedLocale
-    : routing.defaultLocale;
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
 
   const t = await getTranslations({ locale, namespace: "metadata" });
 
