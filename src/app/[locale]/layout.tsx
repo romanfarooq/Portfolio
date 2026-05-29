@@ -169,8 +169,8 @@ export default async function RootLayout({
   return (
     <html
       lang={locale}
-      dir={isRtlLocale(locale) ? "rtl" : "ltr"}
       data-scroll-behavior="smooth"
+      dir={isRtlLocale(locale) ? "rtl" : "ltr"}
     >
       <body
         className={cn(
