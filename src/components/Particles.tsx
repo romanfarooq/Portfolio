@@ -144,7 +144,7 @@ export function Particles({
     resizeTimeout.current = setTimeout(setupCanvas, 200);
   }, [setupCanvas]);
 
-  const animateParticles = useCallback(function animateParticles() {
+  const animateParticles = useCallback(() => {
     clearContext();
 
     for (let index = 0; index < circles.current.length; index++) {
@@ -160,15 +160,13 @@ export function Particles({
     }
 
     rafID.current = requestAnimationFrame(animateParticles);
-  },
-    [
-      createCircle,
-      clearContext,
-      isCircleOutOfBounds,
-      updateCirclePosition,
-      renderCircleParticle
-    ]
-  );
+  }, [
+    createCircle,
+    clearContext,
+    isCircleOutOfBounds,
+    updateCirclePosition,
+    renderCircleParticle
+  ]);
 
   useEffect(() => {
     context.current = canvasRef.current?.getContext("2d") || null;
