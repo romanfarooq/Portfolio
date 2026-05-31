@@ -35,11 +35,6 @@
 }
 
 @layer base {
-  html,
-  body {
-    overflow-x: hidden;
-  }
-
   html[data-scroll-behavior="smooth"] {
     scroll-behavior: smooth !important;
   }
