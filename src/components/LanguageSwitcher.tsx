@@ -1,7 +1,7 @@
 "use client";
 
-import { useLocale, useTranslations } from "next-intl";
 import { useTransition } from "react";
+import { useLocale, useTranslations } from "next-intl";
 
 import { cn } from "@/lib/utils";
 import { Languages } from "@/components/icons";
