@@ -25,9 +25,8 @@ export function LanguageSwitcher({
   onLocaleChange,
   selectClassName
 }: LanguageSwitcherProps) {
-  const locale = useLocale();
   const t = useTranslations("languageSwitcher");
-  const currentLocale = locale as Locale;
+  const locale = useLocale() as Locale;
   const router = useRouter();
   const pathname = usePathname();
   const [isPending, startTransition] = useTransition();
@@ -49,8 +48,8 @@ export function LanguageSwitcher({
   return (
     <div className={cn("relative", className)}>
       <Select
+        value={locale}
         disabled={isPending}
-        value={currentLocale}
         onValueChange={(value) => handleChange(value as Locale)}
       >
         <SelectTrigger
@@ -65,7 +64,7 @@ export function LanguageSwitcher({
             <span className="flex size-6 shrink-0 items-center justify-center rounded-full bg-white/10 text-neutral-200 transition-colors group-hover:bg-white/15">
               <Languages className="size-3.5" aria-hidden="true" />
             </span>
-            <span className="truncate">{localeLabels[currentLocale]}</span>
+            <span className="truncate">{localeLabels[locale]}</span>
           </span>
         </SelectTrigger>
         <SelectContent
