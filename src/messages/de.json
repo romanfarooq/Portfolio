@@ -66,11 +66,7 @@
     "dedicatedText": "Engagiert für",
     "buildingText": "Entwicklung",
     "webSolutions": "intelligente Lösungen",
-    "flipWords": [
-      "Datengetrieben",
-      "Skalierbar",
-      "Innovativ"
-    ]
+    "flipWords": ["Datengetrieben", "Skalierbar", "Innovativ"]
   },
   "about": {
     "title": "Über mich",
@@ -174,7 +170,6 @@
     "ariaLabel": "Sprache ändern",
     "languages": {
       "en": "Englisch",
-      "zh": "Chinesisch",
       "de": "Deutsch",
       "fr": "Französisch",
       "es": "Spanisch",
@@ -182,9 +177,11 @@
       "nl": "Niederländisch",
       "sv": "Schwedisch",
       "fi": "Finnisch",
+      "zh": "Chinesisch",
+      "ja": "Japanisch",
+      "ko": "Koreanisch",
       "ar": "Arabisch",
-      "ur": "Urdu",
-      "ja": "Japanisch"
+      "ur": "Urdu"
     }
   }
 }

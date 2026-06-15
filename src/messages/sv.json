@@ -66,11 +66,7 @@
     "dedicatedText": "Dedikerad till att skapa",
     "buildingText": "Bygger",
     "webSolutions": "intelligenta lösningar",
-    "flipWords": [
-      "Datadrivna",
-      "Skalbara",
-      "Innovativa"
-    ]
+    "flipWords": ["Datadrivna", "Skalbara", "Innovativa"]
   },
   "about": {
     "title": "Om mig",
@@ -174,7 +170,6 @@
     "ariaLabel": "Byt språk",
     "languages": {
       "en": "engelska",
-      "zh": "kinesiska",
       "de": "tyska",
       "fr": "franska",
       "es": "spanska",
@@ -182,9 +177,11 @@
       "nl": "nederländska",
       "sv": "svenska",
       "fi": "finska",
+      "zh": "kinesiska",
+      "ja": "japanska",
+      "ko": "koreanska",
       "ar": "arabiska",
-      "ur": "urdu",
-      "ja": "japanska"
+      "ur": "urdu"
     }
   }
 }

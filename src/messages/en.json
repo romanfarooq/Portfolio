@@ -96,11 +96,7 @@
     "dedicatedText": "Dedicated to Crafting",
     "buildingText": "Building",
     "webSolutions": "Intelligent Solutions",
-    "flipWords": [
-      "Data-Driven",
-      "Scalable",
-      "Innovative"
-    ]
+    "flipWords": ["Data-Driven", "Scalable", "Innovative"]
   },
   "about": {
     "title": "About Me",
@@ -204,7 +200,6 @@
     "ariaLabel": "Change language",
     "languages": {
       "en": "English",
-      "zh": "Chinese",
       "de": "German",
       "fr": "French",
       "es": "Spanish",
@@ -212,9 +207,11 @@
       "nl": "Dutch",
       "sv": "Swedish",
       "fi": "Finnish",
+      "zh": "Chinese",
+      "ja": "Japanese",
+      "ko": "Korean",
       "ar": "Arabic",
-      "ur": "Urdu",
-      "ja": "Japanese"
+      "ur": "Urdu"
     }
   }
 }

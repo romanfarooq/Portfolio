@@ -66,11 +66,7 @@
     "dedicatedText": "Toegewijd aan het maken van",
     "buildingText": "Bouwen",
     "webSolutions": "intelligente oplossingen",
-    "flipWords": [
-      "Datagedreven",
-      "Schaalbaar",
-      "Innovatief"
-    ]
+    "flipWords": ["Datagedreven", "Schaalbaar", "Innovatief"]
   },
   "about": {
     "title": "Over mij",
@@ -174,7 +170,6 @@
     "ariaLabel": "Taal wijzigen",
     "languages": {
       "en": "Engels",
-      "zh": "Chinees",
       "de": "Duits",
       "fr": "Frans",
       "es": "Spaans",
@@ -182,9 +177,11 @@
       "nl": "Nederlands",
       "sv": "Zweeds",
       "fi": "Fins",
+      "zh": "Chinees",
+      "ja": "Japans",
+      "ko": "Koreaans",
       "ar": "Arabisch",
-      "ur": "Urdu",
-      "ja": "Japans"
+      "ur": "Urdu"
     }
   }
 }

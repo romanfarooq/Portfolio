@@ -1,0 +1,217 @@
+{
+  "metadata": {
+    "title": "로만 파루크 | AI 및 소프트웨어 엔지니어 | RF, 위성 통신 및 우주 기술",
+    "description": "로만 파루크는 소프트웨어, 인공지능, RF 시스템, 위성 통신, GIS, 원격 탐사 및 우주 기술 전반에 걸쳐 지능형 엔지니어링 시스템을 구축하는 소프트웨어 및 AI 엔지니어입니다. 풀스택 개발, AI/ML, 데이터 기반 애플리케이션, 지리 공간 기술, 디지털 신호 처리 및 실제 기술 운영을 위한 엔지니어링 소프트웨어를 결합해 작업합니다.",
+    "openGraphTitle": "로만 파루크 | AI 및 소프트웨어 엔지니어 | RF, 위성 통신 및 우주 기술",
+    "openGraphDescription": "로만 파루크는 RF 시스템, 위성 통신, GIS, 원격 탐사 및 우주 기술에 대한 전문성을 넓혀 가는 소프트웨어 및 AI 엔지니어입니다. AI, 데이터, 엔지니어링 워크플로, 지리 공간 분석 및 실제 기술 운영을 연결하는 지능형 소프트웨어 시스템을 구축합니다.",
+    "openGraphSiteName": "로만 파루크의 AI, 소프트웨어 및 우주 기술 포트폴리오",
+    "twitterTitle": "로만 파루크 | AI 및 소프트웨어 엔지니어 | RF 및 우주 기술",
+    "twitterDescription": "RF 시스템, 위성 통신, GIS, 원격 탐사, 우주 기술 및 지능형 엔지니어링 소프트웨어 시스템에 집중하는 소프트웨어 및 AI 엔지니어입니다.",
+    "applicationName": "로만 파루크의 AI, 소프트웨어 및 우주 기술 포트폴리오",
+    "category": "포트폴리오",
+    "classification": "포트폴리오, 소프트웨어 엔지니어링, 인공지능, RF 시스템, 위성 통신, GIS, 원격 탐사, 우주 기술, 엔지니어링 소프트웨어",
+    "keywords": [
+      "로만 파루크",
+      "AI 엔지니어",
+      "소프트웨어 엔지니어",
+      "인공지능",
+      "머신러닝 엔지니어",
+      "딥러닝",
+      "자연어 처리",
+      "NLP",
+      "LLM 애플리케이션",
+      "RAG",
+      "LangChain",
+      "엔지니어링 소프트웨어",
+      "RF 시스템",
+      "RF 엔지니어링",
+      "위성 통신",
+      "위성 커뮤니케이션",
+      "우주 기술",
+      "지상국 운영",
+      "스펙트럼 모니터링",
+      "반송파 모니터링",
+      "안테나 시스템",
+      "링크 버짓",
+      "VSAT",
+      "C 대역",
+      "Ku 대역",
+      "Ka 대역",
+      "HTS",
+      "GIS",
+      "지리 정보 시스템",
+      "원격 탐사",
+      "지구 관측",
+      "지리 공간 분석",
+      "초분광 영상",
+      "디지털 신호 처리",
+      "DSP",
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "scikit-learn",
+      "PyTorch",
+      "TensorFlow",
+      "FastAPI",
+      "React",
+      "React Native",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "Node.js",
+      "Express.js",
+      "Flutter",
+      "MongoDB",
+      "SQL",
+      "PostgreSQL",
+      "Prisma",
+      "Docker",
+      "Tailwind CSS",
+      "QGIS",
+      "ESA SNAP",
+      "Google Earth Engine",
+      "GDAL",
+      "Rasterio",
+      "GeoPandas",
+      "Leaflet",
+      "오픈 소스",
+      "원격 근무",
+      "파키스탄",
+      "라호르",
+      "포트폴리오 웹사이트"
+    ]
+  },
+  "navbar": {
+    "brandName": "로만 파루크",
+    "home": "홈",
+    "about": "소개",
+    "work": "작업",
+    "education": "학력",
+    "contact": "연락처"
+  },
+  "hero": {
+    "greeting": "안녕하세요, 로만입니다",
+    "developerText": "AI 및 소프트웨어 엔지니어",
+    "dedicatedText": "가치 있는 결과를 만드는",
+    "buildingText": "구축",
+    "webSolutions": "지능형 솔루션",
+    "flipWords": ["데이터 기반", "확장 가능한", "혁신적인"]
+  },
+  "about": {
+    "title": "소개",
+    "greeting": "안녕하세요, 로만 파루크입니다",
+    "description": "RF 시스템, 위성 통신, GIS, 원격 탐사 및 우주 기술에 대한 전문성을 넓혀 가는 소프트웨어 및 AI 엔지니어입니다. 소프트웨어, AI, 데이터 및 실제 기술 운영을 연결하는 지능형 엔지니어링 시스템을 구축하는 데 관심이 있습니다.",
+    "metaCertTitle": "Meta 프런트엔드 개발자",
+    "metaCertSubtitle": "전문 자격증",
+    "metaCertDescription": "Coursera를 통해 제공되는 Meta의 체계적인 프로그램을 이수하여 취득한 자격증입니다. React, JavaScript, UI 디자인 원칙, 디버깅, Git을 활용한 버전 관리 및 프로덕션용 애플리케이션 배포를 포함한 프런트엔드 개발 역량을 검증합니다.",
+    "viewCertificate": "🎓 자격증 보기",
+    "locationTitle": "위치",
+    "locationDescription": "파키스탄 라호르에 거주하고 있습니다",
+    "academicCollaboration": "학술 협업, AI/ML 연구, RF 시스템, 위성 통신, GIS, 원격 탐사 및 엔지니어링 소프트웨어 프로젝트에 열려 있습니다.",
+    "techStackTitle": "기술 스택",
+    "techStackDescription": "Python(Pandas, NumPy, Matplotlib, FastAPI), JavaScript/TypeScript와 React, Next.js, Node.js, React Native 같은 프레임워크에 능숙합니다. 데이터베이스 관리(MongoDB, PostgreSQL), AI API 통합, LLM 워크플로 및 클라우드 배포 경험이 있습니다. scikit-learn, PyTorch, TensorFlow, LangChain, Tailwind CSS, Docker, Prisma, Redux, Flutter, QGIS, ESA SNAP, Google Earth Engine, GDAL, Rasterio, GeoPandas, Leaflet 및 확장 가능한 백엔드 아키텍처도 다룰 수 있습니다.",
+    "codingImageAlt": "코딩하는 시점의 이미지",
+    "metaCertSkills": [
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git/GitHub",
+      "UI/UX 원칙"
+    ]
+  },
+  "copyEmail": {
+    "copyButton": "이메일 주소 복사",
+    "copiedMessage": "이메일 주소가 복사되었습니다"
+  },
+  "education": {
+    "title": "학력",
+    "bachelors": {
+      "title": "컴퓨터 과학 학사",
+      "institute": "University of Central Punjab, 라호르",
+      "date": "2020년 10월 - 2024년 7월",
+      "contents": [
+        "CGPA 3.42로 졸업했습니다.",
+        "2020년 10월부터 2024년 7월까지 CGPA 기반 50% 장학금을 받았습니다.",
+        "프로그래밍, 자료 구조, 알고리즘, 데이터베이스 시스템, 웹 개발, 인공지능 및 딥러닝을 포함한 주요 과목을 이수했습니다.",
+        "고급 소프트웨어 엔지니어링 및 AI 개념을 활용한 졸업 프로젝트를 완료했습니다."
+      ]
+    },
+    "intermediate": {
+      "title": "컴퓨터 과학 중등과정(물리)",
+      "institute": "Punjab College, 라호르",
+      "date": "2018년 9월 - 2020년 6월",
+      "contents": [
+        "A 등급으로 졸업했습니다.",
+        "컴퓨터 과학과 물리를 전공했습니다."
+      ]
+    },
+    "matriculation": {
+      "title": "중등학교 졸업(과학)",
+      "institute": "The Punjab School, 라호르",
+      "date": "2016년 3월 - 2018년 5월",
+      "contents": [
+        "A 등급으로 졸업했습니다.",
+        "8학년 때 학급 간 영어 글쓰기 대회에서 1위를 차지했습니다.",
+        "팀원들과 함께 캠퍼스 간 탁구 대회에서 우승했습니다."
+      ]
+    }
+  },
+  "contact": {
+    "title": "함께 이야기해요",
+    "description": "새 웹사이트를 만들거나 기존 플랫폼을 개선하거나 특별한 프로젝트를 현실로 구현하고 싶다면 도와드리겠습니다",
+    "form": {
+      "legend": "연락처 정보",
+      "name": {
+        "label": "이름",
+        "placeholder": "홍길동"
+      },
+      "email": {
+        "label": "이메일",
+        "placeholder": "gildong@email.com"
+      },
+      "message": {
+        "label": "메시지",
+        "placeholder": "생각을 들려주세요..."
+      },
+      "submit": "보내기",
+      "submitting": "보내는 중...",
+      "validation": {
+        "nameRequired": "이름은 필수입니다",
+        "nameMaxLength": "이름은 50자 미만이어야 합니다",
+        "emailInvalid": "올바른 이메일 주소를 입력해 주세요",
+        "messageMinLength": "메시지는 10자 이상이어야 합니다",
+        "messageMaxLength": "메시지는 1000자 미만이어야 합니다"
+      }
+    },
+    "alerts": {
+      "success": "메시지가 전송되었습니다!",
+      "error": "문제가 발생했습니다!",
+      "emailError": "이메일을 보내지 못했습니다"
+    }
+  },
+  "footer": {
+    "ownerShort": "로만",
+    "termsConditions": "이용약관",
+    "privacyPolicy": "개인정보 처리방침",
+    "copyright": "모든 권리 보유."
+  },
+  "languageSwitcher": {
+    "ariaLabel": "언어 변경",
+    "languages": {
+      "en": "영어",
+      "de": "독일어",
+      "fr": "프랑스어",
+      "es": "스페인어",
+      "it": "이탈리아어",
+      "nl": "네덜란드어",
+      "sv": "스웨덴어",
+      "fi": "핀란드어",
+      "zh": "중국어",
+      "ja": "일본어",
+      "ko": "한국어",
+      "ar": "아랍어",
+      "ur": "우르두어"
+    }
+  }
+}

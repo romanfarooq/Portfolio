@@ -2,7 +2,6 @@ import { defineRouting } from "next-intl/routing";
 
 export const locales = [
   "en",
-  "zh",
   "de",
   "fr",
   "es",
@@ -10,9 +9,11 @@ export const locales = [
   "nl",
   "sv",
   "fi",
+  "zh",
+  "ja",
+  "ko",
   "ar",
-  "ur",
-  "ja"
+  "ur"
 ] as const;
 
 export type Locale = (typeof locales)[number];
@@ -21,7 +22,6 @@ export const rtlLocales = ["ar", "ur"] as const;
 
 export const localeLabels = {
   en: "English",
-  zh: "中文",
   de: "Deutsch",
   fr: "Français",
   es: "Español",
@@ -29,14 +29,15 @@ export const localeLabels = {
   nl: "Nederlands",
   sv: "Svenska",
   fi: "Suomi",
+  zh: "中文",
+  ja: "日本語",
+  ko: "한국어",
   ar: "العربية",
-  ur: "اردو",
-  ja: "日本語"
+  ur: "اردو"
 } satisfies Record<Locale, string>;
 
 export const localePathnames = {
   en: "/en",
-  zh: "/zh",
   de: "/de",
   fr: "/fr",
   es: "/es",
@@ -44,9 +45,11 @@ export const localePathnames = {
   nl: "/nl",
   sv: "/sv",
   fi: "/fi",
+  zh: "/zh",
+  ja: "/ja",
+  ko: "/ko",
   ar: "/ar",
-  ur: "/ur",
-  ja: "/ja"
+  ur: "/ur"
 } satisfies Record<Locale, `/${string}`>;
 
 export const routing = defineRouting({

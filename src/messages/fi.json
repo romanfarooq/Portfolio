@@ -66,11 +66,7 @@
     "dedicatedText": "Omistautunut rakentamaan",
     "buildingText": "Rakennan",
     "webSolutions": "älykkäitä ratkaisuja",
-    "flipWords": [
-      "Datavetoisia",
-      "Skaalautuvia",
-      "Innovatiivisia"
-    ]
+    "flipWords": ["Datavetoisia", "Skaalautuvia", "Innovatiivisia"]
   },
   "about": {
     "title": "Tietoa minusta",
@@ -174,7 +170,6 @@
     "ariaLabel": "Vaihda kieli",
     "languages": {
       "en": "englanti",
-      "zh": "kiina",
       "de": "saksa",
       "fr": "ranska",
       "es": "espanja",
@@ -182,9 +177,11 @@
       "nl": "hollanti",
       "sv": "ruotsi",
       "fi": "suomi",
+      "zh": "kiina",
+      "ja": "japani",
+      "ko": "korea",
       "ar": "arabia",
-      "ur": "urdu",
-      "ja": "japani"
+      "ur": "urdu"
     }
   }
 }

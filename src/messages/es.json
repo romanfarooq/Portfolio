@@ -66,11 +66,7 @@
     "dedicatedText": "Dedicado a crear",
     "buildingText": "Construyendo",
     "webSolutions": "soluciones inteligentes",
-    "flipWords": [
-      "Basadas en datos",
-      "Escalables",
-      "Innovadoras"
-    ]
+    "flipWords": ["Basadas en datos", "Escalables", "Innovadoras"]
   },
   "about": {
     "title": "Sobre mí",
@@ -174,7 +170,6 @@
     "ariaLabel": "Cambiar idioma",
     "languages": {
       "en": "inglés",
-      "zh": "chino",
       "de": "alemán",
       "fr": "francés",
       "es": "español",
@@ -182,9 +177,11 @@
       "nl": "neerlandés",
       "sv": "sueco",
       "fi": "finés",
+      "zh": "chino",
+      "ja": "japonés",
+      "ko": "coreano",
       "ar": "árabe",
-      "ur": "urdu",
-      "ja": "japonés"
+      "ur": "urdu"
     }
   }
 }
