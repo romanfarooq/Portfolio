@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import { AnimatePresence, motion } from "motion/react";
+import { motion, AnimatePresence } from "motion/react";
 
 import { Link } from "@/i18n/navigation";
 import { Close, Menu } from "@/components/icons";

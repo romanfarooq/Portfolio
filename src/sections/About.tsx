@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { getLocale, getTranslations } from "next-intl/server";
 
-import { Meta } from "@/components/logos";
 import { cn } from "@/lib/utils";
+import { Meta } from "@/components/logos";
 import { Globe } from "@/components/Globe";
 import { isRtlLocale } from "@/i18n/routing";
 import { Frameworks } from "@/components/Frameworks";

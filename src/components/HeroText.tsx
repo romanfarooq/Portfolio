@@ -1,9 +1,9 @@
 import { motion } from "motion/react";
 import { useLocale, useTranslations } from "next-intl";
 
-import { FlipWords } from "@/components/FlipWords";
 import { cn } from "@/lib/utils";
 import { isRtlLocale } from "@/i18n/routing";
+import { FlipWords } from "@/components/FlipWords";
 
 export function HeroText() {
   const locale = useLocale();
