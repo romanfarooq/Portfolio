@@ -35,7 +35,7 @@ export function Hero() {
         <Canvas camera={{ position: [0, 1, 3] }}>
           <Suspense fallback={<Loader />}>
             <Environment preset="city" resolution={128} />
-            <Float>
+            <Float rotationIntensity={isMobile ? 1 : 0}>
               <Astronaut {...astronautConfig} />
             </Float>
             <Float>

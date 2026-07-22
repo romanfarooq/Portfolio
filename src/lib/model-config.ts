@@ -41,11 +41,11 @@ const ASTRONAUT_CONFIG: Record<HeroViewportPreset, ModelConfig> = {
   },
   desktop: {
     scale: 1.5,
-    position: [1.5, -1, 0],
+    position: [3, -1, 0],
     rotation: [
-      MathUtils.degToRad(30),
-      MathUtils.degToRad(126),
-      MathUtils.degToRad(-36)
+      MathUtils.degToRad(40),
+      MathUtils.degToRad(125),
+      MathUtils.degToRad(-50)
     ]
   }
 };
@@ -55,15 +55,15 @@ function adjustAstronautForRtl(config: ModelConfig) {
 
   return {
     ...config,
-    position: [-positionX, positionY, positionZ - 0.1] satisfies [
+    position: [-positionX, positionY, positionZ - 0.5] satisfies [
       number,
       number,
       number
     ],
     rotation: [
-      MathUtils.degToRad(20),
-      MathUtils.degToRad(156),
-      MathUtils.degToRad(-16)
+      MathUtils.degToRad(15),
+      MathUtils.degToRad(180),
+      MathUtils.degToRad(5)
     ] satisfies [number, number, number]
   };
 }
