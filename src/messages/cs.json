@@ -1,0 +1,218 @@
+{
+  "metadata": {
+    "title": "Roman Farooq | Inženýr AI a softwaru | RF, satelitní komunikace a kosmické technologie",
+    "description": "Roman Farooq je softwarový a AI inženýr zaměřený na tvorbu inteligentních technických systémů v oblastech softwaru, umělé inteligence, RF systémů, satelitní komunikace, GIS, dálkového průzkumu Země a kosmických technologií. Ve své práci propojuje full-stack vývoj, AI/ML, datové aplikace, geoprostorové technologie, digitální zpracování signálu a technický software pro reálný provoz.",
+    "openGraphTitle": "Roman Farooq | Inženýr AI a softwaru | RF, satelitní komunikace a kosmické technologie",
+    "openGraphDescription": "Roman Farooq je softwarový a AI inženýr, který se stále více zaměřuje na RF systémy, satelitní komunikaci, GIS, dálkový průzkum Země a kosmické technologie. Vytváří inteligentní softwarové systémy propojující AI, data, technické pracovní postupy, geoprostorové analýzy a reálný provoz.",
+    "openGraphSiteName": "Portfolio Romana Farooqa v oblasti AI, softwaru a kosmických technologií",
+    "twitterTitle": "Roman Farooq | Inženýr AI a softwaru | RF a kosmické technologie",
+    "twitterDescription": "Softwarový a AI inženýr zaměřený na RF systémy, satelitní komunikaci, GIS, dálkový průzkum Země, kosmické technologie a inteligentní technické softwarové systémy.",
+    "applicationName": "Portfolio Romana Farooqa v oblasti AI, softwaru a kosmických technologií",
+    "category": "Portfolio",
+    "classification": "Portfolio, softwarové inženýrství, umělá inteligence, RF systémy, satelitní komunikace, GIS, dálkový průzkum Země, kosmické technologie, technický software",
+    "keywords": [
+      "Roman Farooq",
+      "AI inženýr",
+      "Softwarový inženýr",
+      "Umělá inteligence",
+      "Machine Learning Engineer",
+      "Deep Learning",
+      "Natural Language Processing",
+      "NLP",
+      "LLM Applications",
+      "RAG",
+      "LangChain",
+      "Technický software",
+      "RF systémy",
+      "RF inženýrství",
+      "Satelitní komunikace",
+      "Satellite Communications",
+      "Kosmické technologie",
+      "Provoz pozemních stanic",
+      "Monitorování spektra",
+      "Monitorování nosných",
+      "Anténní systémy",
+      "Výpočet linkové bilance",
+      "VSAT",
+      "C-band",
+      "Ku-band",
+      "Ka-band",
+      "HTS",
+      "GIS",
+      "Geografické informační systémy",
+      "Dálkový průzkum Země",
+      "Pozorování Země",
+      "Geoprostorová analýza",
+      "Hyperspektrální zobrazování",
+      "Digitální zpracování signálu",
+      "DSP",
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "scikit-learn",
+      "PyTorch",
+      "TensorFlow",
+      "FastAPI",
+      "React",
+      "React Native",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "Node.js",
+      "Express.js",
+      "Flutter",
+      "MongoDB",
+      "SQL",
+      "PostgreSQL",
+      "Prisma",
+      "Docker",
+      "Tailwind CSS",
+      "QGIS",
+      "ESA SNAP",
+      "Google Earth Engine",
+      "GDAL",
+      "Rasterio",
+      "GeoPandas",
+      "Leaflet",
+      "Open Source",
+      "Práce na dálku",
+      "Pákistán",
+      "Láhaur",
+      "Webové portfolio"
+    ]
+  },
+  "navbar": {
+    "brandName": "Roman Farooq",
+    "home": "Domů",
+    "about": "O mně",
+    "work": "Práce",
+    "education": "Vzdělání",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "greeting": "Ahoj, jsem Roman",
+    "developerText": "Inženýr AI a softwaru",
+    "dedicatedText": "Věnuji se tvorbě",
+    "buildingText": "Tvořím",
+    "webSolutions": "Inteligentní řešení",
+    "flipWords": ["Datově řízená", "Škálovatelná", "Inovativní"]
+  },
+  "about": {
+    "title": "O mně",
+    "greeting": "Ahoj, jsem Roman Farooq",
+    "description": "Jsem softwarový a AI inženýr, který se stále více zaměřuje na RF systémy, satelitní komunikaci, GIS, dálkový průzkum Země a kosmické technologie. Zajímá mě tvorba inteligentních technických systémů, které propojují software, AI, data a reálný provoz.",
+    "metaCertTitle": "Meta Front-End Developer",
+    "metaCertSubtitle": "Profesní certifikát",
+    "metaCertDescription": "Tento certifikát, získaný v náročném programu společnosti Meta prostřednictvím platformy Coursera, potvrzuje znalosti front-endového vývoje včetně Reactu, JavaScriptu, principů návrhu uživatelského rozhraní, ladění, správy verzí pomocí Gitu a nasazování aplikací připravených pro produkční provoz.",
+    "viewCertificate": "🎓 Zobrazit certifikát",
+    "locationTitle": "Lokalita",
+    "locationDescription": "Žiji v Láhauru v Pákistánu",
+    "academicCollaboration": "Jsem otevřený akademické spolupráci, výzkumu AI/ML a projektům v oblastech RF systémů, satelitní komunikace, GIS, dálkového průzkumu Země a technického softwaru.",
+    "techStackTitle": "Technologie",
+    "techStackDescription": "Ovládám Python (Pandas, NumPy, Matplotlib, FastAPI), JavaScript/TypeScript a frameworky jako React, Next.js, Node.js a React Native. Mám zkušenosti se správou databází (MongoDB, PostgreSQL), integrací AI API, pracovními postupy LLM a cloudovým nasazením. Pracoval jsem také s technologiemi scikit-learn, PyTorch, TensorFlow, LangChain, Tailwind CSS, Docker, Prisma, Redux, Flutter, QGIS, ESA SNAP, Google Earth Engine, GDAL, Rasterio, GeoPandas, Leaflet a se škálovatelnou backendovou architekturou.",
+    "codingImageAlt": "Pohled programátora",
+    "metaCertSkills": [
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git/GitHub",
+      "Principy UI/UX"
+    ]
+  },
+  "copyEmail": {
+    "copyButton": "Kopírovat e-mailovou adresu",
+    "copiedMessage": "E-mail byl zkopírován"
+  },
+  "education": {
+    "title": "Moje vzdělání",
+    "bachelors": {
+      "title": "Bakalář informatiky",
+      "institute": "University of Central Punjab, Lahore",
+      "date": "říj 2020 – čvc 2024",
+      "contents": [
+        "Absolvoval jsem s průměrem CGPA 3,42.",
+        "Od října 2020 do července 2024 jsem získával 50% stipendium na základě studijního průměru CGPA.",
+        "Absolvoval jsem klíčové předměty včetně programování, datových struktur, algoritmů, databázových systémů, webového vývoje, umělé inteligence a hlubokého učení.",
+        "Dokončil jsem závěrečný projekt využívající pokročilé koncepty softwarového inženýrství a AI."
+      ]
+    },
+    "intermediate": {
+      "title": "Středoškolské studium informatiky (fyzika)",
+      "institute": "Punjab College, Lahore",
+      "date": "zář 2018 – čvn 2020",
+      "contents": [
+        "Absolvoval jsem s hodnocením A.",
+        "Specializoval jsem se na informatiku a fyziku."
+      ]
+    },
+    "matriculation": {
+      "title": "Středoškolské vzdělání (přírodní vědy)",
+      "institute": "The Punjab School, Lahore",
+      "date": "bře 2016 – kvě 2018",
+      "contents": [
+        "Absolvoval jsem s hodnocením A.",
+        "V osmé třídě jsem získal první místo v mezioddílové soutěži v psaní v angličtině.",
+        "Se svým týmem jsem zvítězil v mezikampusové soutěži ve stolním tenise."
+      ]
+    }
+  },
+  "contact": {
+    "title": "Spojme se",
+    "description": "Ať už chcete vytvořit nový web, vylepšit stávající platformu nebo uvést jedinečný projekt v život, rád vám pomohu",
+    "form": {
+      "legend": "Kontaktní údaje",
+      "name": {
+        "label": "Celé jméno",
+        "placeholder": "Jan Novák"
+      },
+      "email": {
+        "label": "E-mail",
+        "placeholder": "jan.novak@email.cz"
+      },
+      "message": {
+        "label": "Zpráva",
+        "placeholder": "Napište mi své představy..."
+      },
+      "submit": "Odeslat",
+      "submitting": "Odesílání...",
+      "validation": {
+        "nameRequired": "Jméno je povinné",
+        "nameMaxLength": "Jméno musí mít méně než 50 znaků",
+        "emailInvalid": "Zadejte platnou e-mailovou adresu",
+        "messageMinLength": "Zpráva musí mít alespoň 10 znaků",
+        "messageMaxLength": "Zpráva musí mít méně než 1 000 znaků"
+      }
+    },
+    "alerts": {
+      "success": "Vaše zpráva byla odeslána!",
+      "error": "Něco se pokazilo!",
+      "emailError": "E-mail se nepodařilo odeslat"
+    }
+  },
+  "footer": {
+    "ownerShort": "Roman",
+    "termsConditions": "Obchodní podmínky",
+    "privacyPolicy": "Zásady ochrany osobních údajů",
+    "copyright": "Všechna práva vyhrazena."
+  },
+  "languageSwitcher": {
+    "ariaLabel": "Změnit jazyk",
+    "languages": {
+      "en": "angličtina",
+      "de": "němčina",
+      "fr": "francouzština",
+      "es": "španělština",
+      "it": "italština",
+      "nl": "nizozemština",
+      "sv": "švédština",
+      "fi": "finština",
+      "cs": "čeština",
+      "zh": "čínština",
+      "ja": "japonština",
+      "ko": "korejština",
+      "ar": "arabština",
+      "ur": "urdština"
+    }
+  }
+}
