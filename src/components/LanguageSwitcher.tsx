@@ -55,7 +55,7 @@ export function LanguageSwitcher({
         <SelectTrigger
           aria-label={t("ariaLabel")}
           className={cn(
-            "group min-w-36 rounded-full border-white/10 bg-white/[0.07] px-3.5 py-2 text-neutral-100 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] backdrop-blur-md hover:border-white/20 hover:bg-white/11",
+            "group min-w-36 cursor-pointer rounded-full border-white/10 bg-white/[0.07] px-3.5 py-2 text-neutral-100 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] backdrop-blur-md hover:border-white/20 hover:bg-white/11",
             "data-[state=open]:border-white/25 data-[state=open]:bg-white/13",
             selectClassName
           )}
