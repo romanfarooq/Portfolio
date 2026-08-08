@@ -96,7 +96,11 @@
     "dedicatedText": "가치 있는 결과를 만드는",
     "buildingText": "구축",
     "webSolutions": "지능형 솔루션",
-    "flipWords": ["데이터 기반", "확장 가능한", "혁신적인"]
+    "flipWords": [
+      "데이터 기반",
+      "확장 가능한",
+      "혁신적인"
+    ]
   },
   "about": {
     "title": "소개",

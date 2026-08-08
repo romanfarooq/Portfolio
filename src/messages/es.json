@@ -66,7 +66,11 @@
     "dedicatedText": "Dedicado a crear",
     "buildingText": "Construyendo",
     "webSolutions": "soluciones inteligentes",
-    "flipWords": ["Basadas en datos", "Escalables", "Innovadoras"]
+    "flipWords": [
+      "Basadas en datos",
+      "Escalables",
+      "Innovadoras"
+    ]
   },
   "about": {
     "title": "Sobre mí",

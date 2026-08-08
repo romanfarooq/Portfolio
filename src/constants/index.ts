@@ -14,7 +14,6 @@ export interface Project {
 
 export const educations = ["bachelors", "intermediate", "matriculation"];
 
-
 export const socials = [
   {
     name: "GitHub",

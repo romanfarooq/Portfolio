@@ -66,7 +66,11 @@
     "dedicatedText": "Toegewijd aan het maken van",
     "buildingText": "Bouwen",
     "webSolutions": "intelligente oplossingen",
-    "flipWords": ["Datagedreven", "Schaalbaar", "Innovatief"]
+    "flipWords": [
+      "Datagedreven",
+      "Schaalbaar",
+      "Innovatief"
+    ]
   },
   "about": {
     "title": "Over mij",

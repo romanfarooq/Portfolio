@@ -96,7 +96,11 @@
     "dedicatedText": "Věnuji se tvorbě",
     "buildingText": "Tvořím",
     "webSolutions": "Inteligentní řešení",
-    "flipWords": ["Datově řízená", "Škálovatelná", "Inovativní"]
+    "flipWords": [
+      "Datově řízená",
+      "Škálovatelná",
+      "Inovativní"
+    ]
   },
   "about": {
     "title": "O mně",

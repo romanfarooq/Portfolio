@@ -96,7 +96,11 @@
     "dedicatedText": "Dedicated to Crafting",
     "buildingText": "Building",
     "webSolutions": "Intelligent Solutions",
-    "flipWords": ["Data-Driven", "Scalable", "Innovative"]
+    "flipWords": [
+      "Data-Driven",
+      "Scalable",
+      "Innovative"
+    ]
   },
   "about": {
     "title": "About Me",

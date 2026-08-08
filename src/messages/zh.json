@@ -66,7 +66,11 @@
     "dedicatedText": "致力于打造",
     "buildingText": "构建",
     "webSolutions": "智能化解决方案",
-    "flipWords": ["数据驱动", "可扩展", "创新"]
+    "flipWords": [
+      "数据驱动",
+      "可扩展",
+      "创新"
+    ]
   },
   "about": {
     "title": "关于我",
@@ -111,7 +115,10 @@
       "title": "计算机科学中级课程（物理）",
       "institute": "旁遮普学院，拉合尔",
       "date": "2018年9月 - 2020年6月",
-      "contents": ["以 A 等成绩毕业。", "主修计算机科学和物理。"]
+      "contents": [
+        "以 A 等成绩毕业。",
+        "主修计算机科学和物理。"
+      ]
     },
     "matriculation": {
       "title": "中学毕业（理科）",
