@@ -17,8 +17,6 @@ export const locales = [
   "ur"
 ] as const;
 
-export type Locale = (typeof locales)[number];
-
 export const rtlLocales = ["ar", "ur"] as const;
 
 export const localeLabels = {

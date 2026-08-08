@@ -132,7 +132,7 @@
     "title": "Moje vzdělání",
     "bachelors": {
       "title": "Bakalář informatiky",
-      "institute": "University of Central Punjab, Lahore",
+      "institute": "Univerzita centrálního Paňdžábu, Láhaur",
       "date": "říj 2020 – čvc 2024",
       "contents": [
         "Absolvoval jsem s průměrem CGPA 3,42/4,00.",
@@ -143,7 +143,7 @@
     },
     "intermediate": {
       "title": "Středoškolské studium informatiky (fyzika)",
-      "institute": "Punjab College, Lahore",
+      "institute": "Paňdžábská kolej, Láhaur",
       "date": "zář 2018 – čvn 2020",
       "contents": [
         "Absolvoval jsem s hodnocením A.",
@@ -152,7 +152,7 @@
     },
     "matriculation": {
       "title": "Středoškolské vzdělání (přírodní vědy)",
-      "institute": "The Punjab School, Lahore",
+      "institute": "Paňdžábská škola, Láhaur",
       "date": "bře 2016 – kvě 2018",
       "contents": [
         "Absolvoval jsem s hodnocením A.",

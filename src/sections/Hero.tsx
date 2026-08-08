@@ -7,7 +7,7 @@ import { useMediaQuery } from "react-responsive";
 import { Float, Environment } from "@react-three/drei";
 
 import { isRtlLocale } from "@/i18n/routing";
-import { getModelConfigs } from "@/lib/model-config";
+import { getSceneConfig } from "@/lib/scene";
 import { Loader } from "@/components/Loader";
 import { HeroText } from "@/components/HeroText";
 import { Astronaut } from "@/components/Astronaut";
@@ -19,7 +19,7 @@ export function Hero() {
   const isRtl = isRtlLocale(locale);
   const isMobile = useMediaQuery({ maxWidth: 768 });
 
-  const { astronautConfig, spaceStationConfig } = getModelConfigs({
+  const { astronautConfig, spaceStationConfig } = getSceneConfig({
     isRtl,
     isMobile
   });

@@ -132,7 +132,7 @@
     "title": "학력",
     "bachelors": {
       "title": "컴퓨터 과학 학사",
-      "institute": "University of Central Punjab, 라호르",
+      "institute": "중앙 펀자브 대학교, 라호르",
       "date": "2020년 10월 - 2024년 7월",
       "contents": [
         "CGPA 3.42/4.00로 졸업했습니다.",
@@ -143,7 +143,7 @@
     },
     "intermediate": {
       "title": "컴퓨터 과학 중등과정(물리)",
-      "institute": "Punjab College, 라호르",
+      "institute": "펀자브 칼리지, 라호르",
       "date": "2018년 9월 - 2020년 6월",
       "contents": [
         "A 등급으로 졸업했습니다.",
@@ -152,7 +152,7 @@
     },
     "matriculation": {
       "title": "중등학교 졸업(과학)",
-      "institute": "The Punjab School, 라호르",
+      "institute": "펀자브 스쿨, 라호르",
       "date": "2016년 3월 - 2018년 5월",
       "contents": [
         "A 등급으로 졸업했습니다.",

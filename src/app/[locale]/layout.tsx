@@ -1,7 +1,6 @@
-import { notFound } from "next/navigation";
 import { Funnel_Display } from "next/font/google";
-import { NextIntlClientProvider, hasLocale } from "next-intl";
-import { setRequestLocale, getTranslations } from "next-intl/server";
+import { NextIntlClientProvider } from "next-intl";
+import { getLocale, getTranslations } from "next-intl/server";
 import type { Metadata, Viewport } from "next";
 
 import { cn } from "@/lib/utils";
@@ -13,16 +12,9 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-export async function generateMetadata({
-  params
-}: Omit<PageProps<"/[locale]">, "searchParams">): Promise<Metadata> {
-  const { locale } = await params;
-
-  if (!hasLocale(routing.locales, locale)) {
-    notFound();
-  }
-
-  const t = await getTranslations({ locale, namespace: "metadata" });
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
+  const t = await getTranslations("metadata");
 
   return {
     title: t("title"),
@@ -155,16 +147,9 @@ const funnelDisplay = Funnel_Display({
 });
 
 export default async function RootLayout({
-  params,
   children
 }: LayoutProps<"/[locale]">) {
-  const { locale } = await params;
-
-  if (!hasLocale(routing.locales, locale)) {
-    notFound();
-  }
-
-  setRequestLocale(locale);
+  const locale = await getLocale();
 
   return (
     <html

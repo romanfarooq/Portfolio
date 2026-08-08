@@ -9,8 +9,8 @@ import { createContactFormSchema } from "@/lib/schema";
 
 const resend = new Resend(env.RESEND_API_KEY);
 
-export async function sendEmail(formData: FormData) {
-  const t = await getTranslations("contact");
+export async function sendEmail(locale: Locale, formData: FormData) {
+  const t = await getTranslations({ locale, namespace: "contact" });
 
   try {
     const data = Object.fromEntries(formData.entries());

@@ -1,12 +1,12 @@
 import type { MetadataRoute } from "next";
 
-import { localePathnames, locales } from "@/i18n/routing";
+import { locales, localePathnames } from "@/i18n/routing";
 
-const siteUrl = "https://romanfarooq.vercel.app";
+const SITE_URL = "https://romanfarooq.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return locales.map((locale) => ({
-    url: `${siteUrl}${localePathnames[locale]}`,
+    url: `${SITE_URL}${localePathnames[locale]}`,
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 1

@@ -102,7 +102,7 @@
     "title": "Meine Ausbildung",
     "bachelors": {
       "title": "Bachelor of Science in Informatik",
-      "institute": "University of Central Punjab, Lahore",
+      "institute": "Universität von Zentral-Punjab, Lahore",
       "date": "Okt. 2020 - Juli 2024",
       "contents": [
         "Abschluss mit einem CGPA von 3,42/4,00.",
@@ -113,7 +113,7 @@
     },
     "intermediate": {
       "title": "Intermediate in Computer Science (Physik)",
-      "institute": "Punjab College, Lahore",
+      "institute": "Punjab-Kolleg, Lahore",
       "date": "Sept. 2018 - Juni 2020",
       "contents": [
         "Abschluss mit Note A.",
@@ -122,7 +122,7 @@
     },
     "matriculation": {
       "title": "Matriculation (Naturwissenschaften)",
-      "institute": "The Punjab School, Lahore",
+      "institute": "Punjab-Schule, Lahore",
       "date": "März 2016 - Mai 2018",
       "contents": [
         "Abschluss mit Note A.",

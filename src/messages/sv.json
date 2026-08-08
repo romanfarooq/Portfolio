@@ -102,7 +102,7 @@
     "title": "Min utbildning",
     "bachelors": {
       "title": "Kandidatexamen i datavetenskap",
-      "institute": "University of Central Punjab, Lahore",
+      "institute": "Universitetet i centrala Punjab, Lahore",
       "date": "okt. 2020 - juli 2024",
       "contents": [
         "Tog examen med CGPA 3,42/4,00.",
@@ -113,7 +113,7 @@
     },
     "intermediate": {
       "title": "Intermediate i datavetenskap (fysik)",
-      "institute": "Punjab College, Lahore",
+      "institute": "Punjab-högskolan, Lahore",
       "date": "sep. 2018 - juni 2020",
       "contents": [
         "Tog examen med betyg A.",
@@ -122,7 +122,7 @@
     },
     "matriculation": {
       "title": "Matriculation (naturvetenskap)",
-      "institute": "The Punjab School, Lahore",
+      "institute": "Punjab-skolan, Lahore",
       "date": "mars 2016 - maj 2018",
       "contents": [
         "Tog examen med betyg A.",

@@ -1,12 +1,12 @@
 "use client";
 
 import { useTransition } from "react";
-import { useLocale, useTranslations } from "next-intl";
+import { hasLocale, useLocale, useTranslations } from "next-intl";
 
 import { cn } from "@/lib/utils";
 import { Languages } from "@/components/icons";
+import { locales, localeLabels } from "@/i18n/routing";
 import { usePathname, useRouter } from "@/i18n/navigation";
-import { localeLabels, locales, type Locale } from "@/i18n/routing";
 import {
   Select,
   SelectItem,
@@ -26,20 +26,18 @@ export function LanguageSwitcher({
   selectClassName
 }: LanguageSwitcherProps) {
   const t = useTranslations("languageSwitcher");
-  const locale = useLocale() as Locale;
+  const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
   const [isPending, startTransition] = useTransition();
 
-  const handleChange = (nextLocale: Locale) => {
-    if (nextLocale === locale) return;
+  const handleChange = (nextLocale: string) => {
+    if (!hasLocale(locales, nextLocale) || nextLocale === locale) return;
 
     onLocaleChange?.();
 
     startTransition(() => {
-      const query = window.location.search.slice(1);
-      const hash = window.location.hash;
-      const href = `${pathname}${query ? `?${query}` : ""}${hash}`;
+      const href = `${pathname}${window.location.hash}`;
 
       router.replace(href, { locale: nextLocale, scroll: false });
     });
@@ -47,11 +45,7 @@ export function LanguageSwitcher({
 
   return (
     <div className={cn("relative", className)}>
-      <Select
-        value={locale}
-        disabled={isPending}
-        onValueChange={(value) => handleChange(value as Locale)}
-      >
+      <Select value={locale} disabled={isPending} onValueChange={handleChange}>
         <SelectTrigger
           aria-label={t("ariaLabel")}
           className={cn(

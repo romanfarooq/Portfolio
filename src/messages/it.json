@@ -102,7 +102,7 @@
     "title": "La mia formazione",
     "bachelors": {
       "title": "Laurea in informatica",
-      "institute": "University of Central Punjab, Lahore",
+      "institute": "Università del Punjab centrale, Lahore",
       "date": "ott 2020 - lug 2024",
       "contents": [
         "Mi sono laureato con un CGPA di 3,42/4,00.",
@@ -113,7 +113,7 @@
     },
     "intermediate": {
       "title": "Intermediate in informatica (fisica)",
-      "institute": "Punjab College, Lahore",
+      "institute": "Collegio del Punjab, Lahore",
       "date": "set 2018 - giu 2020",
       "contents": [
         "Mi sono diplomato con voto A.",
@@ -122,7 +122,7 @@
     },
     "matriculation": {
       "title": "Matriculation (scienze)",
-      "institute": "The Punjab School, Lahore",
+      "institute": "Scuola del Punjab, Lahore",
       "date": "mar 2016 - mag 2018",
       "contents": [
         "Mi sono diplomato con voto A.",

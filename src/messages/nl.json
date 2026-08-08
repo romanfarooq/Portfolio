@@ -102,7 +102,7 @@
     "title": "Mijn opleiding",
     "bachelors": {
       "title": "Bachelor in computerwetenschappen",
-      "institute": "University of Central Punjab, Lahore",
+      "institute": "Universiteit van Centraal-Punjab, Lahore",
       "date": "okt. 2020 - jul. 2024",
       "contents": [
         "Afgestudeerd met een CGPA van 3,42/4,00.",
@@ -113,7 +113,7 @@
     },
     "intermediate": {
       "title": "Intermediate in Computer Science (natuurkunde)",
-      "institute": "Punjab College, Lahore",
+      "institute": "Punjabcollege, Lahore",
       "date": "sep. 2018 - jun. 2020",
       "contents": [
         "Afgestudeerd met grade A.",
@@ -122,7 +122,7 @@
     },
     "matriculation": {
       "title": "Matriculation (natuurwetenschappen)",
-      "institute": "The Punjab School, Lahore",
+      "institute": "Punjabschool, Lahore",
       "date": "mrt. 2016 - mei 2018",
       "contents": [
         "Afgestudeerd met grade A.",

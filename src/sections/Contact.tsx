@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { useTranslations } from "next-intl";
 import { AnimatePresence } from "motion/react";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useLocale, useTranslations } from "next-intl";
 
 import { Alert } from "@/components/Alert";
 import { sendEmail } from "@/actions/email";
@@ -21,6 +21,7 @@ interface AlertState extends AlertMessage {
 }
 
 export function Contact() {
+  const locale = useLocale();
   const t = useTranslations("contact");
   const contactFormSchema = createContactFormSchema(t);
 
@@ -57,7 +58,7 @@ export function Contact() {
         formData.append(key, value)
       );
 
-      const result = await sendEmail(formData);
+      const result = await sendEmail(locale, formData);
 
       if (!result?.success) {
         showAlertMessage({

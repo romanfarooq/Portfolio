@@ -102,7 +102,7 @@
     "title": "Mi educación",
     "bachelors": {
       "title": "Licenciatura en Ciencias de la Computación",
-      "institute": "University of Central Punjab, Lahore",
+      "institute": "Universidad del Punjab Central, Lahore",
       "date": "oct. 2020 - jul. 2024",
       "contents": [
         "Me gradué con un CGPA de 3,42/4,00.",
@@ -113,7 +113,7 @@
     },
     "intermediate": {
       "title": "Intermedio en Ciencias de la Computación (Física)",
-      "institute": "Punjab College, Lahore",
+      "institute": "Colegio de Punjab, Lahore",
       "date": "sept. 2018 - jun. 2020",
       "contents": [
         "Me gradué con calificación A.",
@@ -122,7 +122,7 @@
     },
     "matriculation": {
       "title": "Matriculación (Ciencias)",
-      "institute": "The Punjab School, Lahore",
+      "institute": "Escuela de Punjab, Lahore",
       "date": "mar. 2016 - may. 2018",
       "contents": [
         "Me gradué con calificación A.",
