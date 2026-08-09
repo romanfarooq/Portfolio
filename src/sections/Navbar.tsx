@@ -1,3 +1,5 @@
+"use client";
+
 import { MobileNavbar } from "@/components/MobileNavbar";
 import { DesktopNavbar } from "@/components/DesktopNavbar";
 

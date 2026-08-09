@@ -1,10 +1,15 @@
-import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
 
 import { Link } from "@/i18n/navigation";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
-export async function DesktopNavbar() {
-  const t = await getTranslations("navbar");
+export function DesktopNavbar() {
+  const t = useTranslations("navbar");
+
+  const handleNavClick = (section: string) => {
+    const element = document.getElementById(section);
+    if (element) element.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <nav className="hidden items-center justify-between lg:flex">
@@ -16,18 +21,16 @@ export async function DesktopNavbar() {
       </Link>
       <div className="flex items-center gap-5 xl:gap-7">
         <ul className="flex flex-row items-center gap-5 xl:gap-6">
-          {["home", "about", "education", "contact"].map(
-            (section) => (
-              <li key={section} className="py-2">
-                <a
-                  href={`#${section}`}
-                  className="text-base text-neutral-300 capitalize transition-colors hover:text-white"
-                >
-                  {t(section)}
-                </a>
-              </li>
-            )
-          )}
+          {["home", "about", "education", "contact"].map((section) => (
+            <li key={section} className="py-2">
+              <a
+                onClick={() => handleNavClick(section)}
+                className="cursor-pointer text-base text-neutral-300 capitalize transition-colors hover:text-white"
+              >
+                {t(section)}
+              </a>
+            </li>
+          ))}
         </ul>
         <LanguageSwitcher
           className="py-1"

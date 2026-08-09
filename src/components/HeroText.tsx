@@ -24,7 +24,7 @@ export function HeroText() {
       dir={isRtl ? "rtl" : "ltr"}
     >
       <motion.h1
-        className="w-full text-4xl font-medium text-white md:text-3xl"
+        className="w-full text-3xl font-medium text-white sm:text-4xl md:text-3xl"
         variants={variants}
         initial="hidden"
         animate="visible"
@@ -39,7 +39,7 @@ export function HeroText() {
         )}
       >
         <motion.p
-          className="w-full text-5xl font-medium text-neutral-100 [unicode-bidi:plaintext] md:text-5xl md:font-medium"
+          className="w-full text-4xl font-medium text-neutral-100 [unicode-bidi:plaintext] sm:text-5xl md:text-5xl md:font-medium"
           variants={variants}
           initial="hidden"
           animate="visible"
@@ -60,11 +60,11 @@ export function HeroText() {
         >
           <FlipWords
             words={t.raw("flipWords")}
-            className="text-7xl font-bold text-white md:text-8xl md:font-black"
+            className="text-5xl font-black text-white sm:text-7xl sm:font-bold md:text-8xl md:font-black"
           />
         </motion.div>
         <motion.p
-          className="w-full pt-3 text-4xl font-black text-neutral-100 [unicode-bidi:plaintext] md:text-4xl md:font-medium"
+          className="w-full pt-3 text-3xl font-black text-neutral-100 [unicode-bidi:plaintext] sm:text-4xl md:text-4xl md:font-medium"
           variants={variants}
           initial="hidden"
           animate="visible"

@@ -1,5 +1,3 @@
-"use client";
-
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { motion, AnimatePresence } from "motion/react";
@@ -13,14 +11,10 @@ export function MobileNavbar() {
 
   const [isNavOpen, setIsNavOpen] = useState(false);
 
-  const handleNavClick = (
-    e: React.MouseEvent<HTMLAnchorElement>,
-    hash: string
-  ) => {
-    e.preventDefault();
+  const handleNavClick = (section: string) => {
     setIsNavOpen(false);
     setTimeout(() => {
-      const element = document.getElementById(hash);
+      const element = document.getElementById(section);
       if (element) element.scrollIntoView({ behavior: "smooth" });
     }, 100);
   };
@@ -55,18 +49,16 @@ export function MobileNavbar() {
             transition={{ duration: 0.3 }}
           >
             <ul className="flex flex-col items-center gap-4 py-4">
-              {["home", "about", "education", "contact"].map(
-                (section) => (
-                  <li key={section} className="py-2">
-                    <a
-                      onClick={(e) => handleNavClick(e, section)}
-                      className="cursor-pointer text-lg text-neutral-300 capitalize transition-colors hover:text-white"
-                    >
-                      {t(section)}
-                    </a>
-                  </li>
-                )
-              )}
+              {["home", "about", "education", "contact"].map((section) => (
+                <li key={section} className="py-2">
+                  <a
+                    onClick={() => handleNavClick(section)}
+                    className="cursor-pointer text-lg text-neutral-300 capitalize transition-colors hover:text-white"
+                  >
+                    {t(section)}
+                  </a>
+                </li>
+              ))}
               <li className="flex w-full justify-center border-t border-white/10 pt-4">
                 <LanguageSwitcher onLocaleChange={() => setIsNavOpen(false)} />
               </li>
