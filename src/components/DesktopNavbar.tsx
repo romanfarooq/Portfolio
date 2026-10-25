@@ -21,16 +21,18 @@ export function DesktopNavbar() {
       </Link>
       <div className="flex items-center gap-5 xl:gap-7">
         <ul className="flex flex-row items-center gap-5 xl:gap-6">
-          {["home", "about", "education", "contact"].map((section) => (
-            <li key={section} className="py-2">
-              <a
-                onClick={() => handleNavClick(section)}
-                className="cursor-pointer text-base text-neutral-300 capitalize transition-colors hover:text-white"
-              >
-                {t(section)}
-              </a>
-            </li>
-          ))}
+          {["home", "about", "experience", "education", "contact"].map(
+            (section) => (
+              <li key={section} className="py-2">
+                <a
+                  onClick={() => handleNavClick(section)}
+                  className="cursor-pointer text-base text-neutral-300 capitalize transition-colors hover:text-white"
+                >
+                  {t(section)}
+                </a>
+              </li>
+            )
+          )}
         </ul>
         <LanguageSwitcher
           className="py-1"

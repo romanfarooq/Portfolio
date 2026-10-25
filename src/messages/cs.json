@@ -86,6 +86,7 @@
     "home": "Domů",
     "about": "O mně",
     "work": "Práce",
+    "experience": "Praxe",
     "education": "Vzdělání",
     "contact": "Kontakt"
   },
@@ -127,23 +128,63 @@
     "copyButton": "Kopírovat e-mailovou adresu",
     "copiedMessage": "E-mail byl zkopírován"
   },
+  "experience": {
+    "title": "Moje pracovní zkušenosti",
+    "present": "Dosud",
+    "fullTime": "Plný úvazek",
+    "internship": "Stáž",
+    "onSite": "Na pracovišti",
+    "hybrid": "Hybridně",
+    "location": "Láhaur, Paňdžáb, Pákistán",
+    "limelight": {
+      "title": "Softwarový inženýr",
+      "contents": [
+        "Pracuji na full-stack vývoji interní platformy ERP pro módní maloobchod a výrobu, zahrnující správu životního cyklu produktů, řízení výroby, finance, maloobchod, zásoby a další podnikové procesy."
+      ]
+    },
+    "suparco": {
+      "title": "Stážista v informatice",
+      "contents": [
+        "Spolupracoval jsem s týmy řízení družic a provozu nosných a získal praktické zkušenosti s monitorováním nosných, kontrolami dostupnosti služeb, sledováním rušení a postupy pozemních stanic.",
+        "Podporoval jsem komunikační služby PAKSAT-1R a PAKSAT-MM1, včetně RF systémů v pásmech C, Ku a Ka, provozu VSAT a antén, správy sítí HTS a softwarových nástrojů pro monitorování satelitní komunikace a analýzu dat.",
+        "Podílel jsem se na vývoji interního technického softwaru pro provozní monitoring, automatizaci pracovních postupů, správu dat a vizualizaci."
+      ]
+    },
+    "vixelsEngineer": {
+      "title": "Softwarový inženýr",
+      "contents": [
+        "Dodával jsem produkční webové, mobilní a AI aplikace i headless aplikace Shopify pomocí React, Next.js, React Native, Node.js, FastAPI, PostgreSQL a MongoDB.",
+        "Zajišťoval jsem funkce od návrhu systému po nasazení s AWS, Docker a CI/CD; pracoval jsem s mikroslužbami, frontami zpráv, událostmi řízenou architekturou, mezipamětí a integracemi Shopify přes Storefront API, GraphQL Admin API, webhooky a Shopify Functions."
+      ]
+    },
+    "vixelsAssociate": {
+      "title": "Juniorní softwarový inženýr",
+      "contents": [
+        "Vytvářel jsem full-stack aplikace pomocí React, Next.js, Node.js, Express.js, PostgreSQL a MongoDB, včetně REST a GraphQL API, autentizace a autorizace, databázových modelů, opakovaně použitelných komponent a integrací třetích stran."
+      ]
+    },
+    "pepsico": {
+      "title": "Stážista v dodavatelském řetězci",
+      "contents": [
+        "Dokončil jsem projekt mapování náhradních dílů a analýzy kritičnosti metodami HFM, ABC a XYZ, vytvořil tříletý výhled zásob a vyhodnotil lokalizaci, odstranění značkového označení a alternativní dodavatele pro lepší plánování zásob údržby."
+      ]
+    }
+  },
   "education": {
+    "location": "Láhaur, Paňdžáb, Pákistán",
     "title": "Moje vzdělání",
     "bachelors": {
       "title": "Bakalář informatiky",
-      "institute": "Univerzita centrálního Paňdžábu, Láhaur",
-      "date": "říj 2020 – čvc 2024",
+      "institute": "Univerzita centrálního Paňdžábu",
       "contents": [
         "Absolvoval jsem s průměrem CGPA 3,42/4,00.",
         "Od října 2020 do července 2024 jsem získával 50% stipendium na základě studijního průměru CGPA.",
-        "Absolvoval jsem klíčové předměty včetně programování, datových struktur, algoritmů, databázových systémů, webového vývoje, umělé inteligence a hlubokého učení.",
-        "Dokončil jsem závěrečný projekt využívající pokročilé koncepty softwarového inženýrství a AI."
+        "Absolvoval jsem klíčové předměty včetně programování, datových struktur, algoritmů, databázových systémů, webového vývoje, umělé inteligence a hlubokého učení."
       ]
     },
     "intermediate": {
       "title": "Středoškolské studium informatiky (fyzika)",
-      "institute": "Paňdžábská kolej, Láhaur",
-      "date": "zář 2018 – čvn 2020",
+      "institute": "Paňdžábská kolej",
       "contents": [
         "Absolvoval jsem s hodnocením A.",
         "Specializoval jsem se na informatiku a fyziku."
@@ -151,8 +192,7 @@
     },
     "matriculation": {
       "title": "Středoškolské vzdělání (přírodní vědy)",
-      "institute": "Paňdžábská škola, Láhaur",
-      "date": "bře 2016 – kvě 2018",
+      "institute": "Paňdžábská škola",
       "contents": [
         "Absolvoval jsem s hodnocením A.",
         "V osmé třídě jsem získal první místo v mezioddílové soutěži v psaní v angličtině.",

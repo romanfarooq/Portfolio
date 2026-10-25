@@ -56,6 +56,7 @@
     "home": "Etusivu",
     "about": "Tietoa",
     "work": "Työt",
+    "experience": "Työkokemus",
     "education": "Koulutus",
     "contact": "Yhteys"
   },
@@ -97,23 +98,63 @@
     "copyButton": "Kopioi sähköpostiosoite",
     "copiedMessage": "Sähköposti kopioitu"
   },
+  "experience": {
+    "title": "Työkokemukseni",
+    "present": "Nykyhetki",
+    "fullTime": "Kokoaikainen",
+    "internship": "Harjoittelu",
+    "onSite": "Lähityö",
+    "hybrid": "Hybridityö",
+    "location": "Lahore, Punjab, Pakistan",
+    "limelight": {
+      "title": "Ohjelmistoinsinööri",
+      "contents": [
+        "Työskentelen muotikaupan ja valmistuksen sisäisen ERP-alustan full-stack-kehityksessä. Alusta kattaa tuotteiden elinkaaren hallinnan, tuotannonohjauksen, talouden, vähittäiskaupan, varaston ja muut liiketoiminnot."
+      ]
+    },
+    "suparco": {
+      "title": "Tietojenkäsittelytieteen harjoittelija",
+      "contents": [
+        "Tein yhteistyötä satelliittiohjauksen ja kantoaaltojen operointitiimien kanssa sekä sain käytännön kokemusta kantoaaltojen seurannasta, palvelujen saatavuustarkistuksista, häiriöiden havainnoinnista ja maa-asemien työnkuluista.",
+        "Tuin PAKSAT-1R- ja PAKSAT-MM1-viestintäpalveluihin liittyviä tehtäviä, kuten C-, Ku- ja Ka-kaistojen RF-järjestelmiä, VSAT- ja antennitoimintoja, HTS-verkonhallintaa sekä satelliittiviestinnän seurannan ja data-analyysin ohjelmistotyökaluja.",
+        "Osallistuin sisäisten teknisten ohjelmistojen kehittämiseen toiminnan seurantaa, työnkulkujen automatisointia, tiedonhallintaa ja visualisointia varten."
+      ]
+    },
+    "vixelsEngineer": {
+      "title": "Ohjelmistoinsinööri",
+      "contents": [
+        "Toteutin tuotantokäyttöön verkko-, mobiili-, tekoälyä hyödyntäviä ja headless Shopify -sovelluksia Reactilla, Next.js:llä, React Nativella, Node.js:llä, FastAPI:lla, PostgreSQL:llä ja MongoDB:llä.",
+        "Vastasin ominaisuuksista järjestelmäsuunnittelusta käyttöönottoon AWS:n, Dockerin ja CI/CD-putkien avulla. Työskentelin mikropalvelujen, viestijonojen, tapahtumapohjaisen arkkitehtuurin, välimuistin sekä Shopify-integraatioiden kanssa käyttäen Storefront API:a, GraphQL Admin API:a, webhookeja ja Shopify Functionsia."
+      ]
+    },
+    "vixelsAssociate": {
+      "title": "Nuorempi ohjelmistoinsinööri",
+      "contents": [
+        "Kehitin full-stack-sovelluksia Reactilla, Next.js:llä, Node.js:llä, Express.js:llä, PostgreSQL:llä ja MongoDB:llä sekä toteutin REST- ja GraphQL-rajapintoja, tunnistautumista ja käyttöoikeuksia, tietokantamalleja, uudelleenkäytettäviä komponentteja ja kolmannen osapuolen integraatioita."
+      ]
+    },
+    "pepsico": {
+      "title": "Toimitusketjuharjoittelija",
+      "contents": [
+        "Toteutin varaosien kartoitus- ja kriittisyysanalyysiprojektin HFM-, ABC- ja XYZ-menetelmillä, laadin kolmen vuoden varastoennusteen ja arvioin paikallistamista, brändimerkintöjen poistamista ja vaihtoehtoisia toimittajia kunnossapidon varastosuunnittelun parantamiseksi."
+      ]
+    }
+  },
   "education": {
+    "location": "Lahore, Punjab, Pakistan",
     "title": "Koulutukseni",
     "bachelors": {
       "title": "Luonnontieteiden kandidaatti, tietojenkäsittelytiede",
-      "institute": "Keski-Punjabin yliopisto, Lahore",
-      "date": "loka 2020 - heinä 2024",
+      "institute": "Keski-Punjabin yliopisto",
       "contents": [
         "Valmistuin CGPA-arvosanalla 3,42/4,00.",
         "Sain 50% CGPA-pohjaisen stipendin lokakuusta 2020 heinäkuuhun 2024.",
-        "Suoritin keskeisiä kursseja, kuten ohjelmointi, tietorakenteet, algoritmit, tietokantajärjestelmät, web-kehitys, tekoäly ja deep learning.",
-        "Suoritin lopputyöprojektin, joka sisälsi edistyneitä ohjelmistotekniikan ja AI:n käsitteitä."
+        "Suoritin keskeisiä kursseja, kuten ohjelmointi, tietorakenteet, algoritmit, tietokantajärjestelmät, web-kehitys, tekoäly ja deep learning."
       ]
     },
     "intermediate": {
       "title": "Intermediate in Computer Science (fysiikka)",
-      "institute": "Punjab-opisto, Lahore",
-      "date": "syys 2018 - kesä 2020",
+      "institute": "Punjab-opisto",
       "contents": [
         "Valmistuin arvosanalla A.",
         "Erikoistuin tietojenkäsittelytieteeseen ja fysiikkaan."
@@ -121,8 +162,7 @@
     },
     "matriculation": {
       "title": "Matriculation (luonnontieteet)",
-      "institute": "Punjab-koulu, Lahore",
-      "date": "maalis 2016 - touko 2018",
+      "institute": "Punjab-koulu",
       "contents": [
         "Valmistuin arvosanalla A.",
         "Voitin ensimmäisen sijan 8. luokan osastojen välisessä englannin kirjoituskilpailussa.",

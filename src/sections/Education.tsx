@@ -1,85 +1,90 @@
 "use client";
 
-import { useRef } from "react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { motion, useScroll, useTransform } from "motion/react";
 
+import { cn } from "@/lib/utils";
 import { educations } from "@/constants";
+import { Timeline } from "@/components/Timeline";
+import { ExperienceDates } from "@/components/ExperienceDates";
+import { EducationIllustration } from "@/components/EducationIllustration";
 
 export function Education() {
   const t = useTranslations("education");
-  const containerRef = useRef<HTMLElement>(null);
-
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start 10%", "end 50%"]
-  });
-
-  const scaleY = useTransform(scrollYProgress, [0, 1], [0, 1]);
-  const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   return (
-    <section ref={containerRef} id="education" className="w-full scroll-mt-12">
-      <div className="mt-20 min-h-screen px-5 sm:px-10 md:mt-30 lg:px-15">
-        <h2 className="text-3xl font-bold md:text-4xl">{t("title")}</h2>
-        <div className="relative pb-20">
-          {educations.map((education) => (
-            <article
-              key={education}
-              className="flex justify-start pt-10 md:gap-10 md:pt-40"
-            >
-              <aside className="flex max-w-xs flex-col items-center self-start md:sticky md:top-40 md:z-40 md:w-full md:flex-row lg:max-w-md">
-                <div className="bg-midnight z-20 flex h-10 w-10 items-center justify-center rounded-full md:absolute md:-inset-s-4">
-                  <div className="h-4 w-4 rounded-full border border-neutral-700 bg-neutral-800 p-2" />
-                </div>
-                <header className="hidden flex-col gap-2 md:flex md:ps-20">
-                  <h3 className="text-2xl font-bold text-neutral-200">
-                    {t(`${education}.title`)}
-                  </h3>
-                  <h4 className="text-lg font-semibold text-neutral-300">
-                    {t(`${education}.institute`)}
-                  </h4>
-                  <time className="text-base text-neutral-300">
-                    {t(`${education}.date`)}
-                  </time>
-                </header>
-              </aside>
-
-              <div className="w-full ps-5 sm:ps-10 md:ps-0">
-                <header className="mb-4 block text-start md:hidden">
-                  <h3 className="text-2xl font-bold text-neutral-200">
-                    {t(`${education}.title`)}
-                  </h3>
-                  <h4 className="text-lg font-semibold text-neutral-300">
-                    {t(`${education}.institute`)}
-                  </h4>
-                  <time className="text-base text-neutral-300">
-                    {t(`${education}.date`)}
-                  </time>
-                </header>
-                <ul className="space-y-2">
-                  {t
-                    .raw(`${education}.contents`)
-                    .map((content: string, index: number) => (
-                      <li
-                        key={index}
-                        className="list-disc font-normal text-neutral-300"
-                      >
-                        {content}
-                      </li>
-                    ))}
-                </ul>
-              </div>
-            </article>
-          ))}
-          <div className="absolute inset-s-5 top-0 z-10 h-full w-0.5 overflow-hidden bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-0% via-neutral-700 to-transparent to-100% mask-[linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] md:inset-s-1">
-            <motion.div
-              className="via-lavender/50 absolute inset-x-0 top-0 h-full w-0.5 origin-top rounded-full bg-linear-to-t from-purple-500 from-0% via-10% to-transparent"
-              style={{ scaleY: scaleY, opacity: opacityTransform }}
+    <Timeline
+      id="education"
+      title={t("title")}
+      illustration={<EducationIllustration />}
+      entries={educations.map((education) => ({
+        id: education.id,
+        header: (
+          <div className="flex items-start gap-4">
+            <Image
+              src={education.logo}
+              alt={education.institution}
+              width={56}
+              height={56}
+              sizes="56px"
+              unoptimized
+              loading="eager"
+              className="size-14 shrink-0 rounded-xl bg-white object-contain p-1.5 ring-1 ring-white/10"
             />
+            <div className="min-w-0 flex-1">
+              <h3 className="text-xl font-semibold tracking-tight text-white xl:text-2xl">
+                <a
+                  href={education.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group hover:text-lavender inline-flex items-center gap-2 transition-colors focus-visible:underline"
+                >
+                  <span className="whitespace-pre-line">
+                    {t(education.institution)}
+                  </span>
+                  <svg
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    className="group-hover:text-lavender size-4 shrink-0 text-neutral-500 transition-colors"
+                  >
+                    <path d="M7 17 17 7M7 7h10v10" />
+                  </svg>
+                </a>
+              </h3>
+              <p className="mt-1 text-xs leading-relaxed text-neutral-500">
+                {t(education.location)}
+              </p>
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
+        ),
+        content: (
+          <div className="space-y-7">
+            {education.degrees.map((degree, index) => (
+              <div
+                key={degree.id}
+                className={cn(index > 0 && "border-t border-white/8 pt-6")}
+              >
+                <div className="mb-3 flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
+                  <h4 className="text-base font-medium text-neutral-100 sm:text-lg">
+                    {t(`${degree.id}.title`)}
+                  </h4>
+                  <ExperienceDates start={degree.start} end={degree.end} />
+                </div>
+                <div className="space-y-1.5 text-[15px] leading-6 text-neutral-400">
+                  {(t.raw(`${degree.id}.contents`) as string[]).map(
+                    (content) => (
+                      <p key={content}>{content}</p>
+                    )
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        )
+      }))}
+    />
   );
 }

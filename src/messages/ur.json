@@ -56,6 +56,7 @@
     "home": "ہوم",
     "about": "تعارف",
     "work": "کام",
+    "experience": "تجربہ",
     "education": "تعلیم",
     "contact": "رابطہ"
   },
@@ -97,23 +98,63 @@
     "copyButton": "ای میل ایڈریس کاپی کریں",
     "copiedMessage": "ای میل کاپی ہو گئی"
   },
+  "experience": {
+    "title": "میرا پیشہ ورانہ تجربہ",
+    "present": "تاحال",
+    "fullTime": "کل وقتی",
+    "internship": "انٹرن شپ",
+    "onSite": "دفتر میں",
+    "hybrid": "ہائبرڈ",
+    "location": "لاہور، پنجاب، پاکستان",
+    "limelight": {
+      "title": "سافٹ ویئر انجینئر",
+      "contents": [
+        "فیشن ریٹیل اور مینوفیکچرنگ کے لیے اندرونی ERP پلیٹ فارم کی فل اسٹیک ڈیولپمنٹ پر کام کر رہا ہوں، جس میں پروڈکٹ لائف سائیکل مینجمنٹ، مینوفیکچرنگ ایگزیکیوشن، فنانس، ریٹیل، انوینٹری اور دیگر کاروباری آپریشنز شامل ہیں۔"
+      ]
+    },
+    "suparco": {
+      "title": "کمپیوٹر سائنس انٹرن",
+      "contents": [
+        "سیٹلائٹ کنٹرول اور کیریئر آپریشنز کی ٹیموں کے ساتھ کام کیا اور کیریئر مانیٹرنگ، سروس کی دستیابی کی جانچ، مداخلت کے مشاہدے اور گراؤنڈ اسٹیشن کے کام کے طریقوں میں عملی تجربہ حاصل کیا۔",
+        "PAKSAT-1R اور PAKSAT-MM1 کی کمیونیکیشن سروسز سے متعلق سرگرمیوں میں معاونت کی، جن میں C، Ku اور Ka بینڈ RF سسٹمز، VSAT اور اینٹینا آپریشنز، HTS نیٹ ورک مینجمنٹ، اور سیٹلائٹ کمیونیکیشن مانیٹرنگ اور ڈیٹا تجزیے کے سافٹ ویئر ٹولز شامل تھے۔",
+        "آپریشنل مانیٹرنگ، ورک فلو آٹومیشن، ڈیٹا مینجمنٹ اور ویژولائزیشن کے لیے اندرونی انجینئرنگ سافٹ ویئر کی تیاری میں حصہ لیا۔"
+      ]
+    },
+    "vixelsEngineer": {
+      "title": "سافٹ ویئر انجینئر",
+      "contents": [
+        "React، Next.js، React Native، Node.js، FastAPI، PostgreSQL اور MongoDB سے پروڈکشن ویب، موبائل، AI پر مبنی اور ہیڈلیس Shopify ایپلی کیشنز تیار کیں۔",
+        "AWS، Docker اور CI/CD پائپ لائنز کے ذریعے سسٹم ڈیزائن سے ڈیپلائمنٹ تک فیچرز کی ذمہ داری سنبھالی۔ مائیکرو سروسز، میسج کیوز، ایونٹ پر مبنی آرکیٹیکچر، کیشنگ اور Storefront API، GraphQL Admin API، webhooks اور Shopify Functions کے ذریعے Shopify انٹیگریشنز پر کام کیا۔"
+      ]
+    },
+    "vixelsAssociate": {
+      "title": "ایسوسی ایٹ سافٹ ویئر انجینئر",
+      "contents": [
+        "React، Next.js، Node.js، Express.js، PostgreSQL اور MongoDB سے فل اسٹیک ایپلی کیشنز بنائیں، جن میں REST اور GraphQL APIs، تصدیق اور اجازت، ڈیٹا بیس ماڈلز، دوبارہ قابل استعمال کمپوننٹس اور تھرڈ پارٹی انٹیگریشنز شامل تھیں۔"
+      ]
+    },
+    "pepsico": {
+      "title": "سپلائی چین انٹرن",
+      "contents": [
+        "HFM، ABC اور XYZ طریقوں سے اسپیئر پارٹس میپنگ اور اہمیت کے تجزیے کا منصوبہ مکمل کیا، تین سالہ انوینٹری تخمینہ تیار کیا اور مینٹیننس انوینٹری پلاننگ بہتر بنانے کے لیے مقامی تیاری، برانڈ لیبل ہٹانے اور متبادل وینڈرز سے خریداری کا جائزہ لیا۔"
+      ]
+    }
+  },
   "education": {
+    "location": "لاہور، پنجاب، پاکستان",
     "title": "میری تعلیم",
     "bachelors": {
       "title": "بیچلر آف سائنس ان کمپیوٹر سائنس",
-      "institute": "سنٹرل پنجاب یونیورسٹی، لاہور",
-      "date": "اکتوبر 2020 - جولائی 2024",
+      "institute": "سنٹرل پنجاب یونیورسٹی",
       "contents": [
         "4.00 میں سے 3.42 CGPA کے ساتھ گریجویشن مکمل کی۔",
         "اکتوبر 2020 سے جولائی 2024 تک CGPA کی بنیاد پر 50% scholarship حاصل کی۔",
-        "Programming، Data Structures، Algorithms، Database Systems، Web Development، Artificial Intelligence اور Deep Learning جیسے اہم subjects میں coursework مکمل کیا۔",
-        "advanced software engineering اور AI concepts پر مشتمل Final Year Project مکمل کیا۔"
+        "Programming، Data Structures، Algorithms، Database Systems، Web Development، Artificial Intelligence اور Deep Learning جیسے اہم subjects میں coursework مکمل کیا۔"
       ]
     },
     "intermediate": {
       "title": "انٹرمیڈیٹ ان کمپیوٹر سائنس (فزکس)",
-      "institute": "پنجاب کالج، لاہور",
-      "date": "ستمبر 2018 - جون 2020",
+      "institute": "پنجاب کالج",
       "contents": [
         "Grade A کے ساتھ گریجویشن مکمل کی۔",
         "Computer Science اور Physics میں specialization کی۔"
@@ -121,8 +162,7 @@
     },
     "matriculation": {
       "title": "میٹرک (سائنس)",
-      "institute": "پنجاب اسکول، لاہور",
-      "date": "مارچ 2016 - مئی 2018",
+      "institute": "پنجاب اسکول",
       "contents": [
         "Grade A کے ساتھ گریجویشن مکمل کی۔",
         "آٹھویں جماعت میں inter-section English writing competition میں پہلی پوزیشن حاصل کی۔",

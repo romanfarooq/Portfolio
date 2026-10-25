@@ -86,6 +86,7 @@
     "home": "Home",
     "about": "About",
     "work": "Work",
+    "experience": "Experience",
     "education": "Education",
     "contact": "Contact"
   },
@@ -127,23 +128,63 @@
     "copyButton": "Copy Email Address",
     "copiedMessage": "Email has Copied"
   },
+  "experience": {
+    "title": "My Experience",
+    "present": "Present",
+    "fullTime": "Full-time",
+    "internship": "Internship",
+    "onSite": "On-site",
+    "hybrid": "Hybrid",
+    "location": "Lahore, Punjab, Pakistan",
+    "limelight": {
+      "title": "Software Engineer",
+      "contents": [
+        "Working on the full-stack development of an in-house ERP platform for fashion retail and manufacturing, covering product lifecycle management, manufacturing execution, finance, retail, inventory, and broader business operations."
+      ]
+    },
+    "suparco": {
+      "title": "Computer Science Intern",
+      "contents": [
+        "Collaborated with satellite-control and carrier-operations teams, gaining practical experience in carrier monitoring, service-availability checks, interference observation, and ground-station workflows.",
+        "Supported activities involving PAKSAT-1R and PAKSAT-MM1 communication services, including C-, Ku-, and Ka-band RF systems, VSAT and antenna operations, HTS network management, and software tools for satellite-communications monitoring and data analysis.",
+        "Contributed to the development of in-house engineering software for operational monitoring, workflow automation, data management, and visualization."
+      ]
+    },
+    "vixelsEngineer": {
+      "title": "Software Engineer",
+      "contents": [
+        "Delivered production web, mobile, AI-enabled, and headless Shopify applications using React, Next.js, React Native, Node.js, FastAPI, PostgreSQL, and MongoDB.",
+        "Owned features from system design through deployment using AWS, Docker, and CI/CD pipelines, working with microservices, message queues, event-driven architecture, caching, and Shopify integrations through the Storefront API, GraphQL Admin API, webhooks, and Shopify Functions."
+      ]
+    },
+    "vixelsAssociate": {
+      "title": "Associate Software Engineer",
+      "contents": [
+        "Built full-stack applications using React, Next.js, Node.js, Express.js, PostgreSQL, and MongoDB, implementing REST and GraphQL APIs, authentication and authorization, database models, reusable components, and third-party integrations."
+      ]
+    },
+    "pepsico": {
+      "title": "Supply Chain Intern",
+      "contents": [
+        "Completed a spares-mapping and criticality-analysis project using HFM, ABC, and XYZ methods, producing a three-year inventory projection and evaluating localization, unbadging, and alternative-vendor sourcing to strengthen maintenance-inventory planning."
+      ]
+    }
+  },
   "education": {
+    "location": "Lahore, Punjab, Pakistan",
     "title": "My Education",
     "bachelors": {
       "title": "Bachelor of Science in Computer Science",
-      "institute": "University of Central Punjab, Lahore",
-      "date": "Oct 2020 - Jul 2024",
+      "institute": "University of\nCentral Punjab",
       "contents": [
         "Graduated with a CGPA of 3.42/4.00.",
         "Awarded 50% CGPA-based scholarship from October 2020 to July 2024.",
-        "Completed coursework in key subjects including Programming, Data Structures, Algorithms, Database Systems, Web Development, Artificial Intelligence, and Deep Learning.",
-        "Completed a Final Year Project involving advanced software engineering and AI concepts."
+        "Completed coursework in key subjects including Programming, Data Structures, Algorithms, Database Systems, Web Development, Artificial Intelligence, and Deep Learning."
       ]
     },
     "intermediate": {
       "title": "Intermediate in Computer Science (Physics)",
-      "institute": "Punjab College, Lahore",
-      "date": "Sep 2018 - Jun 2020",
+      "institute": "Punjab College",
       "contents": [
         "Graduated with Grade A.",
         "Specialized in Computer Science and Physics."
@@ -151,8 +192,7 @@
     },
     "matriculation": {
       "title": "Matriculation (Science)",
-      "institute": "The Punjab School, Lahore",
-      "date": "Mar 2016 - May 2018",
+      "institute": "The Punjab School",
       "contents": [
         "Graduated with Grade A.",
         "Won first place in an inter-section English writing competition in 8th grade.",

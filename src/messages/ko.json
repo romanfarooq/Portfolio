@@ -86,6 +86,7 @@
     "home": "홈",
     "about": "소개",
     "work": "작업",
+    "experience": "경력",
     "education": "학력",
     "contact": "연락처"
   },
@@ -127,23 +128,63 @@
     "copyButton": "이메일 주소 복사",
     "copiedMessage": "이메일 주소가 복사되었습니다"
   },
+  "experience": {
+    "title": "나의 경력",
+    "present": "현재",
+    "fullTime": "정규직",
+    "internship": "인턴십",
+    "onSite": "현장 근무",
+    "hybrid": "하이브리드 근무",
+    "location": "파키스탄 펀자브주 라호르",
+    "limelight": {
+      "title": "소프트웨어 엔지니어",
+      "contents": [
+        "패션 소매 및 제조를 위한 사내 ERP 플랫폼의 풀스택 개발을 담당하고 있습니다. 제품 수명주기 관리, 제조 실행, 재무, 소매, 재고 및 전반적인 비즈니스 운영을 지원합니다."
+      ]
+    },
+    "suparco": {
+      "title": "컴퓨터 과학 인턴",
+      "contents": [
+        "위성 제어 및 반송파 운영 팀과 협업하며 반송파 모니터링, 서비스 가용성 확인, 간섭 관찰, 지상국 업무 흐름에 대한 실무 경험을 쌓았습니다.",
+        "PAKSAT-1R 및 PAKSAT-MM1 통신 서비스 관련 업무를 지원했습니다. C·Ku·Ka 대역 RF 시스템, VSAT 및 안테나 운용, HTS 네트워크 관리, 위성 통신 모니터링 및 데이터 분석 소프트웨어 도구를 다뤘습니다.",
+        "운영 모니터링, 업무 자동화, 데이터 관리 및 시각화를 위한 사내 엔지니어링 소프트웨어 개발에 기여했습니다."
+      ]
+    },
+    "vixelsEngineer": {
+      "title": "소프트웨어 엔지니어",
+      "contents": [
+        "React, Next.js, React Native, Node.js, FastAPI, PostgreSQL, MongoDB를 사용하여 웹, 모바일, AI 기반 및 헤드리스 Shopify 애플리케이션을 프로덕션에 제공했습니다.",
+        "AWS, Docker, CI/CD 파이프라인으로 시스템 설계부터 배포까지 기능 개발을 담당했습니다. 마이크로서비스, 메시지 큐, 이벤트 기반 아키텍처, 캐싱, Storefront API, GraphQL Admin API, 웹훅, Shopify Functions를 통한 Shopify 통합을 구현했습니다."
+      ]
+    },
+    "vixelsAssociate": {
+      "title": "주니어 소프트웨어 엔지니어",
+      "contents": [
+        "React, Next.js, Node.js, Express.js, PostgreSQL, MongoDB로 풀스택 애플리케이션을 개발하고 REST 및 GraphQL API, 인증 및 권한 부여, 데이터베이스 모델, 재사용 컴포넌트와 외부 서비스 통합을 구현했습니다."
+      ]
+    },
+    "pepsico": {
+      "title": "공급망 인턴",
+      "contents": [
+        "HFM, ABC, XYZ 방법을 사용한 예비 부품 매핑 및 중요도 분석 프로젝트를 완료하고 3년 재고 전망을 수립했습니다. 유지보수 재고 계획을 개선하기 위해 현지화, 브랜드 표시 제거 및 대체 공급업체 조달을 평가했습니다."
+      ]
+    }
+  },
   "education": {
+    "location": "파키스탄 펀자브주 라호르",
     "title": "학력",
     "bachelors": {
       "title": "컴퓨터 과학 학사",
-      "institute": "중앙 펀자브 대학교, 라호르",
-      "date": "2020년 10월 - 2024년 7월",
+      "institute": "중앙 펀자브 대학교",
       "contents": [
         "CGPA 3.42/4.00로 졸업했습니다.",
         "2020년 10월부터 2024년 7월까지 CGPA 기반 50% 장학금을 받았습니다.",
-        "프로그래밍, 자료 구조, 알고리즘, 데이터베이스 시스템, 웹 개발, 인공지능 및 딥러닝을 포함한 주요 과목을 이수했습니다.",
-        "고급 소프트웨어 엔지니어링 및 AI 개념을 활용한 졸업 프로젝트를 완료했습니다."
+        "프로그래밍, 자료 구조, 알고리즘, 데이터베이스 시스템, 웹 개발, 인공지능 및 딥러닝을 포함한 주요 과목을 이수했습니다."
       ]
     },
     "intermediate": {
       "title": "컴퓨터 과학 중등과정(물리)",
-      "institute": "펀자브 칼리지, 라호르",
-      "date": "2018년 9월 - 2020년 6월",
+      "institute": "펀자브 칼리지",
       "contents": [
         "A 등급으로 졸업했습니다.",
         "컴퓨터 과학과 물리를 전공했습니다."
@@ -151,8 +192,7 @@
     },
     "matriculation": {
       "title": "중등학교 졸업(과학)",
-      "institute": "펀자브 스쿨, 라호르",
-      "date": "2016년 3월 - 2018년 5월",
+      "institute": "펀자브 스쿨",
       "contents": [
         "A 등급으로 졸업했습니다.",
         "8학년 때 학급 간 영어 글쓰기 대회에서 1위를 차지했습니다.",

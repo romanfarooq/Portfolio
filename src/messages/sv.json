@@ -56,6 +56,7 @@
     "home": "Hem",
     "about": "Om mig",
     "work": "Arbete",
+    "experience": "Erfarenhet",
     "education": "Utbildning",
     "contact": "Kontakt"
   },
@@ -97,23 +98,63 @@
     "copyButton": "Kopiera e-postadress",
     "copiedMessage": "E-post har kopierats"
   },
+  "experience": {
+    "title": "Min arbetslivserfarenhet",
+    "present": "Nuvarande",
+    "fullTime": "Heltid",
+    "internship": "Praktik",
+    "onSite": "På plats",
+    "hybrid": "Hybrid",
+    "location": "Lahore, Punjab, Pakistan",
+    "limelight": {
+      "title": "Mjukvaruingenjör",
+      "contents": [
+        "Jag arbetar med fullstackutveckling av en intern ERP-plattform för modehandel och tillverkning. Den omfattar produktlivscykelhantering, tillverkningsstyrning, ekonomi, detaljhandel, lager och övrig affärsverksamhet."
+      ]
+    },
+    "suparco": {
+      "title": "Praktikant inom datavetenskap",
+      "contents": [
+        "Jag samarbetade med team för satellitstyrning och bärvågsdrift och fick praktisk erfarenhet av bärvågsövervakning, kontroller av tjänstetillgänglighet, störningsobservation och markstationers arbetsflöden.",
+        "Jag stödde aktiviteter kring kommunikationstjänsterna PAKSAT-1R och PAKSAT-MM1, inklusive RF-system i C-, Ku- och Ka-band, VSAT- och antenndrift, HTS-nätverkshantering samt mjukvaruverktyg för satellitkommunikationsövervakning och dataanalys.",
+        "Jag bidrog till intern ingenjörsmjukvara för driftövervakning, automatisering av arbetsflöden, datahantering och visualisering."
+      ]
+    },
+    "vixelsEngineer": {
+      "title": "Mjukvaruingenjör",
+      "contents": [
+        "Jag levererade webb-, mobil-, AI-stödda och headless Shopify-applikationer i produktion med React, Next.js, React Native, Node.js, FastAPI, PostgreSQL och MongoDB.",
+        "Jag ansvarade för funktioner från systemdesign till driftsättning med AWS, Docker och CI/CD-pipelines och arbetade med mikrotjänster, meddelandeköer, händelsedriven arkitektur, cachelagring och Shopify-integrationer via Storefront API, GraphQL Admin API, webhooks och Shopify Functions."
+      ]
+    },
+    "vixelsAssociate": {
+      "title": "Junior mjukvaruingenjör",
+      "contents": [
+        "Jag byggde fullstackapplikationer med React, Next.js, Node.js, Express.js, PostgreSQL och MongoDB och implementerade REST- och GraphQL-API:er, autentisering och behörighet, databasmodeller, återanvändbara komponenter och tredjepartsintegrationer."
+      ]
+    },
+    "pepsico": {
+      "title": "Praktikant inom försörjningskedjan",
+      "contents": [
+        "Jag slutförde ett projekt för reservdelskartläggning och kritikalitetsanalys med HFM-, ABC- och XYZ-metoder, tog fram en treårig lagerprognos och utvärderade lokalisering, inköp utan varumärkesmärkning och alternativa leverantörer för att stärka planeringen av underhållslager."
+      ]
+    }
+  },
   "education": {
+    "location": "Lahore, Punjab, Pakistan",
     "title": "Min utbildning",
     "bachelors": {
       "title": "Kandidatexamen i datavetenskap",
-      "institute": "Universitetet i centrala Punjab, Lahore",
-      "date": "okt. 2020 - juli 2024",
+      "institute": "Universitetet i centrala Punjab",
       "contents": [
         "Tog examen med CGPA 3,42/4,00.",
         "Tilldelades ett CGPA-baserat stipendium på 50% från oktober 2020 till juli 2024.",
-        "Slutförde kurser i centrala ämnen som programmering, datastrukturer, algoritmer, databassystem, webbutveckling, artificiell intelligens och deep learning.",
-        "Slutförde ett examensprojekt med avancerade koncept inom mjukvaruteknik och AI."
+        "Slutförde kurser i centrala ämnen som programmering, datastrukturer, algoritmer, databassystem, webbutveckling, artificiell intelligens och deep learning."
       ]
     },
     "intermediate": {
       "title": "Intermediate i datavetenskap (fysik)",
-      "institute": "Punjab-högskolan, Lahore",
-      "date": "sep. 2018 - juni 2020",
+      "institute": "Punjab-högskolan",
       "contents": [
         "Tog examen med betyg A.",
         "Specialiserade mig på datavetenskap och fysik."
@@ -121,8 +162,7 @@
     },
     "matriculation": {
       "title": "Matriculation (naturvetenskap)",
-      "institute": "Punjab-skolan, Lahore",
-      "date": "mars 2016 - maj 2018",
+      "institute": "Punjab-skolan",
       "contents": [
         "Tog examen med betyg A.",
         "Vann första plats i en engelsk skrivtävling mellan sektioner i årskurs 8.",

@@ -56,6 +56,7 @@
     "home": "首页",
     "about": "关于",
     "work": "作品",
+    "experience": "工作经历",
     "education": "教育",
     "contact": "联系"
   },
@@ -97,23 +98,63 @@
     "copyButton": "复制邮箱地址",
     "copiedMessage": "邮箱已复制"
   },
+  "experience": {
+    "title": "我的工作经历",
+    "present": "至今",
+    "fullTime": "全职",
+    "internship": "实习",
+    "onSite": "现场办公",
+    "hybrid": "混合办公",
+    "location": "巴基斯坦旁遮普省拉合尔",
+    "limelight": {
+      "title": "软件工程师",
+      "contents": [
+        "负责面向时尚零售与制造的内部ERP平台全栈开发，涵盖产品生命周期管理、制造执行、财务、零售、库存及其他业务运营。"
+      ]
+    },
+    "suparco": {
+      "title": "计算机科学实习生",
+      "contents": [
+        "与卫星控制及载波运营团队合作，积累了载波监测、服务可用性检查、干扰观测和地面站工作流程的实践经验。",
+        "支持PAKSAT-1R和PAKSAT-MM1通信服务相关工作，包括C、Ku、Ka波段射频系统、VSAT及天线操作、HTS网络管理，以及卫星通信监测和数据分析软件工具。",
+        "参与内部工程软件开发，用于运营监控、工作流程自动化、数据管理和可视化。"
+      ]
+    },
+    "vixelsEngineer": {
+      "title": "软件工程师",
+      "contents": [
+        "使用React、Next.js、React Native、Node.js、FastAPI、PostgreSQL和MongoDB交付生产级Web、移动端、AI应用及无头Shopify应用。",
+        "借助AWS、Docker和CI/CD流水线，负责从系统设计到部署的完整功能交付，涉及微服务、消息队列、事件驱动架构、缓存，以及通过Storefront API、GraphQL Admin API、webhooks和Shopify Functions实现Shopify集成。"
+      ]
+    },
+    "vixelsAssociate": {
+      "title": "助理软件工程师",
+      "contents": [
+        "使用React、Next.js、Node.js、Express.js、PostgreSQL和MongoDB构建全栈应用，实现REST和GraphQL API、身份验证与授权、数据库模型、可复用组件及第三方集成。"
+      ]
+    },
+    "pepsico": {
+      "title": "供应链实习生",
+      "contents": [
+        "运用HFM、ABC和XYZ方法完成备件梳理与关键性分析项目，制定三年库存预测，并评估本地化、去品牌化及替代供应商采购方案，以改善维护库存规划。"
+      ]
+    }
+  },
   "education": {
+    "location": "巴基斯坦旁遮普省拉合尔",
     "title": "我的教育背景",
     "bachelors": {
       "title": "计算机科学理学学士",
-      "institute": "中央旁遮普大学，拉合尔",
-      "date": "2020年10月 - 2024年7月",
+      "institute": "中央旁遮普大学",
       "contents": [
         "毕业平均绩点为 3.42/4.00。",
         "2020年10月至2024年7月期间获得 50% 的基于 CGPA 奖学金。",
-        "完成了编程、数据结构、算法、数据库系统、Web 开发、人工智能和深度学习等核心课程。",
-        "完成了一个涉及高级软件工程和 AI 概念的毕业设计项目。"
+        "完成了编程、数据结构、算法、数据库系统、Web 开发、人工智能和深度学习等核心课程。"
       ]
     },
     "intermediate": {
       "title": "计算机科学中级课程（物理）",
-      "institute": "旁遮普学院，拉合尔",
-      "date": "2018年9月 - 2020年6月",
+      "institute": "旁遮普学院",
       "contents": [
         "以 A 等成绩毕业。",
         "主修计算机科学和物理。"
@@ -121,8 +162,7 @@
     },
     "matriculation": {
       "title": "中学毕业（理科）",
-      "institute": "旁遮普学校，拉合尔",
-      "date": "2016年3月 - 2018年5月",
+      "institute": "旁遮普学校",
       "contents": [
         "以 A 等成绩毕业。",
         "在八年级班级组英语写作比赛中获得第一名。",

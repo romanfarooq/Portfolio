@@ -12,7 +12,75 @@ export interface Project {
   image: string;
 }
 
-export const educations = ["bachelors", "intermediate", "matriculation"];
+export const educations = [
+  {
+    id: "ucp",
+    institution: "bachelors.institute",
+    logo: "/assets/images/ucp.webp",
+    href: "https://ucp.edu.pk/",
+    location: "location",
+    degrees: [{ id: "bachelors", start: "2020-10", end: "2024-07" }]
+  },
+  {
+    id: "punjabCollege",
+    institution: "intermediate.institute",
+    logo: "/assets/images/punjab-colleges.webp",
+    href: "https://pgc.edu/",
+    location: "location",
+    degrees: [{ id: "intermediate", start: "2018-09", end: "2020-06" }]
+  },
+  {
+    id: "punjabSchool",
+    institution: "matriculation.institute",
+    logo: "/assets/images/punjab-school.webp",
+    href: "https://www.thepunjabschool.edu.pk/",
+    location: "location",
+    degrees: [{ id: "matriculation", start: "2016-03", end: "2018-05" }]
+  }
+] as const;
+
+export const experiences = [
+  {
+    id: "limelight",
+    logo: "/assets/images/limelight.webp",
+    company: "LIMELIGHT",
+    href: "https://www.limelight.pk/",
+    employment: "fullTime",
+    workplace: "onSite",
+    positions: [{ id: "limelight", start: "2026-09", end: null }]
+  },
+  {
+    id: "suparco",
+    logo: "/assets/images/suparco.webp",
+    company:
+      "Pakistan Space and Upper Atmosphere Research Commission (SUPARCO)",
+    href: "https://suparco.gov.pk/",
+    employment: "internship",
+    workplace: "onSite",
+    positions: [{ id: "suparco", start: "2025-11", end: "2026-05" }]
+  },
+  {
+    id: "vixels",
+    logo: "/assets/images/vixels.webp",
+    company: "Vixels.dev",
+    href: "https://vixels.dev/",
+    employment: "fullTime",
+    workplace: "onSite",
+    positions: [
+      { id: "vixelsEngineer", start: "2025-03", end: "2025-11" },
+      { id: "vixelsAssociate", start: "2024-09", end: "2025-02" }
+    ]
+  },
+  {
+    id: "pepsico",
+    logo: "/assets/images/pepsico.webp",
+    company: "PepsiCo Pakistan",
+    href: "https://www.pepsico.com/",
+    employment: "internship",
+    workplace: "hybrid",
+    positions: [{ id: "pepsico", start: "2024-07", end: "2024-08" }]
+  }
+] as const;
 
 export const socials = [
   {

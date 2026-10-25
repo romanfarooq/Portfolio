@@ -56,6 +56,7 @@
     "home": "Home",
     "about": "Over mij",
     "work": "Werk",
+    "experience": "Ervaring",
     "education": "Opleiding",
     "contact": "Contact"
   },
@@ -97,23 +98,63 @@
     "copyButton": "E-mailadres kopiëren",
     "copiedMessage": "E-mail is gekopieerd"
   },
+  "experience": {
+    "title": "Mijn werkervaring",
+    "present": "Heden",
+    "fullTime": "Fulltime",
+    "internship": "Stage",
+    "onSite": "Op locatie",
+    "hybrid": "Hybride",
+    "location": "Lahore, Punjab, Pakistan",
+    "limelight": {
+      "title": "Software-engineer",
+      "contents": [
+        "Ik werk aan de full-stackontwikkeling van een intern ERP-platform voor modedetailhandel en productie, met productlevenscyclusbeheer, productie-uitvoering, financiën, retail, voorraad en bredere bedrijfsprocessen."
+      ]
+    },
+    "suparco": {
+      "title": "Stagiair informatica",
+      "contents": [
+        "Ik werkte samen met teams voor satellietbesturing en draaggolfoperaties en deed praktijkervaring op met draaggolfmonitoring, controles van de beschikbaarheid van diensten, interferentiewaarneming en werkprocessen van grondstations.",
+        "Ik ondersteunde activiteiten voor communicatiediensten van PAKSAT-1R en PAKSAT-MM1, waaronder RF-systemen in de C-, Ku- en Ka-band, VSAT- en antenneoperaties, HTS-netwerkbeheer en software voor satellietcommunicatiemonitoring en data-analyse.",
+        "Ik droeg bij aan interne engineeringsoftware voor operationele monitoring, workflowautomatisering, gegevensbeheer en visualisatie."
+      ]
+    },
+    "vixelsEngineer": {
+      "title": "Software-engineer",
+      "contents": [
+        "Ik leverde productieklare web-, mobiele, AI-ondersteunde en headless Shopify-applicaties met React, Next.js, React Native, Node.js, FastAPI, PostgreSQL en MongoDB.",
+        "Ik was verantwoordelijk voor functies van systeemontwerp tot deployment met AWS, Docker en CI/CD-pipelines en werkte met microservices, berichtenwachtrijen, eventgedreven architectuur, caching en Shopify-integraties via Storefront API, GraphQL Admin API, webhooks en Shopify Functions."
+      ]
+    },
+    "vixelsAssociate": {
+      "title": "Junior software-engineer",
+      "contents": [
+        "Ik bouwde full-stackapplicaties met React, Next.js, Node.js, Express.js, PostgreSQL en MongoDB, inclusief REST- en GraphQL-API’s, authenticatie en autorisatie, databasemodellen, herbruikbare componenten en integraties met derden."
+      ]
+    },
+    "pepsico": {
+      "title": "Stagiair supply chain",
+      "contents": [
+        "Ik voltooide een project voor het in kaart brengen van reserveonderdelen en kriticiteitsanalyse met HFM-, ABC- en XYZ-methoden, maakte een driejarige voorraadprognose en beoordeelde lokalisatie, levering zonder merklabel en alternatieve leveranciers om onderhoudsvoorraadplanning te verbeteren."
+      ]
+    }
+  },
   "education": {
+    "location": "Lahore, Punjab, Pakistan",
     "title": "Mijn opleiding",
     "bachelors": {
       "title": "Bachelor in computerwetenschappen",
-      "institute": "Universiteit van Centraal-Punjab, Lahore",
-      "date": "okt. 2020 - jul. 2024",
+      "institute": "Universiteit van Centraal-Punjab",
       "contents": [
         "Afgestudeerd met een CGPA van 3,42/4,00.",
         "Een op CGPA gebaseerde beurs van 50% ontvangen van oktober 2020 tot juli 2024.",
-        "Vakken afgerond in kerngebieden zoals programmeren, datastructuren, algoritmen, databasesystemen, webontwikkeling, kunstmatige intelligentie en deep learning.",
-        "Een afstudeerproject voltooid met geavanceerde concepten uit software-engineering en AI."
+        "Vakken afgerond in kerngebieden zoals programmeren, datastructuren, algoritmen, databasesystemen, webontwikkeling, kunstmatige intelligentie en deep learning."
       ]
     },
     "intermediate": {
       "title": "Intermediate in Computer Science (natuurkunde)",
-      "institute": "Punjabcollege, Lahore",
-      "date": "sep. 2018 - jun. 2020",
+      "institute": "Punjabcollege",
       "contents": [
         "Afgestudeerd met grade A.",
         "Gespecialiseerd in informatica en natuurkunde."
@@ -121,8 +162,7 @@
     },
     "matriculation": {
       "title": "Matriculation (natuurwetenschappen)",
-      "institute": "Punjabschool, Lahore",
-      "date": "mrt. 2016 - mei 2018",
+      "institute": "Punjabschool",
       "contents": [
         "Afgestudeerd met grade A.",
         "Eerste plaats behaald in een Engelse schrijfwedstrijd tussen secties in de 8e klas.",

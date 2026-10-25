@@ -56,6 +56,7 @@
     "home": "Accueil",
     "about": "À propos",
     "work": "Travaux",
+    "experience": "Expérience",
     "education": "Formation",
     "contact": "Contact"
   },
@@ -97,23 +98,63 @@
     "copyButton": "Copier l’adresse e-mail",
     "copiedMessage": "E-mail copié"
   },
+  "experience": {
+    "title": "Mon expérience",
+    "present": "Aujourd’hui",
+    "fullTime": "Temps plein",
+    "internship": "Stage",
+    "onSite": "Sur site",
+    "hybrid": "Hybride",
+    "location": "Lahore, Pendjab, Pakistan",
+    "limelight": {
+      "title": "Ingénieur logiciel",
+      "contents": [
+        "Je travaille au développement full-stack d’une plateforme ERP interne pour la distribution et la fabrication de mode, couvrant le cycle de vie des produits, l’exécution de la production, la finance, la vente au détail, les stocks et les autres opérations de l’entreprise."
+      ]
+    },
+    "suparco": {
+      "title": "Stagiaire en informatique",
+      "contents": [
+        "J’ai collaboré avec les équipes de contrôle des satellites et d’exploitation des porteuses, acquérant une expérience pratique de la surveillance des porteuses, des contrôles de disponibilité des services, de l’observation des interférences et des processus des stations au sol.",
+        "J’ai soutenu des activités liées aux services de communication PAKSAT-1R et PAKSAT-MM1 : systèmes RF en bandes C, Ku et Ka, exploitation VSAT et des antennes, gestion des réseaux HTS, logiciels de surveillance des communications satellitaires et analyse de données.",
+        "J’ai contribué au développement de logiciels d’ingénierie internes pour le suivi opérationnel, l’automatisation des processus, la gestion des données et la visualisation."
+      ]
+    },
+    "vixelsEngineer": {
+      "title": "Ingénieur logiciel",
+      "contents": [
+        "J’ai livré des applications web, mobiles, intégrant l’IA et Shopify headless en production avec React, Next.js, React Native, Node.js, FastAPI, PostgreSQL et MongoDB.",
+        "J’ai pris en charge des fonctionnalités de la conception du système au déploiement avec AWS, Docker et des pipelines CI/CD, en utilisant microservices, files de messages, architecture événementielle, cache et intégrations Shopify via Storefront API, GraphQL Admin API, webhooks et Shopify Functions."
+      ]
+    },
+    "vixelsAssociate": {
+      "title": "Ingénieur logiciel junior",
+      "contents": [
+        "J’ai créé des applications full-stack avec React, Next.js, Node.js, Express.js, PostgreSQL et MongoDB, en réalisant des API REST et GraphQL, l’authentification et les autorisations, des modèles de données, des composants réutilisables et des intégrations tierces."
+      ]
+    },
+    "pepsico": {
+      "title": "Stagiaire en chaîne logistique",
+      "contents": [
+        "J’ai réalisé un projet de cartographie des pièces de rechange et d’analyse de criticité selon les méthodes HFM, ABC et XYZ, produit une projection des stocks sur trois ans et évalué la localisation, l’approvisionnement sans marque et les fournisseurs alternatifs pour améliorer la planification des stocks de maintenance."
+      ]
+    }
+  },
   "education": {
+    "location": "Lahore, Pendjab, Pakistan",
     "title": "Ma formation",
     "bachelors": {
       "title": "Licence en informatique",
-      "institute": "Université du Pendjab central, Lahore",
-      "date": "oct. 2020 - juil. 2024",
+      "institute": "Université du Pendjab central",
       "contents": [
         "Diplômé avec un CGPA de 3,42/4,00.",
         "A obtenu une bourse de 50 % basée sur le CGPA d’octobre 2020 à juillet 2024.",
-        "A suivi des cours clés, notamment programmation, structures de données, algorithmes, systèmes de bases de données, développement web, intelligence artificielle et deep learning.",
-        "A réalisé un projet de fin d’études impliquant des concepts avancés de génie logiciel et d’IA."
+        "A suivi des cours clés, notamment programmation, structures de données, algorithmes, systèmes de bases de données, développement web, intelligence artificielle et deep learning."
       ]
     },
     "intermediate": {
       "title": "Études intermédiaires en informatique (physique)",
-      "institute": "Collège du Pendjab, Lahore",
-      "date": "sept. 2018 - juin 2020",
+      "institute": "Collège du Pendjab",
       "contents": [
         "Diplômé avec la note A.",
         "Spécialisation en informatique et physique."
@@ -121,8 +162,7 @@
     },
     "matriculation": {
       "title": "Matriculation (sciences)",
-      "institute": "École du Pendjab, Lahore",
-      "date": "mars 2016 - mai 2018",
+      "institute": "École du Pendjab",
       "contents": [
         "Diplômé avec la note A.",
         "A remporté la première place lors d’un concours d’écriture en anglais inter-sections en 8e classe.",

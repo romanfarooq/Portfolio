@@ -56,6 +56,7 @@
     "home": "Inicio",
     "about": "Acerca de",
     "work": "Trabajo",
+    "experience": "Experiencia",
     "education": "Educación",
     "contact": "Contacto"
   },
@@ -97,23 +98,63 @@
     "copyButton": "Copiar dirección de correo",
     "copiedMessage": "El correo ha sido copiado"
   },
+  "experience": {
+    "title": "Mi experiencia",
+    "present": "Actualidad",
+    "fullTime": "Tiempo completo",
+    "internship": "Prácticas",
+    "onSite": "Presencial",
+    "hybrid": "Híbrido",
+    "location": "Lahore, Punjab, Pakistán",
+    "limelight": {
+      "title": "Ingeniero de software",
+      "contents": [
+        "Trabajo en el desarrollo full-stack de una plataforma ERP interna para el comercio y la fabricación de moda, que abarca gestión del ciclo de vida del producto, ejecución de fabricación, finanzas, venta minorista, inventario y otras operaciones empresariales."
+      ]
+    },
+    "suparco": {
+      "title": "Becario de informática",
+      "contents": [
+        "Colaboré con equipos de control de satélites y operaciones de portadoras, adquiriendo experiencia práctica en monitoreo de portadoras, comprobaciones de disponibilidad del servicio, observación de interferencias y procesos de estaciones terrestres.",
+        "Apoyé servicios de comunicación de PAKSAT-1R y PAKSAT-MM1, incluidos sistemas RF en bandas C, Ku y Ka, operaciones de VSAT y antenas, gestión de redes HTS y herramientas de monitoreo de comunicaciones satelitales y análisis de datos.",
+        "Contribuí al desarrollo de software de ingeniería interno para monitoreo operativo, automatización de procesos, gestión de datos y visualización."
+      ]
+    },
+    "vixelsEngineer": {
+      "title": "Ingeniero de software",
+      "contents": [
+        "Entregué aplicaciones en producción web, móviles, con IA y de Shopify headless con React, Next.js, React Native, Node.js, FastAPI, PostgreSQL y MongoDB.",
+        "Me responsabilicé de funcionalidades desde el diseño del sistema hasta el despliegue con AWS, Docker y CI/CD, trabajando con microservicios, colas de mensajes, arquitectura orientada a eventos, caché e integraciones de Shopify mediante Storefront API, GraphQL Admin API, webhooks y Shopify Functions."
+      ]
+    },
+    "vixelsAssociate": {
+      "title": "Ingeniero de software asociado",
+      "contents": [
+        "Desarrollé aplicaciones full-stack con React, Next.js, Node.js, Express.js, PostgreSQL y MongoDB, implementando APIs REST y GraphQL, autenticación y autorización, modelos de bases de datos, componentes reutilizables e integraciones de terceros."
+      ]
+    },
+    "pepsico": {
+      "title": "Becario de cadena de suministro",
+      "contents": [
+        "Completé un proyecto de mapeo de repuestos y análisis de criticidad con métodos HFM, ABC y XYZ, elaborando una proyección de inventario a tres años y evaluando localización, eliminación de marcas y proveedores alternativos para mejorar la planificación del inventario de mantenimiento."
+      ]
+    }
+  },
   "education": {
+    "location": "Lahore, Punjab, Pakistán",
     "title": "Mi educación",
     "bachelors": {
       "title": "Licenciatura en Ciencias de la Computación",
-      "institute": "Universidad del Punjab Central, Lahore",
-      "date": "oct. 2020 - jul. 2024",
+      "institute": "Universidad del Punjab Central",
       "contents": [
         "Me gradué con un CGPA de 3,42/4,00.",
         "Recibí una beca del 50 % basada en CGPA desde octubre de 2020 hasta julio de 2024.",
-        "Completé cursos en materias clave, incluyendo programación, estructuras de datos, algoritmos, sistemas de bases de datos, desarrollo web, inteligencia artificial y deep learning.",
-        "Completé un proyecto final que involucró conceptos avanzados de ingeniería de software e IA."
+        "Completé cursos en materias clave, incluyendo programación, estructuras de datos, algoritmos, sistemas de bases de datos, desarrollo web, inteligencia artificial y deep learning."
       ]
     },
     "intermediate": {
       "title": "Intermedio en Ciencias de la Computación (Física)",
-      "institute": "Colegio de Punjab, Lahore",
-      "date": "sept. 2018 - jun. 2020",
+      "institute": "Colegio de Punjab",
       "contents": [
         "Me gradué con calificación A.",
         "Me especialicé en ciencias de la computación y física."
@@ -121,8 +162,7 @@
     },
     "matriculation": {
       "title": "Matriculación (Ciencias)",
-      "institute": "Escuela de Punjab, Lahore",
-      "date": "mar. 2016 - may. 2018",
+      "institute": "Escuela de Punjab",
       "contents": [
         "Me gradué con calificación A.",
         "Gané el primer lugar en una competencia intersección de escritura en inglés en 8.º grado.",

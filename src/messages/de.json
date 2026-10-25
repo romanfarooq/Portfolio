@@ -56,6 +56,7 @@
     "home": "Start",
     "about": "Über mich",
     "work": "Projekte",
+    "experience": "Berufserfahrung",
     "education": "Ausbildung",
     "contact": "Kontakt"
   },
@@ -97,23 +98,63 @@
     "copyButton": "E-Mail-Adresse kopieren",
     "copiedMessage": "E-Mail wurde kopiert"
   },
+  "experience": {
+    "title": "Meine Berufserfahrung",
+    "present": "Heute",
+    "fullTime": "Vollzeit",
+    "internship": "Praktikum",
+    "onSite": "Vor Ort",
+    "hybrid": "Hybrid",
+    "location": "Lahore, Punjab, Pakistan",
+    "limelight": {
+      "title": "Softwareingenieur",
+      "contents": [
+        "Ich arbeite an der Full-Stack-Entwicklung einer internen ERP-Plattform für Modehandel und Fertigung. Sie umfasst Produktlebenszyklusmanagement, Fertigungssteuerung, Finanzen, Einzelhandel, Lagerbestand und weitere Geschäftsprozesse."
+      ]
+    },
+    "suparco": {
+      "title": "Informatikpraktikant",
+      "contents": [
+        "Ich arbeitete mit Teams für Satellitensteuerung und Trägerbetrieb zusammen und sammelte praktische Erfahrung bei Trägerüberwachung, Prüfungen der Dienstverfügbarkeit, Störungsbeobachtung und Bodenstationsabläufen.",
+        "Ich unterstützte Kommunikationsdienste von PAKSAT-1R und PAKSAT-MM1, darunter HF-Systeme im C-, Ku- und Ka-Band, VSAT- und Antennenbetrieb, HTS-Netzwerkmanagement sowie Software zur Überwachung der Satellitenkommunikation und Datenanalyse.",
+        "Ich wirkte an interner Engineering-Software für Betriebsüberwachung, Workflow-Automatisierung, Datenverwaltung und Visualisierung mit."
+      ]
+    },
+    "vixelsEngineer": {
+      "title": "Softwareingenieur",
+      "contents": [
+        "Ich entwickelte produktive Web-, Mobil-, KI-gestützte und Headless-Shopify-Anwendungen mit React, Next.js, React Native, Node.js, FastAPI, PostgreSQL und MongoDB.",
+        "Ich verantwortete Funktionen vom Systementwurf bis zum Deployment mit AWS, Docker und CI/CD-Pipelines und arbeitete mit Microservices, Nachrichtenwarteschlangen, ereignisgesteuerter Architektur, Caching und Shopify-Integrationen über Storefront API, GraphQL Admin API, Webhooks und Shopify Functions."
+      ]
+    },
+    "vixelsAssociate": {
+      "title": "Junior-Softwareingenieur",
+      "contents": [
+        "Ich entwickelte Full-Stack-Anwendungen mit React, Next.js, Node.js, Express.js, PostgreSQL und MongoDB und implementierte REST- und GraphQL-APIs, Authentifizierung und Autorisierung, Datenbankmodelle, wiederverwendbare Komponenten und Drittanbieterintegrationen."
+      ]
+    },
+    "pepsico": {
+      "title": "Praktikant im Supply Chain Management",
+      "contents": [
+        "Ich schloss ein Projekt zur Erfassung von Ersatzteilen und Kritikalitätsanalyse mit HFM-, ABC- und XYZ-Methoden ab, erstellte eine dreijährige Bestandsprognose und bewertete Lokalisierung, den Bezug ohne Markenkennzeichnung sowie alternative Lieferanten zur Verbesserung der Instandhaltungsbestandsplanung."
+      ]
+    }
+  },
   "education": {
+    "location": "Lahore, Punjab, Pakistan",
     "title": "Meine Ausbildung",
     "bachelors": {
       "title": "Bachelor of Science in Informatik",
-      "institute": "Universität von Zentral-Punjab, Lahore",
-      "date": "Okt. 2020 - Juli 2024",
+      "institute": "Universität von Zentral-Punjab",
       "contents": [
         "Abschluss mit einem CGPA von 3,42/4,00.",
         "Erhielt von Oktober 2020 bis Juli 2024 ein CGPA-basiertes Stipendium von 50%.",
-        "Absolvierte Kurse in zentralen Fächern wie Programmierung, Datenstrukturen, Algorithmen, Datenbanksysteme, Webentwicklung, künstliche Intelligenz und Deep Learning.",
-        "Schloss ein Abschlussprojekt mit fortgeschrittenen Konzepten aus Software Engineering und KI ab."
+        "Absolvierte Kurse in zentralen Fächern wie Programmierung, Datenstrukturen, Algorithmen, Datenbanksysteme, Webentwicklung, künstliche Intelligenz und Deep Learning."
       ]
     },
     "intermediate": {
       "title": "Intermediate in Computer Science (Physik)",
-      "institute": "Punjab-Kolleg, Lahore",
-      "date": "Sept. 2018 - Juni 2020",
+      "institute": "Punjab-Kolleg",
       "contents": [
         "Abschluss mit Note A.",
         "Spezialisierung auf Informatik und Physik."
@@ -121,8 +162,7 @@
     },
     "matriculation": {
       "title": "Matriculation (Naturwissenschaften)",
-      "institute": "Punjab-Schule, Lahore",
-      "date": "März 2016 - Mai 2018",
+      "institute": "Punjab-Schule",
       "contents": [
         "Abschluss mit Note A.",
         "Gewann in der 8. Klasse den ersten Platz in einem klassenübergreifenden englischen Schreibwettbewerb.",

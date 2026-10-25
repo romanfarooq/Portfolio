@@ -49,16 +49,18 @@ export function MobileNavbar() {
             transition={{ duration: 0.3 }}
           >
             <ul className="flex flex-col items-center gap-4 py-4">
-              {["home", "about", "education", "contact"].map((section) => (
-                <li key={section} className="py-2">
-                  <a
-                    onClick={() => handleNavClick(section)}
-                    className="cursor-pointer text-lg text-neutral-300 capitalize transition-colors hover:text-white"
-                  >
-                    {t(section)}
-                  </a>
-                </li>
-              ))}
+              {["home", "about", "experience", "education", "contact"].map(
+                (section) => (
+                  <li key={section} className="py-2">
+                    <a
+                      onClick={() => handleNavClick(section)}
+                      className="cursor-pointer text-lg text-neutral-300 capitalize transition-colors hover:text-white"
+                    >
+                      {t(section)}
+                    </a>
+                  </li>
+                )
+              )}
               <li className="flex w-full justify-center border-t border-white/10 pt-4">
                 <LanguageSwitcher onLocaleChange={() => setIsNavOpen(false)} />
               </li>
