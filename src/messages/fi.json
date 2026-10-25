@@ -52,6 +52,8 @@
     ]
   },
   "navbar": {
+    "openMenu": "Avaa valikko",
+    "closeMenu": "Sulje valikko",
     "brandName": "Roman Farooq",
     "home": "Etusivu",
     "about": "Tietoa",
@@ -198,6 +200,8 @@
       }
     },
     "alerts": {
+      "successLabel": "Onnistui",
+      "errorLabel": "Virhe",
       "success": "Viestisi on lähetetty!",
       "error": "Jokin meni pieleen!",
       "emailError": "Sähköpostin lähetys epäonnistui"

@@ -82,6 +82,8 @@
     ]
   },
   "navbar": {
+    "openMenu": "Otevřít nabídku",
+    "closeMenu": "Zavřít nabídku",
     "brandName": "Roman Farooq",
     "home": "Domů",
     "about": "O mně",
@@ -228,6 +230,8 @@
       }
     },
     "alerts": {
+      "successLabel": "Úspěch",
+      "errorLabel": "Chyba",
       "success": "Vaše zpráva byla odeslána!",
       "error": "Něco se pokazilo!",
       "emailError": "E-mail se nepodařilo odeslat"

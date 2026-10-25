@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import { useTranslations } from "next-intl";
 
 import { cn } from "@/lib/utils";
 
@@ -14,9 +15,11 @@ const alertVarients = {
 };
 
 export function Alert({ text, type }: AlertProps) {
+  const t = useTranslations("contact.alerts");
+
   return (
     <motion.div
-      className="fixed right-5 bottom-5 z-50 flex items-center justify-center"
+      className="fixed inset-e-5 bottom-5 z-50 flex max-w-[calc(100vw-2.5rem)] items-center justify-center"
       initial="hidden"
       animate="visible"
       exit="exit"
@@ -25,19 +28,19 @@ export function Alert({ text, type }: AlertProps) {
     >
       <div
         className={cn(
-          "flex items-center rounded-md p-2 leading-none text-indigo-100 lg:inline-flex lg:rounded-full",
+          "flex items-center rounded-md p-2 leading-normal text-indigo-100 lg:inline-flex lg:rounded-full",
           type === "danger" ? "bg-red-800" : "bg-royal"
         )}
       >
         <p
           className={cn(
-            "mr-3 flex rounded-full px-2 py-1 text-xs font-semibold uppercase",
+            "me-3 flex shrink-0 rounded-full px-2 py-1 text-xs font-semibold uppercase",
             type === "danger" ? "bg-red-500" : "bg-lavender"
           )}
         >
-          {type === "danger" ? "Failed" : "Success"}
+          {type === "danger" ? t("errorLabel") : t("successLabel")}
         </p>
-        <p className="mr-2 text-left">{text}</p>
+        <p className="me-2 min-w-0 text-start wrap-break-word">{text}</p>
       </div>
     </motion.div>
   );

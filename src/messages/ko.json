@@ -82,6 +82,8 @@
     ]
   },
   "navbar": {
+    "openMenu": "메뉴 열기",
+    "closeMenu": "메뉴 닫기",
     "brandName": "로만 파루크",
     "home": "홈",
     "about": "소개",
@@ -228,6 +230,8 @@
       }
     },
     "alerts": {
+      "successLabel": "성공",
+      "errorLabel": "실패",
       "success": "메시지가 전송되었습니다!",
       "error": "문제가 발생했습니다!",
       "emailError": "이메일을 보내지 못했습니다"

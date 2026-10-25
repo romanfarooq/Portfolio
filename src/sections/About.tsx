@@ -21,7 +21,7 @@ export async function About() {
     >
       <h2 className="text-3xl font-bold md:text-4xl">{t("title")}</h2>
       <div className="mt-12 grid grid-cols-1 gap-4 md:auto-rows-fr md:grid-cols-6">
-        <header className="from-storm to-indigo relative row-span-2 flex h-60 items-end overflow-hidden rounded-2xl bg-linear-to-b p-6 duration-200 hover:-translate-y-1 md:col-span-3 md:h-full">
+        <header className="from-storm to-indigo relative row-span-2 flex min-h-60 items-end overflow-hidden rounded-2xl bg-linear-to-b p-6 duration-200 hover:-translate-y-1 md:col-span-3 md:h-full">
           <Image
             src="/assets/images/coding-pov.webp"
             alt={t("codingImageAlt")}

@@ -60,7 +60,8 @@ export function HeroText() {
         >
           <FlipWords
             words={t.raw("flipWords")}
-            className="text-5xl font-black text-white sm:text-7xl sm:font-bold md:text-8xl md:font-black"
+            animateLetters={!isRtl}
+            className="text-[clamp(1.875rem,9.5vw,6rem)] font-black text-white sm:font-bold md:font-black"
           />
         </motion.div>
         <motion.p

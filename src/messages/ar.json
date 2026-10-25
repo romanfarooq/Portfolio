@@ -52,6 +52,8 @@
     ]
   },
   "navbar": {
+    "openMenu": "فتح القائمة",
+    "closeMenu": "إغلاق القائمة",
     "brandName": "رومان فاروق",
     "home": "الرئيسية",
     "about": "نبذة",
@@ -198,6 +200,8 @@
       }
     },
     "alerts": {
+      "successLabel": "نجاح",
+      "errorLabel": "فشل",
       "success": "تم إرسال رسالتك!",
       "error": "حدث خطأ ما!",
       "emailError": "فشل إرسال البريد الإلكتروني"

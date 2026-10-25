@@ -52,6 +52,8 @@
     ]
   },
   "navbar": {
+    "openMenu": "Abrir el menú",
+    "closeMenu": "Cerrar el menú",
     "brandName": "Roman Farooq",
     "home": "Inicio",
     "about": "Acerca de",
@@ -198,6 +200,8 @@
       }
     },
     "alerts": {
+      "successLabel": "Éxito",
+      "errorLabel": "Error",
       "success": "¡Tu mensaje ha sido enviado!",
       "error": "¡Algo salió mal!",
       "emailError": "No se pudo enviar el correo"

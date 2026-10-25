@@ -41,10 +41,10 @@ export function getDevicePixelRatio() {
     : 1;
 }
 
-export const getRotationForLocation = ([latitude, longitude]: [
+export function getRotationForLocation([latitude, longitude]: [
   number,
   number
-]) => {
+]) {
   const latitudeRadians = (latitude * Math.PI) / 180;
   const longitudeRadians = (longitude * Math.PI) / 180;
   const cosLatitude = Math.cos(latitudeRadians);
@@ -56,4 +56,15 @@ export const getRotationForLocation = ([latitude, longitude]: [
     phi: Math.atan2(-x, z),
     theta: Math.atan2(y, Math.hypot(x, z))
   };
-};
+}
+
+const graphemeSegmenter =
+  typeof Intl.Segmenter === "function"
+    ? new Intl.Segmenter(undefined, { granularity: "grapheme" })
+    : null;
+
+export function graphemes(text: string) {
+  return graphemeSegmenter
+    ? Array.from(graphemeSegmenter.segment(text), ({ segment }) => segment)
+    : Array.from(text);
+}

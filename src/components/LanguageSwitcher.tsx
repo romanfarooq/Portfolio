@@ -5,7 +5,7 @@ import { hasLocale, useLocale, useTranslations } from "next-intl";
 
 import { cn } from "@/lib/utils";
 import { Languages } from "@/components/icons";
-import { locales, localeLabels } from "@/i18n/routing";
+import { isRtlLocale, locales, localeLabels } from "@/i18n/routing";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import {
   Select,
@@ -45,7 +45,12 @@ export function LanguageSwitcher({
 
   return (
     <div className={cn("relative", className)}>
-      <Select value={locale} disabled={isPending} onValueChange={handleChange}>
+      <Select
+        value={locale}
+        disabled={isPending}
+        onValueChange={handleChange}
+        dir={isRtlLocale(locale) ? "rtl" : "ltr"}
+      >
         <SelectTrigger
           aria-label={t("ariaLabel")}
           className={cn(

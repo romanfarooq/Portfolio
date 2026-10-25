@@ -52,6 +52,8 @@
     ]
   },
   "navbar": {
+    "openMenu": "メニューを開く",
+    "closeMenu": "メニューを閉じる",
     "brandName": "ロマン・ファルーク",
     "home": "ホーム",
     "about": "自己紹介",
@@ -198,6 +200,8 @@
       }
     },
     "alerts": {
+      "successLabel": "送信完了",
+      "errorLabel": "エラー",
       "success": "メッセージを送信しました!",
       "error": "問題が発生しました!",
       "emailError": "メール送信に失敗しました"

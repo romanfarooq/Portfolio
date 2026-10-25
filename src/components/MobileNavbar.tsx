@@ -29,7 +29,9 @@ export function MobileNavbar() {
           {t("brandName")}
         </Link>
         <button
+          aria-expanded={isNavOpen}
           onClick={() => setIsNavOpen((prev) => !prev)}
+          aria-label={isNavOpen ? t("closeMenu") : t("openMenu")}
           className="cursor-pointer text-neutral-300 hover:text-white focus:outline-none"
         >
           {isNavOpen ? (

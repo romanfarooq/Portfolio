@@ -52,6 +52,8 @@
     ]
   },
   "navbar": {
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单",
     "brandName": "罗曼·法鲁克",
     "home": "首页",
     "about": "关于",
@@ -198,6 +200,8 @@
       }
     },
     "alerts": {
+      "successLabel": "成功",
+      "errorLabel": "失败",
       "success": "你的消息已发送！",
       "error": "出了点问题！",
       "emailError": "发送邮件失败"

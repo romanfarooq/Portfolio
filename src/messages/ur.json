@@ -52,6 +52,8 @@
     ]
   },
   "navbar": {
+    "openMenu": "مینو کھولیں",
+    "closeMenu": "مینو بند کریں",
     "brandName": "رومان فاروق",
     "home": "ہوم",
     "about": "تعارف",
@@ -198,6 +200,8 @@
       }
     },
     "alerts": {
+      "successLabel": "کامیاب",
+      "errorLabel": "ناکام",
       "success": "آپ کا پیغام بھیج دیا گیا!",
       "error": "کچھ غلط ہو گیا!",
       "emailError": "ای میل بھیجنے میں ناکامی"
