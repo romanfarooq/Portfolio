@@ -4,12 +4,12 @@ import createGlobe from "cobe";
 import { useRef, useEffect } from "react";
 import { useSpring, useMotionValue } from "motion/react";
 import type { COBEOptions } from "cobe";
-import type { CSSProperties } from "react";
+import type { CSSProperties, PointerEvent } from "react";
 
 import { cn, getRotationForLocation } from "@/lib/utils";
 
 const MOVEMENT_DAMPING = 200;
-const AUTO_ROTATION_SPEED = 0.003;
+const AUTO_ROTATION_SPEED = 0.18; // Radians per second.
 const LAHORE_MARKER_ID = "lahore";
 const LAHORE_INITIAL_PHI_OFFSET = 0.8;
 const LAHORE_COORDINATES: [number, number] = [31.5204, 74.3587];
@@ -48,11 +48,12 @@ interface GlobeProps {
 }
 
 export function Globe({ className, config = GLOBE_CONFIG }: GlobeProps) {
-  const phi = useRef(config.phi ?? 0);
-  const width = useRef(0);
-  const dragStartRotation = useRef(0);
-  const canvasRef = useRef<HTMLCanvasElement>(null);
-  const pointerRef = useRef<number | null>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const dragRef = useRef<{
+    pointerId: number;
+    startX: number;
+    startRotation: number;
+  } | null>(null);
 
   const dragRotation = useMotionValue(0);
   const springRotation = useSpring(dragRotation, {
@@ -61,68 +62,92 @@ export function Globe({ className, config = GLOBE_CONFIG }: GlobeProps) {
     stiffness: 100
   });
 
-  const updatePointerInteraction = (value: number | null) => {
-    pointerRef.current = value;
-    if (canvasRef.current) {
-      canvasRef.current.style.cursor = value !== null ? "grabbing" : "grab";
-    }
-  };
+  function startDragging(event: PointerEvent<HTMLDivElement>) {
+    if (!event.isPrimary || event.button !== 0 || dragRef.current) return;
 
-  const updateMovement = (clientX: number) => {
-    if (pointerRef.current !== null) {
-      const delta = clientX - pointerRef.current;
-      dragRotation.set(dragStartRotation.current + delta / MOVEMENT_DAMPING);
-    }
-  };
+    event.currentTarget.setPointerCapture(event.pointerId);
+    dragRef.current = {
+      pointerId: event.pointerId,
+      startX: event.clientX,
+      startRotation: dragRotation.get()
+    };
+  }
 
-  const startDragging = (clientX: number) => {
-    dragStartRotation.current = dragRotation.get();
-    updatePointerInteraction(clientX);
-  };
+  function updateDragging(event: PointerEvent<HTMLDivElement>) {
+    const drag = dragRef.current;
+
+    if (!drag || drag.pointerId !== event.pointerId) return;
+
+    const delta = (event.clientX - drag.startX) / MOVEMENT_DAMPING;
+    dragRotation.set(drag.startRotation + delta);
+  }
+
+  function stopDragging(event: PointerEvent<HTMLDivElement>) {
+    if (dragRef.current?.pointerId !== event.pointerId) return;
+
+    dragRef.current = null;
+    if (event.currentTarget.hasPointerCapture(event.pointerId)) {
+      event.currentTarget.releasePointerCapture(event.pointerId);
+    }
+  }
 
   useEffect(() => {
+    const container = containerRef.current;
+
+    if (!container) return;
+
+    // Each setup owns a fresh canvas: COBE mutates its DOM and WebGL state.
+    const canvas = document.createElement("canvas");
+    canvas.className = "block size-full";
+    container.append(canvas);
+
+    let size = container.clientWidth;
+    let phi = config.phi;
+    let previousTime: number | undefined;
     let animationFrame = 0;
 
-    const onResize = () => {
-      if (canvasRef.current) {
-        width.current = canvasRef.current.offsetWidth;
-      }
-    };
-
-    onResize();
-    window.addEventListener("resize", onResize);
-    phi.current = config.phi ?? 0;
-
-    const globe = createGlobe(canvasRef.current!, {
+    const globe = createGlobe(canvas, {
       ...config,
-      width: width.current * 2,
-      height: width.current * 2
+      width: size * 2,
+      height: size * 2
     });
 
-    const animate = () => {
-      if (pointerRef.current === null) phi.current += AUTO_ROTATION_SPEED;
+    const resizeObserver = new ResizeObserver(() => {
+      const nextSize = container.clientWidth;
 
-      globe.update({
-        phi: phi.current + springRotation.get(),
-        width: width.current * 2,
-        height: width.current * 2
-      });
+      if (nextSize === size) return;
+
+      size = nextSize;
+      globe.update({ width: size * 2, height: size * 2 });
+    });
+
+    resizeObserver.observe(container);
+
+    const animate = (time: number) => {
+      // Limit the step when returning from a background tab.
+      const delta =
+        previousTime === undefined
+          ? 0
+          : Math.min((time - previousTime) / 1000, 0.1);
+
+      previousTime = time;
+
+      if (!dragRef.current) phi += AUTO_ROTATION_SPEED * delta;
+
+      globe.update({ phi: phi + springRotation.get() });
+      container.style.opacity = "1";
 
       animationFrame = requestAnimationFrame(animate);
     };
 
-    animate();
-
-    setTimeout(() => {
-      if (canvasRef.current) {
-        canvasRef.current.style.opacity = "1";
-      }
-    }, 0);
+    animationFrame = requestAnimationFrame(animate);
 
     return () => {
       cancelAnimationFrame(animationFrame);
+      resizeObserver.disconnect();
       globe.destroy();
-      window.removeEventListener("resize", onResize);
+      container.replaceChildren();
+      dragRef.current = null;
     };
   }, [springRotation, config]);
 
@@ -133,13 +158,14 @@ export function Globe({ className, config = GLOBE_CONFIG }: GlobeProps) {
         className
       )}
     >
-      <canvas
-        ref={canvasRef}
-        className="size-120 opacity-0 transition-opacity duration-500 contain-layout contain-paint contain-size"
-        onPointerUp={() => updatePointerInteraction(null)}
-        onPointerOut={() => updatePointerInteraction(null)}
-        onPointerDown={(e) => startDragging(e.clientX)}
-        onPointerMove={(e) => updateMovement(e.clientX)}
+      <div
+        ref={containerRef}
+        className="size-120 cursor-grab touch-none opacity-0 transition-opacity duration-500 contain-layout contain-paint contain-size active:cursor-grabbing"
+        onPointerDown={startDragging}
+        onPointerMove={updateDragging}
+        onPointerUp={stopDragging}
+        onPointerCancel={stopDragging}
+        onLostPointerCapture={stopDragging}
       />
       <div
         aria-hidden="true"

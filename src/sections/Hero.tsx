@@ -33,7 +33,7 @@ export function Hero() {
       <ParallaxBackground />
       <figure className="absolute inset-0 h-screen w-screen">
         <Canvas camera={{ position: [0, 1, 3] }}>
-          <Suspense fallback={<Loader />}>
+          <Suspense fallback={null}>
             <Environment preset="city" />
             <Float rotationIntensity={isMobile ? 1 : 0}>
               <Astronaut {...astronautConfig} />
@@ -43,6 +43,7 @@ export function Hero() {
             </Float>
           </Suspense>
         </Canvas>
+        <Loader />
       </figure>
     </section>
   );

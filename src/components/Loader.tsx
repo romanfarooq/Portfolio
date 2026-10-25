@@ -1,9 +1,19 @@
-import { Html } from "@react-three/drei";
+"use client";
+
+import { useProgress } from "@react-three/drei";
 
 export function Loader() {
+  const active = useProgress((state) => state.active);
+
+  if (!active) return null;
+
   return (
-    <Html className="loader">
-      <div className="loading" />
-    </Html>
+    <div
+      role="status"
+      aria-label="Loading 3D scene"
+      className="loader pointer-events-none"
+    >
+      <div className="loading" aria-hidden="true" />
+    </div>
   );
 }
