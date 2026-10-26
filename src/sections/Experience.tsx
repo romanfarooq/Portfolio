@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 import { experiences } from "@/constants";
 import { Timeline } from "@/components/Timeline";
 import { ExperienceDates } from "@/components/ExperienceDates";
-import { ExperienceIllustration } from "@/components/ExperienceIllustration";
+import { Orbit, ExternalLink } from "@/components/icons";
 
 export function Experience() {
   const t = useTranslations("experience");
@@ -16,7 +16,7 @@ export function Experience() {
     <Timeline
       id="experience"
       title={t("title")}
-      illustration={<ExperienceIllustration />}
+      illustration={<Orbit />}
       entries={experiences.map((experience) => ({
         id: experience.id,
         header: (
@@ -43,16 +43,7 @@ export function Experience() {
                     {experience.id === "suparco"
                       ? "SUPARCO"
                       : experience.company}
-                    <svg
-                      aria-hidden="true"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      className="group-hover:text-lavender size-4 shrink-0 text-neutral-500 transition-colors"
-                    >
-                      <path d="M7 17 17 7M7 7h10v10" />
-                    </svg>
+                    <ExternalLink className="group-hover:text-lavender size-4 shrink-0 text-neutral-500 transition-colors" />
                   </a>
                 </h3>
                 {experience.positions.some(

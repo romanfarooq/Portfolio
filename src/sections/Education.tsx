@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 import { educations } from "@/constants";
 import { Timeline } from "@/components/Timeline";
 import { ExperienceDates } from "@/components/ExperienceDates";
-import { EducationIllustration } from "@/components/EducationIllustration";
+import { Telescope, ExternalLink } from "@/components/icons";
 
 export function Education() {
   const t = useTranslations("education");
@@ -16,7 +16,7 @@ export function Education() {
     <Timeline
       id="education"
       title={t("title")}
-      illustration={<EducationIllustration />}
+      illustration={<Telescope />}
       entries={educations.map((education) => ({
         id: education.id,
         header: (
@@ -42,16 +42,7 @@ export function Education() {
                   <span className="whitespace-pre-line">
                     {t(education.institution)}
                   </span>
-                  <svg
-                    aria-hidden="true"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                    className="group-hover:text-lavender size-4 shrink-0 text-neutral-500 transition-colors"
-                  >
-                    <path d="M7 17 17 7M7 7h10v10" />
-                  </svg>
+                  <ExternalLink className="group-hover:text-lavender size-4 shrink-0 text-neutral-500 transition-colors" />
                 </a>
               </h3>
               <p className="mt-1 text-xs leading-relaxed text-neutral-500">
