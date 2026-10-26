@@ -9,9 +9,8 @@ export function ExperienceDates({
   start: string;
   end: string | null;
 }) {
-  const t = useTranslations("experience");
-
   const format = useFormatter();
+  const t = useTranslations("experience");
 
   const month = (value: string) =>
     format.dateTime(new Date(`${value}-01T12:00:00Z`), {
