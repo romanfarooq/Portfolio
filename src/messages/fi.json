@@ -109,18 +109,24 @@
     "hybrid": "Hybridityö",
     "location": "Lahore, Punjab, Pakistan",
     "limelight": {
+      "company": "LIMELIGHT",
       "title": "Ohjelmistoinsinööri",
       "contents": [
         "Työskentelen muotikaupan ja valmistuksen sisäisen ERP-alustan full-stack-kehityksessä. Alusta kattaa tuotteiden elinkaaren hallinnan, tuotannonohjauksen, talouden, vähittäiskaupan, varaston ja muut liiketoiminnot."
       ]
     },
     "suparco": {
+      "company": "SUPARCO",
+      "fullName": "Pakistanin avaruus- ja yläilmakehätutkimuskomissio (SUPARCO)",
       "title": "Tietojenkäsittelytieteen harjoittelija",
       "contents": [
         "Tein yhteistyötä satelliittiohjauksen ja kantoaaltojen operointitiimien kanssa sekä sain käytännön kokemusta kantoaaltojen seurannasta, palvelujen saatavuustarkistuksista, häiriöiden havainnoinnista ja maa-asemien työnkuluista.",
         "Tuin PAKSAT-1R- ja PAKSAT-MM1-viestintäpalveluihin liittyviä tehtäviä, kuten C-, Ku- ja Ka-kaistojen RF-järjestelmiä, VSAT- ja antennitoimintoja, HTS-verkonhallintaa sekä satelliittiviestinnän seurannan ja data-analyysin ohjelmistotyökaluja.",
         "Osallistuin sisäisten teknisten ohjelmistojen kehittämiseen toiminnan seurantaa, työnkulkujen automatisointia, tiedonhallintaa ja visualisointia varten."
       ]
+    },
+    "vixels": {
+      "company": "Vixels.dev"
     },
     "vixelsEngineer": {
       "title": "Ohjelmistoinsinööri",
@@ -136,6 +142,7 @@
       ]
     },
     "pepsico": {
+      "company": "PepsiCo Pakistan",
       "title": "Toimitusketjuharjoittelija",
       "contents": [
         "Toteutin varaosien kartoitus- ja kriittisyysanalyysiprojektin HFM-, ABC- ja XYZ-menetelmillä, laadin kolmen vuoden varastoennusteen ja arvioin paikallistamista, brändimerkintöjen poistamista ja vaihtoehtoisia toimittajia kunnossapidon varastosuunnittelun parantamiseksi."

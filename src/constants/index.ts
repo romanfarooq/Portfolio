@@ -43,7 +43,7 @@ export const experiences = [
   {
     id: "limelight",
     logo: "/assets/images/limelight.webp",
-    company: "LIMELIGHT",
+    company: "limelight.company",
     href: "https://www.limelight.pk/",
     employment: "fullTime",
     workplace: "onSite",
@@ -52,8 +52,7 @@ export const experiences = [
   {
     id: "suparco",
     logo: "/assets/images/suparco.webp",
-    company:
-      "Pakistan Space and Upper Atmosphere Research Commission (SUPARCO)",
+    company: "suparco.company",
     href: "https://suparco.gov.pk/",
     employment: "internship",
     workplace: "onSite",
@@ -62,7 +61,7 @@ export const experiences = [
   {
     id: "vixels",
     logo: "/assets/images/vixels.webp",
-    company: "Vixels.dev",
+    company: "vixels.company",
     href: "https://vixels.dev/",
     employment: "fullTime",
     workplace: "onSite",
@@ -74,7 +73,7 @@ export const experiences = [
   {
     id: "pepsico",
     logo: "/assets/images/pepsico.webp",
-    company: "PepsiCo Pakistan",
+    company: "pepsico.company",
     href: "https://www.pepsico.com/",
     employment: "internship",
     workplace: "hybrid",

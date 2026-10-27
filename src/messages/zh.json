@@ -109,18 +109,24 @@
     "hybrid": "混合办公",
     "location": "巴基斯坦旁遮普省拉合尔",
     "limelight": {
+      "company": "LIMELIGHT",
       "title": "软件工程师",
       "contents": [
         "负责面向时尚零售与制造的内部ERP平台全栈开发，涵盖产品生命周期管理、制造执行、财务、零售、库存及其他业务运营。"
       ]
     },
     "suparco": {
+      "company": "SUPARCO",
+      "fullName": "巴基斯坦空间与上层大气研究委员会（SUPARCO）",
       "title": "计算机科学实习生",
       "contents": [
         "与卫星控制及载波运营团队合作，积累了载波监测、服务可用性检查、干扰观测和地面站工作流程的实践经验。",
         "支持PAKSAT-1R和PAKSAT-MM1通信服务相关工作，包括C、Ku、Ka波段射频系统、VSAT及天线操作、HTS网络管理，以及卫星通信监测和数据分析软件工具。",
         "参与内部工程软件开发，用于运营监控、工作流程自动化、数据管理和可视化。"
       ]
+    },
+    "vixels": {
+      "company": "Vixels.dev"
     },
     "vixelsEngineer": {
       "title": "软件工程师",
@@ -136,6 +142,7 @@
       ]
     },
     "pepsico": {
+      "company": "百事公司巴基斯坦",
       "title": "供应链实习生",
       "contents": [
         "运用HFM、ABC和XYZ方法完成备件梳理与关键性分析项目，制定三年库存预测，并评估本地化、去品牌化及替代供应商采购方案，以改善维护库存规划。"

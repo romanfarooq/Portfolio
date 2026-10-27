@@ -22,7 +22,7 @@ export function ParallaxBackground() {
   return (
     <div
       ref={backgroundRef}
-      className="absolute inset-0 overflow-hidden bg-black/40"
+      className="absolute inset-x-0 top-0 h-screen overflow-hidden bg-black/40"
     >
       <figure className="relative h-screen overflow-hidden will-change-transform">
         {/* Background Layer - Sky */}

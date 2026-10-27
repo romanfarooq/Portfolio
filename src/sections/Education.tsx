@@ -23,7 +23,7 @@ export function Education() {
           <div className="flex items-start gap-4">
             <Image
               src={education.logo}
-              alt={education.institution}
+              alt={t(education.institution)}
               width={56}
               height={56}
               sizes="56px"

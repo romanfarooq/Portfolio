@@ -139,18 +139,24 @@
     "hybrid": "Hybridně",
     "location": "Láhaur, Paňdžáb, Pákistán",
     "limelight": {
+      "company": "LIMELIGHT",
       "title": "Softwarový inženýr",
       "contents": [
         "Pracuji na full-stack vývoji interní platformy ERP pro módní maloobchod a výrobu, zahrnující správu životního cyklu produktů, řízení výroby, finance, maloobchod, zásoby a další podnikové procesy."
       ]
     },
     "suparco": {
+      "company": "SUPARCO",
+      "fullName": "Pákistánská komise pro výzkum vesmíru a horních vrstev atmosféry (SUPARCO)",
       "title": "Stážista v informatice",
       "contents": [
         "Spolupracoval jsem s týmy řízení družic a provozu nosných a získal praktické zkušenosti s monitorováním nosných, kontrolami dostupnosti služeb, sledováním rušení a postupy pozemních stanic.",
         "Podporoval jsem komunikační služby PAKSAT-1R a PAKSAT-MM1, včetně RF systémů v pásmech C, Ku a Ka, provozu VSAT a antén, správy sítí HTS a softwarových nástrojů pro monitorování satelitní komunikace a analýzu dat.",
         "Podílel jsem se na vývoji interního technického softwaru pro provozní monitoring, automatizaci pracovních postupů, správu dat a vizualizaci."
       ]
+    },
+    "vixels": {
+      "company": "Vixels.dev"
     },
     "vixelsEngineer": {
       "title": "Softwarový inženýr",
@@ -166,6 +172,7 @@
       ]
     },
     "pepsico": {
+      "company": "PepsiCo Pákistán",
       "title": "Stážista v dodavatelském řetězci",
       "contents": [
         "Dokončil jsem projekt mapování náhradních dílů a analýzy kritičnosti metodami HFM, ABC a XYZ, vytvořil tříletý výhled zásob a vyhodnotil lokalizaci, odstranění značkového označení a alternativní dodavatele pro lepší plánování zásob údržby."

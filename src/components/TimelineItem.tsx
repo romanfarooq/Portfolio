@@ -1,10 +1,5 @@
 import { useRef, type ReactNode } from "react";
-import {
-  motion,
-  useScroll,
-  useTransform,
-  useReducedMotion
-} from "motion/react";
+import { motion, useScroll, useTransform } from "motion/react";
 
 import { cn } from "@/lib/utils";
 
@@ -15,16 +10,14 @@ export interface TimelineEntry {
 }
 
 export function TimelineItem({
-  entry,
-  last
+  last,
+  entry
 }: {
-  entry: TimelineEntry;
   last: boolean;
+  entry: TimelineEntry;
 }) {
   const segmentRef = useRef<HTMLDivElement>(null);
   const waypointRef = useRef<HTMLDivElement>(null);
-
-  const reduceMotion = useReducedMotion();
 
   const { scrollYProgress } = useScroll({
     target: segmentRef,
@@ -37,7 +30,7 @@ export function TimelineItem({
   });
 
   const color = useTransform(waypointProgress, (progress) =>
-    progress > 0 ? "var(--color-lavender)" : "#404040"
+    progress > 0 ? "var(--color-lavender)" : "var(--color-graphite)"
   );
 
   return (
@@ -51,14 +44,12 @@ export function TimelineItem({
         )}
       >
         <motion.div
-          data-timeline-progress
           style={{ scaleY: scrollYProgress }}
           className="from-lavender/30 to-lavender absolute inset-0 origin-top bg-linear-to-b"
         />
       </div>
       <div
         ref={waypointRef}
-        data-timeline-waypoint
         aria-hidden="true"
         className="bg-midnight absolute -inset-2 top-11 z-10 flex size-8 items-center justify-center rounded-full sm:-inset-1 sm:top-13"
       >
@@ -69,10 +60,8 @@ export function TimelineItem({
       </div>
       <motion.div
         initial={false}
-        whileInView={
-          reduceMotion ? undefined : { opacity: [0.65, 1], y: [12, 0] }
-        }
         transition={{ duration: 0.55 }}
+        whileInView={{ opacity: [0.65, 1] }}
         viewport={{ once: true, amount: 0.1 }}
         className="grid gap-6 border-b border-white/8 py-8 group-last:border-0 sm:py-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.6fr)] lg:gap-12"
       >

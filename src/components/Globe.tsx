@@ -50,8 +50,8 @@ interface GlobeProps {
 export function Globe({ className, config = GLOBE_CONFIG }: GlobeProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const dragRef = useRef<{
-    pointerId: number;
     startX: number;
+    pointerId: number;
     startRotation: number;
   } | null>(null);
 
@@ -148,7 +148,7 @@ export function Globe({ className, config = GLOBE_CONFIG }: GlobeProps) {
       container.replaceChildren();
       dragRef.current = null;
     };
-  }, [springRotation, config]);
+  }, [config, springRotation]);
 
   return (
     <div

@@ -109,18 +109,24 @@
     "hybrid": "Hybrid",
     "location": "Lahore, Punjab, Pakistan",
     "limelight": {
+      "company": "LIMELIGHT",
       "title": "Softwareingenieur",
       "contents": [
         "Ich arbeite an der Full-Stack-Entwicklung einer internen ERP-Plattform für Modehandel und Fertigung. Sie umfasst Produktlebenszyklusmanagement, Fertigungssteuerung, Finanzen, Einzelhandel, Lagerbestand und weitere Geschäftsprozesse."
       ]
     },
     "suparco": {
+      "company": "SUPARCO",
+      "fullName": "Pakistanische Kommission für Weltraum- und obere Atmosphärenforschung (SUPARCO)",
       "title": "Informatikpraktikant",
       "contents": [
         "Ich arbeitete mit Teams für Satellitensteuerung und Trägerbetrieb zusammen und sammelte praktische Erfahrung bei Trägerüberwachung, Prüfungen der Dienstverfügbarkeit, Störungsbeobachtung und Bodenstationsabläufen.",
         "Ich unterstützte Kommunikationsdienste von PAKSAT-1R und PAKSAT-MM1, darunter HF-Systeme im C-, Ku- und Ka-Band, VSAT- und Antennenbetrieb, HTS-Netzwerkmanagement sowie Software zur Überwachung der Satellitenkommunikation und Datenanalyse.",
         "Ich wirkte an interner Engineering-Software für Betriebsüberwachung, Workflow-Automatisierung, Datenverwaltung und Visualisierung mit."
       ]
+    },
+    "vixels": {
+      "company": "Vixels.dev"
     },
     "vixelsEngineer": {
       "title": "Softwareingenieur",
@@ -136,6 +142,7 @@
       ]
     },
     "pepsico": {
+      "company": "PepsiCo Pakistan",
       "title": "Praktikant im Supply Chain Management",
       "contents": [
         "Ich schloss ein Projekt zur Erfassung von Ersatzteilen und Kritikalitätsanalyse mit HFM-, ABC- und XYZ-Methoden ab, erstellte eine dreijährige Bestandsprognose und bewertete Lokalisierung, den Bezug ohne Markenkennzeichnung sowie alternative Lieferanten zur Verbesserung der Instandhaltungsbestandsplanung."

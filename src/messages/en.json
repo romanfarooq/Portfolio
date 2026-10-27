@@ -139,18 +139,24 @@
     "hybrid": "Hybrid",
     "location": "Lahore, Punjab, Pakistan",
     "limelight": {
+      "company": "LIMELIGHT",
       "title": "Software Engineer",
       "contents": [
         "Working on the full-stack development of an in-house ERP platform for fashion retail and manufacturing, covering product lifecycle management, manufacturing execution, finance, retail, inventory, and broader business operations."
       ]
     },
     "suparco": {
+      "company": "SUPARCO",
+      "fullName": "Pakistan Space and Upper Atmosphere Research Commission (SUPARCO)",
       "title": "Computer Science Intern",
       "contents": [
         "Collaborated with satellite-control and carrier-operations teams, gaining practical experience in carrier monitoring, service-availability checks, interference observation, and ground-station workflows.",
         "Supported activities involving PAKSAT-1R and PAKSAT-MM1 communication services, including C-, Ku-, and Ka-band RF systems, VSAT and antenna operations, HTS network management, and software tools for satellite-communications monitoring and data analysis.",
         "Contributed to the development of in-house engineering software for operational monitoring, workflow automation, data management, and visualization."
       ]
+    },
+    "vixels": {
+      "company": "Vixels.dev"
     },
     "vixelsEngineer": {
       "title": "Software Engineer",
@@ -166,6 +172,7 @@
       ]
     },
     "pepsico": {
+      "company": "PepsiCo Pakistan",
       "title": "Supply Chain Intern",
       "contents": [
         "Completed a spares-mapping and criticality-analysis project using HFM, ABC, and XYZ methods, producing a three-year inventory projection and evaluating localization, unbadging, and alternative-vendor sourcing to strengthen maintenance-inventory planning."

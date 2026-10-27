@@ -23,7 +23,7 @@ export function Experience() {
           <div className="flex items-start gap-4">
             <Image
               src={experience.logo}
-              alt={experience.company}
+              alt={t(experience.company)}
               width={56}
               height={56}
               sizes="56px"
@@ -40,9 +40,7 @@ export function Experience() {
                     rel="noopener noreferrer"
                     className="group hover:text-lavender inline-flex items-center gap-2 transition-colors focus-visible:underline"
                   >
-                    {experience.id === "suparco"
-                      ? "SUPARCO"
-                      : experience.company}
+                    {t(experience.company)}
                     <ExternalLink className="group-hover:text-lavender size-4 shrink-0 text-neutral-500 transition-colors" />
                   </a>
                 </h3>
@@ -57,7 +55,7 @@ export function Experience() {
               </div>
               {experience.id === "suparco" && (
                 <p className="mt-1 max-w-md text-xs leading-relaxed text-neutral-400">
-                  {experience.company}
+                  {t("suparco.fullName")}
                 </p>
               )}
               <p className="mt-1.5 text-xs text-neutral-400 sm:text-[13px]">

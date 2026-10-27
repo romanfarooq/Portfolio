@@ -109,18 +109,24 @@
     "hybrid": "Hybride",
     "location": "Lahore, Punjab, Pakistan",
     "limelight": {
+      "company": "LIMELIGHT",
       "title": "Software-engineer",
       "contents": [
         "Ik werk aan de full-stackontwikkeling van een intern ERP-platform voor modedetailhandel en productie, met productlevenscyclusbeheer, productie-uitvoering, financiën, retail, voorraad en bredere bedrijfsprocessen."
       ]
     },
     "suparco": {
+      "company": "SUPARCO",
+      "fullName": "Pakistaanse commissie voor ruimteonderzoek en onderzoek van de bovenste atmosfeer (SUPARCO)",
       "title": "Stagiair informatica",
       "contents": [
         "Ik werkte samen met teams voor satellietbesturing en draaggolfoperaties en deed praktijkervaring op met draaggolfmonitoring, controles van de beschikbaarheid van diensten, interferentiewaarneming en werkprocessen van grondstations.",
         "Ik ondersteunde activiteiten voor communicatiediensten van PAKSAT-1R en PAKSAT-MM1, waaronder RF-systemen in de C-, Ku- en Ka-band, VSAT- en antenneoperaties, HTS-netwerkbeheer en software voor satellietcommunicatiemonitoring en data-analyse.",
         "Ik droeg bij aan interne engineeringsoftware voor operationele monitoring, workflowautomatisering, gegevensbeheer en visualisatie."
       ]
+    },
+    "vixels": {
+      "company": "Vixels.dev"
     },
     "vixelsEngineer": {
       "title": "Software-engineer",
@@ -136,6 +142,7 @@
       ]
     },
     "pepsico": {
+      "company": "PepsiCo Pakistan",
       "title": "Stagiair supply chain",
       "contents": [
         "Ik voltooide een project voor het in kaart brengen van reserveonderdelen en kriticiteitsanalyse met HFM-, ABC- en XYZ-methoden, maakte een driejarige voorraadprognose en beoordeelde lokalisatie, levering zonder merklabel en alternatieve leveranciers om onderhoudsvoorraadplanning te verbeteren."

@@ -109,18 +109,24 @@
     "hybrid": "Hybride",
     "location": "Lahore, Pendjab, Pakistan",
     "limelight": {
+      "company": "LIMELIGHT",
       "title": "Ingénieur logiciel",
       "contents": [
         "Je travaille au développement full-stack d’une plateforme ERP interne pour la distribution et la fabrication de mode, couvrant le cycle de vie des produits, l’exécution de la production, la finance, la vente au détail, les stocks et les autres opérations de l’entreprise."
       ]
     },
     "suparco": {
+      "company": "SUPARCO",
+      "fullName": "Commission pakistanaise de recherche spatiale et sur la haute atmosphère (SUPARCO)",
       "title": "Stagiaire en informatique",
       "contents": [
         "J’ai collaboré avec les équipes de contrôle des satellites et d’exploitation des porteuses, acquérant une expérience pratique de la surveillance des porteuses, des contrôles de disponibilité des services, de l’observation des interférences et des processus des stations au sol.",
         "J’ai soutenu des activités liées aux services de communication PAKSAT-1R et PAKSAT-MM1 : systèmes RF en bandes C, Ku et Ka, exploitation VSAT et des antennes, gestion des réseaux HTS, logiciels de surveillance des communications satellitaires et analyse de données.",
         "J’ai contribué au développement de logiciels d’ingénierie internes pour le suivi opérationnel, l’automatisation des processus, la gestion des données et la visualisation."
       ]
+    },
+    "vixels": {
+      "company": "Vixels.dev"
     },
     "vixelsEngineer": {
       "title": "Ingénieur logiciel",
@@ -136,6 +142,7 @@
       ]
     },
     "pepsico": {
+      "company": "PepsiCo Pakistan",
       "title": "Stagiaire en chaîne logistique",
       "contents": [
         "J’ai réalisé un projet de cartographie des pièces de rechange et d’analyse de criticité selon les méthodes HFM, ABC et XYZ, produit une projection des stocks sur trois ans et évalué la localisation, l’approvisionnement sans marque et les fournisseurs alternatifs pour améliorer la planification des stocks de maintenance."

@@ -109,18 +109,24 @@
     "hybrid": "Ibrido",
     "location": "Lahore, Punjab, Pakistan",
     "limelight": {
+      "company": "LIMELIGHT",
       "title": "Ingegnere software",
       "contents": [
         "Lavoro allo sviluppo full-stack di una piattaforma ERP interna per il commercio e la produzione di moda, che comprende gestione del ciclo di vita del prodotto, esecuzione della produzione, finanza, vendita al dettaglio, inventario e altre operazioni aziendali."
       ]
     },
     "suparco": {
+      "company": "SUPARCO",
+      "fullName": "Commissione pakistana per la ricerca spaziale e dell’alta atmosfera (SUPARCO)",
       "title": "Tirocinante in informatica",
       "contents": [
         "Ho collaborato con i team di controllo satellitare e gestione delle portanti, acquisendo esperienza pratica nel monitoraggio delle portanti, nei controlli di disponibilità dei servizi, nell’osservazione delle interferenze e nei flussi delle stazioni di terra.",
         "Ho supportato attività relative ai servizi di comunicazione PAKSAT-1R e PAKSAT-MM1, inclusi sistemi RF nelle bande C, Ku e Ka, operazioni VSAT e delle antenne, gestione delle reti HTS e strumenti software per monitoraggio delle comunicazioni satellitari e analisi dei dati.",
         "Ho contribuito allo sviluppo di software di ingegneria interno per monitoraggio operativo, automazione dei flussi di lavoro, gestione dei dati e visualizzazione."
       ]
+    },
+    "vixels": {
+      "company": "Vixels.dev"
     },
     "vixelsEngineer": {
       "title": "Ingegnere software",
@@ -136,6 +142,7 @@
       ]
     },
     "pepsico": {
+      "company": "PepsiCo Pakistan",
       "title": "Tirocinante nella supply chain",
       "contents": [
         "Ho completato un progetto di mappatura dei ricambi e analisi della criticità con metodi HFM, ABC e XYZ, elaborando una previsione delle scorte a tre anni e valutando localizzazione, rimozione dei marchi e fornitori alternativi per migliorare la pianificazione delle scorte di manutenzione."

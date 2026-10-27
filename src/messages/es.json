@@ -109,18 +109,24 @@
     "hybrid": "Híbrido",
     "location": "Lahore, Punjab, Pakistán",
     "limelight": {
+      "company": "LIMELIGHT",
       "title": "Ingeniero de software",
       "contents": [
         "Trabajo en el desarrollo full-stack de una plataforma ERP interna para el comercio y la fabricación de moda, que abarca gestión del ciclo de vida del producto, ejecución de fabricación, finanzas, venta minorista, inventario y otras operaciones empresariales."
       ]
     },
     "suparco": {
+      "company": "SUPARCO",
+      "fullName": "Comisión de Investigación Espacial y de la Alta Atmósfera de Pakistán (SUPARCO)",
       "title": "Becario de informática",
       "contents": [
         "Colaboré con equipos de control de satélites y operaciones de portadoras, adquiriendo experiencia práctica en monitoreo de portadoras, comprobaciones de disponibilidad del servicio, observación de interferencias y procesos de estaciones terrestres.",
         "Apoyé servicios de comunicación de PAKSAT-1R y PAKSAT-MM1, incluidos sistemas RF en bandas C, Ku y Ka, operaciones de VSAT y antenas, gestión de redes HTS y herramientas de monitoreo de comunicaciones satelitales y análisis de datos.",
         "Contribuí al desarrollo de software de ingeniería interno para monitoreo operativo, automatización de procesos, gestión de datos y visualización."
       ]
+    },
+    "vixels": {
+      "company": "Vixels.dev"
     },
     "vixelsEngineer": {
       "title": "Ingeniero de software",
@@ -136,6 +142,7 @@
       ]
     },
     "pepsico": {
+      "company": "PepsiCo Pakistán",
       "title": "Becario de cadena de suministro",
       "contents": [
         "Completé un proyecto de mapeo de repuestos y análisis de criticidad con métodos HFM, ABC y XYZ, elaborando una proyección de inventario a tres años y evaluando localización, eliminación de marcas y proveedores alternativos para mejorar la planificación del inventario de mantenimiento."

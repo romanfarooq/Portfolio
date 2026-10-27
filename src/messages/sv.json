@@ -109,18 +109,24 @@
     "hybrid": "Hybrid",
     "location": "Lahore, Punjab, Pakistan",
     "limelight": {
+      "company": "LIMELIGHT",
       "title": "Mjukvaruingenjör",
       "contents": [
         "Jag arbetar med fullstackutveckling av en intern ERP-plattform för modehandel och tillverkning. Den omfattar produktlivscykelhantering, tillverkningsstyrning, ekonomi, detaljhandel, lager och övrig affärsverksamhet."
       ]
     },
     "suparco": {
+      "company": "SUPARCO",
+      "fullName": "Pakistans kommission för rymd- och övre atmosfärforskning (SUPARCO)",
       "title": "Praktikant inom datavetenskap",
       "contents": [
         "Jag samarbetade med team för satellitstyrning och bärvågsdrift och fick praktisk erfarenhet av bärvågsövervakning, kontroller av tjänstetillgänglighet, störningsobservation och markstationers arbetsflöden.",
         "Jag stödde aktiviteter kring kommunikationstjänsterna PAKSAT-1R och PAKSAT-MM1, inklusive RF-system i C-, Ku- och Ka-band, VSAT- och antenndrift, HTS-nätverkshantering samt mjukvaruverktyg för satellitkommunikationsövervakning och dataanalys.",
         "Jag bidrog till intern ingenjörsmjukvara för driftövervakning, automatisering av arbetsflöden, datahantering och visualisering."
       ]
+    },
+    "vixels": {
+      "company": "Vixels.dev"
     },
     "vixelsEngineer": {
       "title": "Mjukvaruingenjör",
@@ -136,6 +142,7 @@
       ]
     },
     "pepsico": {
+      "company": "PepsiCo Pakistan",
       "title": "Praktikant inom försörjningskedjan",
       "contents": [
         "Jag slutförde ett projekt för reservdelskartläggning och kritikalitetsanalys med HFM-, ABC- och XYZ-metoder, tog fram en treårig lagerprognos och utvärderade lokalisering, inköp utan varumärkesmärkning och alternativa leverantörer för att stärka planeringen av underhållslager."
