@@ -1,5 +1,3 @@
-"use client";
-
 import { useProgress } from "@react-three/drei";
 
 export function Loader() {

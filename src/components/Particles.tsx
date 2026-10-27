@@ -144,29 +144,32 @@ export function Particles({
     resizeTimeout.current = setTimeout(setupCanvas, 200);
   }, [setupCanvas]);
 
-  const animateParticles = useCallback(() => {
-    clearContext();
+  const animateParticles = useCallback(
+    function animate() {
+      clearContext();
 
-    for (let index = 0; index < circles.current.length; index++) {
-      const circle = circles.current[index];
+      for (let index = 0; index < circles.current.length; index++) {
+        const circle = circles.current[index];
 
-      updateCirclePosition(circle);
+        updateCirclePosition(circle);
 
-      renderCircleParticle(circle);
+        renderCircleParticle(circle);
 
-      if (isCircleOutOfBounds(circle)) {
-        circles.current[index] = createCircle();
+        if (isCircleOutOfBounds(circle)) {
+          circles.current[index] = createCircle();
+        }
       }
-    }
 
-    rafID.current = requestAnimationFrame(animateParticles);
-  }, [
-    createCircle,
-    clearContext,
-    isCircleOutOfBounds,
-    updateCirclePosition,
-    renderCircleParticle
-  ]);
+      rafID.current = requestAnimationFrame(animate);
+    },
+    [
+      createCircle,
+      clearContext,
+      isCircleOutOfBounds,
+      updateCirclePosition,
+      renderCircleParticle
+    ]
+  );
 
   useEffect(() => {
     context.current = canvasRef.current?.getContext("2d") || null;

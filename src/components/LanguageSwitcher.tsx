@@ -1,5 +1,3 @@
-"use client";
-
 import { useTransition } from "react";
 import { hasLocale, useLocale, useTranslations } from "next-intl";
 
@@ -38,7 +36,6 @@ export function LanguageSwitcher({
 
     startTransition(() => {
       const href = `${pathname}${window.location.hash}`;
-
       router.replace(href, { locale: nextLocale, scroll: false });
     });
   };

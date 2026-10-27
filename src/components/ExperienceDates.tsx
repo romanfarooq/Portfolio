@@ -1,5 +1,3 @@
-"use client";
-
 import { useFormatter, useTranslations } from "next-intl";
 
 export function ExperienceDates({
