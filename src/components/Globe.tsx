@@ -9,7 +9,7 @@ import type { CSSProperties, PointerEvent } from "react";
 import { cn, getRotationForLocation } from "@/lib/utils";
 
 const MOVEMENT_DAMPING = 200;
-const AUTO_ROTATION_SPEED = 0.18; // Radians per second.
+const AUTO_ROTATION_SPEED = 0.18;
 const LAHORE_MARKER_ID = "lahore";
 const LAHORE_INITIAL_PHI_OFFSET = 0.8;
 const LAHORE_COORDINATES: [number, number] = [31.5204, 74.3587];
@@ -96,35 +96,35 @@ export function Globe({ className, config = GLOBE_CONFIG }: GlobeProps) {
 
     if (!container) return;
 
-    // Each setup owns a fresh canvas: COBE mutates its DOM and WebGL state.
     const canvas = document.createElement("canvas");
     canvas.className = "block size-full";
     container.append(canvas);
 
-    let size = container.clientWidth;
     let phi = config.phi;
+    let size = Math.max(1, container.clientWidth);
     let previousTime: number | undefined;
     let animationFrame = 0;
 
     const globe = createGlobe(canvas, {
       ...config,
-      width: size * 2,
-      height: size * 2
+      width: size,
+      height: size
     });
+
+    container.style.opacity = "1";
 
     const resizeObserver = new ResizeObserver(() => {
       const nextSize = container.clientWidth;
 
-      if (nextSize === size) return;
+      if (nextSize === 0 || nextSize === size) return;
 
       size = nextSize;
-      globe.update({ width: size * 2, height: size * 2 });
+      globe.update({ width: size, height: size });
     });
 
     resizeObserver.observe(container);
 
     const animate = (time: number) => {
-      // Limit the step when returning from a background tab.
       const delta =
         previousTime === undefined
           ? 0
@@ -135,7 +135,6 @@ export function Globe({ className, config = GLOBE_CONFIG }: GlobeProps) {
       if (!dragRef.current) phi += AUTO_ROTATION_SPEED * delta;
 
       globe.update({ phi: phi + springRotation.get() });
-      container.style.opacity = "1";
 
       animationFrame = requestAnimationFrame(animate);
     };
