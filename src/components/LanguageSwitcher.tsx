@@ -23,10 +23,10 @@ export function LanguageSwitcher({
   onLocaleChange,
   selectClassName
 }: LanguageSwitcherProps) {
-  const t = useTranslations("languageSwitcher");
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
+  const t = useTranslations("languageSwitcher");
   const [isPending, startTransition] = useTransition();
 
   const handleChange = (nextLocale: string) => {
