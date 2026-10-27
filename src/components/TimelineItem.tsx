@@ -39,8 +39,8 @@ export function TimelineItem({
         ref={segmentRef}
         aria-hidden="true"
         className={cn(
-          "pointer-events-none absolute inset-s-2 top-15 h-full w-px sm:inset-3 sm:top-17",
-          last && "invisible"
+          last && "invisible",
+          "pointer-events-none absolute inset-s-2 top-15 h-full w-px sm:inset-3 sm:top-17"
         )}
       >
         <motion.div
