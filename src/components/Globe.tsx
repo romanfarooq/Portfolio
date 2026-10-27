@@ -160,10 +160,10 @@ export function Globe({ className, config = GLOBE_CONFIG }: GlobeProps) {
     >
       <div
         ref={containerRef}
-        className="size-120 cursor-grab touch-none opacity-0 transition-opacity duration-500 contain-layout contain-paint contain-size active:cursor-grabbing"
+        className="size-120 cursor-grab touch-pan-y touch-pinch-zoom opacity-0 transition-opacity duration-500 contain-layout contain-paint contain-size active:cursor-grabbing"
+        onPointerUp={stopDragging}
         onPointerDown={startDragging}
         onPointerMove={updateDragging}
-        onPointerUp={stopDragging}
         onPointerCancel={stopDragging}
         onLostPointerCapture={stopDragging}
       />
