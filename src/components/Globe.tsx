@@ -67,8 +67,8 @@ export function Globe({ className, config = GLOBE_CONFIG }: GlobeProps) {
 
     event.currentTarget.setPointerCapture(event.pointerId);
     dragRef.current = {
-      pointerId: event.pointerId,
       startX: event.clientX,
+      pointerId: event.pointerId,
       startRotation: dragRotation.get()
     };
   }
