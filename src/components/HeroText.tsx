@@ -45,9 +45,9 @@ export function HeroText() {
           animate="visible"
           transition={{ delay: 1.2 }}
         >
-          <span className="hidden md:inline">
+          <span className="hidden md:block">
             {t("developerText")}
-            <br /> {t("dedicatedText")}
+            <span className="mt-2 block">{t("dedicatedText")}</span>
           </span>
           <span className="md:hidden">{t("buildingText")}</span>
         </motion.p>
