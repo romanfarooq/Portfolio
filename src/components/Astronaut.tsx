@@ -37,35 +37,27 @@ export function Astronaut(props: ThreeElements["group"]) {
 
   return (
     <group {...props} ref={group} dispose={null}>
-      <group name="Sketchfab_Scene">
-        <group name="Sketchfab_model">
-          <group name="Root">
-            <group name="metarig">
-              <primitive object={nodes.metarig_rootJoint} />
-              {[
-                "Cube001_0",
-                "Cube005_0",
-                "Cube002_0",
-                "Plane_0",
-                "Cube008_0",
-                "Cube004_0",
-                "Cube003_0",
-                "Cube_0",
-                "Cube009_0",
-                "Cube011_0"
-              ].map((name) => (
-                <skinnedMesh
-                  key={name}
-                  name={name}
-                  geometry={(nodes[name] as SkinnedMesh).geometry}
-                  skeleton={(nodes[name] as SkinnedMesh).skeleton}
-                  material={materials["AstronautFallingTexture.png"]}
-                />
-              ))}
-            </group>
-          </group>
-        </group>
-      </group>
+      <primitive object={nodes.metarig_rootJoint} />
+      {[
+        "Cube001_0",
+        "Cube005_0",
+        "Cube002_0",
+        "Plane_0",
+        "Cube008_0",
+        "Cube004_0",
+        "Cube003_0",
+        "Cube_0",
+        "Cube009_0",
+        "Cube011_0"
+      ].map((name) => (
+        <skinnedMesh
+          key={name}
+          name={name}
+          geometry={(nodes[name] as SkinnedMesh).geometry}
+          skeleton={(nodes[name] as SkinnedMesh).skeleton}
+          material={materials["AstronautFallingTexture.png"]}
+        />
+      ))}
     </group>
   );
 }
