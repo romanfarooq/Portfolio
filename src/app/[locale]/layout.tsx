@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import { Funnel_Display } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getTranslations } from "next-intl/server";
@@ -144,6 +145,7 @@ export default async function RootLayout({
         )}
       >
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );
