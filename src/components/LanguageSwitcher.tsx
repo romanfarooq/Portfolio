@@ -3,8 +3,8 @@ import { hasLocale, useLocale, useTranslations } from "next-intl";
 
 import { cn } from "@/lib/utils";
 import { Languages } from "@/components/icons";
-import { isRtlLocale, locales, localeLabels } from "@/i18n/routing";
 import { usePathname, useRouter } from "@/i18n/navigation";
+import { isRtlLocale, locales, localeLabels } from "@/i18n/routing";
 import {
   Select,
   SelectItem,
