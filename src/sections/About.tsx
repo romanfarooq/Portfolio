@@ -21,14 +21,14 @@ export async function About() {
     >
       <h2 className="text-3xl font-bold md:text-4xl">{t("title")}</h2>
       <div className="mt-12 grid grid-cols-1 gap-4 md:auto-rows-fr md:grid-cols-6">
-        <header className="relative row-span-2 flex min-h-60 items-end overflow-hidden rounded-2xl border border-violet-300/25 bg-[radial-gradient(ellipse_at_top_left,#50377b_0%,#241b43_45%,#111225_100%)] p-6 transition-[border-color,box-shadow] duration-300 hover:border-violet-300/25 hover:shadow-lg hover:shadow-violet-950/15 md:col-span-3 md:h-full">
+        <header className="relative row-span-2 flex min-h-60 items-end overflow-hidden rounded-2xl border border-violet-300/25 bg-[radial-gradient(ellipse_at_top_left,#674095_0%,#382052_45%,#1c122e_100%)] p-6 transition-[border-color,box-shadow] duration-300 hover:border-violet-300/25 hover:shadow-lg hover:shadow-violet-950/15 md:col-span-3 md:h-full">
           <Image
             src="/assets/images/coding-pov.webp"
             alt={t("codingImageAlt")}
             width={1280}
             height={720}
             priority={true}
-            className="pointer-events-none absolute inset-0 size-full [mask-image:linear-gradient(to_bottom,black,transparent_85%)] object-cover"
+            className="pointer-events-none absolute inset-0 size-full [mask-image:linear-gradient(to_bottom,black_45%,transparent_95%)] object-cover"
           />
           <div
             aria-hidden="true"
