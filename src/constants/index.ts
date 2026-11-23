@@ -100,12 +100,14 @@ export const socials = [
 ];
 
 export const skills = [
+  { name: "zephyr", icon: Logos.Zephyr },
+  { name: "qemu", icon: Logos.QEMU },
+  { name: "linux", icon: Logos.Linux },
   { name: "html5", icon: Logos.HTML5 },
   { name: "css3", icon: Logos.CSS3 },
   { name: "cplusplus", icon: Logos.CPlusPlus },
   { name: "git", icon: Logos.Git },
   { name: "github", icon: Logos.GitHub },
-  { name: "stripe", icon: Logos.Stripe },
   { name: "expressjs", icon: Logos.ExpressJS },
   { name: "javascript", icon: Logos.JavaScript },
   { name: "typescript", icon: Logos.TypeScript },
@@ -119,9 +121,7 @@ export const skills = [
   { name: "socketio", icon: Logos.SocketIO },
   { name: "flutter", icon: Logos.Flutter },
   { name: "tailwindcss", icon: Logos.TailwindCSS },
-  { name: "bootstrap", icon: Logos.Bootstrap },
   { name: "threejs", icon: Logos.ThreeJS },
-  { name: "material-ui", icon: Logos.MaterialUI },
   { name: "motion", icon: Logos.Motion },
   { name: "chartjs", icon: Logos.Chartjs },
   { name: "prisma", icon: Logos.Prisma },

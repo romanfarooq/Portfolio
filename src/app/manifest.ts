@@ -2,9 +2,10 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Roman Farooq's Software & Space Technology Portfolio",
+    name: "Roman Farooq | Software Engineer",
     short_name: "Roman Farooq - Portfolio",
-    description: "Roman Farooq is a Software Engineer focused on RF systems, satellite communication, GIS, remote sensing, space technology, and engineering software systems.",
+    description:
+      "Software Engineer building web, mobile, and data applications with a direction in embedded systems, space technology, and Earth observation.",
     lang: "en-US",
     start_url: "/",
     scope: "/",
